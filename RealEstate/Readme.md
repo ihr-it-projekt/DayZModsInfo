@@ -12,7 +12,7 @@ Thats all and more with TB Real Estate.
 - Player can give keys to other players
 - Player can lock/unlock house
 - Player can set the name of the house
-- Player cam extend the house with 
+- Player cam extend the house with
   - Storage with different levels (feature can be removed from the config)
   - Alarm system with currently 3 levels (feature can be removed from the config)
     - Level 1, player get a message that one house is broken in
@@ -20,7 +20,7 @@ Thats all and more with TB Real Estate.
     - Level 3, player get a message that one house is broken with the custom name of the house and the name of the player who broke in
   - Respawn point (feature can be removed from the config)
     - can be enabled and disabled by the player
-- Admin can configure 
+- Admin can configure
   - any house type
   - house price
   - house storage level´s
@@ -59,7 +59,7 @@ storeHouseStateDisabled = 0;
 - Start your server. All configurations will now create in your Server profile folder.
 - Tear down the server
 - Configure your needs
-- Start your Server :-) 
+- Start your Server :-)
 
 ## Configurations
 
@@ -241,6 +241,20 @@ Admins can currently delete house ownership in game
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
             "isLockSystem": 0, // Never touch this value. It is needed internally
             "isKeySpawnPoint": 1, // Never touch this value. It is needed internally
+            "message": "", // Never touch this value. It is needed internally
+            "level": 0 // Never touch this value. It is needed internally
+        },
+        {
+            "id": "998737067", // Never touch this value. It is needed internally
+            "type": "#Despawn_Prevent", // The Label in House menu, you can change but then you loose translatiom on other languages
+            "description": "#Despawn_Prevent_desc", // The description of the extension. You can change but then you loose translatiom on other languages
+            "price": 100000, // The price of the extension
+            "isHouseAlarm": 0, // Never touch this value. It is needed internally
+            "isHouseInventory": 0, // Never touch this value. It is needed internally
+            "isSpawnPoint": 0, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 1, // Never touch this value. It is needed internally
             "message": "", // Never touch this value. It is needed internally
             "level": 0 // Never touch this value. It is needed internally
         }
