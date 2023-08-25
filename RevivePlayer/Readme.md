@@ -19,6 +19,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 Yes, you can. But you have to in MissionServer.c of your spawn selection mod the following line:
 
+
 ````
     override PlayerBase OnClientNewEvent(PlayerIdentity identity, vector pos, ParamsReadContext ctx){
         PlayerBase player = super.OnClientNewEvent(identity, pos, ctx);
@@ -36,7 +37,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
 		
 		return player;
     }
-´´´´
+````
 
 
 ## How to install
