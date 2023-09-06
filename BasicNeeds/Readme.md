@@ -33,6 +33,15 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Configure your needs
 - Start your Server :-)
 
+## Items included
+
+- TB_Soap for cleaning body and clothing
+- TB_PooGround
+- TB_PeeGround
+- TBDetergent for cleaning clothing in washing machine
+- TBWashingMachine this can be picked up by players and placed in the world
+- TBStaticWashingMachine this can not be picked up by players
+
 ## Configurations
 
 ### Config.json
@@ -142,5 +151,27 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
         "DirtIncreaseForFeetClothing": 1.0, // How much dirt will be increased for feet clothing
         "DirtIncreaseForBodyClothing": 1.0 // How much dirt will be increased for body clothing
     }
+}
+````
+
+### WashingMachineConfig.json
+
+````
+{
+    "version": "1", // Never touch this value. It is needed internally
+    "energyQuantityConsumptionPerMinuted": 10.0, // How much energy will be consumed per minute per clothing
+    "waterQuantityConsumptionPerMinuted": 100.0, // How much water will be consumed per minute per clothing
+    "detergentQuantityConsumptionPerMinuted": 1.0, // How much detergent will be consumed per minute per clothing
+    "cleanEffectivenessPerMinuted": 34.0, // How much dirt will be decreased per minute per clothing
+    "itemsThatGetDamageWhenInWashedClothing": [ // Items can be get damaged when they are in inventory of closthing
+        {
+            "type": "IsElectricAppliance", // All Items that are electric becomes damage
+            "damagePerMinute": 10 // How much damage will be done per minute
+        },
+        {
+            "type": "Paper", // Item type
+            "damagePerMinute": 10 // How much damage will be done per minute
+        }
+    ]
 }
 ````
