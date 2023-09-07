@@ -19,7 +19,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 Yes, you can. But you have to in MissionServer.c of your spawn selection mod the following line:
 
-
 ````
     override PlayerBase OnClientNewEvent(PlayerIdentity identity, vector pos, ParamsReadContext ctx){
         PlayerBase player = super.OnClientNewEvent(identity, pos, ctx);
@@ -47,7 +46,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
 - Start your server. All configurations will now create in your Server profile folder.
 - Tear down the server
 - Configure your needs
-- Start your Server :-) 
+- Start your Server :-)
 
 ## Configuration
 
@@ -65,6 +64,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
     "minTimeBeforeHospital": 180, // Min time in seconds before the player can be revived in the hospital
     "minTimeBeforeKillButton": 5, // Min time in seconds before player can use the kill/suiccied button
     "enableHospital": 1, // 0 = No hospital revive, 1 = Hospital revive is enabled
+    "destroyDefibrillatorAfterUsage": 0, // 0 = Defibrillator will not be destroyed after usage, 1 = Defibrillator will be destroyed after usage
     "priceForReviveInHospital": 100, // Price for revive in hospital -1 = no price for revive 100 = 100 $ for revive
     "reviveHospital": { // If a player will be revived in the hospital
         "maxWounds": 0, // Max wounds the player get when revived
