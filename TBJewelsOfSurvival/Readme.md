@@ -74,7 +74,7 @@ Thirst of player will be reduced or increased
 
 ... more are planned
 
-### [Configuration](#Configuration)
+### [Configuration](#anvilconfigjson)
 - a lot of configurations possibilities
 - config will automatically create on first server start
 
@@ -113,7 +113,7 @@ Thirst of player will be reduced or increased
 
 ... more are planned
 
-## <a id="Configuration">Configuration</a>
+## Configuration
 Here are shown only examples. The generated configs can have more items. But they will all described here.
 ### AnvilConfig.json
 ```
