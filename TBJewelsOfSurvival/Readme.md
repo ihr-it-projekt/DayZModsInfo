@@ -1,4 +1,4 @@
-![TB Jewels of Survival](./images/TBJewelsOfSurvival.png "TB Jewels of Survival")
+<img src="./images/TBJewelsOfSurvival.png" alt="TB Jewels of Survival" width="400"/>
 
 # TB Jewels of Survival
 
