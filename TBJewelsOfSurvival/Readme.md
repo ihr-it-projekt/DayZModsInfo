@@ -1,4 +1,4 @@
-<img src="./images/TBJewelsOfSurvival.png" alt="TB Jewels of Survival" width="400"/>
+<img src="./images/jewels_of_survival.jpeg" alt="TB Jewels of Survival" width="400"/>
 
 # TB Jewels of Survival
 
