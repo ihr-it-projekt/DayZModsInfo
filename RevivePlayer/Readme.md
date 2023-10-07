@@ -2,12 +2,18 @@
 
 A mod to revive dead players.
 
+<img src="./Logo.png" alt="TB Jewels of Survival" width="400"/>
+
 ## Shop Link
 https://lbmaster.de/product.php?id=22
 
 ## Support
 
 If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
+
+## Youtube
+
+[![Version 1](logoYT.png)](https://youtu.be/Dh3ECiVC6S4)
 
 
 ## Dependencies

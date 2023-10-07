@@ -1,9 +1,22 @@
 # TB Real Estate
 
+<img src="./Logo.png" alt="TB Jewels of Survival" width="400"/>
+
 Use house as home. Buy, sell, extend and lock your house. Share your house and house inventory with your friends.
 Protect your house with an alarm system and respawn in your house.
 
 Thats all and more with TB Real Estate.
+
+## Shop Link
+https://lbmaster.de/product.php?id=19
+
+## Support
+
+If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
+
+## Youtube
+
+[![Version 1](logoYT.png)](https://youtu.be/JsQrh3tAQEs)
 
 ## Features
 

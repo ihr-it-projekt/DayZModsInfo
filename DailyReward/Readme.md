@@ -1,7 +1,20 @@
 # TB Daily Reward
 
+<img src="./logo.png" alt="TB Jewels of Survival" width="512"/>
+
 ## Description
 This Mod allows you in DayZ to get a reward for every day you play on the server.
+
+## Shop Link
+https://lbmaster.de/product.php?id=20
+
+## Support
+
+If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
+
+## Youtube
+
+[![Version 1](logoYT.png)](https://youtu.be/ulrSrztYB1c)
 
 ## Features
 - monetise your sever with premium rewards
@@ -21,10 +34,6 @@ This Mod allows you in DayZ to get a reward for every day you play on the server
 - Win animation when player gets reward
 - Logging in files or Discord Webhook
 - Admins can make a hot reload of configs an player data
-
-## Support
-
-If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
 
 ## Dependencies
 - Community Framework (CF)

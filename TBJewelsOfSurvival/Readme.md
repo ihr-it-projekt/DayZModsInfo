@@ -6,6 +6,18 @@
 
 This mod allows you to harvest, craft and use jewels with different Skills.
 
+## Shop Link
+https://lbmaster.de/product.php?id=27
+
+## Support
+
+If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
+
+## Youtube
+
+[![Version 1](./images/logoYT.png)](https://youtu.be/7JhJnIazOaA)
+[![Presentation](./images/logoYTP.png)](https://youtu.be/gKKrYm1T3z0)
+
 ## Features
 
 ## 21 new Materials

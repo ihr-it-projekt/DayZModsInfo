@@ -18,9 +18,17 @@
 - if player is dirty, flies will be around him
 
 
+## Shop Link
+https://lbmaster.de/product.php?id=25
+
 ## Support
 
 If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
+
+## Youtube
+
+[![Basic Needs](Logo.png)](https://youtu.be/3CVjtuJO8gE)
+[![Washing Machine](logoWYT.png)](https://www.youtube.com/watch?v=Z5NNgfVLpaQ)
 
 ## How to install
 
