@@ -87,7 +87,8 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
             "MoneyRuble25": 25,
             "MoneyRuble50": 50,
             "MoneyRuble100": 100
-        }
+        },
+        "useMoneyFromLBMasterATM": 1 // If you ae using advanced banking system from LBMaster, you can use to take the money from the ATM. 0 = disabled, 1 = enabled
     },
     "hospitalSpawnPoints": [ // Positions of hospital spawn points, player will spawn on one of them randomly
         {
