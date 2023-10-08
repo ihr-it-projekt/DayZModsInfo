@@ -226,7 +226,7 @@ Here are shown only examples. The generated configs can have more items. But the
 ### OreSpawnAreasConfig.json
 ```
 {
-    "version": "1", // never change this, internal version number
+    "version": "2", // never change this, internal version number
     "copperOreSpawnAreas": { // name of the ore area, never change this
         "minOreCountInArea": 1, // how many ores are minimum in this area
         "maxOreCountInArea": 5, // how many ores are maximum in this area
@@ -248,7 +248,8 @@ Here are shown only examples. The generated configs can have more items. But the
                 ],
                 "radius": 10.0 // the radius of the position where the ore will spawn
             }
-        ]
+        ],
+        "useExactPosition": 0 // 0 = use random position in the radius. The Ore will allways spawn on Ground. If you want to spawm the Ore underground use: 1 = use exact position, ore will spawn on one exact position, radius option is then obsolate.
     },
     ...
 }
