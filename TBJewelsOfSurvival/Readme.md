@@ -52,7 +52,6 @@ Charcoal Effective time will be reduced or increased
 
 #### Damage Reduce Effect
 Damage will be reduced or increased when player will be attacked. 
-**<p><u style="color:red">Has no effect one shoot kills :-( DayZ kill the player before the effect will be applied. This is unfortunately not otherwise possible in DayZ!</u></p>**
 
 #### Damage Increase Effect
 Damage will be reduced or increased when player will attack
