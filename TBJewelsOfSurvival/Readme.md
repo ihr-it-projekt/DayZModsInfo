@@ -144,6 +144,7 @@ Here are shown only examples. The generated configs can have more items. But the
 ### AnvilConfig.json
 ```
 {
+    "damageOnCraftingItem": 10.0, // how much damage will be done on the crafting item
     "ringOfPerseveranceLevel1Recipe": { // recipe name, never change this.
         "targetType": "TBJOFRingOfPerseveranceLevel1", // What kind of item will be created
         "timeToCraftInSeconds": 5, // how long the carfting will take in seconds
@@ -221,6 +222,7 @@ Here are shown only examples. The generated configs can have more items. But the
     "mineTimeGreenDiamondInSeconds": 70, // how long it takes to mine green diamond
     "mineTimeBlueDiamondInSeconds": 80, // how long it takes to mine blue diamond
     "mineTimeRedDiamondInSeconds": 90, // how long it takes to mine red diamond
+    "damageOnCraftingItem": 10.0, // how much damage will be done on the crafting item
     "version": "1" // never change this, internal version number
 }
 ```
@@ -249,7 +251,7 @@ Here are shown only examples. The generated configs can have more items. But the
             {
                 "position": [ // position of the ore
                     6218.919921875, 
-                    0.0, // you dont need to set the high, it will be calculated to ground
+                    0.0, // you dont need to set the high, it will be calculated to ground if you NOT use "useExactPosition" option otherwise you have to set it.
                     2349.865234375
                 ],
                 "radius": 10.0 // the radius of the position where the ore will spawn
@@ -257,7 +259,7 @@ Here are shown only examples. The generated configs can have more items. But the
             {
                 "position": [ // position of the ore
                     4218.919921875,
-                    0.0, // you dont need to set the high, it will be calculated to ground
+                    0.0, // you dont need to set the high, it will be calculated to ground if you NOT use "useExactPosition" option otherwise you have to set it.
                     1349.865234375
                 ],
                 "radius": 10.0 // the radius of the position where the ore will spawn
