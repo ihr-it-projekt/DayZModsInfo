@@ -121,6 +121,21 @@ Thirst of player will be reduced or increased
 ![Ring of Perseverance Level 2](./images/ROFPL2.JPG "Ring of Perseverance Level2")
 ##### Ring of Perseverance Level 3 (Type: TBJOFRingOfPerseveranceLevel3)
 ![Ring of Perseverance Level 3](./images/ROFPL3.JPG "Ring of Perseverance Level3")
+##### Ring of Owl Level 1 (Type: TBJOFRingOfOwlLevel1)
+![Ring of Owl Level 1](./images/ROFOL1.png "Ring of Owl Level1")
+##### Ring of Owl Level 2 (Type: TBJOFRingOfOwlLevel2)
+![Ring of Owl Level 2](./images/ROFOL2.png "Ring of Owl Level2")
+##### Ring of Owl Level 3 (Type: TBJOFRingOfOwlLevel3)
+![Ring of Owl Level 3](./images/ROFOL3.png "Ring of Owl Level3")
+##### Night Vision Ring of Owl Level 1 (Type: TBJOFRingOfOwlLevel1)
+![Night Vision Ring of Owl Level 1](./images/NVROFOL1.png "Night Vision Ring of Owl Level1")
+##### Night Vision Ring of Owl Level 2 (Type: TBJOFRingOfOwlLevel2)
+![Night Vision Ring of Owl Level 2](./images/NVROFOL2.png "Night Vision Ring of Owl Level2")
+##### Night Vision Ring of Owl Level 3 (Type: TBJOFRingOfOwlLevel3)
+![Night Vision Ring of Owl Level 3](./images/NVROFOL3.png "Night Vision Ring of Owl Level3")
+##### Negative Effect all Ring of Owl Level (Type: TBJOFRingOfOwl)
+![Negative Effect all Ring of Owl Level](./images/NegativeEffect.png "Negative Effect all Ring of Owl Level")
+
 
 ... more are planned
 
@@ -271,6 +286,9 @@ Here are shown only examples. The generated configs can have more items. But the
     "enableTBJOFRingOfDragonBloodLevel1": 1, // 1 = enabled, 0 = disabled the ring
     "enableTBJOFRingOfDragonBloodLevel2": 1, // 1 = enabled, 0 = disabled the ring
     "enableTBJOFRingOfDragonBloodLevel3": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfOwlLevel1": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfOwlLevel2": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfOwlLevel3": 1, // 1 = enabled, 0 = disabled the ring
     "version": "1" // never change this, internal version number
 }
 ```
@@ -297,5 +315,23 @@ Here are shown only examples. The generated configs can have more items. But the
             "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have "o" as default key
         }
     ]
+}
+```
+###  JewelRecoveryConfig.json
+```
+{
+    "ringOfAttackLevel1": {
+        "recoveryTimeInSeconds": -1, // -1 = no recovery time
+        "usageTimeInSeconds": -1 // -1 = no usage time
+    },
+    "ringOfAttackLevel2": {
+        "recoveryTimeInSeconds": 300, // 300 seconds recovery time
+        "usageTimeInSeconds": -1
+    },
+    "ringOfAttackLevel3": {
+        "recoveryTimeInSeconds": -1,
+        "usageTimeInSeconds": 300 // 300 seconds usage time
+    },
+    "version": "1"
 }
 ```
