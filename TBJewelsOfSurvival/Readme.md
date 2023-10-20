@@ -115,12 +115,6 @@ Thirst of player will be reduced or increased
 ![Ring of Life Level 2](./images/ROFLL2.JPG "Ring of Life Level2")
 ##### Ring of Life Level 3 (Type: TBJOFRingOfLifeLevel3)
 ![Ring of Life Level 3](./images/ROFLL3.JPG "Ring of Life Level3")
-##### Ring of Perseverance Level 1 (Type: TBJOFRingOfPerseveranceLevel1)
-![Ring of Perseverance Level 1](./images/ROFPL1.JPG "Ring of Perseverance Level1")
-##### Ring of Perseverance Level 2 (Type: TBJOFRingOfPerseveranceLevel2)
-![Ring of Perseverance Level 2](./images/ROFPL2.JPG "Ring of Perseverance Level2")
-##### Ring of Perseverance Level 3 (Type: TBJOFRingOfPerseveranceLevel3)
-![Ring of Perseverance Level 3](./images/ROFPL3.JPG "Ring of Perseverance Level3")
 ##### Ring of Owl Level 1 (Type: TBJOFRingOfOwlLevel1)
 ![Ring of Owl Level 1](./images/ROFOL1.png "Ring of Owl Level1")
 ##### Ring of Owl Level 2 (Type: TBJOFRingOfOwlLevel2)
@@ -135,9 +129,15 @@ Thirst of player will be reduced or increased
 ![Night Vision Ring of Owl Level 3](./images/NVROFOL3.png "Night Vision Ring of Owl Level3")
 ##### Negative Effect all Ring of Owl Level (Type: TBJOFRingOfOwl)
 ![Negative Effect all Ring of Owl Level](./images/NegativeEffect.png "Negative Effect all Ring of Owl Level")
+##### Ring of Perseverance Level 1 (Type: TBJOFRingOfPerseveranceLevel1)
+![Ring of Perseverance Level 1](./images/ROFPL1.JPG "Ring of Perseverance Level1")
+##### Ring of Perseverance Level 2 (Type: TBJOFRingOfPerseveranceLevel2)
+![Ring of Perseverance Level 2](./images/ROFPL2.JPG "Ring of Perseverance Level2")
+##### Ring of Perseverance Level 3 (Type: TBJOFRingOfPerseveranceLevel3)
+![Ring of Perseverance Level 3](./images/ROFPL3.JPG "Ring of Perseverance Level3")
 
 
-... more are planned
+... more Rings are planned
 
 ## Configuration
 Here are shown only examples. The generated configs can have more items. But they will all described here.
@@ -210,6 +210,25 @@ Here are shown only examples. The generated configs can have more items. But the
     "timeInSecondsToGrindGreenDiamond": 10, // how long it takes to grind green diamond
     "timeInSecondsToGrindBlueDiamond": 15, // how long it takes to grind blue diamond
     "timeInSecondsToGrindRedDiamond": 20 // how long it takes to grind red diamond
+}
+```
+###  JewelRecoveryConfig.json
+```
+{
+    "ringOfAttackLevel1": {
+        "recoveryTimeInSeconds": -1, // -1 = no recovery time
+        "usageTimeInSeconds": -1 // -1 = no usage time
+    },
+    "ringOfAttackLevel2": {
+        "recoveryTimeInSeconds": 300, // 300 seconds recovery time
+        "usageTimeInSeconds": 300 // 300 seconds usage time
+    },
+    "ringOfAttackLevel3": {
+        "recoveryTimeInSeconds": -1,
+        "usageTimeInSeconds": 300 // 300 seconds usage time
+    },
+    ...
+    "version": "1"
 }
 ```
 ### MineConfig.json
@@ -317,23 +336,5 @@ Here are shown only examples. The generated configs can have more items. But the
             "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have "o" as default key
         }
     ]
-}
-```
-###  JewelRecoveryConfig.json
-```
-{
-    "ringOfAttackLevel1": {
-        "recoveryTimeInSeconds": -1, // -1 = no recovery time
-        "usageTimeInSeconds": -1 // -1 = no usage time
-    },
-    "ringOfAttackLevel2": {
-        "recoveryTimeInSeconds": 300, // 300 seconds recovery time
-        "usageTimeInSeconds": -1
-    },
-    "ringOfAttackLevel3": {
-        "recoveryTimeInSeconds": -1,
-        "usageTimeInSeconds": 300 // 300 seconds usage time
-    },
-    "version": "1"
 }
 ```
