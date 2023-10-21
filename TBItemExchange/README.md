@@ -1,5 +1,7 @@
 # TBItemExchange
 
+<img src="./TBExchangeItem.jpeg" alt="TB Jewels of Survival" width="400"/>
+
 ## Description
 
 Do you know the problem. You have a lot of cool mods but they bring duplicate Items in? And the items are not compatible to use in each other mod? Here is the solution. Just let player exchange the Items.
