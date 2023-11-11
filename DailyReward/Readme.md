@@ -209,3 +209,19 @@ This is a collection of your reward levels and level conditions
 
 ````
 
+### Animals
+
+````
+
+AmbientHen
+AnimalBear
+AnimalCow
+AnimalDeer
+AnimalGoat
+AnimalPig
+AnimalRoeDeer
+AnimalSheep
+AnimalWildBoar
+AnimalWolf
+
+````
