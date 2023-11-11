@@ -176,6 +176,8 @@ You have to create for every level one level condition, You can name it as you w
 
 #### Vanilla Animal Types
 
+If an animal is not listed here, you can just kill one and then take a look into mod data folder. In player data is then created an entry  with the type of the animal.
+
 ````
 
 Animal_GallusGallusDomesticus
