@@ -165,9 +165,56 @@ You have to create for every level one level condition, You can name it as you w
     "playerKillsRequiredCount": -1, // The player kills the player must have to get the reward or -1 to disable this condition
     "infectedKillsRequiredCount": -1, // The infected kills the player must have to get the reward or -1 to disable this condition
     "distanceTravelledRequiredInMeters": 300, // The distance the player must have to get the reward or -1 to disable this condition
-    "canReTakenAfterPeriodOfDaysRealTime": 1 // The real time in days that player must wait to get the reward again or -1 to disable this condition
+    "canReTakenAfterPeriodOfDaysRealTime": 1, // The real time in days that player must wait to get the reward again or -1 to disable this condition
+    "animalKills": { // The animal kills the player must have to get the reward leave it empty to disable this condition
+        "Animal_GallusGallusDomesticus": 1 // "Animal Type Name": count of required kills, 
+    },
+    "version": "1" // Never touch this value. It is needed internally
 }
 ````
+
+
+#### Vanilla Animal Types
+
+````
+
+Animal_GallusGallusDomesticus
+Animal_GallusGallusDomesticusF_Brown
+Animal_GallusGallusDomesticusF_Spotted
+Animal_GallusGallusDomesticusF_White
+
+Animal_UrsusArctos
+
+Animal_BosTaurusF_Brown
+Animal_BosTaurusF_Spotted
+Animal_BosTaurusF_White
+Animal_BosTaurus_Brown
+Animal_BosTaurus_Spotted
+Animal_BosTaurus_White
+
+Animal_CervusElaphus
+Animal_CervusElaphusF
+
+Animal_CapraHircusF
+Animal_CapraHircus_Black
+Animal_CapraHircus_Brown
+Animal_CapraHircus_White
+
+Animal_SusDomesticus
+
+Animal_CapreolusCapreolus
+Animal_CapreolusCapreolusF
+
+Animal_OvisAries
+Animal_OvisAriesF
+
+Animal_SusScrofa
+
+Animal_CanisLupus_Grey
+Animal_CanisLupus_White
+
+````
+
 
 ### RewardLevels.json
 
@@ -206,46 +253,5 @@ This is a collection of your reward levels and level conditions
         "Level_4_Premium_Reward_2"
     ]
 }
-
-````
-
-### Animals
-
-````
-
-Animal_GallusGallusDomesticus
-Animal_GallusGallusDomesticusF_Brown
-Animal_GallusGallusDomesticusF_Spotted
-Animal_GallusGallusDomesticusF_White
-
-Animal_UrsusArctos
-
-Animal_BosTaurusF_Brown
-Animal_BosTaurusF_Spotted
-Animal_BosTaurusF_White
-Animal_BosTaurus_Brown
-Animal_BosTaurus_Spotted
-Animal_BosTaurus_White
-
-Animal_CervusElaphus
-Animal_CervusElaphusF
-
-Animal_CapraHircusF
-Animal_CapraHircus_Black
-Animal_CapraHircus_Brown
-Animal_CapraHircus_White
-
-Animal_SusDomesticus
-
-Animal_CapreolusCapreolus
-Animal_CapreolusCapreolusF
-
-Animal_OvisAries
-Animal_OvisAriesF
-
-Animal_SusScrofa
-
-Animal_CanisLupus_Grey
-Animal_CanisLupus_White
 
 ````
