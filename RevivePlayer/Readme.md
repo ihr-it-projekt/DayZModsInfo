@@ -2,7 +2,7 @@
 
 A mod to revive dead players.
 
-<img src="./Logo.png" alt="TB Jewels of Survival" width="400"/>
+<img src="./logo.png" alt="Revive Player" width="400"/>
 
 ## Shop Link
 https://lbmaster.de/product.php?id=22
