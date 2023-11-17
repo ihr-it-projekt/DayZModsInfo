@@ -30,7 +30,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 [![Basic Needs](Logo.png)](https://youtu.be/3CVjtuJO8gE)
 [![Washing Machine](logoWYT.png)](https://www.youtube.com/watch?v=Z5NNgfVLpaQ)
 
-## How to install
+## FAQ
+
+### How to install
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
@@ -38,6 +40,21 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Tear down the server
 - Configure your needs
 - Start your Server :-)
+
+### How to migrate from Version 1.x.x to 2.x.x
+
+**Please read before everything, before you start.**
+
+1. Backup everything ``YourServerProfilesFolder\TBDailyReward`` files from Mod
+1. Delete the old pbos from server and client
+1. Download the new version and copy over
+1. Start the server
+1. Wait server is up
+1. Stop the server
+1. Copy everything from `YourServerProfilesFolder\TBBasicNeeds\Config` into `YourServerProfilesFolder\TBMods\Config\TBBasicNeeds`
+1. Copy everything from `YourServerProfilesFolder\TBBasicNeeds\Data` into `YourServerProfilesFolder\TBMods\Data\TBBasicNeeds`
+1. Update done. Start your Server
+1. If everything is fine, you can delete the old folder ``YourServerProfilesFolder\TBBasicNeeds``
 
 ## Items included
 

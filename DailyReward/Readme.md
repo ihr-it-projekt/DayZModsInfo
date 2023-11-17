@@ -35,10 +35,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Logging in files or Discord Webhook
 - Admins can make a hot reload of configs an player data
 
-## Dependencies
-- Community Framework (CF)
+## FAQ
 
-## How to install
+### How to install
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
@@ -48,6 +47,32 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Tear down the server
 - Configure your needs
 - Start your Server :-)
+
+### How to migrate from Version 1.x.x to 2.x.x
+
+**Please read before everything, before you start.**
+
+1. Backup everything ``YourServerProfilesFolder\TBDailyReward`` files from Mod
+1. Do not move the original files and folders form ``YourServerProfilesFolder\TBDailyReward`` some files will be migrated to new locations
+1. Delete the old pbos from server and client
+1. Download the new version and copy over
+1. Start the server
+1. Wait server is up
+1. `PremiumUser.json` and `AdminConfig.json` will now migrate to new versions. You will find them now in `YourServerProfilesFolder\TBMods\Data\Global` and `YourServerProfilesFolder\TBMods\Config\Global`
+1. Stop the server
+1. Copy everything except `PremiumUser.json`, `TBKeyBindsConfig.json` and `AdminConfig.json` from `YourServerProfilesFolder\TBDailyReward\Config` into `YourServerProfilesFolder\TBMods\Config\TBDailyReward`
+1. Copy everything from `YourServerProfilesFolder\TBDailyReward\Data` into `YourServerProfilesFolder\TBMods\Data\TBDailyReward`
+1. Configure the [tbKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson) for your needs
+1. Update done. Start your Server
+
+
+### How i can give player premium status?
+
+There are 3 Items implemented. Just give him one of the items and he will get premium status for Daily Reward.
+
+- TBDRPremiumCoinGold | 30 Days Premium in Daily Reward
+- TBDRPremiumCoinSilver | 7 Days Premium in Daily Reward
+- TBDRPremiumCoinBronze | 1 Day Premium in Daily Reward
 
 ## Configurations
 
@@ -62,59 +87,17 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ````
 
 ### TBKeyBindsConfig.json
-```
-{
-    "version": "1", // Never touch this value. It is needed internally
-    "keyBinds": [
-        {
-            "name": "UAInputOpenTBDailyReward",  // Never touch this value. It is needed internally
-            "defaultKey": 25, // The Deafult key will be P, if you want change, pls find the key code in file YourServerProfileFolder\TBDailyReward\TBKeyCodeMatch.json 
-            "useServerKeyBind": 0 // 0 = use player configured key, 1 = use server key (if you enable it, at every server join of the player, the key will changed for him). 
-        }
-    ]
-}
-```
 
-### PremiumUser.json
-````
-{
-    "version": "1", // Never touch this value. It is needed internally
-    "premiumUsers": [
-        { // Begin first user
-            "endDate": { // Premium end date
-                "year": 2023,
-                "month": 6,
-                "day": 7
-            },
-            "playerId": "Add here Steam Or DayZ ID 2"
-        },
-        { // Begin next user, you can add so many you want. 
-            "endDate": {
-                "year": 2023,
-                "month": 6,
-                "day": 5
-            },
-            "playerId": "Add here Steam Or DayZ ID 2"
-        }
-    ]
-}
+see [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
 
-````
 
 ### AdminConfig.json
 
 Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
 
-````
-{
-    "version": "1", // Never touch this value. It is needed internally
-    "adminList": [
-        "Add here Player Steam Or DayZ ID 1",
-        "Add here Player Steam Or DayZ ID 2"
-    ],
-    "isLoaded": 0 // Never touch this value. It is needed internally
-}
-````
+see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
+
+
 ### Items/Example_Item_1.json
 
 Here you can configure your items.

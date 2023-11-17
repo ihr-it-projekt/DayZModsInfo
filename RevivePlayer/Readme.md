@@ -15,10 +15,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 [![Version 1](logoYT.png)](https://youtu.be/Dh3ECiVC6S4)
 
-
-## Dependencies
-- Community Framework
-
 ## FAQ
 
 ### I have another spawn selection mod, can I use it with this mod?
@@ -29,7 +25,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
     override PlayerBase OnClientNewEvent(PlayerIdentity identity, vector pos, ParamsReadContext ctx){
         PlayerBase player = super.OnClientNewEvent(identity, pos, ctx);
 
-    	#ifdef TBRevivePlayerClient
+    	#ifdef TBRevivePlayerServer
     	// Check if the player is in an emergency
 		TBREmergency emergency = TBREmergencies.Get().GetEmergency(identity.GetId());
 		if (emergency) {
@@ -53,6 +49,23 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
 - Tear down the server
 - Configure your needs
 - Start your Server :-)
+
+## How to upgrade from 1.x.x to 2.x.x
+
+**Please read before everything, before you start.**
+
+The currency configuration part will be removed after the upgrade. The currency configuration will then in TBMods configuration folder.
+
+1. Backup everything in ``YourServerProfilesFolder\TBRevivePlayer`` folder
+1. Delete the old pbos from server and client
+1. Download the new version and copy over
+1. Start the server
+1. Wait server is up
+1. Stop the server
+1. Adapt the currency config in ``YourServerProfilesFolder\TBMods\Configs\Global\CurrencyConfig.json`` to your needs. You can copy over the part from backup configuration.
+1. Configure the [tbKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson) for your needs
+1. Update done. Start your Server
+1. If everything is fine, you can delete the old config folder ``YourServerProfilesFolder\TBRevivePlayer``
 
 ## Configuration
 
@@ -78,17 +91,6 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
         "health": 1.0, // Health the player get when revived (0.0 - 1.0) 1.0 = 100%
         "blood": 1.0, // Blood the player get when revived (0.0 - 1.0) 1.0 = 100%
         "shock": 1.0 // Shock the player get when revived (0.0 - 1.0) 0 means 100% shock, 1.0 means no shock
-    },
-    "currencyConfig": {
-        "currencyValues": { // Currency values for the your currencies
-            "MoneyRuble1": 1, // "ItemName": ITEM VALUE
-            "MoneyRuble5": 5,
-            "MoneyRuble10": 10,
-            "MoneyRuble25": 25,
-            "MoneyRuble50": 50,
-            "MoneyRuble100": 100
-        },
-        "useMoneyFromLBMasterATM": 1 // If you ae using advanced banking system from LBMaster, you can use to take the money from the ATM. 0 = disabled, 1 = enabled
     },
     "hospitalSpawnPoints": [ // Positions of hospital spawn points, player will spawn on one of them randomly
         {
@@ -134,3 +136,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
 }
 
 ````
+
+### TBKeyBindsConfig.json
+
+see [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)

@@ -88,7 +88,24 @@ Thirst of player will be reduced or increased
 
 ... more are planned
 
-### [Configuration](#anvilconfigjson)
+## FAQ 
+
+### How to migrate from Version 1.x.x to 2.x.x
+
+**Please read before everything, before you start.**
+
+1. Backup everything ``YourServerProfilesFolder\TBJewelsOfSurvival`` files from Mod
+1. Delete the old pbos from server and client
+1. Download the new version and copy over
+1. Start the server
+1. Wait server is up
+1. Stop the server
+1. Copy everything from `YourServerProfilesFolder\TBJewelsOfSurvival\Config` into `YourServerProfilesFolder\TBMods\Config\TBJewelsOfSurvival`
+1. Configure the [tbKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson) for your needs
+1. Update done. Start your Server
+1. If everything is fine, you can delete the old folder ``YourServerProfilesFolder\TBJewelsOfSurvival``
+
+## [Configuration](#anvilconfigjson)
 - a lot of configurations possibilities
 - config will automatically create on first server start
 
@@ -334,16 +351,7 @@ Here are shown only examples. The generated configs can have more items. But the
     "tickCountToProduceGold": 15 // how many ticks are needed to produce one gold ingot
 }
 ```
+
 ### TBKeyBindsConfig.json
-```
-{
-    "version": "1",
-    "keyBinds": [ 
-        {
-            "name": "UAInputOpenTBJOFBook",
-            "defaultKey": 24, // default key is O, if you want to have another key, you can change it here. You can find the numbers in TBKeyCodeMatch.json
-            "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have "o" as default key
-        }
-    ]
-}
-```
+
+see [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
