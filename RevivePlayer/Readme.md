@@ -57,7 +57,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
 The currency configuration part will be removed after the upgrade. The currency configuration will then in TBMods configuration folder.
 
 1. Backup everything in ``YourServerProfilesFolder\TBRevivePlayer`` folder
-1. Delete the old pbos from server and client
+1. Backup the old pbos from server and client and remove them from your server
 1. Download the new version and copy over
 1. Start the server
 1. Wait server is up
