@@ -25,7 +25,7 @@ Yes, you can. But you have to in MissionServer.c of your spawn selection mod the
     override PlayerBase OnClientNewEvent(PlayerIdentity identity, vector pos, ParamsReadContext ctx){
         PlayerBase player = super.OnClientNewEvent(identity, pos, ctx);
 
-    	#ifdef TBRevivePlayerServer
+    	#ifdef TBRevivePlayerClient
     	// Check if the player is in an emergency
 		TBREmergency emergency = TBREmergencies.Get().GetEmergency(identity.GetId());
 		if (emergency) {
