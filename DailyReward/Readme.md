@@ -42,7 +42,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
 - extract TBDailyReward.zip
-- Copy the extracted Folder `TBDailyReward` into your server profile folder.
+- Copy the files from `TBDailyReward\Config` into `YourServerProfilesFolder\TBMods\Config\TBTBDailyReward` folder
 - Start your server. Some more configurations will be generated.
 - Tear down the server
 - Configure your needs
