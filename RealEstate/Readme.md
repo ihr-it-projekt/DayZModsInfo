@@ -22,6 +22,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 - Player can buy any configured houses type
 - Player can sell any owned house
+- Player can transfer house ownership to other players
 - Player can give keys to other players
 - Player can lock/unlock house
 - Player can set the name of the house
@@ -31,6 +32,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
     - Level 1, player get a message that one house is broken in
     - Level 2, player get a message that one house is broken with the custom name of the house
     - Level 3, player get a message that one house is broken with the custom name of the house and the name of the player who broke in
+    - Level 4, like level 3 but with discord message
   - Respawn point (feature can be removed from the config)
     - can be enabled and disabled by the player
 - Admin can configure
@@ -39,7 +41,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
   - house storage level´s
   - raid tools
   - storage price
-  - inventory items per level
+  - inventory slots per level
   - max house inventory level
   - raid time
   - can turn on and off mini Map in house menu
@@ -47,6 +49,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
   - if player can respawn in houses
   - currencies that are used
   - black and white listed areas
+  - blacklist for items
 - Logs for (File or/and Discord)
   - Raid system
   - House inventory
@@ -74,27 +77,41 @@ storeHouseStateDisabled = 0;
 - Configure your needs
 - Start your Server :-)
 
+## How to upgrade from 1.x.x to 2.x.x
+
+**Please read before everything, before you start.**
+
+1. backup everything in ``YourServerProfilesFolder\TBRealEstate`` folder
+1. download the new version and copy over, do not forget also the TBLib update.
+1. start the server
+1. wait server is up
+1. stop the server
+1. adapt the currency config in ``YourServerProfilesFolder\TBMods\Configs\Global\CurrencyConfig.json`` to your needs. You can copy over the content from backup configuration to new generated file.
+1. Delete everything in ``YourServerProfilesFolder\TBMods\Data\TBRealEstate`` folder
+1. Copy every file form from old ``YourServerProfilesFolder\TBRealEstate\Data`` to new ``YourServerProfilesFolder\TBMods\Data\TBRealEstate`` folder. 
+1. Delete everything in ``YourServerProfilesFolder\TBMods\Config\TBRealEstate`` folder
+1. Copy every file form from old ``YourServerProfilesFolder\TBRealEstate\Config`` to new ``YourServerProfilesFolder\TBMods\Config\TBRealEstate`` folder. 
+1. Start the server
+
+
 ## Configurations
+
+All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBRealEstate`
 
 ### AdminConfig.json
 
 Admins can currently delete house ownership in game
+### AdminConfig.json
 
-````
-{
-    "version": "1", // Never touch this value. It is needed internally
-    "adminList": [
-        "Add here Player Steam Or DayZ ID 1",
-        "Add here Player Steam Or DayZ ID 2"
-    ]
-}
-````
+Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
+
+see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
 
 ### example house config
 ````
 {
-    "version": "3", // Never touch this value. It is needed internally
+    "version": "5", // Never touch this value. It is needed internally
     "showMap": 1, // Show the map in the house menu
     "howManyHousesCanPlayerBuy": 1, // How many houses can a player buy
     "playerCanRespawnInHouse": 1, // Player can by respawn extension
@@ -139,38 +156,76 @@ Admins can currently delete house ownership in game
         }
         // you can add more areas
     ],
-    "houseConfigs": [
-        {
-            "houseType": "Land_Garage_Row_Small",  // The type of the building 
-            "sellPrice": 50,  // Price when player sell this building
-            "buyPrice": 100, // Price when player buy this building
-            "storageBuyFactor": 0.5, // The increase of price, when a player buy a storage. E.g. first cost 100 the second will cost 150 by a factor of 0.5
-            "raidTools": [  // What kind of weapons the raider must have, he needs only one of the.
-                "Crowbar"
-            ],
-            "inventoryItemsPerLevel": 10, // How much items can stored per level
-            "maxHouseInventoryLevel": 20, // the max level of house inventory. Attention: If you can store to much items. The store file can be corrupted by DayZ. 
-            "raidTimeInSeconds": 600,  // How long the raid time per door is
-            "maxKeys": -1 // How many keys can given for this house type to other plasers. Every house counts for his own. -1 = unlimited keys 10 = only 10 Players can get access to this house
-        }
-    ]
+    "houseDefinitionNames": [ // Define here all house types that you want to use, after first start the house definition files will be created in `YourServerProfilesFolder\TBMods\Config\TBRealEstate\HouseDefinitions` folder
+        "Land_Garage_Row_Small",
+        "Land_Shed_W6",
+        "Land_Garage_Office",
+        "Land_Factory_Small",
+        "Land_House_1B01_Pub",
+        "Land_House_1W10",
+        "Land_House_1W10_Brown",
+        "Land_House_1W03",
+        "Land_House_1W09_Yellow",
+        "Land_House_1W04",
+        "Land_House_2W01",
+        "Land_House_1W08",
+        "Land_House_1W08_Brown",
+        "Land_House_2B02",
+        "Land_House_2B01",
+        "Land_House_1W07",
+        "Land_House_1W11",
+        "Land_House_1W05",
+        "Land_House_1W05_Yellow",
+        "Land_House_1W01",
+        "Land_House_1W06",
+        "Land_House_2W02",
+        "Land_House_2W03",
+        "Land_House_2W04",
+        "Land_House_2W04_Yellow",
+        "Land_House_2B03"
+    ],
+    "houseConfigs": [] // only for interla usage, keep it like it is
 }
         
 ````
+### Example House definition
+
+You will find the autogenerated files after first start in `YourServerProfilesFolder\TBMods\Config\TBRealEstate\HouseDefinitions` folder
+
+```
+{
+    "version": "1", // Never touch this value. It is needed internally
+    "houseType": "Land_Garage_Row_Small",  // The type of the building 
+    "sellPrice": 50,  // Price when player sell this building
+    "buyPrice": 100, // Price when player buy this building
+    "storageBuyFactor": 0.5, // The increase of price, when a player buy a storage. E.g. first cost 100 the second will cost 150 by a factor of 0.5
+    "raidTools": [  // What kind of weapons the raider must have, he needs only one of the.
+        "Crowbar"
+    ],
+    "inventoryItemsPerLevel": 10, // How much items can stored per level
+    "maxHouseInventoryLevel": 20, // the max level of house inventory. Attention: If you can store to much items. The store file can be corrupted by DayZ. 
+    "raidTimeInSeconds": 600,  // How long the raid time per door is
+    "raidCoolDownInSeconds": 0,  // After this period of time, can the doors looked after the last door was raided
+    "maxKeys": -1 // How many keys can given for this house type to other plasers. Every house counts for his own. -1 = unlimited keys 10 = only 10 Players can get access to this house
+}
+```
 
 ### Example house extension config
 ````
 {
-    "version": "4", // Never touch this value. It is needed internally
+    "version": "6", // Never touch this value. It is needed internally
     "extensions": [
         {
-            "id": "4", // Never touch this value. It is needed internally
+            "id": "rc70jd70ix", // Never touch this value. It is needed internally
             "type": "#Alarm_system", // The Label in House menu, you can change but then you loose translatiom on other languages
             "description": "#Alarm_system_desc_1", // The description of the extension. You can change but then you loose translatiom on other languages
             "price": 1, // The price of the extension
             "isHouseAlarm": 1, // Never touch this value. It is needed internally
             "isHouseInventory": 0, // Never touch this value. It is needed internally
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "#Alarm_system_message_1", // Never touch this value. It is needed internally
             "level": 1 // Never touch this value. It is needed internally
         },
@@ -182,6 +237,9 @@ Admins can currently delete house ownership in game
             "isHouseAlarm": 1, // Never touch this value. It is needed internally
             "isHouseInventory": 0, // Never touch this value. It is needed internally
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "#Alarm_system_message_2", // Never touch this value. It is needed internally
             "level": 2 // Never touch this value. It is needed internally
         },
@@ -193,6 +251,9 @@ Admins can currently delete house ownership in game
             "isHouseAlarm": 1,  // Never touch this value. It is needed internally
             "isHouseInventory": 0, // Never touch this value. It is needed internally
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "#Alarm_system_message_3", // Never touch this value. It is needed internally
             "level": 3 // Never touch this value. It is needed internally
         },
@@ -204,6 +265,9 @@ Admins can currently delete house ownership in game
             "isHouseAlarm": 0, // Never touch this value. It is needed internally
             "isHouseInventory": 0, // Never touch this value. It is needed internally
             "isSpawnPoint": 1, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "", // Never touch this value. It is needed internally
             "level": 0 // Never touch this value. It is needed internally
         },
@@ -215,6 +279,9 @@ Admins can currently delete house ownership in game
             "isHouseAlarm": 0, // Never touch this value. It is needed internally
             "isHouseInventory": 1, // Never touch this value. It is needed internally
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
+            "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "", // not used yet
             "level": 0 // Never touch this value. It is needed internally
         },
@@ -228,6 +295,7 @@ Admins can currently delete house ownership in game
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
             "isLockSystem": 0, // Never touch this value. It is needed internally
             "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "#Alarm_system_message_4", // Never touch this value. It is needed internally
             "level": 4 // Never touch this value. It is needed internally
         },
@@ -239,8 +307,9 @@ Admins can currently delete house ownership in game
             "isHouseAlarm": 0, // Never touch this value. It is needed internally
             "isHouseInventory": 0, // Never touch this value. It is needed internally
             "isSpawnPoint": 0,  // Never touch this value. It is needed internally
-            "isLockSystem": 1, // Never touch this value. It is needed internally
+            "isLockSystem": 0, // Never touch this value. It is needed internally
             "isKeySpawnPoint": 0, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "", // Never touch this value. It is needed internally
             "level": 0 // Never touch this value. It is needed internally
         },
@@ -254,6 +323,7 @@ Admins can currently delete house ownership in game
             "isSpawnPoint": 0, // Never touch this value. It is needed internally
             "isLockSystem": 0, // Never touch this value. It is needed internally
             "isKeySpawnPoint": 1, // Never touch this value. It is needed internally
+            "isStopDisappearing": 0, // Never touch this value. It is needed internally
             "message": "", // Never touch this value. It is needed internally
             "level": 0 // Never touch this value. It is needed internally
         },
@@ -297,16 +367,7 @@ Admins can currently delete house ownership in game
 
 ### Example Currency configuration
 
-````
-"currencyValues": {
-    "MoneyRuble1": 1, // Item that is your currency and what the value is for item.
-    "MoneyRuble5": 5, // Item that is your currency and what the value is for item.
-    "MoneyRuble10": 10,
-    "MoneyRuble25": 25,
-    "MoneyRuble50": 50,
-    "MoneyRuble100": 100
-}
-````
+see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 
 ### Example Store Blacklist configuration
 

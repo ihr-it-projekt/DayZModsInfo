@@ -10,11 +10,13 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
   "version": "1", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
-      "dailyRewardAdmin": 0, // is admin in daily reward
+++      "dailyRewardAdmin": 0, // is admin in daily reward mod
+      "realEstateAdmin": 0, // is admin in real estate mod
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
       "dailyRewardAdmin": 1,
+      "realEstateAdmin": 1,
       "playerId": "765611328196317725"
     }
   }
