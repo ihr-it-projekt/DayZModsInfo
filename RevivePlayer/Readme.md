@@ -67,6 +67,11 @@ The currency configuration part will be removed after the upgrade. The currency 
 1. Update done. Start your Server
 1. If everything is fine, you can delete the old config folder ``YourServerProfilesFolder\TBRevivePlayer``
 
+## FAQ
+
+### The defibrillator is de spawned after re log/server restart
+In your `mpmission` folder there is a `cfgIgnoreList.xml` where you have to remove the "Defibrillator" entry
+
 ## Configuration
 
 ````
