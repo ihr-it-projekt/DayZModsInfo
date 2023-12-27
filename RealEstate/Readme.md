@@ -91,6 +91,9 @@ storeHouseStateDisabled = 0;
 1. Copy every file form from old ``YourServerProfilesFolder\TBRealEstate\Data`` to new ``YourServerProfilesFolder\TBMods\Data\TBRealEstate`` folder. 
 1. Delete everything in ``YourServerProfilesFolder\TBMods\Config\TBRealEstate`` folder
 1. Copy every file form from old ``YourServerProfilesFolder\TBRealEstate\Config`` to new ``YourServerProfilesFolder\TBMods\Config\TBRealEstate`` folder. 
+1. Copy the [convert.exe](./convert/dist/convert.exe) to ``YourServerProfilesFolder\TBMods\Data\TBRealEstate\Player`` folder
+1. execute the ``convert.exe`` in ``YourServerProfilesFolder\TBMods\Data\TBRealEstate\Player`` folder
+1. you can delete the ``convert.exe`` script now
 1. Start the server
 
 
