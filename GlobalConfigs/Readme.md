@@ -10,7 +10,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
   "version": "1", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
-++      "dailyRewardAdmin": 0, // is admin in daily reward mod
+      "dailyRewardAdmin": 0, // is admin in daily reward mod
       "realEstateAdmin": 0, // is admin in real estate mod
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
@@ -28,7 +28,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 {
   "version": "1", // never change this, internal version number
     "currencyValues": { // Currency values for the your currencies
-        "MoneyRuble1": 1, // "ItemName": ITEM VALUE
+        "MoneyRuble1": 1, // "ItemName": ITEM VALUE // Attention the Typename is key sensitive
         "MoneyRuble5": 5,
         "MoneyRuble10": 10,
         "MoneyRuble25": 25,
@@ -38,6 +38,12 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     "useMoneyFromLBMasterATM": 1 // If you ae using advanced banking system from LBMaster, you can use to take the money from the ATM. 0 = disabled, 1 = enabled
 } 
 ````
+
+### Money types Extension
+
+ExpansionBanknoteUSD
+ExpansionBanknoteEuro
+ExpansionBanknoteHryvnia
 
 ## TBKeyBindsConfig.json
 ````
