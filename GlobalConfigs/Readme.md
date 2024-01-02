@@ -41,9 +41,9 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 
 ### Money types Extension
 
-ExpansionBanknoteUSD
-ExpansionBanknoteEuro
-ExpansionBanknoteHryvnia
+- ExpansionBanknoteUSD
+- ExpansionBanknoteEuro
+- ExpansionBanknoteHryvnia
 
 ## TBKeyBindsConfig.json
 ````
