@@ -103,10 +103,7 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBRe
 
 ### AdminConfig.json
 
-Admins can currently delete house ownership in game
-### AdminConfig.json
-
-Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
+Admins can currently delete house ownership in game and can make a hot reload of configs and player data. 
 
 see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
