@@ -17,6 +17,12 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## FAQ
 
+
+## Class names of the item "Defibrillator"
+````
+Remove the class name of the item "Defibrillator" from the cfgIgnoreList.xml in your mpmission folder
+````
+
 ### I have another spawn selection mod, can I use it with this mod?
 
 Yes, you can. But you have to in MissionServer.c of your spawn selection mod the following line:
