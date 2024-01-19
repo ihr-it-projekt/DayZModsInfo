@@ -141,6 +141,7 @@ Here you can configure your items.
 	"version": "1", // Never touch this value. It is needed internally
 	"level": 1, // The level of the reward
 	"canTakenTimes": -1, // How many times all players can take this reward, -1 means unlimited times, 10 means 10 times for all players, if you want to reset the taken times, just delete in ServerProfile\TBDailyReward\Data\Level_1_Example_Reward_1.json and reload all configs
+	"items" [] // Dont use it, internal used. 
 	"uniqueItemNames": [  // Here you can add and name your own previuse created reward items. for configuration see Items/Example_Item_1.json
 		"Example_Item_1",
 		"GiftBox_Medium_2",
