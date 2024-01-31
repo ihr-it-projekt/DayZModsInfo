@@ -143,7 +143,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ````
 {
-    "version": "2", // Never touch this value. It is needed internally
+    "version": "4", // Never touch this value. It is needed internally
+    "animationCommandUID": 1056, // see https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/main/scripts/3_game/dayzplayer.c#L1007 !!!!DO NOT CHANGE IF YOU NOT KNOW WHAT YOU DO!!! This change the animation for poo and pee
+    "stanceMask": 2, // see https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/main/scripts/3_game/dayzplayer.c#L634 !!!!DO NOT CHANGE IF YOU NOT KNOW WHAT YOU DO !!! This change the stance for poo and pee
     "cleanItemsWhenPoo": [ // This clean items are needed when you make poo
         {
             "type": "Paper", // Item type
