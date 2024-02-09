@@ -1,5 +1,15 @@
 # You find here all Global configurations for TB Mods
 
+## Items
+
+### Premium Coins
+
+This coins give player premium status for all my mods that support premium status. 
+
+- TBLibPremiumCoinGold | 30 Days Premium in Daily Reward
+- TBLibPremiumCoinSilver | 7 Days Premium in Daily Reward
+- TBLibPremiumCoinBronze | 1 Day Premium in Daily Reward
+
 It can be that you will not find all properties or configurations in your mod. They will always automatically created when you start the server and they are needed.
 
 You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`

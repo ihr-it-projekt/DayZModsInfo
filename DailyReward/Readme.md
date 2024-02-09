@@ -1,6 +1,6 @@
 # TB Daily Reward
 
-<img src="./logo.png" alt="TB Jewels of Survival" width="512"/>
+<img src="./logo.png" alt="TB Daily Reward" width="512"/>
 
 ## Description
 This Mod allows you in DayZ to get a reward for every day you play on the server.
