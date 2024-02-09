@@ -17,6 +17,7 @@ will be coming soon :-)
 
 ## Features
 - Creates a showroom for player, where they can test the cars
+- works with DayZLife Car ownership, other mod supports are planed.
 - Player can 
   - buy cars
   - buy premium cars
@@ -25,6 +26,9 @@ will be coming soon :-)
 - Admin
   - can reload configs and user data in game, that helps to support config changes without server restart
   - can add multiple independent dealer points
+  - can add car variations to car position, for example different colors or equipment
+  - can mark cars as premium cars so only premium users can buy them
+  - can add additional items to the car that increase the price of the car
   
 
 ## FAQ
