@@ -169,6 +169,7 @@ You have to create for every level one level condition, You can name it as you w
         "Animal_GallusGallusDomesticus": 1 // "Animal Type Name": count of required kills, 
     },
     "version": "1" // Never touch this value. It is needed internally
+    "displayName": "Level 1" // The display name on the level button
 }
 ````
 
