@@ -37,11 +37,9 @@ will be coming soon :-)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
-- extract TBCarDealer.zip
-- Copy the files from `TBCarDealer\Config` into `YourServerProfilesFolder\TBMods\Config\TBCarDealer` folder
-- Start your server. Some more configurations will be generated.
-- Tear down the server
-- Configure your needs
+- extract Config.zip
+- Copy the files from `Config\Config` into `YourServerProfilesFolder\TBMods\Config\TBCarDealer` folder
+- Configure your needs, for example pricing
 - Start your Server :-)
 
 ### How i can give player premium status?
@@ -100,6 +98,17 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
     0.0,
     0.0
   ],
+  "spawnPosition": [
+    6540.68,
+    6.18,
+    2479.06
+  ],
+  "spawnOrientation": [
+    166.0,
+    0.0,
+    0.0
+  ],
+  "useExactSpawnPosition": 0,
   "useExactPosition": 0, // If you want to use the exact position, set this value to 1 otherwise the Dealer point object will be automatically placed on the ground 
   "cars": [], // never change this, internal usage
   "uniqueFileNames": [ // The unique names of the cars you want to offer here, muss match with the file names from `\TBMods\Config\TBCarDealer\CarConfigs` folder 
