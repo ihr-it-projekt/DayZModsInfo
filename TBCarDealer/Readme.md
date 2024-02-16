@@ -20,6 +20,7 @@ will be coming soon :-)
 - works with DayZLife Car ownership, other mod supports are planed.
 - Player can 
   - buy cars
+  - sell cars
   - buy premium cars
   - can buy additional items for the car
   - can become premium user by using three different premium coins
@@ -29,6 +30,8 @@ will be coming soon :-)
   - can add car variations to car position, for example different colors or equipment
   - can mark cars as premium cars so only premium users can buy them
   - can add additional items to the car that increase the price of the car
+  - can log all transactions
+  - can disable buy, sell and showroom for locations
   
 
 ## FAQ
@@ -88,6 +91,10 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 ````
 {
   "uniqueName": "Chernogorsk", // The name of the dealer point, file name must be the same
+  "version": "1", // never change this, internal version number
+  "playerCanSellCars": 0, // If you want to allow the player to sell cars, set this value to 1 otherwise to 0
+  "playerCanEnterShowRoom": 1, // If you want to allow the player to enter the showroom, set this value to 1 otherwise to 0
+  "playerCanBuyCars": 1, // If you want to allow the player to buy cars, set this value to 1 otherwise to 0
   "position": [ // The position of the dealer point
     6542.534180,
     6.215929,
@@ -99,9 +106,9 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
     0.0
   ],
   "spawnPosition": [
-    6540.68,
-    6.18,
-    2479.06
+    6537.031738,
+    5.995119,
+    2482.719971
   ],
   "spawnOrientation": [
     166.0,
@@ -164,6 +171,22 @@ Here you can configure your price items.
 	    "CarBattery",
 	    "SparkPlug"
 	],
+}
+````
+
+### Logger.json
+
+Here you can configure logging
+
+````
+{
+    "version": "1", // never change this, internal version number
+    "logBuyCSV": 0, // If you want to log all buy transactions to a csv file, set this value to 1 otherwise to 0
+    "logBuyDiscord": 0, // If you want to log all buy transactions to discord, set this value to 1 otherwise to 0
+    "discordBuyWebhookURL": "", // The webhook url of the discord channel where the buy transactions should be logged
+    "logSellCSV": 0, // If you want to log all sell transactions to a csv file, set this value to 1 otherwise to 0
+    "logSellDiscord": 0, // If you want to log all sell transactions to discord, set this value to 1 otherwise to 0
+    "discordSellWebhookURL": "" // The webhook url of the discord channel where the sell transactions should be logged
 }
 ````
 
