@@ -92,6 +92,9 @@ The player will see now in reward menu, 7000m plus. If the character dies now, t
 ## Configurations
 
 ### Logger.json
+
+See also logging for premium coin usage [Logger.json](../GlobalConfigs/Readme.md#loggerjson)
+
 ````
 {
     "version": "1",  // Never touch this value. It is needed internally

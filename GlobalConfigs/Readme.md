@@ -49,6 +49,16 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 } 
 ````
 
+## Logger.json
+```
+{
+    "version": "1", // never change this, internal version number
+    "logUsePremiumCoinCSV": 1, // 1 = enables csv logging in path YourServerProfilesFolder\TBMods\Logs\Global\playerSteamId, 0 = disabled
+    "logUsePremiumCoinDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordUsePremiumCoinWebhookURL": "" // Add here your discord webhook url
+}
+```
+
 ### Money types Extension
 
 - ExpansionBanknoteUSD

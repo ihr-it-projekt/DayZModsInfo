@@ -176,6 +176,8 @@ Here you can configure your price items.
 
 ### Logger.json
 
+See also logging for premium coin usage [Logger.json](../GlobalConfigs/Readme.md#loggerjson)
+
 Here you can configure logging
 
 ````
