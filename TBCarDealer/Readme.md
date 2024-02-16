@@ -13,7 +13,7 @@ https://lbmaster.de/product.php?id=36
 If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
 
 ## Youtube
-will be coming soon :-)
+https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ## Features
 - Creates a showroom for player, where they can test the cars
