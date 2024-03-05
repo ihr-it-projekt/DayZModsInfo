@@ -22,7 +22,6 @@ https://youtu.be/xdvwHjvxJYw
 - You can configure 
   - multiple insurance durations and prices
   - max heirs per insurance
-  - Blacklist for items which can not be insured
   - position of insurance trader
   - time when insurance will be active after death
   - non pieced insurance cases (Gear) will be deleted after configured time
@@ -107,16 +106,3 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
     }
 }
 ```
-
-
-### ItemBlacklist.json
-
-````
-{
-    "version": "1", // Never touch this value. It is needed internally
-    "blackList": [ // List of item types that is not allowed to store in house
-        "Battery9V",
-        "ItemB"
-    ]
-}
-````
