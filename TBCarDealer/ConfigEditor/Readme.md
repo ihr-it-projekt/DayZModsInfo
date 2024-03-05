@@ -2,7 +2,7 @@
 
 ## Downlaod
 
-- [TB Car Dealer Editor](TBCarDealerEditor.zip)
+- [TB Car Dealer Editor](./TBCarDealerConfigEditor.rar)
 
 ## Description
 ### How to use the TB Car Dealer Editor
