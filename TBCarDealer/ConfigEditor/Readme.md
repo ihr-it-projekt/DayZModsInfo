@@ -1,4 +1,9 @@
 # TB Car Dealer Editor
+
+## Downlaod
+
+- [TB Car Dealer Editor](TB_Car_Dealer_Editor.zip)
+
 ## Description
 ### How to use the TB Car Dealer Editor
 
@@ -51,9 +56,3 @@ click once on the item in `Unique Name` and then click on the `+` next to the it
 - #### I advise you to import both before editing PriceItems and CarConfigs to avoid errors later on. 
 
 <img src="./Export.png"/>
-
-
-## Downlaod
-
-- [TB Car Dealer Editor](
-
