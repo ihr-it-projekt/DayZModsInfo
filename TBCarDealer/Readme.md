@@ -3,9 +3,11 @@
 <img src="./Logo.jpeg" alt="TB Car Dealer" width="512"/>
 
 ## Description
+
 A car dealer script to buy cars and premium cars
 
 ## Shop Link
+
 https://lbmaster.de/product.php?id=36
 
 ## Support
@@ -13,26 +15,27 @@ https://lbmaster.de/product.php?id=36
 If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
 
 ## Youtube
+
 https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ## Features
+
 - Creates a showroom for player, where they can test the cars
 - works with DayZLife Car ownership, other mod supports are planed.
-- Player can 
-  - buy cars
-  - sell cars
-  - buy premium cars
-  - can buy additional items for the car
-  - can become premium user by using three different premium coins
+- Player can
+    - buy cars
+    - sell cars
+    - buy premium cars
+    - can buy additional items for the car
+    - can become premium user by using three different premium coins
 - Admin
-  - can reload configs and user data in game, that helps to support config changes without server restart
-  - can add multiple independent dealer points
-  - can add car variations to car position, for example different colors or equipment
-  - can mark cars as premium cars so only premium users can buy them
-  - can add additional items to the car that increase the price of the car
-  - can log all transactions
-  - can disable buy, sell and showroom for locations
-  
+    - can reload configs and user data in game, that helps to support config changes without server restart
+    - can add multiple independent dealer points
+    - can add car variations to car position, for example different colors or equipment
+    - can mark cars as premium cars so only premium users can buy them
+    - can add additional items to the car that increase the price of the car
+    - can log all transactions
+    - can disable buy, sell and showroom for locations
 
 ## FAQ
 
@@ -47,7 +50,8 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ### How i can give player premium status?
 
-Hint: There are general coin for all my mods that support premium status. See [Global Readme](../GlobalConfigs/Readme.md#premium-coins)
+Hint: There are general coin for all my mods that support premium status.
+See [Global Readme](../GlobalConfigs/Readme.md#premium-coins)
 
 There are 3 Items implemented. Just give him one of the items and he will get premium status for Car Dealer.
 
@@ -55,6 +59,19 @@ There are 3 Items implemented. Just give him one of the items and he will get pr
 - TBCarDealerPremiumCoinSilver | 7 Days Premium in Daily Reward
 - TBCarDealerPremiumCoinBronze | 1 Day Premium in Daily Reward
 
+### What kind of Action Objects are available?
+
+- TBCDCashier
+- TBCDMachine (default)
+- TBCDPokladna
+- TBCDPultskasou
+
+<p float="left">
+  <img src="images/img.png" width="22%" />
+  <img src="images/20240307163631_1.jpg" width="22%" />
+  <img src="images/20240307163720_1.jpg" width="22%" />
+  <img src="images/20240307163807_1.jpg" width="22%" />
+</p>
 
 ## Configurations
 
@@ -69,6 +86,7 @@ Admins can currently make a hot reload of configs and player data. Only they see
 see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
 ### CarConfigs Example
+
 ````
 {
     "uniqueName": "Hatchback", // The name of the car config, file name must be the same
@@ -84,7 +102,6 @@ see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 ### Example Currency configuration
 
 see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
-
 
 ### DealerPointConfig Example
 
