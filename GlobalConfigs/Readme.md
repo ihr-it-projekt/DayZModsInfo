@@ -27,6 +27,8 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     "7656119813296317725": {
       "dailyRewardAdmin": 1,
       "realEstateAdmin": 1,
+      "carDealerAdmin": 1,
+      "basicNeedsAdmin": 1,
       "playerId": "765611328196317725"
     }
   }
