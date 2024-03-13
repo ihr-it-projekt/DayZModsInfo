@@ -22,6 +22,8 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     "Add here Steam Or DayZ ID": {
       "dailyRewardAdmin": 0, // is admin in daily reward mod
       "realEstateAdmin": 0, // is admin in real estate mod
+      "carDealerAdmin": 1, // is admin in car dealer
+      "basicNeedsAdmin": 1, // is admin in basic needs
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
