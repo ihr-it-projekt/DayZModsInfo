@@ -53,6 +53,12 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 } 
 ````
 
+### Money types Extension
+
+- ExpansionBanknoteUSD
+- ExpansionBanknoteEuro
+- ExpansionBanknoteHryvnia
+  
 ## Logger.json
 ```
 {
@@ -62,12 +68,6 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     "discordUsePremiumCoinWebhookURL": "" // Add here your discord webhook url
 }
 ```
-
-### Money types Extension
-
-- ExpansionBanknoteUSD
-- ExpansionBanknoteEuro
-- ExpansionBanknoteHryvnia
 
 ## TBKeyBindsConfig.json
 ````
