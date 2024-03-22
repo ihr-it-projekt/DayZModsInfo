@@ -1,6 +1,6 @@
 # TB Death Insurance
 
-<img src="./DeathInsurance.jpeg" alt="TB Jewels of Survival" width="512"/>
+<img src="./DeathInsurance.jpeg" alt="TB Death Insurance" width="512"/>
 
 ## Description
 This mods allows player to have an insurance for their gear. If they die, they can get their gear back. 

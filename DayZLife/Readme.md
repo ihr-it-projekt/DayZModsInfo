@@ -1,4 +1,6 @@
-# DayZ Life Version 2
+# DayZ Life Version 2 (RP Framework)
+
+<img src="./DayZLife2Logo.png" alt="DayZ Life V2" width="512"/>
 
 ***Version 1 see: https://dayz-life.net/***
 
@@ -46,7 +48,7 @@
     - can be parked in a virtual garage
     - can be raided
     - insurance for car damage, can be taken at garage
-    - can be tuned (replace car) by a tuning menu for restricted user
+    - can be tuned (replace car) by a tuning menu for restricted job
 
 ### Banking System
 
