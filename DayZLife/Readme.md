@@ -69,7 +69,7 @@
 ### Shop Robbery 
     - players can rob the shop
     - Cops get a starting notifiocation
-    - Cops can get a message where the shop is raided and who is the raider
+    - Cops can get a message where (Map in message menu) the shop is raided and who is the raider
 
 ### legal and illegal harvest of resources.
 
