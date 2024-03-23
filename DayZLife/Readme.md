@@ -66,6 +66,11 @@
     - trader can be configured, so that they can only used by a job group job groubs or by all
     - dynamic prices for items related to trader storage
 
+### Shop Robbery 
+    - players can rob the shop
+    - Cops get a starting notifiocation
+    - Cops can get a message where the shop is raided and who is the raider
+
 ### legal and illegal harvest of resources.
 
       - coal
