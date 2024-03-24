@@ -38,17 +38,17 @@
     - cops can send messages to all players
     - must have a personal radio with active battery to use message system (configurable)
 
-### Cars
+### Vehicles
 
     - Key System
-    - last driver can sell cars
-    - every car has one owner
-    - every player, who has access to car, can see the owner of the car
-    - configurable no car collision damage
+    - last driver can sell vehicles
+    - every vehicle has one owner
+    - every player, who has access to vehicles, can see the owner of the vehicles
+    - configurable no vehicles collision damage
     - can be parked in a virtual garage
     - can be raided
-    - insurance for car damage, can be taken at garage
-    - can be tuned (replace car) by a tuning menu for restricted job
+    - insurance for vehicles damage, can be taken at garage
+    - can be tuned (replace vehicles/parts) by a tuning menu for restricted job
 
 ### Banking System
 
@@ -120,6 +120,8 @@
     - can see owner of cars
     - can give player arrest
     - can open every car
+    - can give player ticket
+    - can see open tickets
     - can pay back the money from a bank robbery, every policeman who is online at that time gets a percentage
 
 ### Medics
