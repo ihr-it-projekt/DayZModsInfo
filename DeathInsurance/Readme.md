@@ -50,7 +50,7 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDe
     "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": 10,
     "insurances": [
         {
-            "id": "g8ciyetvox", // never change this, internal usage
+            "id": "g8ciyetvox", // this value must be unique to other insurance ids.
             "price": 1000, // price of the insurance
             "durationInSeconds": 86400, // duration of the insurance in seconds
             "stayActiveAfterDeath": 0 // if 1, the insurance will stay active after death of player
