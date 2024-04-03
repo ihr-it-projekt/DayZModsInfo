@@ -111,12 +111,13 @@ see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 ### example house config
 ````
 {
-    "version": "5", // Never touch this value. It is needed internally
+    "version": "6", // Never touch this value. It is needed internally
     "showMap": 1, // Show the map in the house menu
     "howManyHousesCanPlayerBuy": 1, // How many houses can a player buy
     "playerCanRespawnInHouse": 1, // Player can by respawn extension
     "useBlackListedAreas": 0, // 1 = on 0 = off, if on, the player can not buy a house in the black listed area. Please do not use black and white list together
     "useWhiteListedAreas": 0, // 1 = on 0 = off, if on, the player can buy a house only in the white listed area. Please do not use black and white list together
+    "notSoldHousesAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses are locked
     "inactiveDaysBeforePlayerDataWillDeleted": 300, // if a player is inactive for x days, all data in that mod will be deleted
     "blackListedAreas": [ // The blacklisted areas
         { // area 1
