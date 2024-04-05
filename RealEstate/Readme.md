@@ -20,44 +20,63 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Features
 
+Use house as home. Buy, sell, extend and lock your house. Share your house and house inventory with your friends. Protect your house with an alarm system and respawn in your house.
+
+Thats all and more with TB Real Estate.
+
 - Player can buy any configured houses type
 - Player can sell any owned house
-- Player can transfer house ownership to other players
 - Player can give keys to other players
 - Player can lock/unlock house
 - Player can set the name of the house
-- Player cam extend the house with
+- Player can transfer ownership to other players
+- Every player that has access to a house can buy extensions
+- Player can extend the house with
   - Storage with different levels (feature can be removed from the config)
   - Alarm system with currently 3 levels (feature can be removed from the config)
     - Level 1, player get a message that one house is broken in
     - Level 2, player get a message that one house is broken with the custom name of the house
     - Level 3, player get a message that one house is broken with the custom name of the house and the name of the player who broke in
-    - Level 4, like level 3 but with discord message
+    - Level 4, player can use a discord channel for alarm
   - Respawn point (feature can be removed from the config)
-    - can be enabled and disabled by the player
+  - can be enabled and disabled by the player
+  - Lock system to lock all doors at same time
+  - prevent the despawning of objects in range of 20 m of house position
+- Admin can delete house ownership in game
+- Admin can reload configs and data in game without restart
 - Admin can configure
   - any house type
   - house price
   - house storage level´s
   - raid tools
   - storage price
-  - inventory slots per level
+  - inventory items per level
   - max house inventory level
   - raid time
   - can turn on and off mini Map in house menu
   - how many houses a player can own
   - if player can respawn in houses
   - currencies that are used
-  - black and white listed areas
-  - blacklist for items
-- Logs for (File or/and Discord)
+  - Blacklist Zone and Whitelist Zone where players can (not) buy houses
+  - automatically deletion of ownership if players does not rejoin server
+  - max house keys that can player give to other players
+  - cooldown time for respawn point usage
+  - all not sold houses can be locked
+- Admin Actions
+  - Admin can delete house ownership in game
+  - Admin can reload configs and data in game without restart
+  - Can lock/unlock house
+  - can open House menu any time
+- Advanced Group Supported to use house as group house
+- Spawn select from LBMaster supported that player can select spawn in house, if they have the house extension
+- Groups ATM Supported to use Money from bank account
+- Logs (Discord/Files) for
   - Raid system
   - House inventory
   - buy and sell houses
   - buy house extensions
+  - when ownership was transferred
 - Logs can be turned on/off in config
-
-## Support
 
 If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3m
 
