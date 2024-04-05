@@ -17,13 +17,14 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ## AdminConfig.json
 ````
 {
-  "version": "1", // never change this, internal version number
+  "version": "5", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
       "realEstateAdmin": 0, //  0 = off 1 = on | is admin in real estate mod
       "carDealerAdmin": 0, //  0 = off 1 = on | is admin in car dealer
       "basicNeedsAdmin": 0, // 0 = off 1 = on | is admin in basic needs
+      "deathInsurance": 0, // 0 = off 1 = on | is admin in death insurance
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -31,6 +32,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "realEstateAdmin": 1,
       "carDealerAdmin": 1,
       "basicNeedsAdmin": 1,
+      "deathInsurance": 1,
       "playerId": "765611328196317725"
     }
   }
