@@ -208,52 +208,52 @@ see [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 }
 ````
 
-### BodyZoneConfig.json
+### BodyZones.json
 
-````
+````json lines
 {
     "version": "1", // Never touch this value. It is needed internally
-    "regular": { // This part is for clothing or body when one "tick" is over from Config.json
-        "DirtIncreaseForHeadClothing": 1.0, // How much dirt will be increased for head clothing
-        "DirtIncreaseForHeadgearClothing": 1.0, // How much dirt will be increased for headgear clothing
-        "DirtIncreaseForMaskClothing": 1.0, // How much dirt will be increased for mask clothing
-        "DirtIncreaseForGlovesClothing": 1.0, // How much dirt will be increased for gloves clothing
-        "DirtIncreaseForArmbandClothing": 1.0, // How much dirt will be increased for armband clothing
-        "DirtIncreaseForVestClothing": 1.0, // How much dirt will be increased for vest clothing
-        "DirtIncreaseForBackClothing": 1.0, // How much dirt will be increased for back clothing
-        "DirtIncreaseForHipsClothing": 1.0, // How much dirt will be increased for hips clothing
-        "DirtIncreaseForLegsClothing": 1.0, // How much dirt will be increased for legs clothing
-        "DirtIncreaseForFeetClothing": 1.0, // How much dirt will be increased for feet clothing
-        "DirtIncreaseForBodyClothing": 1.0, // How much dirt will be increased for body clothing
-        "DirtIncreaseForBody": 1 // How much dirt will be increased for body
-    },
-    "whenPee": { // This part is for clothing or body when player pees
-        "DirtIncreaseForHeadClothing": 1.0, // How much dirt will be increased for head clothing
-        "DirtIncreaseForHeadgearClothing": 1.0, // How much dirt will be increased for headgear clothing
-        "DirtIncreaseForMaskClothing": 1.0, // How much dirt will be increased for mask clothing
-        "DirtIncreaseForGlovesClothing": 1.0, // How much dirt will be increased for gloves clothing
-        "DirtIncreaseForArmbandClothing": 1.0, // How much dirt will be increased for armband clothing
-        "DirtIncreaseForVestClothing": 1.0, // How much dirt will be increased for vest clothing
-        "DirtIncreaseForBackClothing": 1.0, // How much dirt will be increased for back clothing
-        "DirtIncreaseForHipsClothing": 1.0, // How much dirt will be increased for hips clothing
-        "DirtIncreaseForLegsClothing": 1.0, // How much dirt will be increased for legs clothing
-        "DirtIncreaseForFeetClothing": 1.0, // How much dirt will be increased for feet clothing
-        "DirtIncreaseForBodyClothing": 1.0, // How much dirt will be increased for body clothing
-        "DirtIncreaseForBody": 1.0 // How much dirt will be increased for body
-    },
-    "whenPoo": { // This part is for clothing or body when player poos
-        "DirtIncreaseForHeadClothing": 1.0, // How much dirt will be increased for head clothing
-        "DirtIncreaseForHeadgearClothing": 1.0, // How much dirt will be increased for headgear clothing
-        "DirtIncreaseForMaskClothing": 1.0, // How much dirt will be increased for mask clothing
-        "DirtIncreaseForGlovesClothing": 1.0, // How much dirt will be increased for gloves clothing
-        "DirtIncreaseForArmbandClothing": 1.0, // How much dirt will be increased for armband clothing
-        "DirtIncreaseForVestClothing": 1.0, // How much dirt will be increased for vest clothing
-        "DirtIncreaseForBackClothing": 1.0, // How much dirt will be increased for back clothing
-        "DirtIncreaseForHipsClothing": 1.0, // How much dirt will be increased for hips clothing 
-        "DirtIncreaseForLegsClothing": 1.0, // How much dirt will be increased for legs clothing
-        "DirtIncreaseForFeetClothing": 1.0, // How much dirt will be increased for feet clothing
-        "DirtIncreaseForBodyClothing": 1.0 // How much dirt will be increased for body clothing
-    }
+    "isInitialized": 1, // Never touch this value. It is needed internally
+    "zoneConfigs": [], // Never touch this value. It is needed internally
+    "zoneNames": [ // You can add here your custom body zones or remove some of them. The zone will become dirty
+        "Base", // The base zone means the player body itself, all other zones are clothing's
+        "Body",
+        "Head",
+        "Headgear",
+        "Mask",
+        "Gloves",
+        "Armband",
+        "Vest",
+        "Back",
+        "Hips",
+        "Legs",
+        "Feet"
+    ]
+}
+````
+
+### BodyZoneConfigs/zonename.json
+
+For all Zones you need one config file. This file will automatically generated when you start the server. You can change the values in this file.
+
+````json lines
+{
+    "name": "zonename", // Name of the zone
+    "dirtIncrementWhenPoo": 1.0, // How much dirt will be increased when player make poo
+    "dirtIncrementWhenPee": 0.5, // How much dirt will be increased when player make pee
+    "dirtIncrementRegular": 100.0 // How much dirt will be increased when player is dirty
+}
+````
+
+### DiseaseConfig.json
+
+Player can become sick when he is dirty. You can configure here the chance to get sick.
+
+````json lines
+{
+  "chanceToGetSalmonella": 0.01, // Chance to get salmonella
+  "chanceToGetCholera": 0.01, // Chance to get cholera
+  "chanceToGetInfluenza": 0.01 // Chance to get influenza
 }
 ````
 
