@@ -1,0 +1,21 @@
+# Configs
+
+- [**`Index`**](../Readme.md)
+- [**`JOBS/LoadOut`**](./job/LoadOut.md) (You will find for every job a separate folder)
+- [**`JOBS/SpawnPoints`**](./job/SpawnPoints.md) (You will find for every job a separate folder)
+- [**`adminIds`**](adminIds.md)
+- [**`arrest`**](arrest.md)
+- [**`banking`**](banking.md)
+- [**`BaseBuilding`**](BaseBuilding.md)
+- [**`CarConfig`**](CarConfig.md)
+- [**`CarTuningConfig`**](CarTuningConfig.md)
+- [**`CrimeConfig`**](CrimeConfig.md)
+- [**`house`**](house.md)
+- [**`licence`**](licence.md)
+- [**`logger`**](logger.md)
+- [**`message`**](message.md)
+- [**`paycheck`**](paycheck.md)
+- [**`traderCategories`**](traderCategories.md)
+- [**`traderPositions`**](traderPositions.md)
+- [**`workZone`**](workZone.md)
+- 

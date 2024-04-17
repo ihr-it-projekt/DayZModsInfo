@@ -1,6 +1,6 @@
 # TB Death Insurance
 
-<img src="./DeathInsurance.jpeg" alt="TB Jewels of Survival" width="512"/>
+<img src="./DeathInsurance.jpeg" alt="TB Death Insurance" width="512"/>
 
 ## Description
 This mods allows player to have an insurance for their gear. If they die, they can get their gear back. 
@@ -41,7 +41,7 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDe
 
 ### Config.json
 
-``` 
+``` json lines
 {
     "version": "1", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
@@ -50,7 +50,7 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDe
     "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": 10,
     "insurances": [
         {
-            "id": "g8ciyetvox", // never change this, internal usage
+            "id": "g8ciyetvox", // this value must be unique to other insurance ids.
             "price": 1000, // price of the insurance
             "durationInSeconds": 86400, // duration of the insurance in seconds
             "stayActiveAfterDeath": 0 // if 1, the insurance will stay active after death of player
@@ -72,7 +72,7 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 
 ### InsurancePointConfig.json
 
-```
+``` json lines
 {
     "version": "1", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
@@ -106,3 +106,32 @@ see [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
     }
 }
 ```
+
+### Logger.json
+
+````json lines
+{
+    "version": "1", // never change this, internal version number
+    "isInitialized": 1, // never change this, internal usage
+  // If player buys an insurance
+    "logBuyInsurance": 1, // 1 = enables csv logging, 0 = disabled
+    "logBuyInsuranceDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordBuyInsuranceWebhookURL": "https://discord.com/api/webhooks/1108099699883389049/n6dxjQuMzkEgRZHrgGNZANLju5rUbyy5Ywdpo3Dpl9o5484A5lbLDmbQr5yx5kR3Uits",
+  // If player dies
+    "logPlayerDied": 1, // 1 = enables csv logging, 0 = disabled
+    "logPlayerDiedDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordPlayerDiedWebhookURL": "https://discord.com/api/webhooks/1108099699883389049/n6dxjQuMzkEgRZHrgGNZANLju5rUbyy5Ywdpo3Dpl9o5484A5lbLDmbQr5yx5kR3Uits",
+    // If insurance becomes active and items will be saved
+    "logInsuranceUsed": 1, // 1 = enables csv logging, 0 = disabled
+    "logInsuranceUsedDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordInsuranceUsedWebhookURL": "https://discord.com/api/webhooks/1108099699883389049/n6dxjQuMzkEgRZHrgGNZANLju5rUbyy5Ywdpo3Dpl9o5484A5lbLDmbQr5yx5kR3Uits",
+    // If player takes the items from insurance trader
+    "logInsuranceItemTaken": 1, // 1 = enables csv logging, 0 = disabled
+    "logInsuranceItemTakenDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordInsuranceItemTakenWebhookURL": "https://discord.com/api/webhooks/1108099699883389049/n6dxjQuMzkEgRZHrgGNZANLju5rUbyy5Ywdpo3Dpl9o5484A5lbLDmbQr5yx5kR3Uits",
+    // If player deletes the insurance case or last item was taken
+    "logInsuranceDelete": 1, // 1 = enables csv logging, 0 = disabled
+    "logInsuranceDeleteDiscord": 1, // 1 = enables discord logging, 0 = disabled
+    "discordInsuranceDeleteWebhookURL": "https://discord.com/api/webhooks/1108099699883389049/n6dxjQuMzkEgRZHrgGNZANLju5rUbyy5Ywdpo3Dpl9o5484A5lbLDmbQr5yx5kR3Uits"
+}
+````

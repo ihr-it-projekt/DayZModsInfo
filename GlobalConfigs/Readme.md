@@ -17,11 +17,14 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ## AdminConfig.json
 ````
 {
-  "version": "1", // never change this, internal version number
+  "version": "5", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
-      "dailyRewardAdmin": 0, // is admin in daily reward mod
-      "realEstateAdmin": 0, // is admin in real estate mod
+      "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
+      "realEstateAdmin": 0, //  0 = off 1 = on | is admin in real estate mod
+      "carDealerAdmin": 0, //  0 = off 1 = on | is admin in car dealer
+      "basicNeedsAdmin": 0, // 0 = off 1 = on | is admin in basic needs
+      "deathInsurance": 0, // 0 = off 1 = on | is admin in death insurance
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -29,6 +32,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "realEstateAdmin": 1,
       "carDealerAdmin": 1,
       "basicNeedsAdmin": 1,
+      "deathInsurance": 1,
       "playerId": "765611328196317725"
     }
   }
@@ -51,6 +55,12 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 } 
 ````
 
+### Money types Extension
+
+- ExpansionBanknoteUSD
+- ExpansionBanknoteEuro
+- ExpansionBanknoteHryvnia
+  
 ## Logger.json
 ```
 {
@@ -61,12 +71,6 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 }
 ```
 
-### Money types Extension
-
-- ExpansionBanknoteUSD
-- ExpansionBanknoteEuro
-- ExpansionBanknoteHryvnia
-
 ## TBKeyBindsConfig.json
 ````
 {
@@ -75,7 +79,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     {
       "name": "UAInputOpenTBDailyReward",
       "defaultKey": 25, // default key is P, if you want to have another key, you can change it here. You can find the numbers in TBKeyCodeMatch.json
-      "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have "o" as default key
+      "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have configured defaultKey
     },
     {
       "name": "UAInputOpenTBJOFBook",
