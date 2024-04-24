@@ -4,7 +4,7 @@
 
 ***Version 1 see: https://dayz-life.net/***
 
-- [**`Configs`**](./configs/Readme.md)
+- [**`Configs`**](./Configs/Readme.md)
 - [**`Keybindings`**](./Keybindings.md)
 
 ## Workshop Links:
