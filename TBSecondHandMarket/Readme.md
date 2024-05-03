@@ -21,9 +21,10 @@ Will follow soon
 ## Features
 
 - Premium Feature
-    - Premium Users can pay less for buying an Market Stall
+    - Premium Users can pay less for buying a Market Stall
     - Premium Users can have more placed Market Stalls at same time
     - Premium Users can have more slots in their Market Stalls
+    - if premium status changed, the values to already stalls/stall kit that player have, will adapt 
 - Can trade any item or vehicle
 - Items can be blacklisted
 - (optional) Whitelisted Areas for placing Market Stalls
@@ -35,9 +36,9 @@ Will follow soon
 - Player can create orders for items
 - Admin can access all Stalls and manage them
 - Different Logs (some logs are currently on development) 
+- A lot of logging options
 
 ## Planed Features
-- More logging
 - Bullet Board for overview of all Stalls and what they offer
 - Navigation to Stalls from Bullet Board
 
