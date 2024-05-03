@@ -4,7 +4,7 @@
 
 ```json lines
 {
-  "access": [], // Deprecated, will removed in future
+  "access": [], // Deprecated, will be removed in future
   "playerAccesses": [
     {
       "id": "yWqfOC-DbZMpRXQ8NHEL1VPSTG2elJWrU1pMdqSGrN0=", // DayZ Player ID

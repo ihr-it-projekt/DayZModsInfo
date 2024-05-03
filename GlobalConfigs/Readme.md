@@ -15,9 +15,9 @@ It can be that you will not find all properties or configurations in your mod. T
 You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 
 ## AdminConfig.json
-````
+````json lines
 {
-  "version": "5", // never change this, internal version number
+  "version": "6", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
@@ -25,6 +25,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "carDealerAdmin": 0, //  0 = off 1 = on | is admin in car dealer
       "basicNeedsAdmin": 0, // 0 = off 1 = on | is admin in basic needs
       "deathInsurance": 0, // 0 = off 1 = on | is admin in death insurance
+      "secondHandMarket": 0, // 0 = off 1 = on | is admin in second hand market
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -33,6 +34,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "carDealerAdmin": 1,
       "basicNeedsAdmin": 1,
       "deathInsurance": 1,
+      "secondHandMarket": 1,
       "playerId": "765611328196317725"
     }
   }
@@ -40,7 +42,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ````
 
 ## CurrencyConfig.json
-````
+````json lines
 {
   "version": "1", // never change this, internal version number
     "currencyValues": { // Currency values for the your currencies
@@ -62,7 +64,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 - ExpansionBanknoteHryvnia
   
 ## Logger.json
-```
+```json lines
 {
     "version": "1", // never change this, internal version number
     "logUsePremiumCoinCSV": 1, // 1 = enables csv logging in path YourServerProfilesFolder\TBMods\Logs\Global\playerSteamId, 0 = disabled
@@ -72,7 +74,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ```
 
 ## TBKeyBindsConfig.json
-````
+````json lines
 {
   "version": "1", // never change this, internal version number
   "keyBinds": [
