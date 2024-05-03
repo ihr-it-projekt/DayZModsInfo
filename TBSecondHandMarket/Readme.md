@@ -37,6 +37,7 @@ Will follow soon
 - Admin can access all Stalls and manage them
 - Different Logs (some logs are currently on development) 
 - A lot of logging options
+- Admin can reload the config and data at Market Stall dealer
 
 ## Planed Features
 - Bullet Board for overview of all Stalls and what they offer
@@ -77,10 +78,11 @@ Will follow soon
 
 ## Configs
 
+- [**`AdminConfig.json`**](../GlobalConfigs/Readme.md#adminconfigjson)
+- [**`CurrencyConfig.json`**](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [**`ItemBlackList.json`**](./Configs/ItemBlackList.md)
 - [**`Logger.json`**](./Configs/Logger.md)
 - [**`StallConfig.json`**](./Configs/StallConfig.md)
-- [**`CurrencyConfig.json`**](../GlobalConfigs/Readme.md#currencyconfigjson)
 
 
 ### Images
