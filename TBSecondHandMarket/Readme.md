@@ -55,7 +55,10 @@ Will follow soon
 
 ## Types.xml
 
-### At this object player can buy a Market Stall
+### At this object player can buy a Market Stall 
+
+If you are using VPP Admin tool, you have to use the Object Builder to place thees.
+
 - TBSHMMachine
 - TBSHMCashier
 - TBSHMPokladna
