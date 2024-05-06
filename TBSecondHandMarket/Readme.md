@@ -56,7 +56,7 @@ Will follow soon
 ## Types.xml
 
 ### At this object player can buy a Market Stall
-- TBSHM*
+- TBSHMMachine
 - TBSHMCashier
 - TBSHMPokladna
 - TBSHMPultskasou
