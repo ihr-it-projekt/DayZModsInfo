@@ -23,3 +23,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Configuration
 
 No configuration needed.
+
+### Item Class name
+
+        - TBCPlayerBaseBodyBack
