@@ -6,14 +6,15 @@
 
 ## Index
 
+- [**`SettingUpAServer`**](./SettingUpAServer.md)
 - [**`Configs`**](./Configs/Readme.md)
 - [**`Types`**](./Types.md)
 - [**`Keybindings`**](./Keybindings.md)
 
 ## Workshop Links:
 
-- [**`DayZ Life`**]()
-- [**`DayZ Life - Server`**]()
+- [**`DayZ Life`**](https://steamcommunity.com/sharedfiles/filedetails/?id=3196291732)
+- [**`DayZ Life - Server`**](https://steamcommunity.com/sharedfiles/filedetails/?id=3196294051)
 
 ## Extensions
 
