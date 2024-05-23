@@ -81,6 +81,7 @@ Will follow soon
     - Premium Users can pay less for publishing on Bulletin Board
 - Configuration
   - max. Stalls per Player 
+  - max Stalls per Server
   - Blacklist for items that can not be traded
   - (optional) Whitelisted Areas for placing Market Stalls
   - Slot counts of Stalls 
