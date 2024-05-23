@@ -6,10 +6,10 @@
 
 If you are using VPP Admin tool, you have to use the Object Builder to place thees.
 
-- TBSHMMachine! [Machine.png](img%2FMachine.png)
-- TBSHMCashier! [Cashier.png](img%2FCashier.png)
-- TBSHMPokladna! [Pokladna.png](img%2FPokladna.png)
-- TBSHMPultskasou! [Pultskasou.png](img%2FPultskasou.png)
+- TBSHMMachine! [Machine.jpg](img%2FMachine.jpg)
+- TBSHMCashier! [Cashier.jpg](img%2FCashier.jpg)
+- TBSHMPokladna! [Pokladna.jpg](img%2FPokladna.jpg)
+- TBSHMPultskasou! [Pultskasou.jpg](img%2FPultskasou.jpg)
 
 ### Kits that player can buy at Market Stall Dealer
 - TBSHMStand_01_Kit
@@ -18,16 +18,16 @@ If you are using VPP Admin tool, you have to use the Object Builder to place the
 - TBSHMStand_04_Kit
 
 ### Placed Market Stall objects
-- TBSHMStand_01! [Stand_01.png](img%2FStand_01.png)
-- TBSHMStand_02! [Stand_02.png](img%2FStand_02.png)
-- TBSHMStand_03! [Stand_03.png](img%2FStand_03.png)
-- TBSHMStand_04! [Stand_04.png](img%2FStand_04.png)
+- TBSHMStand_01! [Stand_01.jpg](img%2FStand_01.jpg)
+- TBSHMStand_02! [Stand_02.jpg](img%2FStand_02.jpg)
+- TBSHMStand_03! [Stand_03.jpg](img%2FStand_03.jpg)
+- TBSHMStand_04! [Stand_04.jpg](img%2FStand_04.jpg)
 
 ### Global Stalls
-- TBSHMGlobalStall_01! [Stand_01.png](img%2FStand_01.png)
-- TBSHMGlobalStall_02! [Stand_02.png](img%2FStand_02.png)
-- TBSHMGlobalStall_03! [Stand_03.png](img%2FStand_03.png)
-- TBSHMGlobalStall_04! [Stand_04.png](img%2FStand_04.png)
+- TBSHMGlobalStall_01! [Stand_01.jpg](img%2FStand_01.jpg)
+- TBSHMGlobalStall_02! [Stand_02.jpg](img%2FStand_02.jpg)
+- TBSHMGlobalStall_03! [Stand_03.jpg](img%2FStand_03.jpg)
+- TBSHMGlobalStall_04! [Stand_04.jpg](img%2FStand_04.jpg)
 
 ### Premium Coins
 - TBSHMPremiumCoinBronze! [PremiumCoinBronze.jpg](img%2FPremiumCoinBronze.jpg)
@@ -35,4 +35,4 @@ If you are using VPP Admin tool, you have to use the Object Builder to place the
 - TBSHMPremiumCoinGold! [PremiumCoinGold.jpg](img%2FPremiumCoinGold.jpg)
 
 ### Bulletin Board
-- TBSHMBulletinBoard! [Bulletinboard.png](img%2FBulletinboard.png)
+- TBSHMBulletinBoard! [Bulletinboard.jpg](img%2FBulletinboard.jpg)
