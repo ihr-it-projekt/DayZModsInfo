@@ -1,0 +1,32 @@
+# GlobalStallConfig.json
+
+[**`back`**](../Readme.md)
+
+```json lines
+{
+  // Never touch this value. It is needed internally
+  "version": "1",
+  // Never touch this value. It is needed internally
+  "isInitialized": 1,
+  // Price per slot for player, if an item has 5 slots, player needs to pay 50 in case of this value 
+  "pricePerSlot": 10,
+  // Price per slot for premium player, if an item has 5 slots, player needs to pay 50 in case of this value
+  "pricePerSlotPremiumPlayer": 10,
+  // Free slots for player that must not pay
+  "freeSlotsForPlayer": 50,
+  // How many slots a player can have at all global stalls together
+  "maxSlotsForPlayer": 300,
+  // Free slots for premium player that must not pay
+  "freeSlotsForPremiumPlayer": 100,
+  // How many slots a premium player can have at all global stalls together
+  "maxSlotsForPremiumPlayer": 600,
+  // How long a order stays active after it was created
+  "maxOrderLifetimeInMinutes": 10080,
+  // How long a order stays active after it was created for premium players
+  "maxOrderLifetimeInMinutesPremiumPlayers": 10080,
+  // How long a offer stays active after it was created
+  "maxOfferLifetimeInMinutes": 10080,
+  // How long a offer stays active after it was created for premium players
+  "maxOfferLifetimeInMinutesPremiumPlayers": 10080
+}
+```
