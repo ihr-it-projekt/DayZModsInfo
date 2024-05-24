@@ -28,9 +28,7 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
     - sell cars, 
       - items in car inventory will drop to the ground
       - items in car slots will be sold with the car
-    - buy premium cars
     - can buy additional items for the car
-    - can become premium user by using three different premium coins
 - If spawn location for Vehicle is blocked, the car will be spawned at the next free location
 - Premium Features
   - You can set Cars to Premium Cars, so only Players with Premium Status can buy them
