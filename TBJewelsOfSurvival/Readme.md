@@ -59,7 +59,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Stamina Recovery Effect (Stamina recovery will be reduced or increased)
 - Thirst Effect (Thirst of player will be reduced or increased)
 
-### Configuration
+### Configuration Options
 - a lot of configurations possibilities
 - config will automatically create on first server start
 

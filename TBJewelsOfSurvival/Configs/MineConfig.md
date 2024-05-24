@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md#configuration-1)
+[**`back`**](../Readme.md#configuration)
 ## MineConfig.json
 ```json lines
 {
