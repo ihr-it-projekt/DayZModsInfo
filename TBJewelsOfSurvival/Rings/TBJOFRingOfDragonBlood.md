@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](../Readme.md#rings)
 ##### Ring of DragonBlood Level 1 (Type: TBJOFRingOfDragonBloodLevel1)
 ![Ring of DragonBlood Level 1](../images/ROFDBL1.JPG "Ring of DragonBlood Level1")
 ##### Ring of DragonBlood Level 2 (Type: TBJOFRingOfDragonBloodLevel2)

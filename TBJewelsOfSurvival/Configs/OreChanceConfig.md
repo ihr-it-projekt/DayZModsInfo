@@ -1,5 +1,4 @@
-[**`back`**](../Readme.md)
-
+[**`back`**](../Readme.md#configuration-1)
 ## OreChanceConfig.json
 ```json lines
 {

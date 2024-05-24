@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](../Readme.md#configuration-1)
 ##  JewelRecoveryConfig.json
 ```json lines
 {

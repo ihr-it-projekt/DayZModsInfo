@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](../Readme.md#rings)
 ##### Ring of Eagle Eye Level 1 (Type: TBJOFRingOfEagleEyeLevel1)
 ![Ring of Eagle Eye Level 1](./images/ROFEE1.png "Ring of Eagle Eye Level1")
 ##### Ring of Eagle Eye Level 2 (Type: TBJOFRingOfEagleEyeLevel2)

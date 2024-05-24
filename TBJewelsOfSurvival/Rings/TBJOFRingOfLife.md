@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](../Readme.md#rings)
 ## Ring of Life Level 1 (Type: TBJOFRingOfLifeLevel1)
 ![Ring of Life Level 1](../images/ROFLL1.JPG "Ring of Life Level1")
 ## Ring of Life Level 2 (Type: TBJOFRingOfLifeLevel2)

@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](../Readme.md#rings)
 ## Ring of Owl Level 1 (Type: TBJOFRingOfOwlLevel1)
 ![Ring of Owl Level 1](../images/ROFOL1.png "Ring of Owl Level1")
 ## Ring of Owl Level 2 (Type: TBJOFRingOfOwlLevel2)
