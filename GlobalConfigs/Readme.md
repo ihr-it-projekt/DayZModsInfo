@@ -6,6 +6,7 @@
 
 This coins give player premium status for all my mods that support premium status. 
 
+- TBLibOneTimeCoin | One Time Coin for Car Trader, more will be added
 - TBLibPremiumCoinGold | 30 Days Premium in Daily Reward
 - TBLibPremiumCoinSilver | 7 Days Premium in Daily Reward
 - TBLibPremiumCoinBronze | 1 Day Premium in Daily Reward
