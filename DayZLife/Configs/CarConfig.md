@@ -37,7 +37,7 @@
             ]
         }
     ],
-    "carTypesToStore": [ // Types of cars that can be stored
+    "carTypesToStore": [ // Types.md of cars that can be stored
         "OffroadHatchback",
         "OffroadHatchback_Blue",
         "OffroadHatchback_White",

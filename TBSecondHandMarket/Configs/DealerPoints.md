@@ -27,7 +27,7 @@
       ],
       // 0 = off, 1 = on, if 1 the global stall will be placed exactly at the position
       "useExactPosition": 0,
-      // The type of the global stall (see Types.md)
+      // The type of the global stall (see Types.md.md)
       "type": "TBSHMGlobalStall_03",
       // This name is just to give the stall a name that you can identify it
       "uniqueName": "Chernogorsk 1"
