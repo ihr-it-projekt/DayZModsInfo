@@ -31,6 +31,15 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
     - buy premium cars
     - can buy additional items for the car
     - can become premium user by using three different premium coins
+- If spawn location for Vehicle is blocked, the car will be spawned at the next free location
+- Premium Features
+  - You can set Cars to Premium Cars, so only Players with Premium Status can buy them
+  - You can set Items to Premium Items
+  - 4 different Premium Coins
+    - One Time Coin for Car Trader, player is able to buy one premium car with it
+    - 30 Days Premium in Daily Reward
+    - 7 Days Premium in Daily Reward
+    - 1 Day Premium in Daily Reward
 - Admin
     - can reload configs and user data in game, that helps to support config changes without server restart
     - can add multiple independent dealer points
