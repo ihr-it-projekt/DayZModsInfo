@@ -59,6 +59,17 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Stamina Recovery Effect (Stamina recovery will be reduced or increased)
 - Thirst Effect (Thirst of player will be reduced or increased)
 
+### Jewels (Alphabetic order)
+- Ring of Attack (3 Levels)
+- Ring of Defense (3 Levels)
+- Ring of DragonBlood (3 Levels)
+- Ring of Eagle Eye (3 Levels)
+- Ring of Life (3 Levels)
+- Ring of Owl (3 Levels)
+- Ring of Perseverance (3 Levels)
+
+You will find more information here: [https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels](https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels)
+
 ### Configuration Options
 - a lot of configurations possibilities
 - config will automatically create on first server start
