@@ -39,7 +39,7 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
     - can add additional items to the car that increase the price of the car
     - can log all transactions
     - can disable buy, sell and showroom for locations
-- Config Editor available [TBCarDealerConfigEditor.rar](ConfigEditor%2FTBCarDealerConfigEditor.rar)
+- Config Editor available [TBCarDealerConfigEditor.rar](ConfigEditor/TBCarDealerConfigEditor.rar)
 
 ## How to install
 
@@ -53,7 +53,12 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ## Configurations
 
-Config Editor [TBCarDealerConfigEditor.rar](ConfigEditor%2FTBCarDealerConfigEditor.rar)
+Config Editor [TBCarDealerConfigEditor.rar](ConfigEditor/TBCarDealerConfigEditor.rar)
 
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
+- [CarConfigs.md](Configs/CarConfigs.md)
+- [DealerPointConfig.md](Configs/DealerPointConfig.md)
+- [DealerPointsConfig.md](Configs/DealerPointsConfig.md)
+- [Logger.md](Configs/Logger.md)
+- [PriceItems.md](Configs/PriceItems.md)
