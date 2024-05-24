@@ -37,8 +37,8 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Basic Needs](Logo.png)](https://youtu.be/3CVjtuJO8gE)
-[![Washing Machine](logoWYT.png)](https://www.youtube.com/watch?v=Z5NNgfVLpaQ)
+- [Basic Needs](https://youtu.be/3CVjtuJO8gE)
+- [Washing Machine](https://www.youtube.com/watch?v=Z5NNgfVLpaQ)
 
 
 ## Configurations
