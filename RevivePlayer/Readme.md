@@ -46,5 +46,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Configuration
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
+- [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [reviveConfig.md](Configs/reviveConfig.md)
 
