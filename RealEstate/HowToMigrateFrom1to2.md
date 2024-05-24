@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](./Readme.md)
 
 ## How to upgrade from 1.x.x to 2.x.x
 
