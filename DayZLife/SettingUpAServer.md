@@ -2,8 +2,8 @@
 
 # Setting up a DayZ Life Server
 
-Here you will find any information, how you can setup your DayZ Life Server.
-1. You have to setup the car lifetime in your type.xml. If you don not give them a lifetime, every car that you buy over the trader will be deleted at server restart.
+Here you will find any information, how you can set up your DayZ Life Server.
+1. You have to set up the car lifetime in your type.xml. If you do not give them a lifetime, every car that you buy over the trader will be deleted at server restart.
 Example:
 <pre class="language-markup"><code>&lt;type name="CivilianSedan"&gt;
 &lt;lifetime&gt;129000&lt;/lifetime&gt;
@@ -22,4 +22,4 @@ Example:
 7. Start configure your Server. The most is automatically configured but for the Trader you have to configure your preferences.  You can use our <a href="https://tools.dayz-life.net/category-editor/add-items">Trader configuration tool</a> to do that. You also will find in DayZ Life Server Mod an example for Trader configuration.
 8. Start your server after configuration
 9. Have fun and enjoy our mod.
-10. Feedback and [**`donations`**](https://www.paypal.com/donate/?hosted_button_id=8UASRGVP88YE4) are always wellcome.
+10. Feedback and [**`donations`**](https://www.paypal.com/donate/?hosted_button_id=8UASRGVP88YE4) are always welcome.
