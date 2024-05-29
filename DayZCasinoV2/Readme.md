@@ -1,12 +1,60 @@
 # DayZCasinoV2
 
-Here you find the explanation of dayZCasinoConfigV2.json:
+## How to configure
+
+1. Copy the mod to your server
+2. Copy from mod "DayZCasinoV2\Keys" folder the key into "DayZServer\keys"
+3. Go to Folder: DayZServer\mpmissions\dayzOffline.chernarusplus\db
+4. Open "types.xml" in editor and add between <types></types> the content of:
+```xml
+<type name="CasinoChips">
+    <nominal>150</nominal>
+    <lifetime>7200</lifetime>
+    <restock>0</restock>
+    <min>100</min>
+    <quantmin>5</quantmin>
+    <quantmax>100</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+    <category name="tools"/>
+    <tag name="shelves"/>
+    <usage name="Town"/>
+    <usage name="Village"/>
+    <usage name="Hunting"/>
+</type>
+````
+5. save and close the file
+6. Add chips to Trader config like (you can also find another way to bring Casino Chips to your players)
+```xml
+   <Category> CasinoChips
+   CasinoChips,                                                1,        1,        1
+   CasinoChips,                                                5,        5,        5
+   CasinoChips,                                                10,        10,        10
+   CasinoChips,                                                25,        25,        25
+   CasinoChips,                                                50,        50,        50
+   CasinoChips,                                                100,    100,    100
+   CasinoChips,                                                500,    500,    500
+   CasinoChips,                                                1000,    1000,    1000
+   CasinoChips,                                                5000,    5000,    5000
+   CasinoChips,                                                10000,    10000,    10000
+   </Category>
+```
+7. Add "@DayZCasinoV2" after "@CF" to your server start script
+8. start server first time.
+9. wait for boot finished
+10. stop server
+11. go to configured server profile folder, there are now a new folder named "DayZCasinoV2". This folder contains 2 json files "dayZCasinoConfigV2.json" and "dayZCasinoJackpot.json"
+
 
 You can switch the models of the game object. I recommend using the Nehr (https://steamcommunity.com/sharedfiles/filedetails/?id=1681963184&searchtext=Nehr) Mod and the "Nehr_Gaming_01" object.
 To switch the object replace "Land_FuelStation_Feed" with the object of your choice.
 The current positions of the games are in Kumyrna church.
 
 **Attention: please dont use that config here in readme. It is only for explanation and the server can not laod this config file. The server creates at first start a new config file.**
+
+## Config files
+
+### dayZCasinoConfigV2.json
 
 ````json lines
 {
