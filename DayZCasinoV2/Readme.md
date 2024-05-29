@@ -45,12 +45,7 @@
 10. stop server
 11. go to configured server profile folder, there are now a new folder named "DayZCasinoV2". This folder contains 2 json files "dayZCasinoConfigV2.json" and "dayZCasinoJackpot.json"
 
-
-You can switch the models of the game object. I recommend using the Nehr (https://steamcommunity.com/sharedfiles/filedetails/?id=1681963184&searchtext=Nehr) Mod and the "Nehr_Gaming_01" object.
-To switch the object replace "Land_FuelStation_Feed" with the object of your choice.
-The current positions of the games are in Kumyrna church.
-
-**Attention: please dont use that config here in readme. It is only for explanation and the server can not laod this config file. The server creates at first start a new config file.**
+**Attention: please don't use that config here in readme. It is only for explanation and the server can not load this config file. The server creates at first start a new config file.**
 
 ## Config files
 
@@ -101,7 +96,7 @@ The current positions of the games are in Kumyrna church.
             }
 		// end of second position
         ],
-        "gameObject": "Land_FuelStation_Feed", // the game object that will placed in landscape
+        "gameObject": "Casino_Pacman", // the game object that will placed in landscape
         "chipsBet": 50, // Bet per round
         "minJackpot": 500,
         "maxJackpot": 10000,
@@ -272,7 +267,7 @@ The current positions of the games are in Kumyrna church.
                 ]
             }
         ],
-        "gameObject": "Land_FuelStation_Feed", // the game object that will placed in landscape
+        "gameObject": "Casino_Pacman", // the game object that will placed in landscape
         "minBet": 10,
         "maxBet": 10000,
 		"winFactor": 1.5, // the factor what a player can win
@@ -294,7 +289,7 @@ The current positions of the games are in Kumyrna church.
                 ]
             }
         ],
-        "gameObject": "Land_FuelStation_Feed", // the game object that will placed in landscape
+        "gameObject": "Casino_Pacman", // the game object that will placed in landscape
         "minBet": 10,
         "maxBet": 10000,
         "diceWinFactor": 2 // Factor for multiply the bet when a player win
@@ -315,7 +310,7 @@ The current positions of the games are in Kumyrna church.
                 ]
             }
         ],
-        "gameObject": "Land_FuelStation_Feed", // the game object that will placed in landscape
+        "gameObject": "Casino_Pacman", // the game object that will placed in landscape
         "minBet": 10,
         "maxBet": 10000,
         "maxWinQouta": 5 // max Factor for multiply the bet when a player win
