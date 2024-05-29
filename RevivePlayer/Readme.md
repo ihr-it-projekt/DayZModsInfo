@@ -23,6 +23,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
   - Players can be revived in Hospitals (teleport)
   - Players have to pay for the revive (configurable)
   - support for LBMasters Advanced Banking, so player can pay via bank account, can be disabled via config
+- Real Estate Respawn (feature can be disabled)
+  - Players can be revived in their real estate (teleport)
+  - Players have to pay for the revive (configurable)
 - Players don’t lose their inventory after revive
 - revived players can get after reviving (configurable)
       - random cuts
