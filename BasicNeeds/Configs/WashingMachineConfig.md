@@ -9,7 +9,7 @@
     "waterQuantityConsumptionPerMinuted": 100.0, // How much water will be consumed per minute per clothing
     "detergentQuantityConsumptionPerMinuted": 1.0, // How much detergent will be consumed per minute per clothing
     "cleanEffectivenessPerMinuted": 34.0, // How much dirt will be decreased per minute per clothing
-    "itemsThatGetDamageWhenInWashedClothing": [ // Items can be get damaged when they are in inventory of closthing
+    "itemsThatGetDamageWhenInWashedClothing": [ // Items can be get damaged when they are in inventory of clothing
         {
             "type": "IsElectricAppliance", // All Items that are electric becomes damage
             "damagePerMinute": 10 // How much damage will be done per minute
@@ -21,3 +21,5 @@
     ]
 }
 ````
+
+[**`back`**](../Readme.md)
