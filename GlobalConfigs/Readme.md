@@ -27,7 +27,8 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "basicNeedsAdmin": 0, // 0 = off 1 = on | is admin in basic needs
       "deathInsurance": 0, // 0 = off 1 = on | is admin in death insurance
       "secondHandMarket": 0, // 0 = off 1 = on | is admin in second hand market
-      "revivePlayer": 1, // 0 = off 1 = on | is admin in revive player
+      "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
+      "jewelsOfSurvival": 0, // 0 = off 1 = on | is admin in jewels of survival
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -38,6 +39,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "deathInsurance": 1,
       "secondHandMarket": 1,
       "revivePlayer": 1,
+      "jewelsOfSurvival": 1,
       "playerId": "765611328196317725"
     }
   }
