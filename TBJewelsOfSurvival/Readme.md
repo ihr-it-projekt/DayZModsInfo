@@ -20,6 +20,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Features
 
+### Admin
+- Admin can reload configs in Crafting Book
+
 ### 21 new Materials
 - Ore (Gold, Silver, Copper, Iron, Gemstone Red, Gemstone Green, Gemstone Blue)
 - crafted Ore (Gold, Silver, Copper, Iron, Gemstone Red, Gemstone Green, Gemstone Blue)
