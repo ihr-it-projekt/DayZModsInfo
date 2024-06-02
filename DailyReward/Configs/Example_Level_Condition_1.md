@@ -10,8 +10,9 @@ You have to create for every level one level condition, You can name it as you w
     "isLoaded": 0,  // Never touch this value. It is needed internally
     "level": 1, // The level of the condition
     "onlineTimeRequiredInMinutes": 10, // The time the player must be online to get the reward or -1 to disable this condition
-    "playerKillsRequiredCount": -1, // The player kills the player must have to get the reward or -1 to disable this condition
+    "playerKillsRequiredCount": -1, // The player kills (exclude head shot kills) the player must have to get the reward or -1 to disable this condition
     "infectedKillsRequiredCount": -1, // The infected kills the player must have to get the reward or -1 to disable this condition
+    "headshotKillsRequiredCount": 1, // The headshot kills the player must have to get the reward or -1 to disable this condition
     "distanceTravelledRequiredInMeters": 300, // The distance the player must have to get the reward or -1 to disable this condition
     "canReTakenAfterPeriodOfDaysRealTime": 1, // The real time in days that player must wait to get the reward again or -1 to disable this condition
     "animalKills": { // The animal kills the player must have to get the reward leave it empty to disable this condition

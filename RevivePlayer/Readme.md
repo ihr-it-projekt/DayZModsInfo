@@ -32,6 +32,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
       - blood level
       - shock
       - health
+- Admins can
+  - revive players via F action
+  - can reload config at dead body of player
 
 ## How to install
 
@@ -48,6 +51,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 
 ## Configuration
+- [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently reload config at dead body.
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [reviveConfig.md](Configs/reviveConfig.md)

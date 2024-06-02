@@ -28,6 +28,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
   - reward items
   - reward conditions
     - player kills
+    - headshot kills (will not count as player kill)
     - infected kills
     - walked distance
     - time played

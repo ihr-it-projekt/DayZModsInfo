@@ -11,6 +11,8 @@
   - TBDetergent for cleaning clothing in washing machine
   - TBWashingMachine this can be picked up by players and placed in the world
   - TBStaticWashingMachine this can not be picked up by players
+  - TBWashingDryer this can be picked up by players and placed in the world
+  - TBStaticWashingDryer this can not be picked up by players
   - TBNCanisterGasoline for washing machine water supply can be used instead of a Jerry Can
 - Soap increase the cleaning effect for body
 - different cleaning effects on different water sources
@@ -18,15 +20,19 @@
   - clean body if he is naked on all water sources
   - clean clothing on all water sources
   - clean clothing in washing machine
+  - dry clothing in dryer
 - clothes will be wet after cleaning
 - Washing machine needs energy, water and detergent
+- static washing machine can be configured to not use energy/detergent/water
+- Dryer needs energy
+- Static Dryer can configured to not use energy
 - if player makes poo, and he has a clean item  in hands, he will be less dirty as without clean item
 - if player or clothes are max dirty
   - zombies and animals will smell him earlier
   - he can become sick
 - if player is dirty, flies will be around him
 - Support for Survivor Animations mod to have a better animation for poo
-- Admin can reload configs and data at washing machines
+- Admin can reload configs and data at washing machines and dryers
 
 ## Shop Link
 https://lbmaster.de/product.php?id=25
@@ -48,5 +54,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - [BodyZones.md](Configs/BodyZones.md)
 - [Config.md](Configs/Config.md)
 - [DiseaseConfig.md](Configs/DiseaseConfig.md)
+- [DryerConfig.md](Configs/DryerConfig.md)
+- [StatcicDryerConfig.md](Configs/StatcicDryerConfig.md)
 - [StaticWashingPlaces.md](Configs/StaticWashingPlaces.md)
 - [WashingMachineConfig.md](Configs/WashingMachineConfig.md)
