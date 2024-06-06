@@ -114,11 +114,11 @@ https://youtu.be/YXXO2QezOUU
 - [**`BulletinBoard.json`**](./Configs/BulletinBoard.md)
 - [**`CurrencyConfig.json`**](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [**`DealerPoints.json`**](./Configs/DealerPoints.md)
+- [**`GeneralConfig.json`**](./Configs/GeneralConfig.md)
 - [**`GlobalStallConfig.json`**](./Configs/GlobalStallConfig.md)
 - [**`ItemBlackList.json`**](./Configs/ItemBlackList.md)
 - [**`Logger.json`**](./Configs/Logger.md)
 - [**`StallConfig.json`**](./Configs/StallConfig.md)
-
 
 ### Images
 
