@@ -50,6 +50,7 @@ https://youtu.be/YXXO2QezOUU
   - reload configs at global stall and stall dealer
   - delete offers/orders at bulletin board and at global stall
   - teleport from bulletin board to global stall
+- All premium features are optional and can be disabled
 
 ### Global Stall
 - 4 different Global Stall Models
