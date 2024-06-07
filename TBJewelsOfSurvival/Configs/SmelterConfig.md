@@ -3,7 +3,7 @@
 ```json lines
 {
   // never change this, internal version number
-  "version": "2",
+  "version": "3",
   // how long is one tick in seconds
   "tickLengthInSeconds": 3,
   // how much gas is consumed per tick
@@ -17,6 +17,9 @@
   // how many ticks are needed to produce one gold ingot
   "tickCountToProduceGold": 15,
   // 0 = off 1 = on, if static smelter needs gas canister
-  "staticSmelterNeedsGas": 1
+  "staticSmelterNeedsGas": 1,
+  // 0 = off 1 = on, can be taken into the hand and into the inventory
+  "configMode": 0,
+  
 }
 ```

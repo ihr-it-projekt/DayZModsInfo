@@ -5,6 +5,7 @@
 ```json lines
 {
     "damageOnCraftingItem": 10.0, // how much damage will be done on the crafting item
+    "configMode": 0, // 0 = off 1 = on, can be taken into the hand and into the inventory
     "ringOfPerseveranceLevel1Recipe": { // recipe name, never change this.
         "targetType": "TBJOFRingOfPerseveranceLevel1", // What kind of item will be created
         "timeToCraftInSeconds": 5, // how long the carfting will take in seconds
@@ -51,6 +52,6 @@
             "type": "TBJOFRingOfPerseveranceLevel1" // what kind of ring is needed as indigrent
         }
     },
-    "version": "1" // never change this, internal version number
+    "version": "2" // never change this, internal version number
 }
 ```
