@@ -35,7 +35,7 @@
     },
     "ringOfPerseveranceLevel2Recipe": { // recipe name, never change this.
         "targetType": "TBJOFRingOfPerseveranceLevel2", // What kind of item will be created
-        "timeToCraftInSeconds": 10, // how long the carfting will take in seconds
+        "timeToCraftInSeconds": 10, // how long the crafting will take in seconds
         "copperIngredient": {}, // how many copper ingots are needed, see one level above for full example
         "ironIngredient": {}, // how many iron ingots are needed, see one level above for full example
         "silverIngredient": {}, // how many silver ingots are needed, see one level above for full example
