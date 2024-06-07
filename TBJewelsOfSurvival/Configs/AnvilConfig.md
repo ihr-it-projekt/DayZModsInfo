@@ -52,6 +52,6 @@
             "type": "TBJOFRingOfPerseveranceLevel1" // what kind of ring is needed as indigrent
         }
     },
-    "version": "2" // never change this, internal version number
+    "version": "5" // never change this, internal version number
 }
 ```
