@@ -33,11 +33,13 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - used to smelt ore to ingots
 - Sound animation when processing
 - Consumes Gas and Metal Ores
+- Gas requirement can be disabled for static smelter
 
 ### Grinder (static and non static)
 - used to grind gemstone ore to gemstone
 - sound and running animation when processing
 - consume batteries and gemstone ore
+- battery requirement can be disabled for static grinder  
 - can be used by only one player at same time
 
 ### Anvil (static and non static)
