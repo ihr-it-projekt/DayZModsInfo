@@ -1,4 +1,4 @@
-[**`back`**](../Readme.md)
+[**`back`**](./Readme.md)
 
 # FAQ
 
