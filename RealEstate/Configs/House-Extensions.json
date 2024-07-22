@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "uniqueName": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "level": {
+            "type": "number"
+        },
+        "canTakenTimes": {
+            "type": "number"
+        },
+        "items": {
+            "type": "array",
+            "items": {}
+        },
+        "uniqueItemNames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "uniqueName",
+        "version",
+        "level",
+        "canTakenTimes",
+        "items",
+        "uniqueItemNames"
+    ]
+}
