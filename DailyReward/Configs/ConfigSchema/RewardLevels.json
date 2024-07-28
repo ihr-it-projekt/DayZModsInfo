@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "defaultLevelConditionUniqueNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "premiumLevelConditionUniqueNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uniqueNameRewardLevels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uniqueNamePremiumRewardLevels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "defaultLevelConditionUniqueNames",
+    "premiumLevelConditionUniqueNames",
+    "uniqueNameRewardLevels",
+    "uniqueNamePremiumRewardLevels"
+  ]
+}

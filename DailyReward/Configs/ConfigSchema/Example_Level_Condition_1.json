@@ -29,9 +29,9 @@
       "type": "integer"
     },
     "animalKills": {
-      "type": "object",
-      "additionalProperties": {
-        "type": "integer"
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "version": {
