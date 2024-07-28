@@ -5,17 +5,16 @@
       "type": "string"
     },
     "isLoaded": {
-      "type": "integer",
-      "enum": [0]
+      "type": "number"
     },
     "version": {
       "type": "string"
     },
     "level": {
-      "type": "integer"
+      "type": "number"
     },
     "canTakenTimes": {
-      "type": "integer"
+      "type": "number"
     },
     "items": {
       "type": "array",
