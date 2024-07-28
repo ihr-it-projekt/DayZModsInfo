@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "isInitialized": {
+      "type": "number"
+    },
+    "zoneConfigs": {
+      "type": "array",
+      "items": {}
+    },
+    "zoneNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "isInitialized",
+    "zoneConfigs",
+    "zoneNames"
+  ]
+}

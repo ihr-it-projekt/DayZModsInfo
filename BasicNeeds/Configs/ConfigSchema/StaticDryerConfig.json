@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "isInitialized": {
+      "type": "number"
+    },
+    "dryerPlaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "orientation": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "needsEnergy": {
+            "type": "number"
+          },
+          "useExactPosition": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "position",
+          "orientation",
+          "needsEnergy",
+          "useExactPosition"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "isInitialized",
+    "dryerPlaces"
+  ]
+}

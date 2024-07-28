@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "isInitialized": {
+      "type": "number"
+    },
+    "energyQuantityConsumptionPerMinuted": {
+      "type": "number"
+    },
+    "dryingEffectivenessPerMinuted": {
+      "type": "number"
+    },
+    "itemsThatGetDamageWhenInWashedClothing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "damagePerMinute": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "type",
+          "damagePerMinute"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "isInitialized",
+    "energyQuantityConsumptionPerMinuted",
+    "dryingEffectivenessPerMinuted",
+    "itemsThatGetDamageWhenInWashedClothing"
+  ]
+}

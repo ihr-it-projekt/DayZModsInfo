@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "dirtIncrementWhenPoo": {
+      "type": "number"
+    },
+    "dirtIncrementWhenPee": {
+      "type": "number"
+    },
+    "dirtIncrementRegular": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "dirtIncrementWhenPoo",
+    "dirtIncrementWhenPee",
+    "dirtIncrementRegular"
+  ]
+}
