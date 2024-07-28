@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "uniqueName": {
+      "type": "string"
+    },
+    "isLoaded": {
+      "type": "integer"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "onlineTimeRequiredInMinutes": {
+      "type": "integer"
+    },
+    "playerKillsRequiredCount": {
+      "type": "integer"
+    },
+    "infectedKillsRequiredCount": {
+      "type": "integer"
+    },
+    "headshotKillsRequiredCount": {
+      "type": "integer"
+    },
+    "distanceTravelledRequiredInMeters": {
+      "type": "integer"
+    },
+    "canReTakenAfterPeriodOfDaysRealTime": {
+      "type": "integer"
+    },
+    "animalKills": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "uniqueName",
+    "isLoaded",
+    "level",
+    "onlineTimeRequiredInMinutes",
+    "playerKillsRequiredCount",
+    "infectedKillsRequiredCount",
+    "headshotKillsRequiredCount",
+    "distanceTravelledRequiredInMeters",
+    "canReTakenAfterPeriodOfDaysRealTime",
+    "animalKills",
+    "version",
+    "displayName"
+  ]
+}

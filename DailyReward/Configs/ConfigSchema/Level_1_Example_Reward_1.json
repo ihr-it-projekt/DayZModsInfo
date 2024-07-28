@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "uniqueName": {
+      "type": "string"
+    },
+    "isLoaded": {
+      "type": "integer",
+      "enum": [0]
+    },
+    "version": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "canTakenTimes": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {}
+    },
+    "uniqueItemNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "uniqueName",
+    "isLoaded",
+    "version",
+    "level",
+    "canTakenTimes",
+    "items",
+    "uniqueItemNames"
+  ]
+}
