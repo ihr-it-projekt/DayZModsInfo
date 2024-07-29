@@ -55,6 +55,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - [Config.md](Configs/Config.md)
 - [DiseaseConfig.md](Configs/DiseaseConfig.md)
 - [DryerConfig.md](Configs/DryerConfig.md)
-- [StatcicDryerConfig.md](Configs/StatcicDryerConfig.md)
+- [StatcicDryerConfig.md](Configs/StaticDryerConfig)
 - [StaticWashingPlaces.md](Configs/StaticWashingPlaces.md)
 - [WashingMachineConfig.md](Configs/WashingMachineConfig.md)
