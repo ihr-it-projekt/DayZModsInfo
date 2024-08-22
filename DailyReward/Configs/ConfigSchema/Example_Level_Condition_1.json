@@ -28,6 +28,9 @@
     "canReTakenAfterPeriodOfDaysRealTime": {
       "type": "integer"
     },
+    "canTakenOnlyOnce": {
+      "type": "integer"
+    },
     "animalKills": {
       "type": "array",
       "items": {
@@ -51,6 +54,7 @@
     "headshotKillsRequiredCount",
     "distanceTravelledRequiredInMeters",
     "canReTakenAfterPeriodOfDaysRealTime",
+    "canTakenOnlyOnce",
     "animalKills",
     "version",
     "displayName"
