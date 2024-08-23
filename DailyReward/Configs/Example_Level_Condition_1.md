@@ -15,7 +15,7 @@ You have to create for every level one level condition, You can name it as you w
     "headshotKillsRequiredCount": 1, // The headshot kills the player must have to get the reward or -1 to disable this condition
     "distanceTravelledRequiredInMeters": 300, // The distance the player must have to get the reward or -1 to disable this condition
     "canReTakenAfterPeriodOfDaysRealTime": 1, // The real time in days that player must wait to get the reward again or -1 to disable this condition
-    "canTakenOnlyOnce": 0, // 0 = off, 1 = on If all players can take the reward only one time
+    "canTakenOnlyOnce": 0, // 0 = off, 1 = on If all players can take the reward only one time. The check is done by the unique name of the condition, so if you change the name, the player can take the reward again
     "animalKills": { // The animal kills the player must have to get the reward leave it empty to disable this condition
         "Animal_GallusGallusDomesticus": 1 // "Animal Type Name": count of required kills, 
     },

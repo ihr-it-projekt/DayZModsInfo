@@ -13,6 +13,12 @@
 - Configure your needs
 - Start your Server :-)
 
+## How i can reset a single player?
+- write down the player id (Bohemia ID)
+- kill the player in game
+- delete the player data file in `YourServerProfilesFolder\TBMods\Data\TBDailyReward\Player` folder. Filename is {BohemiaID}.bin
+- reload the date with "Reload Player Data" in the menu
+
 
 ## How i can give player premium status?
 
