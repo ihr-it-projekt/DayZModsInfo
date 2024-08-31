@@ -16,7 +16,9 @@
 ## How i can reset a single player?
 - write down the player id (Bohemia ID)
 - kill the player in game
-- delete the player data file in `YourServerProfilesFolder\TBMods\Data\TBDailyReward\Player` folder. Filename is {BohemiaID}.bin
+- player must logout
+- wait for player data store to not loos data from other players, see changed timestamp of files. Player Data will stored, when DayZ saves the PlayerBase.
+- delete the player data file in `YourServerProfilesFolder\TBMods\Data\TBDailyReward\Player\` folder. Filename is {BohemiaID}.bin
 - reload the date with "Reload Player Data" in the menu
 
 
