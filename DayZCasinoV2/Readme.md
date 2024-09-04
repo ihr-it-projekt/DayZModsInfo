@@ -1,5 +1,8 @@
 # DayZCasinoV2
 
+## Steamlink
+https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
+
 ## How to configure
 
 1. Copy the mod to your server
