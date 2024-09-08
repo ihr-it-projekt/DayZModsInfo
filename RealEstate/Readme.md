@@ -109,7 +109,7 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBRe
 - [logger.md](Configs/logger.md)
 - [SpawnPoint.md](Configs/SpawnPoint.md)
 
-## Modding Interfaces
+## Modding Interfaces (Server Side Only)
 
 Mod Def: TBREALESTATE
 
