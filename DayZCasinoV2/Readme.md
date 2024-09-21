@@ -89,18 +89,19 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
 5. save and close the file
 6. Add chips to Trader config like (you can also find another way to bring Casino Chips to your players)
 ```xml
-   <Category> CasinoChips
-   CasinoChips,                                                1,        1,        1
-   CasinoChips,                                                5,        5,        5
-   CasinoChips,                                                10,        10,        10
-   CasinoChips,                                                25,        25,        25
-   CasinoChips,                                                50,        50,        50
-   CasinoChips,                                                100,    100,    100
-   CasinoChips,                                                500,    500,    500
-   CasinoChips,                                                1000,    1000,    1000
-   CasinoChips,                                                5000,    5000,    5000
-   CasinoChips,                                                10000,    10000,    10000
-   </Category>
+
+<Category>CasinoChips
+    CasinoChip, 1, 1, 1
+    CasinoChip, 5, 5, 5
+    CasinoChip_Red, 1, 10, 10
+    CasinoChip_Red, 5, 50, 50
+    CasinoChip_Green, 1, 100, 100
+    CasinoChip_Green, 5, 500, 500
+    CasinoChip_Blue, 1, 1000, 1000
+    CasinoChip_Blue, 5, 5000, 5000
+    CasinoChip_Yellow, 1, 10000, 10000
+    CasinoChip_Yellow, 5, 50000, 50000
+</Category>
 ```
 7. Add "@DayZCasinoV2" after "@CF" to your server start script
 8. start server first time.
