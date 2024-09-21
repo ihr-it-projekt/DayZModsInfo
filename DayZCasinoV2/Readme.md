@@ -119,7 +119,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
 {
   // You can configure the currency that is needed to play. You can use for example also MoneyRuble instead of CasinoChips. First value is the Object name the second value is the value of currency. Default Object is CasinoChips
   "currencyValues": {
-    "CasinoChips": 1,
+    "CasinoChip": 1,
     "CasinoChip_Green": 100,
     "CasinoChip_Blue": 1000,
     "CasinoChip_Red": 10,
@@ -400,7 +400,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
     "maxWinQouta": 5
     // max Factor for multiply the bet when a player win
   },
-  "configVersion": 3,
+  "configVersion": 4,
   // config file version NEVER CHANGE THIS it is needed to automaticaly update the config file when new values will added
   "enablePlayLogs": 1
   // here you can enable game logs. 1=on 0=off In DayZCasionV2 config folder will created for every day a new file when player plays a game. The name of the file is yeahr-month-day_play.csv for example "2020-2-1_play.csv in this file are four columns "time" "game" "playerid" and "win/lose". Example: 15:43:22 ;BlackJack;76561198196317725;15; 
