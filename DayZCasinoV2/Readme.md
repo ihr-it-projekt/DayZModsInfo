@@ -10,7 +10,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
 3. Go to Folder: DayZServer\mpmissions\dayzOffline.chernarusplus\db
 4. Open "types.xml" in editor and add between <types></types> the content of:
 ```xml
-<type name="CasinoChips">
+<type name="CasinoChip">
     <nominal>150</nominal>
     <lifetime>7200</lifetime>
     <restock>0</restock>
