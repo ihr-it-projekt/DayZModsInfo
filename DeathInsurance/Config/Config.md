@@ -15,13 +15,15 @@
             "id": "g8ciyetvox", // this value must be unique to other insurance ids.
             "price": 1000, // price of the insurance
             "durationInSeconds": 86400, // duration of the insurance in seconds
-            "stayActiveAfterDeath": 0 // if 1, the insurance will stay active after death of player
+            "stayActiveAfterDeath": 0 ,// if 1, the insurance will stay active after death of player
+            "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 1 // if 1, only items that are in cargo and inventory at the moment when player make the insurance will be insured
         },
         {
             "id": "4b2dgimf1x",
             "price": 2000,
             "durationInSeconds": 604800,
-            "stayActiveAfterDeath": 0
+            "stayActiveAfterDeath": 0,
+            "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0
         }
     ]
 }
