@@ -18,6 +18,20 @@ Will come when mod is in stable version
 
 ## Features
 
+- Match Modes
+  - Team Fights
+  - All against All
+- Match creation
+  - player can create their own match 
+  - options
+    - select arena 
+    - match mode
+    - rounds
+    - rounds length
+    - min/max players
+    - count of teams
+    - max kills per round
+    - pre-configured gear sets for match
 - Available Config Options for Matches
   - Arena Buildings
   - How many rounds a match will have
@@ -33,16 +47,41 @@ Will come when mod is in stable version
   - Player health
   - Player schild
     - shield will be regenerated after a period of time, if players get no hit
-  - Coundowns
-    - Countdown to start a match
-    - Countdown to start a new round
-    - Countdown at the end of a match
+  - Countdowns
+    - to start a match
+    - to start a new round
+    - at the end of a match
+- Players can enter main Lobby at Lobby Entry Point or by pressing a key from everywhere. 
+  - key press option can be disabled
 - You can build your own Arena with the DayZ Editor
 - Arena Building(s) will load with the Mod
-- Pre created Arenas in the Moc Client Package
+- Pre created Arenas in the Mod Client Package
+- Scoring System
+  - player hit points
+  - team hit points
+  - player kills
+  - team kills
+  - own deaths
+- Overlays 
+  - shield and health bar 
+  - Players with their kills 
+  - Round 
+    - Time left
+    - max Kills
+    - round number
+    - Team Kills
+- Admin can
+  - Reload config in game
+  - can disable Match creation for other players, so only admins can create new matches
+  - can delete matches everytime
+  - can teleport to arena from lobby menu
+- Arenas will be cleaned from dropped gear after a round 
 
 ## Planned Features
 
+- Match creation (in game)
+  - Starting Fee
+  - change side (teams)
 - More Config Options
   - death penalty times 
   - starting fee, this money can be used to give players a reward
@@ -54,7 +93,13 @@ Will come when mod is in stable version
   - turn on/off spectator mode
 - mechanic to prevent non combat players to enter the arena from external
 - show arena boarder in game
-- 
+- server messages to players when a new match was created
+- players can disable new macht notification
+- spectator mode
+- Goodies like
+  - heal packs
+  - shield packs
+- Overlay to show Match/Round Statistics
 
 ## How to install
 
