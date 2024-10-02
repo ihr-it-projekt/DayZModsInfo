@@ -18,7 +18,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ## AdminConfig.json
 ````json lines
 {
-  "version": "6", // never change this, internal version number
+  "version": "9", // never change this, internal version number
   "admins": {
     "Add here Steam Or DayZ ID": {
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
@@ -29,6 +29,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "secondHandMarket": 0, // 0 = off 1 = on | is admin in second hand market
       "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
       "jewelsOfSurvival": 0, // 0 = off 1 = on | is admin in jewels of survival
+      "warParty": 0, // 0 = off 1 = on | is admin in war party
       "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -40,6 +41,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "secondHandMarket": 1,
       "revivePlayer": 1,
       "jewelsOfSurvival": 1,
+      "warParty": 1,
       "playerId": "765611328196317725"
     }
   }
@@ -86,16 +88,26 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
     {
       "name": "UAInputOpenTBDailyReward",
       "defaultKey": 25, // default key is P, if you want to have another key, you can change it here. You can find the numbers in TBKeyCodeMatch.json
-      "useServerKeyBind": 0 // if you enable this. All players will forced to use your keybind and will have configured defaultKey
+      "useServerKeyBind": 0 // if you enable this. All players will be forced to use your keybind and will have configured defaultKey
     },
     {
-      "name": "UAInputOpenTBJOFBook",
-      "defaultKey": 24,
+      "name": "UAInputOpenTBSHMBulletinBoard",
+      "defaultKey": 47,
       "useServerKeyBind": 0
     },
     {
       "name": "UAInputOpenTBRevive",
       "defaultKey": 23,
+      "useServerKeyBind": 0
+    },
+    {
+      "name": "UAInputOpenTBWarParty",
+      "defaultKey": 48,
+      "useServerKeyBind": 0
+    },
+    {
+      "name": "UAInputOpenTBJOFBook",
+      "defaultKey": 24,
       "useServerKeyBind": 0
     }
   ]

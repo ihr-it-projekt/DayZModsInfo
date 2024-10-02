@@ -1,3 +1,5 @@
+[back](../../../Readme.md)
+
 # C File Converter
 
 This tool search for lines like 
@@ -13,7 +15,7 @@ and converts it into the correct JSON format
 - click on open
 - the converted file will automatically be saved in your download folder
 
-How to continue... ? See here: [ArenaBuildingConfig.md](..%2F..%2F..%2FConfigs%2FArenaBuildingConfig.md)
+How to continue... ? See here: [ArenaBuildingConfig.md](../../../Configs/ArenaBuildingConfig.md)
 
 ## Input Format
 
@@ -39,3 +41,5 @@ void main()
 
 ....
 ````
+
+[back](../../../Readme.md)

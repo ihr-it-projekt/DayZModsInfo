@@ -1,3 +1,6 @@
+[back](../../../Readme.md)
+
+
 # Json Converter
 
 Converts the input file from Input format to correct 
@@ -11,7 +14,7 @@ Converts the input file from Input format to correct
 - click on open
 - the converted file will automatically be saved in your download folder
 
-How to continue... ? See here: [ArenaBuildingConfig.md](..%2F..%2F..%2FConfigs%2FArenaBuildingConfig.md)
+How to continue... ? See here: [ArenaBuildingConfig.md](../../../Configs/ArenaBuildingConfig.md)
 
 ## Input Format
 
@@ -51,3 +54,5 @@ How to continue... ? See here: [ArenaBuildingConfig.md](..%2F..%2F..%2FConfigs%2
   ]
 }
 ````
+
+[back](../../../Readme.md)

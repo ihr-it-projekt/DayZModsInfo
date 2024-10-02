@@ -1,3 +1,5 @@
+[back](Index.md)
+
 # ArenaBuildingConfig
 
 These files are located in folder `TBMods\Config\TBWarParty\ArenaMatchConfigs` 
@@ -46,3 +48,4 @@ Example
 }
 
 ````
+[back](Index.md)

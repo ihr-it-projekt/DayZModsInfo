@@ -1,3 +1,5 @@
+[back](Index.md)
+
 # ArenaMatchConfigs
 
 ````json lines
@@ -114,3 +116,5 @@
     "endMatchCountdown": 10 // how long the countdown will be to end the match, must be at least 5 seconds
 }
 ````
+
+[back](Index.md)

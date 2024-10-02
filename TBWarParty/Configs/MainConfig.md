@@ -1,3 +1,5 @@
+[back](Index.md)
+
 # MainConfig.json
 
 
@@ -21,3 +23,5 @@
   "playerCanOpenArenaMenuFromEverywhere": 1 // If you want to allow the player to open the arena menu from everywhere, set this value to 1 otherwise to 0 and players can only open the menu from lobby enter points.
 }
 ````
+
+[back](Index.md)

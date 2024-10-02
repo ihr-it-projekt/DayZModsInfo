@@ -16,6 +16,17 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 Will come when mod is in stable version
 
+## Configs
+
+[Configs](Configs/Index.md)
+
+## Tools
+
+### Arena Building Converter
+
+- c file to WarParty format converter [Readme.md](Tools/Converter/CConverter/Readme.md)
+- json file to WarParty format converter [Readme.md](Tools/Converter/JSONConverter/Readme.md)
+
 ## Features
 
 - Match Modes
