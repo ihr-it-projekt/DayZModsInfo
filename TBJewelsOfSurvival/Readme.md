@@ -75,6 +75,18 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 You will find more information here: [https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels](https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels)
 
+### How to install
+
+See also here: https://lbmaster.de/install/?p=27&h=1
+
+- Take the Server PBO and bring it into your own server side pack
+- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Start your server. Some more configurations will be generated.
+- Tear down the server
+- Configure your needs
+- Start your Server :-)
+
+
 ### Configuration Options
 - a lot of configurations possibilities
 - config will automatically create on first server start

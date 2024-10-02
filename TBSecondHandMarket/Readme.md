@@ -100,6 +100,8 @@ https://youtu.be/YXXO2QezOUU
 
 ### How to install
 
+See also here: https://lbmaster.de/install/?p=37&h=1
+
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
 - Start the server and stop it again if all configs are generated
