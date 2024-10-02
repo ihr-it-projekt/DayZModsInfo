@@ -8,7 +8,7 @@ These files are located in folder `TBMods\Config\TBWarParty\ArenaMatchConfigs`
 
 We have created different converters to use for example the DayZ Editor (https://steamcommunity.com/sharedfiles/filedetails/?id=2250764298&searchtext=dayz+editor) 
 
-You can find them into `Tools` folder here on GitHub.
+You can find them into [Tools](../Readme.md#tools) folder here on GitHub.
 
 Example 
 
