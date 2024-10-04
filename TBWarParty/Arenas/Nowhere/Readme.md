@@ -5,8 +5,8 @@
 
 ## Screenshots
 
-<img src="./images/Nowhere_1.jpg" alt="Cherno" width="512"/>
-<img src="./images/Nowhere_2.jpg" alt="Cherno" width="512"/>
+<img src="images/Nowhere_1.jpg" alt="Cherno" width="512"/>
+<img src="images/Nowhere_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `Nowhere.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

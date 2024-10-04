@@ -7,8 +7,8 @@
 
 ## Screenshots
 
-<img src="./images/WarZxTBM_WarParty_6on6_1.jpg" alt="Cherno" width="512"/>
-<img src="./images/WarZxTBM_WarParty_6on6_2.jpg" alt="Cherno" width="512"/>
+<img src="images/WarZxTBM_WarParty_6on6_1.jpg" alt="Cherno" width="512"/>
+<img src="images/WarZxTBM_WarParty_6on6_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `WarZxTBM_WarParty_6on6.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.
