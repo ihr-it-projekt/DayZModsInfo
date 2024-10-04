@@ -1,0 +1,235 @@
+{
+    "version": "1",
+    "isInitialized": 1,
+    "arenaObjectsConfigFile": "Cherno",
+    "playersCount": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        15
+    ],
+    "roundsCount": [
+        1,
+        2,
+        3,
+        5,
+        10
+    ],
+    "deathPenaltyTimeInSeconds": [
+        1,
+        2,
+        3,
+        5,
+        10
+    ],
+    "maxTimePerRoundInMinutes": [
+        5,
+        10,
+        15,
+        30,
+        60
+    ],
+    "maxKillsPerRound": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        25,
+        50,
+        100
+    ],
+    "startingFee": [
+        1000,
+        2000,
+        3000,
+        5000,
+        10000
+    ],
+    "teamWinRatio": [
+        {
+            "place": 1,
+            "ratio": 0.5
+        },
+        {
+            "place": 2,
+            "ratio": 0.30000001192092898
+        }
+    ],
+    "enableChangeSides": 1,
+    "enableOneLifeMode": 1,
+    "enableShowTeamMarker": 1,
+    "enableStaminaMode": 1,
+    "enableShowSpectatorMode": 1,
+    "gearSetNames": [
+        "Example1",
+        "Example2"
+    ],
+    "gearSets": [],
+    "externalPlayersCanEnterArena": 0,
+    "adminCanEnterArena": 1,
+    "enableMultipleGearSets": 1,
+    "showArenaBoarderPoints": 1,
+    "teamSpawnZones": {
+        "1": [
+            {
+                "position": [
+                    6763.8564453125,
+                    3.3402645587921144,
+                    2540.978271484375
+                ],
+                "orientation": [
+                    101.74414825439453,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6744.2470703125,
+                    3.340271234512329,
+                    2534.931396484375
+                ],
+                "orientation": [
+                    -9.944429397583008,
+                    -0.0,
+                    0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6746.89794921875,
+                    3.992802858352661,
+                    2511.450927734375
+                ],
+                "orientation": [
+                    165.63446044921876,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6753.23974609375,
+                    11.421638488769532,
+                    2476.16796875
+                ],
+                "orientation": [
+                    -153.7238006591797,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6761.93359375,
+                    3.3615596294403078,
+                    2471.27001953125
+                ],
+                "orientation": [
+                    -153.7238006591797,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            }
+        ],
+        "2": [
+            {
+                "position": [
+                    6827.5615234375,
+                    3.4246761798858644,
+                    2525.75244140625
+                ],
+                "orientation": [
+                    -110.984375,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6811.017578125,
+                    3.2636358737945558,
+                    2509.79443359375
+                ],
+                "orientation": [
+                    -164.58653259277345,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6787.74609375,
+                    7.139649391174316,
+                    2541.153564453125
+                ],
+                "orientation": [
+                    12.94768238067627,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6796.59130859375,
+                    10.740006446838379,
+                    2498.7548828125
+                ],
+                "orientation": [
+                    142.1606903076172,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6798.29248046875,
+                    3.4271929264068605,
+                    2541.3505859375
+                ],
+                "orientation": [
+                    59.85060119628906,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            },
+            {
+                "position": [
+                    6821.923828125,
+                    3.1848745346069338,
+                    2489.65283203125
+                ],
+                "orientation": [
+                    10.417132377624512,
+                    0.0,
+                    -0.0
+                ],
+                "radius": 10.0
+            }
+        ]
+    },
+    "teamsCount": [],
+    "playerHealth": 100,
+    "playerShield": 100,
+    "startCountdown": 6,
+    "startNextRoundCountdown": 10,
+    "endMatchCountdown": 20
+}
