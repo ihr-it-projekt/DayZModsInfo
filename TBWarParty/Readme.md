@@ -20,6 +20,9 @@ Will come when mod is in stable version
 
 [Configs](Configs/Index.md)
 
+## Arenas
+[Arenas](Arenas/README.md)
+
 ## Tools
 
 ### Arena Building Converter
