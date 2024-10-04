@@ -90,7 +90,8 @@ Will come when mod is in stable version
   - can disable Match creation for other players, so only admins can create new matches
   - can delete matches everytime
   - can teleport to arena from lobby menu
-  - F Action to add spawn positions for team 1 
+  - F Action to add spawn positions for teams
+  - F Action to remove spawn positions for teams
 - Arenas will be cleaned from dropped gear after a round 
 
 ## Planned Features
