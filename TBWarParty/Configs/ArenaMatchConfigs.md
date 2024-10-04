@@ -2,6 +2,18 @@
 
 # ArenaMatchConfigs
 
+If you want to add more Spawn coordinates, you can do this also easy in game.
+
+- Be sure you ara an mod admin [Readme.md](../../GlobalConfigs%2FReadme.md)
+- Join Main Lobby and create a match
+- click on "Port to Arena" Button. Only visible if you are an admin
+- The F Action is now usable
+- Go to position where you want to add a new spawn point
+- Select Action and press F
+
+After adding the new spawn points, you must reload the configurations via Admin Menu.
+If you want to add ne positions for other teams, just cut and copy the coordinates from Team 1
+
 ````json lines
 {
     "version": "1", // never change this, internal version number
@@ -111,9 +123,9 @@
     "teamsCount": [], // internal usage, do not change
     "playerHealth": 100, // how much health a player has
     "playerShield": 100, // how much shield a player has, shield are automatically regenerate after a period of time
-    "startCountdown": 60, //
-    "startNextRoundCountdown": 20, // how long the countdown will be to start the next round
-    "endMatchCountdown": 10 // how long the countdown will be to end the match, must be at least 5 seconds
+    "startCountdown": 60, // how long the countdown will be to start the match after enough players are available, must be at least 6 seconds
+    "startNextRoundCountdown": 20, // how long the countdown will be to start the next round, must be at least 6 seconds
+    "endMatchCountdown": 10 // how long the countdown will be to end the match, must be at least 6 seconds
 }
 ````
 

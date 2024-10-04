@@ -43,6 +43,7 @@ Will come when mod is in stable version
     - count of teams
     - max kills per round
     - pre-configured gear sets for match
+    - team markers, so players can see their teammates
 - Available Config Options for Matches
   - Arena Buildings
   - How many rounds a match will have
@@ -86,6 +87,7 @@ Will come when mod is in stable version
   - can disable Match creation for other players, so only admins can create new matches
   - can delete matches everytime
   - can teleport to arena from lobby menu
+  - F Action to add spawn positions for team 1 
 - Arenas will be cleaned from dropped gear after a round 
 
 ## Planned Features
@@ -99,7 +101,7 @@ Will come when mod is in stable version
   - win ration for places, how much money will be given to the players, when they win
   - player can change sides
   - one life mode
-  - team markers, so you can see your team mates
+  
   - turn on/off stamina
   - turn on/off spectator mode
 - mechanic to prevent non combat players to enter the arena from external
