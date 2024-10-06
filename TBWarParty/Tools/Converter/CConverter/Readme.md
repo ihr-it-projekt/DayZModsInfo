@@ -8,7 +8,7 @@ and converts it into the correct JSON format
 
 ## How to use?
 
-- download `index.html` and `index.js` from this folder
+- download `index.html` and `converter.js` from this folder
 - Open `index.html` in Browser of your choice
 - make sure javascript is activated (is by default)
 - click on "Select file"
