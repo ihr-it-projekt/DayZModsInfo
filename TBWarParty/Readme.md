@@ -116,6 +116,8 @@ Will come when mod is in stable version
   - heal packs
   - shield packs
 - Overlay to show Match/Round Statistics
+- Gear Sets can only be used when player have enough points
+- Arenas can only be used when player have enough points
 
 ## How to install
 
