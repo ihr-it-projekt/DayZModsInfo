@@ -1,5 +1,7 @@
 # TB War Party
 
+<img src="images/TBWP_Cover.jpg" alt="addSpawn" width="512"/><br/>
+
 ## Description
 
 Player can make different fights in an arena in Teams or against each other. 
