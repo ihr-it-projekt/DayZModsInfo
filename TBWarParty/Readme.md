@@ -105,7 +105,6 @@ Will come when mod is in stable version
   - win ration for places, how much money will be given to the players, when they win
   - player can change sides
   - one life mode
-  
   - turn on/off stamina
   - turn on/off spectator mode
 - mechanic to prevent non combat players to enter the arena from external

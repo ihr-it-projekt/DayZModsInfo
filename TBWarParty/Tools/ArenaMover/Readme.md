@@ -6,6 +6,7 @@ With this tool you can move the all buildings to another position.
 
 ## How to use
 
+- download `index.html` and `index.js` from this folder
 - Open `index.html` in Browser of your choice
 - make sure javascript is activated (is by default)
 - click on "Select file"
