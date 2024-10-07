@@ -120,6 +120,7 @@ Will come when mod is in stable version
 - Overlay to show Match/Round Statistics
 - Gear Sets can only be used when player have enough points
 - Arenas can only be used when player have enough points
+- Change Load-out in Config Mode
 
 ## How to install
 
