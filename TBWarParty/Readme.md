@@ -38,7 +38,8 @@ Will come when mod is in stable version
   - Team Fights
   - All against All
 - Match creation
-  - player can create their own match 
+  - Admin can create permanent Lobbies for matches. This Lobbies stays active over server restart and reset the match when no player is in the lobby or the match is over. 
+  - player can create their own match (if admin allows it)
   - options
     - select arena 
     - match mode
