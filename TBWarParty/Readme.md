@@ -68,6 +68,7 @@ Will come when mod is in stable version
     - to start a match
     - to start a new round
     - at the end of a match
+  - death penalty times, player has to wait a configured time before he can respawn
 - Players can enter main Lobby at Lobby Entry Point or by pressing a key from everywhere. 
   - key press option can be disabled
 - You can build your own Arena with the DayZ Editor
@@ -79,6 +80,7 @@ Will come when mod is in stable version
   - player kills
   - team kills
   - own deaths
+- Statistics will be shown at the end of a match
 - Overlays 
   - shield and health bar 
   - Players with their kills 
@@ -102,7 +104,6 @@ Will come when mod is in stable version
   - Starting Fee
   - change side (teams)
 - More Config Options
-  - death penalty times 
   - starting fee, this money can be used to give players a reward
   - win ration for places, how much money will be given to the players, when they win
   - player can change sides

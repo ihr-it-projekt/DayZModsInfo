@@ -46,7 +46,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
         1,
         2
     ],
-    "deathPenaltyTimeInSeconds": [ // currently not used but will be used in the future
+    "deathPenaltyTimeInSeconds": [ // player has to wait a configured time before he can respawn 
         1,
         2,
         3,
