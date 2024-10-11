@@ -229,7 +229,7 @@
     "teamsCount": [],
     "playerHealth": 100,
     "playerShield": 100,
-    "startCountdown": 6,
+    "startCountdown": 60,
     "startNextRoundCountdown": 10,
     "endMatchCountdown": 20
 }
