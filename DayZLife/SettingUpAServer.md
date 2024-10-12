@@ -14,7 +14,9 @@ Example:
 3. Copy the mods "@DayZ Life V2 Client (RP Framework)" and "@DayZ Life V2 Server (RP Framework)" to your server
 4. Copy from mod "@DayZ Life V2 Client (RP Framework)\Keys" folders the keys into "DayZServer\keys" folder
 5. Start your server first time for example with this command:
+
 <pre class="language-markup"><code>DayZServer_x64.exe -config=serverDZ.cfg -port=2302 -dologs -adminlog -netlog -freezecheck "-profiles=MyProfileFolder" "-serverMod=@DayZ Life V2 Server (RP Framework)" "-mod=@DayZ Life V2 Client (RP Framework)"</code></pre>
+
 **Hint: "@DayZ Life V2 Server (RP Framework)" Mod is only needed on server side**
 6. if server is ready, shut down your server
 7. Enter into your server profiles folder. There is a new folder named: "YourServerProfilesFolder\TBMods\Config\DayZLife"
