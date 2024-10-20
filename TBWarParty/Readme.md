@@ -117,12 +117,18 @@ Will come when mod is in stable version
 - players can disable new macht notification
 - spectator mode
 - Goodies like
-  - heal packs
+  - heal packs/ heal sticks
   - shield packs
-- Overlay to show Match/Round Statistics
 - Gear Sets can only be used when player have enough points
 - Arenas can only be used when player have enough points
+- all time points for players
 - Change Load-out in Config Mode
+- Players can configure their own gear sets from available gear items
+- Friendly Fire Option
+- Friendly Fire count no points
+- Teammarker position 
+- Kill Feed
+- Delete Admin needs cooldown
 
 ## How to install
 
