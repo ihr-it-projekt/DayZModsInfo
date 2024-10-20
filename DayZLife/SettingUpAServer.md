@@ -18,10 +18,11 @@ Example:
 <pre class="language-markup"><code>DayZServer_x64.exe -config=serverDZ.cfg -port=2302 -dologs -adminlog -netlog -freezecheck "-profiles=MyProfileFolder" "-serverMod=@DayZ Life V2 Server (RP Framework)" "-mod=@DayZ Life V2 Client (RP Framework)"</code></pre>
 
 **Hint: "@DayZ Life V2 Server (RP Framework)" Mod is only needed on server side**
+
 6. if server is ready, shut down your server
 7. Enter into your server profiles folder. There is a new folder named: "YourServerProfilesFolder\TBMods\Config\DayZLife"
 8. Enter "YourServerProfilesFolder\TBMods\Config\DayZLife" folder, there you will find all configurations.
-7. Start configure your Server. The most is automatically configured but for the Trader you have to configure your preferences.  You can use our <a href="https://tools.dayz-life.net/category-editor/add-items">Trader configuration tool</a> to do that. You also will find in DayZ Life Server Mod an example for Trader configuration.
+7. Start configure your Server. The most is automatically configured but for the Trader you have to configure your preferences. You can use our <a href="https://tools.dayz-life.net/category-editor/add-items">Trader configuration tool</a> to do that. You also will find in DayZ Life Server Mod an example for Trader configuration.
 8. Start your server after configuration
 9. Have fun and enjoy our mod.
 10. Feedback and [**`donations`**](https://www.paypal.com/donate/?hosted_button_id=8UASRGVP88YE4) are always welcome.
