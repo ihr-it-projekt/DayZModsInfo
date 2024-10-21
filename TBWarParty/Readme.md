@@ -75,6 +75,7 @@ Will come when mod is in stable version
 - You can build your own Arena with the DayZ Editor
 - Arena Building(s) will load with the Mod
 - Pre created Arenas in the Mod Client Package
+- Kill Feed
 - Scoring System
   - player hit points
   - team hit points
@@ -90,6 +91,21 @@ Will come when mod is in stable version
     - max Kills
     - round number
     - Team Kills
+- frees different states when player joins a lobby or match (Is not important for TBWarParty):
+  - sick states 
+  - cuts 
+  - hunger
+  - thirst
+  - fever
+  - heat
+  - influence
+  - blood and health
+  - blood and health regeneration
+  - shock and shock damage
+  - toxic
+  - heat comfort
+  - immune system
+  - stomach 
 - Admin can
   - Reload config in game
   - can disable Match creation for other players, so only admins can create new matches
@@ -127,7 +143,6 @@ Will come when mod is in stable version
 - Friendly Fire Option
 - Friendly Fire count no points
 - Teammarker position 
-- Kill Feed
 - Delete Admin needs cooldown
 
 ## How to install
