@@ -23,6 +23,9 @@ See also here: https://lbmaster.de/install/?p=20&h=1
 - delete the player data file in `YourServerProfilesFolder\TBMods\Data\TBDailyReward\Player\` folder. Filename is {BohemiaID}.bin
 - reload the date with "Reload Player Data" in the menu
 
+## How i can reset all players?
+- stop your server
+- delete the folder `YourServerProfilesFolder\TBMods\Data\TBDailyReward` 
 
 ## How i can give player premium status?
 
