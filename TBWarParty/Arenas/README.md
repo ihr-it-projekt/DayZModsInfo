@@ -6,4 +6,4 @@ Here you find all arenas and their descriptions.
 - [Colosseum](Colosseum/Readme.md)
 - [Nowhere](Nowhere/Readme.md)
 - [NWA](NWA/Readme.md)
-- [Smoking Island](Smoking Island/Readme.md)
+- [Smoking Island](Smoking_Island/Readme.md)
