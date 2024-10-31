@@ -25,7 +25,7 @@ See also here: https://lbmaster.de/install/?p=20&h=1
 
 ## How i can reset all players?
 - stop your server
-- delete the folder `YourServerProfilesFolder\TBMods\Data\TBDailyReward` 
+- delete the folder `YourServerProfilesFolder\TBMods\Data\TBDailyReward`
 
 ## How i can give player premium status?
 
