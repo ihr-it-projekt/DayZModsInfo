@@ -63,7 +63,7 @@ Will come when mod is in stable version
   - Spawn Positions for the players/Teams
   - How many teams can join a match
   - Player health
-  - Player schild
+  - Player shield
     - shield will be regenerated after a period of time, if players get no hit
   - Countdowns
     - to start a match
