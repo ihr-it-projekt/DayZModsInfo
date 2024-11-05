@@ -18,6 +18,10 @@
     "discordHouseTradeWebhookURL": "", // https://your.discord.webhook.url",",
     "logHouseExtensionTrade": 1,  // 1 = on 0 = off, Log to csv when a player buy or sell a house extension
     "logHouseExtensionTradeToDiscord": 1, //  1 = on 0 = off, Log to discord when a player buy or sell a house extension
-    "discordHouseExtensionTradeWebhookURL": "" //https://your.discord.webhook.url","
+    "discordHouseExtensionTradeWebhookURL": "", //https://your.discord.webhook.url",
+    "logHouseOwnerDelete": 1, // 1 = on 0 = off, Log to csv when delete a house owner/player
+    "logHouseOwnerDeleteToDiscord": 1, // 1 = on 0 = off, Log to discord when delete a house owner/player
+    "discordHouseOwnerDeleteWebhookURL": ""// https://your.discord.webhook.url",
+
 }
 ````
