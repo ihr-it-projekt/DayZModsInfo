@@ -57,4 +57,4 @@ See also here: https://lbmaster.de/install/?p=22&h=1
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [reviveConfig.md](Configs/reviveConfig.md)
-
+- [logger.md](Configs/logger.md)
