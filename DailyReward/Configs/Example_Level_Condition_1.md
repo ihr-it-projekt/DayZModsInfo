@@ -11,7 +11,6 @@ You have to create for every level one level condition, You can name it as you w
     "level": 1, // The level of the condition
     "onlineTimeRequiredInMinutes": 10, // The time the player must be online to get the reward or -1 to disable this condition
     "playerKillsRequiredCount": -1, // The player kills (exclude head shot kills) the player must have to get the reward or -1 to disable this condition
-    "infectedKillsRequiredCount": -1, // The infected kills the player must have to get the reward or -1 to disable this condition
     "headshotKillsRequiredCount": 1, // The headshot kills the player must have to get the reward or -1 to disable this condition
     "distanceTravelledRequiredInMeters": 300, // The distance the player must have to get the reward or -1 to disable this condition
     "canReTakenAfterPeriodOfDaysRealTime": 1, // The real time in days that player must wait to get the reward again or -1 to disable this condition
@@ -19,7 +18,14 @@ You have to create for every level one level condition, You can name it as you w
     "animalKills": { // The animal kills the player must have to get the reward leave it empty to disable this condition
         "Animal_GallusGallusDomesticus": 1 // "Animal Type Name": count of required kills, 
     },
-    "version": "4" // Never touch this value. It is needed internally
+    "infectedKillsRequiredCount": -1, // The infected kills the player must have to get the reward or -1 to disable this condition. Attention: if you enable this condition "zombieKills" option will be ignored
+    "zombieKills": { // The zombie kills the player must have to get the reward leave it empty to disable this condition. For Vanilla types see below
+        "TYPNAME": 1 // "Zombie Type Name": count of required kills,
+        "ZmbM_FarmerFat_Blue": 2,
+        "ZmbM_FarmerFat_Brown": 2,
+        "ZmbM_FarmerFat_Green": 2
+    },
+    "version": "5" // Never touch this value. It is needed internally
     "displayName": "Level 1" // The display name on the level button
 }
 ````
