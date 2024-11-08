@@ -37,7 +37,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
 {
     "version": "1", // never change this, internal version number
     "isInitialized": 1, // never change this. Internal usage
-    "arenaObjectsConfigFile": "Colosseum", // Name of the arena, will use to display the name in game.
+    "arenaObjectsConfigFile": "Colosseum", // Name of the arena, will use to display the name in game. You can also load your arena via DayZ Editor Loader, it is not needed to add the file name here. Leave it empty if no arena objects should be loaded by TBWarParty 
     "playersCount": [ // how many players can join a match, this value will use to set the min and max players for a match
         10,
         15
