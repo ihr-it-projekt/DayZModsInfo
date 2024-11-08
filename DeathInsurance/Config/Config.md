@@ -5,7 +5,7 @@
 
 ```json lines
 {
-    "version": "4", // never change this, internal version number
+    "version": "5", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
