@@ -1,0 +1,220 @@
+{
+	"name": "M4A1",
+	"items": [
+		{
+			"type": "GorkaHelmet",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "GorkaHelmetVisor",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "NVGHeadstrap",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "NVGoggles",
+					"quantityInPercent": 100.0,
+					"attachments": [
+						{
+							"type": "Battery9V",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": -1
+						}
+					],
+					"quickBarEntityShortcut": -1
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "BalaclavaMask_Green",
+			"quantityInPercent": 100.0,
+			"attachments": [],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "M65Jacket_Olive",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "AmmoBox_556x45_20Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "AmmoBox_556x45_20Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "AmmoBox_556x45_20Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "CargoPants_Green",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "Mag_STANAGCoupled_30Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "Mag_STANAGCoupled_30Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "PlateCarrierVest",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "PlateCarrierPouches",
+					"quantityInPercent": 100.0,
+					"attachments": [
+						{
+							"type": "Mag_Deagle_9rnd",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": -1
+						},
+						{
+							"type": "Mag_Deagle_9rnd",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": -1
+						},
+						{
+							"type": "AmmoBox_357_20Rnd",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": -1
+						},
+						{
+							"type": "AmmoBox_357_20Rnd",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": -1
+						}
+					],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "PlateCarrierHolster",
+					"quantityInPercent": 100.0,
+					"attachments": [
+						{
+							"type": "Deagle",
+							"quantityInPercent": 100.0,
+							"attachments": [],
+							"quickBarEntityShortcut": 1
+						}
+					],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "M18SmokeGrenade_Green",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": 3
+				},
+				{
+					"type": "M18SmokeGrenade_Red",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": 4
+				},
+				{
+					"type": "FlashGrenade",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": 5
+				},
+				{
+					"type": "FlashGrenade",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": 6
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "TacticalGloves_Green",
+			"quantityInPercent": 100.0,
+			"attachments": [],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "MilitaryBoots_Black",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "HuntingKnife",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": 2
+				}
+			],
+			"quickBarEntityShortcut": -1
+		},
+		{
+			"type": "M4A1",
+			"quantityInPercent": 100.0,
+			"attachments": [
+				{
+					"type": "M4_CQBBttstck",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "M4_RISHndgrd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "ACOGOptic",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "M4_Suppressor",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "Mag_STANAGCoupled_30Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
+					"quickBarEntityShortcut": -1
+				}
+			],
+			"quickBarEntityShortcut": 0
+		}
+	],
+    "version": "1"
+}
