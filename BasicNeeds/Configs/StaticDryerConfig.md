@@ -19,7 +19,8 @@
         0.0
       ],
       "needsEnergy": 0, // 1 = needs energy, 0 = no energy needed
-      "useExactPosition": 1 // 1 = use exact position, 0 = use position with some tolerance
+      "useExactPosition": 1, // 1 = use exact position, 0 = use position with some tolerance
+      "moneyPerMinuted": 10 // Money per minute for using the dryer place
     }
   ]
 }

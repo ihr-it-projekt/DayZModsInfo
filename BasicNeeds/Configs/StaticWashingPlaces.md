@@ -4,7 +4,7 @@
 
 ````json lines
 {
-    "version": "1", // Never touch this value. It is needed internally
+    "version": "2", // Never touch this value. It is needed internally
     "isInitialized": 1, // Never touch this value. It is needed internally
     "washingPlaces": [
         {
@@ -21,7 +21,8 @@
             "needsDetergent": 1, // 1 = needs detergent, 0 = no detergent needed
             "needsWater": 1, // 1 = needs water, 0 = no water needed
             "needsEnergy": 1, // 1 = needs energy, 0 = no energy needed
-            "useExactPosition": 1 // 1 = use exact position, 0 = use position with some tolerance
+            "useExactPosition": 1, // 1 = use exact position, 0 = use position with some tolerance
+            "moneyPerMinuted": 10 // Money per minute for using the washing place
         },
         {
             "position": [ 
@@ -37,7 +38,8 @@
             "needsDetergent": 1,
             "needsWater": 1,
             "needsEnergy": 1,
-            "useExactPosition": 1
+            "useExactPosition": 1,
+            "moneyPerMinuted": 10
         }
     ]
 }

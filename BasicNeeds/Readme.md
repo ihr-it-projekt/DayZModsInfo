@@ -50,11 +50,12 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Configurations
 
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently reload the config for the static washing places.
-- [BodyZoneConfigs.md](Configs/BodyZoneConfigs.md)
-- [BodyZones.md](Configs/BodyZones.md)
-- [Config.md](Configs/Config.md)
-- [DiseaseConfig.md](Configs/DiseaseConfig.md)
-- [DryerConfig.md](Configs/DryerConfig.md)
-- [StatcicDryerConfig.md](Configs/StaticDryerConfig)
-- [StaticWashingPlaces.md](Configs/StaticWashingPlaces.md)
-- [WashingMachineConfig.md](Configs/WashingMachineConfig.md)
+- [BodyZoneConfigs.json](Configs/BodyZoneConfigs.md)
+- [BodyZones.json](Configs/BodyZones.md)
+- [Config.json](Configs/Config.md)
+- [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
+- [DiseaseConfig.json](Configs/DiseaseConfig.md)
+- [DryerConfig.json](Configs/DryerConfig.md)
+- [StatcicDryerConfig.json](Configs/StaticDryerConfig)
+- [StaticWashingPlaces.json](Configs/StaticWashingPlaces.md)
+- [WashingMachineConfig.json](Configs/WashingMachineConfig.md)
