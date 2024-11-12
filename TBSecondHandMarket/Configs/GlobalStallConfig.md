@@ -5,13 +5,17 @@
 ```json lines
 {
   // Never touch this value. It is needed internally
-  "version": "1",
+  "version": "2",
   // Never touch this value. It is needed internally
   "isInitialized": 1,
   // Price per slot for player, if an item has 5 slots, player needs to pay 50 in case of this value 
   "pricePerSlot": 10,
+  // If the price per slot is in percentage, set this value to 1 otherwise to 0. If you are using this. It will take a fee in percentage of the item price NOT the slot price
+  "pricePerSlotIsInPercentage": 0,
   // Price per slot for premium player, if an item has 5 slots, player needs to pay 50 in case of this value
   "pricePerSlotPremiumPlayer": 10,
+  // If the price for premium per slot is in percentage, set this value to 1 otherwise to 0. If you are using this. It will take a fee in percentage of the item price NOT the slot price
+  "pricePerSlotPremiumPlayerIsInPercentage": 0,
   // Free slots for player that must not pay
   "freeSlotsForPlayer": 50,
   // How many slots a player can have at all global stalls together

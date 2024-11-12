@@ -29,7 +29,7 @@
     0.0,
     0.0
   ],
-  "useExactSpawnPosition": 0,
+  "useExactSpawnPosition": 1, // If you want to use the exact spawn position for vehicle, set this value to 1 otherwise a free position around the spawn position will be searched and used.
   "useExactPosition": 0, // If you want to use the exact position, set this value to 1 otherwise the Dealer point object will be automatically placed on the ground 
   "cars": [], // never change this, internal usage
   "uniqueFileNames": [ // The unique names of the cars you want to offer here, muss match with the file names from `\TBMods\Config\TBCarDealer\CarConfigs` folder 
