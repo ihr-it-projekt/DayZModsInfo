@@ -1,6 +1,6 @@
 # TB Car Dealer Editor
 
-## Downlaod
+## Download
 
 - [TB Car Dealer Editor](./TBCarDealerConfigEditor.rar)
 
