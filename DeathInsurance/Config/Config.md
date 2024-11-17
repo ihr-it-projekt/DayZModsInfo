@@ -9,6 +9,7 @@
     "isInitialized": 0, // never change this, internal usage
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
+    "useLocalTime": 0, // if 1, the time will be calculated and displayed in local time of your server, if 0, the time will be calculated and displayed in UTC
     "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": 10,
     "storeAllItemsInCargoOfMainItems": 0, // if 1, all items will be stored in cargo of main items, so not all items will be stored separately. Recommend to use if you have modded inventory size
     "globalInsuranceBuyCooldownInSeconds": -1, // global cooldown in seconds for buying insurance, -1 to disable. Player has to wait last buy + this value to buy again
