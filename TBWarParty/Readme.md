@@ -1,6 +1,6 @@
 # TB War Party
 
-<img src="images/TBWP_Cover.jpg" alt="addSpawn" width="512"/><br/>
+<img src="Images/TBWP_Cover.jpg" alt="logo" width="512"/><br/>
 
 ## Description
 

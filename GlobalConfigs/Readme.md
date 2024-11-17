@@ -20,7 +20,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 {
   "version": "9", // never change this, internal version number
   "admins": {
-    "Add here Steam Or DayZ ID": {
+    "Add here Steam ID Or DayZ ID": {
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
       "realEstateAdmin": 0, //  0 = off 1 = on | is admin in real estate mod
       "carDealerAdmin": 0, //  0 = off 1 = on | is admin in car dealer
@@ -30,7 +30,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
       "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
       "jewelsOfSurvival": 0, // 0 = off 1 = on | is admin in jewels of survival
       "warParty": 0, // 0 = off 1 = on | is admin in war party
-      "playerId": "Add here Steam Or DayZ ID" // Steam or DayZ ID
+      "playerId": "Add here Steam ID Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
       "dailyRewardAdmin": 1,

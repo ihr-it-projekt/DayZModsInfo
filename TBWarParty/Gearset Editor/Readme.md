@@ -1,6 +1,6 @@
 # TB Car Dealer Editor
 
-## Download
+## Downlaod
 
 - [TB War Party Gear-set Editor](./TBWarPartyGearsetEditor.rar)
 
