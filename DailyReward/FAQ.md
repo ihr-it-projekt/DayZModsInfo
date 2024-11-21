@@ -36,10 +36,10 @@ There are 3 Items implemented. Just give him one of the items and he will get pr
 - TBDRPremiumCoinBronze | 1 Day Premium in Daily Reward
 
 ## How to restore a player data backup?
-- go to `YourServerProfilesFolder\TBMods\Data\TBDailyReward\PlayerBackup\{dayzPlayerID}` folder
+- go to `YourServerProfilesFolder\TBMods\Data\TBDailyReward\PlayerBackup\{BohemiaID}` folder
 - copy the file you want to restore
 - go to `YourServerProfilesFolder\TBMods\Data\TBDailyReward\Player\` folder
-- delete the {dayzPlayerID}.bin file
+- delete the {BohemiaID}.bin file
 - paste the backup file in the folder
-- rename the file to {dayzPlayerID}.bin
+- rename the file to {BohemiaID}.bin
 - press "Reload all Configs" Button in reward menu
