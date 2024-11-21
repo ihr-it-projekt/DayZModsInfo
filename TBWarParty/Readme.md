@@ -50,6 +50,9 @@ Will come when mod is in stable version
     - max kills per round
     - pre-configured gear sets for match
     - team markers, so players can see their teammates
+    - turn on/off stamina
+    - turn on/off  Friendly Fire
+- Friendly Fire count no points
 - Available Config Options for Matches
   - Arena Buildings
   - How many rounds a match will have
@@ -70,6 +73,8 @@ Will come when mod is in stable version
     - to start a new round
     - at the end of a match
   - death penalty times, player has to wait a configured time before he can respawn
+  - turn on/off stamina option for arena 
+  - turn on/off friendly fire for arena 
 - Players can enter main Lobby at Lobby Entry Point or by pressing a key from everywhere. 
   - key press option can be disabled
 - You can build your own Arena with the DayZ Editor
@@ -125,7 +130,6 @@ Will come when mod is in stable version
   - win ration for places, how much money will be given to the players, when they win
   - player can change sides
   - one life mode
-  - turn on/off stamina
   - turn on/off spectator mode
 - mechanic to prevent non combat players to enter the arena from external
 - show arena boarder in game
@@ -140,8 +144,7 @@ Will come when mod is in stable version
 - all time points for players
 - Change Load-out in Config Mode
 - Players can configure their own gear sets from available gear items
-- Friendly Fire Option
-- Friendly Fire count no points
+
 - Teammarker position 
 - Delete Admin needs cooldown
 
