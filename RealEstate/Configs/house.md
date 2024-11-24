@@ -3,7 +3,7 @@
 ## house.json
 ````json lines
 {
-    "version": "7", // Never touch this value. It is needed internally
+    "version": "8", // Never touch this value. It is needed internally
     "isInitialized": 1, // Never touch this value. It is needed internally
     "showMap": 1, // Show the map in the house menu
     "howManyHousesCanPlayerBuy": 1, // How many houses can a player buy
