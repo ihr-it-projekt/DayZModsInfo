@@ -1,6 +1,7 @@
 # Arenas
 Here you find all arenas and their descriptions.
 
+- You can also use this arena in your server (https://steamcommunity.com/sharedfiles/filedetails/?id=2626644996)
 
 ## How to use the .dze files
 
