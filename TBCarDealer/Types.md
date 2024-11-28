@@ -1,4 +1,4 @@
-[**`back`**](../RevivePlayer/Readme.md)
+[**`back`**](./Readme.md)
 
 ### What kind of Action Objects are available?
 

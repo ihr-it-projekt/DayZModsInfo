@@ -59,6 +59,15 @@ See also here: https://lbmaster.de/install/?p=36&h=1
 - Configure your needs, for example pricing
 - Start your Server :-)
 
+## How to use the test drive
+- add your test drive positions to the DealerPointConfig
+- set the vehicle to `canUsedForTestDrive` and set the `maxDistanceToTestDriveSpawnPosition` and `maxTimeInSecondsForTestDrive` to your needs in CarConfig
+- reload the configs
+- Go to show room
+- select a vehicle with enabled option
+- get into vehicle and use "test drive" mouse action
+- you can get back from test drive with another action when you are at test drive OR you just leave the vehicle OR time is over OR max distance is reached  
+
 
 ## Configurations
 
