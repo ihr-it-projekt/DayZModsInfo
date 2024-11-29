@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "maximumHeirsForOneInheritance": {
+            "type": "number"
+        },
+        "insuranceCaseWillDeletedAfterSeconds": {
+            "type": "number"
+        },
+        "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": {
+            "type": "number"
+        },
+        "storeAllItemsInCargoOfMainItems": {
+            "type": "number"
+        },
+        "globalInsuranceBuyCooldownInSeconds": {
+            "type": "number"
+        },
+        "insurances": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    },
+                    "durationInSeconds": {
+                        "type": "number"
+                    },
+                    "stayActiveAfterDeath": {
+                        "type": "number"
+                    },
+                    "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": {
+                        "type": "number"
+                    },
+                    "canBuyAgainAfterSeconds": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "canBuyAgainAfterSeconds",
+                    "durationInSeconds",
+                    "id",
+                    "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory",
+                    "price",
+                    "stayActiveAfterDeath"
+                ]
+            }
+        }
+    },
+    "required": [
+        "globalInsuranceBuyCooldownInSeconds",
+        "insuranceCaseWillDeletedAfterSeconds",
+        "insurances",
+        "isInitialized",
+        "maximumHeirsForOneInheritance",
+        "storeAllItemsInCargoOfMainItems",
+        "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer",
+        "version"
+    ]
+}

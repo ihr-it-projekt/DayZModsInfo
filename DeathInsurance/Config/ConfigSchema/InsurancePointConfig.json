@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "insurancePoints": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "position": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "orientation": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "useExactPosition": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "orientation",
+                    "position",
+                    "useExactPosition"
+                ]
+            }
+        }
+    },
+    "required": [
+        "insurancePoints",
+        "isInitialized",
+        "version"
+    ]
+}

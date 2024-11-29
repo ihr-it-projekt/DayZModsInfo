@@ -1,0 +1,75 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "logBuyInsurance": {
+            "type": "number"
+        },
+        "logBuyInsuranceDiscord": {
+            "type": "number"
+        },
+        "discordBuyInsuranceWebhookURL": {
+            "type": "string"
+        },
+        "logPlayerDied": {
+            "type": "number"
+        },
+        "logPlayerDiedDiscord": {
+            "type": "number"
+        },
+        "discordPlayerDiedWebhookURL": {
+            "type": "string"
+        },
+        "logInsuranceUsed": {
+            "type": "number"
+        },
+        "logInsuranceUsedDiscord": {
+            "type": "number"
+        },
+        "discordInsuranceUsedWebhookURL": {
+            "type": "string"
+        },
+        "logInsuranceItemTaken": {
+            "type": "number"
+        },
+        "logInsuranceItemTakenDiscord": {
+            "type": "number"
+        },
+        "discordInsuranceItemTakenWebhookURL": {
+            "type": "string"
+        },
+        "logInsuranceDelete": {
+            "type": "number"
+        },
+        "logInsuranceDeleteDiscord": {
+            "type": "number"
+        },
+        "discordInsuranceDeleteWebhookURL": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "discordBuyInsuranceWebhookURL",
+        "discordInsuranceDeleteWebhookURL",
+        "discordInsuranceItemTakenWebhookURL",
+        "discordInsuranceUsedWebhookURL",
+        "discordPlayerDiedWebhookURL",
+        "isInitialized",
+        "logBuyInsurance",
+        "logBuyInsuranceDiscord",
+        "logInsuranceDelete",
+        "logInsuranceDeleteDiscord",
+        "logInsuranceItemTaken",
+        "logInsuranceItemTakenDiscord",
+        "logInsuranceUsed",
+        "logInsuranceUsedDiscord",
+        "logPlayerDied",
+        "logPlayerDiedDiscord",
+        "version"
+    ]
+}
