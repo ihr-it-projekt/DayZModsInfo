@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "subtractNPCKillsFromPlayerKills": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "isInitialized",
+        "subtractNPCKillsFromPlayerKills",
+        "version"
+    ]
+}
