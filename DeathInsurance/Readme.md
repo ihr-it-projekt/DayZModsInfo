@@ -61,8 +61,8 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDe
 
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
-- [Config.md](Config/Config.md)
-- [InsurancePointConfig.md](Config/InsurancePointConfig.md)
-- [Logger.md](Config/Logger.md)
+- [Config.md](Configs/Config.md)
+- [InsurancePointConfig.md](Configs/InsurancePointConfig.md)
+- [Logger.md](Configs/Logger.md)
 
 ### Hint, if you are using a mod that increases your inventory, then it can happen that not all gear can be saved.
