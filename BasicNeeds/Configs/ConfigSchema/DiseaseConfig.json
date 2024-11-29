@@ -1,19 +1,19 @@
 {
-  "type": "object",
-  "properties": {
-    "chanceToGetSalmonella": {
-      "type": "number"
+    "type": "object",
+    "properties": {
+        "chanceToGetSalmonella": {
+            "type": "number"
+        },
+        "chanceToGetCholera": {
+            "type": "number"
+        },
+        "chanceToGetInfluenza": {
+            "type": "number"
+        }
     },
-    "chanceToGetCholera": {
-      "type": "number"
-    },
-    "chanceToGetInfluenza": {
-      "type": "number"
-    }
-  },
-  "required": [
-    "chanceToGetSalmonella",
-    "chanceToGetCholera",
-    "chanceToGetInfluenza"
-  ]
+    "required": [
+        "chanceToGetCholera",
+        "chanceToGetInfluenza",
+        "chanceToGetSalmonella"
+    ]
 }

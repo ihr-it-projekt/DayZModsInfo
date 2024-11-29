@@ -7,7 +7,7 @@
         "isInitialized": {
             "type": "number"
         },
-        "washingPlaces": {
+        "dryerPlaces": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -24,12 +24,6 @@
                             "type": "number"
                         }
                     },
-                    "needsDetergent": {
-                        "type": "number"
-                    },
-                    "needsWater": {
-                        "type": "number"
-                    },
                     "needsEnergy": {
                         "type": "number"
                     },
@@ -38,9 +32,7 @@
                     }
                 },
                 "required": [
-                    "needsDetergent",
                     "needsEnergy",
-                    "needsWater",
                     "orientation",
                     "position",
                     "useExactPosition"
@@ -49,8 +41,8 @@
         }
     },
     "required": [
+        "dryerPlaces",
         "isInitialized",
-        "version",
-        "washingPlaces"
+        "version"
     ]
 }

@@ -1,141 +1,140 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "version": {
-      "type": "string"
-    },
-    "isInitialized": {
-      "type": "number"
-    },
-    "animationCommandUID": {
-      "type": "number"
-    },
-    "stanceMask": {
-      "type": "number"
-    },
-    "cleanItemsWhenPoo": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
+    "type": "object",
+    "properties": {
+        "version": {
             "type": "string"
-          },
-          "dirtFactorForBodyInPercent": {
-            "type": "number"
-          }
         },
-        "required": [
-          "dirtFactorForBodyInPercent",
-          "type"
-        ]
-      }
-    },
-    "cleanItemsForBodyWash": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "dirtDecreaseFactorForBodyInPercentForWell": {
+        "isInitialized": {
             "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForFreshWater": {
-            "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForSeeWater": {
-            "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForDirtWater": {
-            "type": "number"
-          }
         },
-        "required": [
-          "dirtDecreaseFactorForBodyInPercentForDirtWater",
-          "dirtDecreaseFactorForBodyInPercentForFreshWater",
-          "dirtDecreaseFactorForBodyInPercentForSeeWater",
-          "dirtDecreaseFactorForBodyInPercentForWell",
-          "type"
-        ]
-      }
-    },
-    "cleanItemsForClothingWash": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "dirtDecreaseFactorForBodyInPercentForWell": {
+        "animationCommandUID": {
             "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForFreshWater": {
-            "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForSeeWater": {
-            "type": "number"
-          },
-          "dirtDecreaseFactorForBodyInPercentForDirtWater": {
-            "type": "number"
-          }
         },
-        "required": [
-          "dirtDecreaseFactorForBodyInPercentForDirtWater",
-          "dirtDecreaseFactorForBodyInPercentForFreshWater",
-          "dirtDecreaseFactorForBodyInPercentForSeeWater",
-          "dirtDecreaseFactorForBodyInPercentForWell",
-          "type"
-        ]
-      }
+        "stanceMask": {
+            "type": "number"
+        },
+        "cleanItemsWhenPoo": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "dirtFactorForBodyInPercent": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "dirtFactorForBodyInPercent",
+                    "type"
+                ]
+            }
+        },
+        "cleanItemsForBodyWash": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForWell": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForFreshWater": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForSeeWater": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForDirtWater": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "dirtDecreaseFactorForBodyInPercentForDirtWater",
+                    "dirtDecreaseFactorForBodyInPercentForFreshWater",
+                    "dirtDecreaseFactorForBodyInPercentForSeeWater",
+                    "dirtDecreaseFactorForBodyInPercentForWell",
+                    "type"
+                ]
+            }
+        },
+        "cleanItemsForClothingWash": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForWell": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForFreshWater": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForSeeWater": {
+                        "type": "number"
+                    },
+                    "dirtDecreaseFactorForBodyInPercentForDirtWater": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "dirtDecreaseFactorForBodyInPercentForDirtWater",
+                    "dirtDecreaseFactorForBodyInPercentForFreshWater",
+                    "dirtDecreaseFactorForBodyInPercentForSeeWater",
+                    "dirtDecreaseFactorForBodyInPercentForWell",
+                    "type"
+                ]
+            }
+        },
+        "pooIncreaseFactorPerTick": {
+            "type": "number"
+        },
+        "pooHealthReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "pooBloodReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "peeIncreaseFactorPerTick": {
+            "type": "number"
+        },
+        "peeHealthReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "peeBloodReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "regularHealthReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "regularBloodReduceStatePerTickInPercent": {
+            "type": "number"
+        },
+        "tickLengthInMinutes": {
+            "type": "number"
+        }
     },
-    "pooIncreaseFactorPerTick": {
-      "type": "number"
-    },
-    "pooHealthReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "pooBloodReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "peeIncreaseFactorPerTick": {
-      "type": "number"
-    },
-    "peeHealthReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "peeBloodReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "regularHealthReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "regularBloodReduceStatePerTickInPercent": {
-      "type": "number"
-    },
-    "tickLengthInMinutes": {
-      "type": "number"
-    }
-  },
-  "required": [
-    "animationCommandUID",
-    "cleanItemsForBodyWash",
-    "cleanItemsForClothingWash",
-    "cleanItemsWhenPoo",
-    "isInitialized",
-    "peeBloodReduceStatePerTickInPercent",
-    "peeHealthReduceStatePerTickInPercent",
-    "peeIncreaseFactorPerTick",
-    "pooBloodReduceStatePerTickInPercent",
-    "pooHealthReduceStatePerTickInPercent",
-    "pooIncreaseFactorPerTick",
-    "regularBloodReduceStatePerTickInPercent",
-    "regularHealthReduceStatePerTickInPercent",
-    "stanceMask",
-    "tickLengthInMinutes",
-    "version"
-  ]
+    "required": [
+        "animationCommandUID",
+        "cleanItemsForBodyWash",
+        "cleanItemsForClothingWash",
+        "cleanItemsWhenPoo",
+        "isInitialized",
+        "peeBloodReduceStatePerTickInPercent",
+        "peeHealthReduceStatePerTickInPercent",
+        "peeIncreaseFactorPerTick",
+        "pooBloodReduceStatePerTickInPercent",
+        "pooHealthReduceStatePerTickInPercent",
+        "pooIncreaseFactorPerTick",
+        "regularBloodReduceStatePerTickInPercent",
+        "regularHealthReduceStatePerTickInPercent",
+        "stanceMask",
+        "tickLengthInMinutes",
+        "version"
+    ]
 }
