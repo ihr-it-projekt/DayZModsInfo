@@ -4,32 +4,31 @@
         "uniqueName": {
             "type": "string"
         },
-        "version": {
+        "health": {
+            "type": "number"
+        },
+        "type": {
             "type": "string"
         },
-        "level": {
+        "quantity": {
             "type": "number"
         },
-        "canTakenTimes": {
-            "type": "number"
-        },
-        "items": {
-            "type": "array",
-            "items": {}
-        },
-        "uniqueItemNames": {
+        "attachmentUniqueNames": {
             "type": "array",
             "items": {
                 "type": "string"
             }
+        },
+        "isCar": {
+            "type": "number"
         }
     },
     "required": [
-        "uniqueName",
-        "version",
-        "level",
-        "canTakenTimes",
-        "items",
-        "uniqueItemNames"
+        "attachmentUniqueNames",
+        "health",
+        "isCar",
+        "quantity",
+        "type",
+        "uniqueName"
     ]
 }

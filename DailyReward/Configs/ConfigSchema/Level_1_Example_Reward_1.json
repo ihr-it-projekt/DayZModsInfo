@@ -1,39 +1,38 @@
 {
-  "type": "object",
-  "properties": {
-    "uniqueName": {
-      "type": "string"
+    "type": "object",
+    "properties": {
+        "uniqueName": {
+            "type": "string"
+        },
+        "isLoaded": {
+            "type": "number"
+        },
+        "version": {
+            "type": "string"
+        },
+        "level": {
+            "type": "number"
+        },
+        "canTakenTimes": {
+            "type": "number"
+        },
+        "items": {
+            "type": "array"
+        },
+        "uniqueItemNames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
     },
-    "isLoaded": {
-      "type": "number"
-    },
-    "version": {
-      "type": "string"
-    },
-    "level": {
-      "type": "number"
-    },
-    "canTakenTimes": {
-      "type": "number"
-    },
-    "items": {
-      "type": "array",
-      "items": {}
-    },
-    "uniqueItemNames": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
-  "required": [
-    "uniqueName",
-    "isLoaded",
-    "version",
-    "level",
-    "canTakenTimes",
-    "items",
-    "uniqueItemNames"
-  ]
+    "required": [
+        "canTakenTimes",
+        "isLoaded",
+        "items",
+        "level",
+        "uniqueItemNames",
+        "uniqueName",
+        "version"
+    ]
 }

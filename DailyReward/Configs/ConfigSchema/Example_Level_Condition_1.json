@@ -1,62 +1,91 @@
 {
-  "type": "object",
-  "properties": {
-    "uniqueName": {
-      "type": "string"
+    "type": "object",
+    "properties": {
+        "uniqueName": {
+            "type": "string"
+        },
+        "isLoaded": {
+            "type": "number"
+        },
+        "level": {
+            "type": "number"
+        },
+        "onlineTimeRequiredInMinutes": {
+            "type": "number"
+        },
+        "playerKillsRequiredCount": {
+            "type": "number"
+        },
+        "headshotKillsRequiredCount": {
+            "type": "number"
+        },
+        "distanceTravelledRequiredInMeters": {
+            "type": "number"
+        },
+        "canReTakenAfterPeriodOfDaysRealTime": {
+            "type": "number"
+        },
+        "canTakenOnlyOnce": {
+            "type": "number"
+        },
+        "animalKills": {
+            "type": "object",
+            "properties": {
+                "Animal_GallusGallusDomesticus": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "Animal_GallusGallusDomesticus"
+            ]
+        },
+        "infectedKillsRequiredCount": {
+            "type": "number"
+        },
+        "zombieKills": {
+            "type": "object",
+            "properties": {
+                "TYPNAME": {
+                    "type": "number"
+                },
+                "ZmbM_FarmerFat_Blue": {
+                    "type": "number"
+                },
+                "ZmbM_FarmerFat_Brown": {
+                    "type": "number"
+                },
+                "ZmbM_FarmerFat_Green": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "TYPNAME",
+                "ZmbM_FarmerFat_Blue",
+                "ZmbM_FarmerFat_Brown",
+                "ZmbM_FarmerFat_Green"
+            ]
+        },
+        "version": {
+            "type": "string"
+        },
+        "displayName": {
+            "type": "string"
+        }
     },
-    "isLoaded": {
-      "type": "integer"
-    },
-    "level": {
-      "type": "integer"
-    },
-    "onlineTimeRequiredInMinutes": {
-      "type": "integer"
-    },
-    "playerKillsRequiredCount": {
-      "type": "integer"
-    },
-    "infectedKillsRequiredCount": {
-      "type": "integer"
-    },
-    "headshotKillsRequiredCount": {
-      "type": "integer"
-    },
-    "distanceTravelledRequiredInMeters": {
-      "type": "integer"
-    },
-    "canReTakenAfterPeriodOfDaysRealTime": {
-      "type": "integer"
-    },
-    "canTakenOnlyOnce": {
-      "type": "integer"
-    },
-    "animalKills": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "version": {
-      "type": "string"
-    },
-    "displayName": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "uniqueName",
-    "isLoaded",
-    "level",
-    "onlineTimeRequiredInMinutes",
-    "playerKillsRequiredCount",
-    "infectedKillsRequiredCount",
-    "headshotKillsRequiredCount",
-    "distanceTravelledRequiredInMeters",
-    "canReTakenAfterPeriodOfDaysRealTime",
-    "canTakenOnlyOnce",
-    "animalKills",
-    "version",
-    "displayName"
-  ]
+    "required": [
+        "animalKills",
+        "canReTakenAfterPeriodOfDaysRealTime",
+        "canTakenOnlyOnce",
+        "displayName",
+        "distanceTravelledRequiredInMeters",
+        "headshotKillsRequiredCount",
+        "infectedKillsRequiredCount",
+        "isLoaded",
+        "level",
+        "onlineTimeRequiredInMinutes",
+        "playerKillsRequiredCount",
+        "uniqueName",
+        "version",
+        "zombieKills"
+    ]
 }
