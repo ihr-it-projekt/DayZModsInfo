@@ -52,7 +52,14 @@
           "dirtDecreaseFactorForBodyInPercentForDirtWater": {
             "type": "number"
           }
-        }
+        },
+        "required": [
+          "dirtDecreaseFactorForBodyInPercentForDirtWater",
+          "dirtDecreaseFactorForBodyInPercentForFreshWater",
+          "dirtDecreaseFactorForBodyInPercentForSeeWater",
+          "dirtDecreaseFactorForBodyInPercentForWell",
+          "type"
+        ]
       }
     },
     "cleanItemsForClothingWash": {
@@ -129,10 +136,6 @@
     "regularHealthReduceStatePerTickInPercent",
     "stanceMask",
     "tickLengthInMinutes",
-    "version",
-    "dirtDecreaseFactorForBodyInPercentForDirtWater",
-    "dirtDecreaseFactorForBodyInPercentForFreshWater",
-    "dirtDecreaseFactorForBodyInPercentForSeeWater",
-    "dirtDecreaseFactorForBodyInPercentForWell"
+    "version"
   ]
 }
