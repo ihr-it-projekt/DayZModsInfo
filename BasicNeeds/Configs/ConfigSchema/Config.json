@@ -1,8 +1,12 @@
 {
+  "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {
     "version": {
       "type": "string"
+    },
+    "isInitialized": {
+      "type": "number"
     },
     "animationCommandUID": {
       "type": "number"
@@ -22,7 +26,10 @@
             "type": "number"
           }
         },
-        "required": ["type", "dirtFactorForBodyInPercent"]
+        "required": [
+          "dirtFactorForBodyInPercent",
+          "type"
+        ]
       }
     },
     "cleanItemsForBodyWash": {
@@ -47,11 +54,11 @@
           }
         },
         "required": [
-          "type",
-          "dirtDecreaseFactorForBodyInPercentForWell",
+          "dirtDecreaseFactorForBodyInPercentForDirtWater",
           "dirtDecreaseFactorForBodyInPercentForFreshWater",
           "dirtDecreaseFactorForBodyInPercentForSeeWater",
-          "dirtDecreaseFactorForBodyInPercentForDirtWater"
+          "dirtDecreaseFactorForBodyInPercentForWell",
+          "type"
         ]
       }
     },
@@ -77,11 +84,11 @@
           }
         },
         "required": [
-          "type",
-          "dirtDecreaseFactorForBodyInPercentForWell",
+          "dirtDecreaseFactorForBodyInPercentForDirtWater",
           "dirtDecreaseFactorForBodyInPercentForFreshWater",
           "dirtDecreaseFactorForBodyInPercentForSeeWater",
-          "dirtDecreaseFactorForBodyInPercentForDirtWater"
+          "dirtDecreaseFactorForBodyInPercentForWell",
+          "type"
         ]
       }
     },
@@ -103,23 +110,32 @@
     "peeBloodReduceStatePerTickInPercent": {
       "type": "number"
     },
+    "regularHealthReduceStatePerTickInPercent": {
+      "type": "number"
+    },
+    "regularBloodReduceStatePerTickInPercent": {
+      "type": "number"
+    },
     "tickLengthInMinutes": {
       "type": "number"
     }
   },
   "required": [
-    "version",
     "animationCommandUID",
-    "stanceMask",
-    "cleanItemsWhenPoo",
     "cleanItemsForBodyWash",
     "cleanItemsForClothingWash",
-    "pooIncreaseFactorPerTick",
-    "pooHealthReduceStatePerTickInPercent",
-    "pooBloodReduceStatePerTickInPercent",
-    "peeIncreaseFactorPerTick",
-    "peeHealthReduceStatePerTickInPercent",
+    "cleanItemsWhenPoo",
+    "isInitialized",
     "peeBloodReduceStatePerTickInPercent",
-    "tickLengthInMinutes"
+    "peeHealthReduceStatePerTickInPercent",
+    "peeIncreaseFactorPerTick",
+    "pooBloodReduceStatePerTickInPercent",
+    "pooHealthReduceStatePerTickInPercent",
+    "pooIncreaseFactorPerTick",
+    "regularBloodReduceStatePerTickInPercent",
+    "regularHealthReduceStatePerTickInPercent",
+    "stanceMask",
+    "tickLengthInMinutes",
+    "version"
   ]
 }
