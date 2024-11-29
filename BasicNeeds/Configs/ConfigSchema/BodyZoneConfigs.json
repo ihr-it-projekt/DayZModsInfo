@@ -5,13 +5,13 @@
       "type": "string"
     },
     "dirtIncrementWhenPoo": {
-      "type": "float"
+      "type": "number"
     },
     "dirtIncrementWhenPee": {
-      "type": "float"
+      "type": "number"
     },
     "dirtIncrementRegular": {
-      "type": "float"
+      "type": "number"
     }
   },
   "required": [
