@@ -2,7 +2,7 @@
 
 ### dayZCasinoConfigV2.json
 
-````
+````json lines
 {
   // You can configure the currency that is needed to play. You can use for example also MoneyRuble instead of CasinoChips. First value is the Object name the second value is the value of currency. Default Object is CasinoChips
   "currencyValues": {
