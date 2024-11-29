@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "currencyValues": {
+            "type": "object",
+            "patternProperties": {
+                "^[A-Za-z0-9_]+$": {
+                    "type": "number"
+                }
+            },
+            "additionalProperties": false
+        },
+        "useMoneyFromLBMasterATM": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "currencyValues",
+        "isInitialized",
+        "useMoneyFromLBMasterATM",
+        "version"
+    ]
+}

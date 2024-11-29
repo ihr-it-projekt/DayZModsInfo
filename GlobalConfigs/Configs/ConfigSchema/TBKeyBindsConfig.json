@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "keyBinds": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "defaultKey": {
+                        "type": "number"
+                    },
+                    "useServerKeyBind": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "defaultKey",
+                    "name",
+                    "useServerKeyBind"
+                ]
+            }
+        }
+    },
+    "required": [
+        "isInitialized",
+        "keyBinds",
+        "version"
+    ]
+}

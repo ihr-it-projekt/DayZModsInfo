@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "logUsePremiumCoinCSV": {
+            "type": "number"
+        },
+        "logUsePremiumCoinDiscord": {
+            "type": "number"
+        },
+        "discordUsePremiumCoinWebhookURL": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "discordUsePremiumCoinWebhookURL",
+        "logUsePremiumCoinCSV",
+        "logUsePremiumCoinDiscord",
+        "version"
+    ]
+}
