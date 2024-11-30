@@ -2,7 +2,7 @@
 
 ## Downlaod
 
-- [TB War Party Gear-set Editor](./TBWarPartyGearsetEditor.rar)
+- [TB War Party Gear-set Editor](./TBWarPartyGearsetEditor.rar) (not published yet)
 
 ## Description
 ### How to use the TB War Party Gear-set Editor

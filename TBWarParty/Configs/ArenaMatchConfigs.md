@@ -11,6 +11,8 @@ If you want to add/remove Spawn coordinates, you can do this also easy in game.
 ## Spawn Points editing
 
 - Be sure you ara an mod admin [Readme.md](../../GlobalConfigs%2FReadme.md)
+- configure your first spawn point directly in the config file, this is needed to use the "Port to Arena" Button
+- reload config with admin "reload config" button 
 - Join Main Lobby and create a match
 - click on "Port to Arena" Button. Only visible if you are an admin
 - The F Action is now usable
