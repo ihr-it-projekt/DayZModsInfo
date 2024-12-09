@@ -111,6 +111,12 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBRe
 - [logger.md](Configs/logger.md)
 - [SpawnPoint.md](Configs/SpawnPoint.md)
 
+## Addons
+### Expansion AI
+If you want that expansion AI can not open doors of houses, you have also to put the `TBRealEstateExpansionAddonClient.pbo` in your client pack on steam.
+You can find the pbo in `TBRealEstateExpansionAddonClient.pbo.TBRealEstate.zip` in downloaded client server pack. 
+
+
 ## Modding Interfaces (Server Side Only)
 
 Mod Def: TBREALESTATE
