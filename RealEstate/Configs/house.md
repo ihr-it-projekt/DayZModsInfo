@@ -12,7 +12,8 @@
     "useWhiteListedAreas": 0, // 1 = on 0 = off, if on, the player can buy a house only in the white listed area. Please do not use black and white list together
     "notSoldHousesAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses are locked
     "inactiveDaysBeforePlayerDataWillDeleted": 300, // if a player is inactive for x days, all data in that mod will be deleted
-    "closeDoorsAtServerRestartAfterSeconds": 30, // when the server restarts, the looked doors will be closed after x seconds 
+    "closeDoorsAtServerRestartAfterSeconds": 30, // when the server restarts, the looked doors will be closed after x seconds
+    "housesCanOnlyBeRaidWhenOwnerIsOnline": 0, // 1 = on 0 = off, if on, a house can only be raided when the owner is online, if raid has already started and the owner goes offline, the raid will be continued as long "raidCoolDownInSeconds" from house definition is not over.  
     "blackListedAreas": [ // The blacklisted areas
         { // area 1
             "position": [
