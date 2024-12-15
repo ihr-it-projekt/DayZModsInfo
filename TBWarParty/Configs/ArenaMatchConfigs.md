@@ -85,7 +85,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
     "enableShowTeamMarker": 1, // currently not used but will be used in the future
     "enableFriendlyFire": 1, // At match creation, the match creator can choose if friendly fire is enabled or not
     "enableStaminaMode": 1, // At match creation, the match creator can choose if stamina is enabled or not
-    "enableShowSpectatorMode": 1, // currently not used but will be used in the future
+    "enableShowSpectatorMode": 1, // Player can join as spectator to a match
     "gearSetNames": [ // name the gear sets, must be the same name as your gear set file name. See here for more information: GearSets.md
         "Example1",
         "Example2"
