@@ -103,7 +103,7 @@ https://youtu.be/YXXO2QezOUU
 See also here: https://lbmaster.de/install/?p=37&h=1
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - Start the server and stop it again if all configs are generated
 - Configure your needs
 - Start your Server :-)

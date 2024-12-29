@@ -153,7 +153,7 @@ Will come when mod is in stable version
 See also here: https://lbmaster.de/install/?p=39&h=1
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - extract Config.zip
 - Copy the files you need from `Config` into `YourServerProfilesFolder\TBMods\Config\TBWarParty` folder
 - Configure your needs
