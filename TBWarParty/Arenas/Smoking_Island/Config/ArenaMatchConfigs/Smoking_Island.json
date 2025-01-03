@@ -1,5 +1,5 @@
 {
-    "version": "1",
+    "version": "2",
     "isInitialized": 1,
     "arenaObjectsConfigFile": "Smoking_Island",
     "playersCount": [
@@ -13,7 +13,9 @@
         8,
         9,
         10,
-        15
+        15,
+        30,
+        60
     ],
     "roundsCount": [
         1,
@@ -23,11 +25,11 @@
         10
     ],
     "deathPenaltyTimeInSeconds": [
-        1,
-        2,
-        3,
+        0,
         5,
-        10
+        10,
+        15,
+        30
     ],
     "maxTimePerRoundInMinutes": [
         5,
@@ -66,11 +68,21 @@
     "enableChangeSides": 1,
     "enableOneLifeMode": 1,
     "enableShowTeamMarker": 1,
+    "enableFriendlyFire": 1,
     "enableStaminaMode": 1,
     "enableShowSpectatorMode": 1,
     "gearSetNames": [
-        "Example1",
-        "Example2"
+        "Cop",
+        "FAL",
+        "M4A1",
+        "Sniper Blaze",
+        "Sniper SVD",
+        "Izh 43 Shotgun",
+        "Mp 133 Shotgun",
+        "MP5",
+        "Saiga",
+        "UMP",
+        "VSS"
     ],
     "gearSets": [],
     "externalPlayersCanEnterArena": 0,
@@ -200,19 +212,6 @@
         "2": [
             {
                 "position": [
-                    3987.601318359375,
-                    396.28509521484377,
-                    11882.591796875
-                ],
-                "orientation": [
-                    -130.3587646484375,
-                    0.0,
-                    -0.0
-                ],
-                "radius": 10.0
-            },
-            {
-                "position": [
                     11155.5966796875,
                     2618.7470703125,
                     13696.9365234375
@@ -333,7 +332,7 @@
     "teamsCount": [],
     "playerHealth": 100,
     "playerShield": 100,
-    "startCountdown": 60,
+    "startCountdown": 6,
     "startNextRoundCountdown": 10,
     "endMatchCountdown": 20
 }

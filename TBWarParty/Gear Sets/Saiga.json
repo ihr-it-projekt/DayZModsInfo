@@ -1,0 +1,88 @@
+{
+    "name": "Saiga",
+    "items": [
+        {
+            "type": "DirtBikeHelmet_Police",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "PoliceJacket",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_Saiga_Drum20Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "PolicePants",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_Saiga_Drum20Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "PoliceVest",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "HikingBootsLow_Black",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "OMNOGloves_Brown",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "Saiga",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_Saiga_Drum20Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Saiga_Bttstck",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "KobraOptic",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": [
+                        {
+                            "type": "Battery9V",
+                            "quantityInPercent": 100.0,
+                            "quickBarEntityShortcut": -1,
+                            "attachments": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "version": "1"
+}

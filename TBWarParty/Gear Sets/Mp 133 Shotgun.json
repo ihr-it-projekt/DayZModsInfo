@@ -1,0 +1,67 @@
+{
+    "name": "Mp 133 Shotgun",
+    "items": [
+        {
+            "type": "FlatCap_Red",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "WoolCoat_Red",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Ammo_12gaSlug",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Ammo_12gaSlug",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Ammo_12gaSlug",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Ammo_12gaSlug",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "Skirt_Yellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "ThickFramesGlasses",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "DressShoes_Black",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "Mp133Shotgun",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": 0,
+            "attachments": []
+        }
+    ],
+    "version": "1"
+}

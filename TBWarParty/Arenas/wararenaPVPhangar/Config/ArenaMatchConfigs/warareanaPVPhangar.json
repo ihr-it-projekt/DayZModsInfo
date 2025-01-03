@@ -70,8 +70,13 @@
     "enableStaminaMode": 1,
     "enableShowSpectatorMode": 1,
     "gearSetNames": [
-        "Example1",
-        "Example2"
+        "Cop",
+		"Izh 43 Shotgun",
+		"Mp 133 Shotgun",
+		"MP5",
+		"Saiga",
+		"UMP",
+		"VSS"
     ],
     "gearSets": [],
     "externalPlayersCanEnterArena": 0,

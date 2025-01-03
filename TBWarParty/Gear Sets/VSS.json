@@ -1,0 +1,118 @@
+{
+    "name": "VSS",
+    "items": [
+        {
+            "type": "GhillieHood_Mossy",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "TacticalShirt_Tan",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "GhillieSuit_Mossy",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "GorkaPants_Autumn",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "HighCapacityVest_Olive",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "BalaclavaMask_Green",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "TacticalGloves_Black",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "JungleBoots_Beige",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "VSS",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": 0,
+            "attachments": [
+                {
+                    "type": "PSO11Optic",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": [
+                        {
+                            "type": "Battery9V",
+                            "quantityInPercent": 100.0,
+                            "quickBarEntityShortcut": -1,
+                            "attachments": []
+                        }
+                    ]
+                },
+                {
+                    "type": "Mag_VSS_10Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        }
+    ],
+    "version": "1"
+}

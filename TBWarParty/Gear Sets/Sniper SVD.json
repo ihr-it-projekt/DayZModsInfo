@@ -43,26 +43,7 @@
 		{
 			"type": "M65Jacket_Olive",
 			"quantityInPercent": 100.0,
-			"attachments": [
-				{
-					"type": "AmmoBox_762x54_20Rnd",
-					"quantityInPercent": 100.0,
-					"attachments": [],
-					"quickBarEntityShortcut": -1
-				},
-				{
-					"type": "AmmoBox_762x54_20Rnd",
-					"quantityInPercent": 100.0,
-					"attachments": [],
-					"quickBarEntityShortcut": -1
-				},
-				{
-					"type": "AmmoBox_762x54_20Rnd",
-					"quantityInPercent": 100.0,
-					"attachments": [],
-					"quickBarEntityShortcut": -1
-				}
-			],
+			"attachments": [],
 			"quickBarEntityShortcut": -1
 		},
 		{
@@ -199,6 +180,12 @@
 							"quickBarEntityShortcut": -1
 						}
 					],
+					"quickBarEntityShortcut": -1
+				},
+				{
+					"type": "Mag_SVD_10Rnd",
+					"quantityInPercent": 100.0,
+					"attachments": [],
 					"quickBarEntityShortcut": -1
 				}
 			],

@@ -1,0 +1,93 @@
+{
+    "name": "MP5",
+    "items": [
+        {
+            "type": "NBCBootsYellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "NBCGlovesYellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "NBCHoodYellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "NBCJacketYellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_MP5_30Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_MP5_30Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "NBCPantsYellow",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Mag_MP5_30Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_MP5_30Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "MP5K",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": 0,
+            "attachments": [
+                {
+                    "type": "MP5_Compensator",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "MP5_RailHndgrd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "MP5k_StockBttstck",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Mag_MP5_30Rnd",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        }
+    ],
+    "version": "1"
+}

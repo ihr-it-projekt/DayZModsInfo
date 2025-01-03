@@ -1,0 +1,62 @@
+{
+    "name": "Izh 43 Shotgun",
+    "items": [
+        {
+            "type": "SlacksPants_Black",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Ammo_12gaPellets",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Ammo_12gaPellets",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "LabCoat",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": [
+                {
+                    "type": "Ammo_12gaPellets",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                },
+                {
+                    "type": "Ammo_12gaPellets",
+                    "quantityInPercent": 100.0,
+                    "quickBarEntityShortcut": -1,
+                    "attachments": []
+                }
+            ]
+        },
+        {
+            "type": "ThinFramesGlasses",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "DressShoes_Brown",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": -1,
+            "attachments": []
+        },
+        {
+            "type": "Izh43Shotgun",
+            "quantityInPercent": 100.0,
+            "quickBarEntityShortcut": 0,
+            "attachments": []
+        }
+    ],
+    "version": "1"
+}
