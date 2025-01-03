@@ -54,7 +54,7 @@
         {
             "type": "Saiga",
             "quantityInPercent": 100.0,
-            "quickBarEntityShortcut": -1,
+            "quickBarEntityShortcut": 0,
             "attachments": [
                 {
                     "type": "Mag_Saiga_Drum20Rnd",

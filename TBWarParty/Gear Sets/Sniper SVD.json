@@ -90,18 +90,6 @@
 							"quantityInPercent": 100.0,
 							"attachments": [],
 							"quickBarEntityShortcut": -1
-						},
-						{
-							"type": "AmmoBox_357_20Rnd",
-							"quantityInPercent": 100.0,
-							"attachments": [],
-							"quickBarEntityShortcut": -1
-						},
-						{
-							"type": "AmmoBox_357_20Rnd",
-							"quantityInPercent": 100.0,
-							"attachments": [],
-							"quickBarEntityShortcut": -1
 						}
 					],
 					"quickBarEntityShortcut": -1
@@ -113,7 +101,14 @@
 						{
 							"type": "Deagle",
 							"quantityInPercent": 100.0,
-							"attachments": [],
+							"attachments": [
+								{
+									"type": "Mag_Deagle_9rnd",
+									"quantityInPercent": 100.0,
+									"attachments": [],
+									"quickBarEntityShortcut": -1
+								}
+							],
 							"quickBarEntityShortcut": 1
 						}
 					],
