@@ -41,7 +41,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 See also here: https://lbmaster.de/install/?p=22&h=1
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - Start your server. All configurations will now create in your Server profile folder.
 - Tear down the server
 - Remove the class name of the item "Defibrillator" from the `cfgIgnoreList.xml` in your mpmission folder

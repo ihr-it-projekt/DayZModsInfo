@@ -11,6 +11,8 @@ If you want to add/remove Spawn coordinates, you can do this also easy in game.
 ## Spawn Points editing
 
 - Be sure you ara an mod admin [Readme.md](../../GlobalConfigs%2FReadme.md)
+- configure your first spawn point directly in the config file, this is needed to use the "Port to Arena" Button
+- reload config with admin "reload config" button 
 - Join Main Lobby and create a match
 - click on "Port to Arena" Button. Only visible if you are an admin
 - The F Action is now usable
@@ -83,7 +85,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
     "enableShowTeamMarker": 1, // currently not used but will be used in the future
     "enableFriendlyFire": 1, // At match creation, the match creator can choose if friendly fire is enabled or not
     "enableStaminaMode": 1, // At match creation, the match creator can choose if stamina is enabled or not
-    "enableShowSpectatorMode": 1, // currently not used but will be used in the future
+    "enableShowSpectatorMode": 1, // Player can join as spectator to a match
     "gearSetNames": [ // name the gear sets, must be the same name as your gear set file name. See here for more information: GearSets.md
         "Example1",
         "Example2"

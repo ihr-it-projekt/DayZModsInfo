@@ -37,6 +37,7 @@ Will come when mod is in stable version
 - Match Modes
   - Team Fights
   - All against All
+
 - Match creation
   - Admin can create permanent Lobbies for matches. This Lobbies stays active over server restart and reset the match when no player is in the lobby or the match is over. 
   - player can create their own match (if admin allows it)
@@ -52,6 +53,7 @@ Will come when mod is in stable version
     - team markers, so players can see their teammates
     - turn on/off stamina
     - turn on/off  Friendly Fire
+    - turn on/off spectator mode
 - Friendly Fire count no points
 - Available Config Options for Matches
   - Arena Buildings
@@ -130,12 +132,10 @@ Will come when mod is in stable version
   - win ration for places, how much money will be given to the players, when they win
   - player can change sides
   - one life mode
-  - turn on/off spectator mode
 - mechanic to prevent non combat players to enter the arena from external
 - show arena boarder in game
 - server messages to players when a new match was created
 - players can disable new macht notification
-- spectator mode
 - Goodies like
   - heal packs/ heal sticks
   - shield packs
@@ -153,7 +153,7 @@ Will come when mod is in stable version
 See also here: https://lbmaster.de/install/?p=39&h=1
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - extract Config.zip
 - Copy the files you need from `Config` into `YourServerProfilesFolder\TBMods\Config\TBWarParty` folder
 - Configure your needs

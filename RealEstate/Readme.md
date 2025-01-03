@@ -86,7 +86,7 @@ This is a standalone mod, no dependencies required.
 See also here: https://lbmaster.de/install/?p=19&h=1
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - You have to configure in your "serverDZ.cfg" the property "storeHouseStateDisabled" to "0". If you don´t do that, the buildings can not be looked.
 ````
 storeHouseStateDisabled = 0;
@@ -110,6 +110,12 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBRe
 - [houseExtension.md](Configs/houseExtension.md)
 - [logger.md](Configs/logger.md)
 - [SpawnPoint.md](Configs/SpawnPoint.md)
+
+## Addons
+### Expansion AI
+If you want that expansion AI can not open doors of houses, you have also to put the `TBRealEstateExpansionAddonClient.pbo` in your client pack on steam.
+You can find the pbo in `TBRealEstateExpansionAddonClient.pbo.TBRealEstate.zip` in downloaded client server pack. 
+
 
 ## Modding Interfaces (Server Side Only)
 
