@@ -5,7 +5,7 @@
 
 ```json lines
 {
-  "version": "1", // Never touch this value. It is needed internally
+  "version": "2", // Never touch this value. It is needed internally
   "maxMarketStallPerUser": 2, // How many market stalls can a player have, -1 = unlimited
   "maxPremiumMarketStallPerUser": 3, // How many market stalls can a premium player have, -1 = unlimited
   "maxMarketStallPerServer": -1, // How many market stalls can be placed on the server, -1 = unlimited
