@@ -62,3 +62,21 @@
     "tickLengthInMinutes": 5 // How long is a tick in minutes
 }
 ````
+
+## Calculation example for poo or pee
+
+### Formula
+```text
+incrementalPerTick = 100 / howLongItShouldTakeToBeFull * tickLengthInMinutes
+
+// example for 60 minutes
+pooIncreaseFactorPerTick = 100 / 60 * tickLengthInMinutes
+1,67 = 100 / 60 * 1
+```
+
+or
+
+// example for 120 minutes
+peeIncreaseFactorPerTick = 100 / 120 * tickLengthInMinutes
+0,83 = 100 / 120 * 1
+``

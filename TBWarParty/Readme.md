@@ -141,6 +141,7 @@ Will come when mod is in stable version
 - Arenas can only be used when player have enough points
 - all time points for players
 - Players can configure their own gear sets from available gear items
+- enableRandomTeamSelect
 
 - Teammarker position 
 - Delete Admin needs cooldown
