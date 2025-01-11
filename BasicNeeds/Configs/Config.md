@@ -67,16 +67,21 @@
 
 ### Formula
 ```text
-incrementalPerTick = 100 / howLongItShouldTakeToBeFull * tickLengthInMinutes
+incrementalPerTick = 100 Percent / howLongItShouldTakeToBeFull * tickLengthInMinutes
 
 // example for 60 minutes
-pooIncreaseFactorPerTick = 100 / 60 * tickLengthInMinutes
+pooIncreaseFactorPerTick = 100 Percent / 60 minutes * tickLengthInMinutes
 1,67 = 100 / 60 * 1
 
 
 or
 
 // example for 120 minutes
-peeIncreaseFactorPerTick = 100 / 120 * tickLengthInMinutes
+peeIncreaseFactorPerTick = 100 percent  / 120 minutes * tickLengthInMinutes
 0,83 = 100 / 120 * 1
+
+// example for 300 minutes
+peeIncreaseFactorPerTick = 100 percent  / 300 minutes * tickLengthInMinutes
+0,33 = 100 / 300 * 1
+
 ```
