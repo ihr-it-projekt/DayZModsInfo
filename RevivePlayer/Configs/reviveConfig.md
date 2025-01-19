@@ -84,6 +84,7 @@
     "health": 0.699999988079071,
     "blood": 0.699999988079071,
     "shock": 0.699999988079071
-  }
+  },
+  "enableSoundFix": 1, // 0 = No sound fix, 1 = Sound fix is enabled. Disable this option, if you have for example an ear plug mod and the sound after revive does not match with the earplug state
 }
 ````
