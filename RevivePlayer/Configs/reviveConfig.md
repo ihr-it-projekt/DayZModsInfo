@@ -3,7 +3,7 @@
 
 ````json lines
 {
-  "version": "4", // Never touch this value. It is needed internally
+  "version": "5", // Never touch this value. It is needed internally
   "isInitialized": 1, // Never touch this value. It is needed internally
   "destroyDefibrillatorAfterUsage": 0, // 0 = Defibrillator will not be destroyed after usage, 1 = Defibrillator will be destroyed after usage
   "deleteDeadBodyTimeWhenHealedByPlayer": 5.0, // Time in seconds when the dead body will be deleted when healed by another player
