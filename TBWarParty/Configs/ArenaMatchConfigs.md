@@ -81,8 +81,8 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
         }
     ],
     "enableChangeSides": 1, // currently not used but will be used in the future
-    "enableOneLifeMode": 1, // currently not used but will be used in the future
-    "enableShowTeamMarker": 1, // currently not used but will be used in the future
+    "enableOneLifeMode": 1, // Players can enable or disable the one life mode
+    "enableShowTeamMarker": 1, // Players can enable or disable the team markers
     "enableFriendlyFire": 1, // At match creation, the match creator can choose if friendly fire is enabled or not
     "enableStaminaMode": 1, // At match creation, the match creator can choose if stamina is enabled or not
     "enableShowSpectatorMode": 1, // Player can join as spectator to a match
