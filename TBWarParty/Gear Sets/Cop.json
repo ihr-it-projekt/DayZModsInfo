@@ -1,0 +1,98 @@
+{
+    "name": "Cop",
+    "items": [
+        {
+            "type": "PoliceCap",
+            "quantityInPercent": 100.0,
+            "attachments": [],
+            "quickBarEntityShortcut": -1
+        },
+        {
+            "type": "PoliceJacketOrel",
+            "quantityInPercent": 100.0,
+            "attachments": [
+                {
+                    "type": "Deagle",
+                    "quantityInPercent": 100.0,
+                    "attachments": [
+                        {
+                            "type": "Mag_Deagle_9rnd",
+                            "quantityInPercent": 100.0,
+                            "attachments": [],
+                            "quickBarEntityShortcut": -1
+                        }
+                    ],
+                    "quickBarEntityShortcut": 0
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                },
+                {
+                    "type": "Mag_Deagle_9rnd",
+                    "quantityInPercent": 100.0,
+                    "attachments": [],
+                    "quickBarEntityShortcut": -1
+                }
+            ],
+            "quickBarEntityShortcut": -1
+        },
+        {
+            "type": "PolicePantsOrel",
+            "quantityInPercent": 100.0,
+            "attachments": [],
+            "quickBarEntityShortcut": -1
+        },
+        {
+            "type": "PoliceVest",
+            "quantityInPercent": 100.0,
+            "attachments": [],
+            "quickBarEntityShortcut": -1
+        },
+        {
+            "type": "JungleBoots_Black",
+            "quantityInPercent": 100.0,
+            "attachments": [],
+            "quickBarEntityShortcut": -1
+        }
+    ],
+    "version": "1"
+}

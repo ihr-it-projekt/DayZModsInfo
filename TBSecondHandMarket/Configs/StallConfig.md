@@ -5,7 +5,7 @@
 
 ```json lines
 {
-  "version": "1", // Never touch this value. It is needed internally
+  "version": "2", // Never touch this value. It is needed internally
   "maxMarketStallPerUser": 2, // How many market stalls can a player have, -1 = unlimited
   "maxPremiumMarketStallPerUser": 3, // How many market stalls can a premium player have, -1 = unlimited
   "maxMarketStallPerServer": -1, // How many market stalls can be placed on the server, -1 = unlimited
@@ -40,7 +40,9 @@
       "lifetimeInMinutes": 360, // How long the stall will be available, if he is placed. After this time, the stall will be closed and deleted after the timeInMinutesThatOwnerHasAfterLifetimeIsExpired
       "premiumExtraLifetimeInMinutes": 120,  // Extra lifetime for premium users
       "price": 2000, // Price for the stall
-      "premiumPriceReduce": 500 // Price reduce for premium users
+      "premiumPriceReduce": 500, // Price reduce for premium users
+      "priceForTimeExtension": 100, // Price for time extension, if value is lower than 0, the time extension feature is disabled
+      "durationInMinutesForTimeExtension": 60 // Duration in minutes for time extension, if value is lower than 0, the time extension feature is disabled
     },
     {
       "id": "0c5nvonrpm",
@@ -50,7 +52,9 @@
       "lifetimeInMinutes": 360,
       "premiumExtraLifetimeInMinutes": 120,
       "price": 2000,
-      "premiumPriceReduce": 500
+      "premiumPriceReduce": 500,
+      "priceForTimeExtension": -1,
+      "durationInMinutesForTimeExtension": -1
     },
     {
       "id": "mydcejy2pk",
@@ -60,7 +64,9 @@
       "lifetimeInMinutes": 360,
       "premiumExtraLifetimeInMinutes": 120,
       "price": 2000,
-      "premiumPriceReduce": 500
+      "premiumPriceReduce": 500,
+      "priceForTimeExtension": -1,
+      "durationInMinutesForTimeExtension": -1
     }
   ]
 }

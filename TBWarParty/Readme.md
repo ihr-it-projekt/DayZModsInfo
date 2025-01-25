@@ -126,11 +126,9 @@ Will come when mod is in stable version
 
 - Match creation (in game)
   - Starting Fee
-  - change side (teams)
 - More Config Options
   - starting fee, this money can be used to give players a reward
   - win ration for places, how much money will be given to the players, when they win
-  - player can change sides
   - one life mode
 - mechanic to prevent non combat players to enter the arena from external
 - show arena boarder in game
@@ -142,8 +140,8 @@ Will come when mod is in stable version
 - Gear Sets can only be used when player have enough points
 - Arenas can only be used when player have enough points
 - all time points for players
-- Change Load-out in Config Mode
 - Players can configure their own gear sets from available gear items
+- enableRandomTeamSelect
 
 - Teammarker position 
 - Delete Admin needs cooldown
