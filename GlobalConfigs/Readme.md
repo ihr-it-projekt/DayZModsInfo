@@ -115,7 +115,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 ````
 
 ## VehicleSpawnConfig.json
-## Only for Car Dealer and Second Hand Market"
+## Only for Car Dealer, Second Hand Market and Daily Reward"
 ````json lines
 {
   "version": "1", // never change this, internal version number
