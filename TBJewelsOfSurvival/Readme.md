@@ -91,6 +91,9 @@ See also here: https://lbmaster.de/install/?p=27&h=1
 - a lot of configurations possibilities
 - config will automatically create on first server start
 
+### Types
+- [Types](Types.md)
+
 ## FAQ
 [HowToMigrateFrom1to2.md](HowToMigrateFrom1to2.md)
 
