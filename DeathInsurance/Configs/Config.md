@@ -5,7 +5,7 @@
 
 ```json lines
 {
-    "version": "5", // never change this, internal version number
+    "version": "7", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
@@ -20,7 +20,8 @@
             "durationInSeconds": 86400, // duration of the insurance in seconds
             "stayActiveAfterDeath": 0 ,// if 1, the insurance will stay active after death of player
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 1, // if 1, only items that are in cargo and inventory at the moment when player make the insurance will be insured
-            "canBuyAgainAfterSeconds": -1 // if -1, player can buy the insurance again, if not, player must wait after last buy, the seconds to buy the insurance again. If "globalInsuranceBuyCooldownInSeconds" is active this value will be ignored
+            "canBuyAgainAfterSeconds": -1, // if -1, player can buy the insurance again, if not, player must wait after last buy, the seconds to buy the insurance again. If "globalInsuranceBuyCooldownInSeconds" is active this value will be ignored
+            "isPremium": 0 // if 1, the insurance is a premium insurance
         },
         {
             "id": "4b2dgimf1x",
@@ -29,6 +30,7 @@
             "stayActiveAfterDeath": 0,
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0,
             "canBuyAgainAfterSeconds": 86400,
+            "isPremium": 1
         }
     ]
 }
