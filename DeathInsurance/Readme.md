@@ -65,4 +65,8 @@ All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDe
 - [InsurancePointConfig.md](Configs/InsurancePointConfig.md)
 - [Logger.md](Configs/Logger.md)
 
+## Types.xml
+  
+- [types.xml](./Types/types.xml)
+
 ### Hint, if you are using a mod that increases your inventory, then it can happen that not all gear can be saved.
