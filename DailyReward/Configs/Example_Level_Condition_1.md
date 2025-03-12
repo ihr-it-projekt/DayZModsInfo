@@ -4,7 +4,7 @@
 
 You have to create for every level one level condition, You can name it as you want. If you want to use the condition you have to add the name in the RewardLevels.json (see below)
 
-````
+````json lines
 {
     "uniqueName": "Example_Level_Condition_1", // This name must match with the file name except the .json. For example if you file name is Example_Level_Condition_1.json, this value must be Example_Level_Condition_1
     "isLoaded": 0,  // Never touch this value. It is needed internally
@@ -20,12 +20,14 @@ You have to create for every level one level condition, You can name it as you w
     },
     "infectedKillsRequiredCount": -1, // The infected kills the player must have to get the reward or -1 to disable this condition. Attention: if you enable this condition "zombieKills" option will be ignored
     "zombieKills": { // The zombie kills the player must have to get the reward leave it empty to disable this condition. For Vanilla types see below
-        "TYPNAME": 1 // "Zombie Type Name": count of required kills,
+        "TYPNAME": 1, // "Zombie Type Name": count of required kills,
         "ZmbM_FarmerFat_Blue": 2,
         "ZmbM_FarmerFat_Brown": 2,
         "ZmbM_FarmerFat_Green": 2
     },
-    "version": "5" // Never touch this value. It is needed internally
+    "aiKillsRequiredCount": -1, // The ai kills the player must have to get the reward or -1 to disable this condition
+    "aiHeadShotKillsRequiredCount": -1, // The ai headshot kills the player must have to get the reward or -1 to disable this condition
+    "version": "6", // Never touch this value. It is needed internally
     "displayName": "Level 1" // The display name on the level button
 }
 ````
