@@ -11,6 +11,6 @@
   // 0 = off, 1 = premium feature enabled/disabled
   "enablePremiumFeature": 1,
   // max distance to the vehicle to the market stall
-  maxSearchDistanceToVehicle: 5.0,
+  "maxSearchDistanceToVehicle": 5.0
 }
 ```
