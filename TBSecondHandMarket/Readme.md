@@ -118,6 +118,8 @@ See also here: https://lbmaster.de/install/?p=37&h=1
 - [**`CurrencyConfig.json`**](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [**`DealerPoints.json`**](./Configs/DealerPoints.md)
 - [**`GeneralConfig.json`**](./Configs/GeneralConfig.md)
+- [**`ItemWhiteList.json`**](./Configs/ItemWhiteList.md)
+- [**`ItemBlackList.json`**](./Configs/ItemBlackList.md)
 - [**`GlobalStallConfig.json`**](./Configs/GlobalStallConfig.md)
 - [**`ItemBlackList.json`**](./Configs/ItemBlackList.md)
 - [**`Logger.json`**](./Configs/Logger.md)
