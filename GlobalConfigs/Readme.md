@@ -31,7 +31,9 @@ If you don´t want to use Premium coins, you can also use the "API".
    - SecondHand
    - CarDealer
    - DeathInsurance
-    Possible values for DurationInDays are: any number between 1 and 999
+
+   Possible values for DurationInDays are: 
+   - any number between 1 and 999
 
 The Premium status will be given to the player, after the "API" has checked the folder. The file will after usage deleted. Invalid files will stay. If you see files that will not processed, please check the server script log for entries starting with `[TB Premium API]`.
 Every successful processed file will be logged in csv or discord. See Logger.json for more information.
