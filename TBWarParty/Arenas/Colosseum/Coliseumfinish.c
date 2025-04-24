@@ -1,7 +1,6 @@
-static Object SpawnObject(string type, vector position, vector orientation, float scale = 1.0)
-{
+static Object SpawnObject(string type, vector position, vector orientation, float scale = 1.0) {
     Object obj = GetGame().CreateObjectEx(type, position, ECE_SETUP | ECE_UPDATEPATHGRAPH | ECE_CREATEPHYSICS);
-    if (!obj) {
+    if(!obj) {
         Error("Failed to create object " + type);
         return null;
     }
@@ -11,10 +10,10 @@ static Object SpawnObject(string type, vector position, vector orientation, floa
     obj.SetOrientation(obj.GetOrientation());
     obj.SetScale(scale);
     obj.Update();
-	obj.SetAffectPathgraph(true, false);
-	if (obj.CanAffectPathgraph()) {
+    obj.SetAffectPathgraph(true, false);
+    if(obj.CanAffectPathgraph()) {
         GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(GetGame().UpdatePathgraphRegionByObject, 100, false, obj);
-    } 
+    }
 
     return obj;
 }

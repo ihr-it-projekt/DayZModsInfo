@@ -108,6 +108,9 @@ See also here: https://lbmaster.de/install/?p=37&h=1
 - Configure your needs
 - Start your Server :-)
 
+### How to give player premium status?
+see [**`Global FAQ`**](../GlobalConfigs/Readme.md#FAQ)
+
 ## Types
 - [**`Types`**](Types.md)
 

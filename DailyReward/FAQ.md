@@ -29,6 +29,8 @@ See also here: https://lbmaster.de/install/?p=20&h=1
 
 ## How i can give player premium status?
 
+see also [**`Global FAQ Premium API`**](../GlobalConfigs/Readme.md)
+
 There are 3 Items implemented. Just give him one of the items and he will get premium status for Daily Reward.
 
 - TBDRPremiumCoinGold | 30 Days Premium in Daily Reward

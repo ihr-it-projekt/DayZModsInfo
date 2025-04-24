@@ -55,6 +55,9 @@ See also here: https://lbmaster.de/install/?p=34&h=1
 - Configure your needs
 - Start your Server :-)
 
+### How to give player premium status?
+see [**`Global FAQ`**](../GlobalConfigs/Readme.md)
+
 ## Configuration
 
 All Configurations you will find in `YourServerProfilesFolder\TBMods\Config\TBDeathInsurance`
