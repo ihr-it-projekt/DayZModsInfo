@@ -31,6 +31,10 @@
   // How long a offer stays active after it was created
   "maxOfferLifetimeInMinutes": 10080,
   // How long a offer stays active after it was created for premium players
-  "maxOfferLifetimeInMinutesPremiumPlayers": 10080
+  "maxOfferLifetimeInMinutesPremiumPlayers": 10080,
+  // How much tax a player has to pay for selling an item at the global stall, min = 0 max = 100 if an item was sold for 100, the player has to pay 10 if the value is 10
+  "sellTaxInPercentageOrder": 0,
+  // How much tax a player has to pay when he has created an order and a player has it sold to him, min = 0 max = 100 if an item was sold for 100, the player has to pay 10 if the value is 10
+  "sellTaxInPercentageOffer": 0,
 }
 ```
