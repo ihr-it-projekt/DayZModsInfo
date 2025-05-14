@@ -113,7 +113,7 @@
         },
         {
             "id": "872327335", // Never touch this value. It is necessary internally
-            "type": "#Key_Respawn_Point", // The Label in House menu, you can change, but then you lose translations on other languages
+            "type": "#Key_Respawn_Point", // The Label in the House menu, you can change, but then you lose translations on other languages
             "description": "#Key_Respawn_Point_desc", // The description of the extension. You can change, but then you lose translations on other languages
             "price": 10, // The price of the extension
             "isHouseAlarm": 0, // Never touch this value. It is necessary internally
