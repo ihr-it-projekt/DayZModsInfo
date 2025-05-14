@@ -1,0 +1,52 @@
+[**`back`**](../Readme.md)
+
+## GlobalRaidConfig.json
+
+```json lines
+{
+    "version": "1", // Never touch this value. It is needed internally
+    "isInitialized": 1, // Never touch this value. It is needed internally
+    "useUTCTime": 0, // 1 = on 0 = off, if on, the time is in UTC time otherwise it is local time
+    "isEnabled": 1, // 1 = on 0 = off, if on, the raid times are enabled
+    "raidTimes": [
+        { //Beginning of raid time 1 example
+            "start": { // Start time of the raid time 1
+                "year": 0, // 0 = means every year if this is 0 month and day musst also 0
+                "month": 0, // 0 = means every month if this is 0 day+++ musst also 0
+                "day": 0, // 0 = means every day
+                "hour": 19, // 0 - 23
+                "minute": 0, // 0 - 59
+                "second": 0 // 0 - 59
+            },
+            "end": { // End time of the raid time 1
+                "year": 0, // 0 = means every year
+                "month": 0, // 0 = means every month
+                "day": 0, // 0 = means every day
+                "hour": 19, // 0 - 23
+                "minute": 25, // 0 - 59
+                "second": 0 // 0 - 59
+            }
+        }, // End of raid time 1 example
+        { // Beginning of raid time 2 example
+            "start": { // Start time of the raid time 2
+                "year": 2025, // You can also set a specific year
+                "month": 12, // You can also set a specific month
+                "day": 25, // You can also set a specific day
+                "hour": 8, // 0 - 23
+                "minute": 0, // 0 - 59
+                "second": 0 // 0 - 59
+            },
+            "end": { // End time of the raid time 2
+                "year": 2025, // You can also set a specific year
+                "month": 12, // You can also set a specific month
+                "day": 27, // You can also set a specific day
+                "hour": 21, // 0 - 23
+                "minute": 0, // 0 - 59
+                "second": 0 // 0 - 59
+            }
+        } // End of raid time 2 example
+        // you can add more raid times
+    ]
+}
+
+```
