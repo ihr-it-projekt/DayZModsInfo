@@ -4,7 +4,7 @@
 
 ## Description
 
-Player can make different fights in an arena in Teams or against each other. 
+Player can make different fights in an arena in Teams or against each other with multiple possibilities on configuration. 
 
 ## Shop Link
 
@@ -37,7 +37,6 @@ Will come when mod is in stable version
 - Match Modes
   - Team Fights
   - All against All
-
 - Match creation
   - Admin can create permanent Lobbies for matches. This Lobbies stays active over server restart and reset the match when no player is in the lobby or the match is over. 
   - player can create their own match (if admin allows it)
@@ -52,19 +51,28 @@ Will come when mod is in stable version
     - pre-configured gear sets for match
     - team markers, so players can see their teammates
     - turn on/off stamina
-    - turn on/off  Friendly Fire
+    - turn on/off friendly fire
     - turn on/off spectator mode
+    - option to prevent players using specator mode when match is running
+    - turn on/off first person mode
+    - turn on/off one life mode
+    - team auto balancing option
+    - option to prevent other players to join the match when it started
+    - starting fee
+    - to delete gears directly at death, so players can not pick up the gear from dead players
 - Friendly Fire count no points
 - Available Config Options for Matches
   - Arena Buildings
   - How many rounds a match will have
   - max time of a round
   - max kills per round
+  - win rates when match has a starting fee
   - gear sets
     - you can create your own gear sets
     - you can choose multiple gear sets for a match
     - you can choose only one gear set for a match
     - configure the quick bar place for the gear set items
+  - gear sets can be assigned to Teams in Game Creation Menu
   - Spawn Positions for the players/Teams
   - How many teams can join a match
   - Player health
@@ -77,12 +85,16 @@ Will come when mod is in stable version
   - death penalty times, player has to wait a configured time before he can respawn
   - turn on/off stamina option for arena 
   - turn on/off friendly fire for arena 
+  - option in main config that fresh spawned/new server players only spawn in Main Lobby Building, (Players can not run around the map) and they can not leave the main lobby by closing the main menu
 - Players can enter main Lobby at Lobby Entry Point or by pressing a key from everywhere. 
   - key press option can be disabled
 - You can build your own Arena with the DayZ Editor
 - Arena Building(s) will load with the Mod
 - Pre created Arenas in the Mod Client Package
 - Kill Feed
+- Global Server Statistics (Leaderboard for Kills, Deaths, Points, Won Matches, Played Matches, Played Rounds) This statics will updated after every match ending.
+ in Game Creation Menu
+- notification after Match was ended to Player with the amount of money he won
 - Scoring System
   - player hit points
   - team hit points
@@ -113,6 +125,7 @@ Will come when mod is in stable version
   - heat comfort
   - immune system
   - stomach 
+- disable TerjeMedicine modifier when in arena (experimental)
 - Admin can
   - Reload config in game
   - can disable Match creation for other players, so only admins can create new matches
@@ -121,27 +134,30 @@ Will come when mod is in stable version
   - F Action to add spawn positions for teams
   - F Action to remove spawn positions for teams
 - Arenas will be cleaned from dropped gear after a round 
+- kills from every deployable object like mines and traps will count for who is placing it
+- kills by cars will count for driver
+- Discord Webhook to log:
+  - Kill feed
+  - Add Discord logs for:
+  - Match was created
+  - Match has stared
+  - Match Winners
+
+## Supported Mods
+- PVEZ (Reloaded)
+- LBMatser Advanced Groups (No team tags and safe zone marker from this Mod are visible in the match)
+- TerjeMedicine (experimental) (can not get sick in arena)
+- MuchPVE
 
 ## Planned Features
 
-- Match creation (in game)
-  - Starting Fee
-- More Config Options
-  - starting fee, this money can be used to give players a reward
-  - win ration for places, how much money will be given to the players, when they win
-  - one life mode
 - mechanic to prevent non combat players to enter the arena from external
-- show arena boarder in game
-- server messages to players when a new match was created
 - players can disable new macht notification
 - Goodies like
   - heal packs/ heal sticks
   - shield packs
 - Gear Sets can only be used when player have enough points
 - Arenas can only be used when player have enough points
-- all time points for players
-- Players can configure their own gear sets from available gear items
-- enableRandomTeamSelect
 
 - Teammarker position 
 - Delete Admin needs cooldown

@@ -3,7 +3,7 @@
 
 ````json lines
 {
-  "version": "6", // Never touch this value. It is needed internally
+  "version": "7", // Never touch this value. It is needed internally
   "isInitialized": 1, // Never touch this value. It is needed internally
   "destroyDefibrillatorAfterUsage": 0, // 0 = Defibrillator will not be destroyed after usage, 1 = Defibrillator will be destroyed after usage
   "deleteDeadBodyTimeWhenHealedByPlayer": 5.0, // Time in seconds when the dead body will be deleted when healed by another player
@@ -18,6 +18,8 @@
   "enableRealEstateRespawn": 0, // 0 = No real estate respawn, 1 = Real estate respawn is enabled
   "priceForRealEstateRespawn": -1, // Price for real estate respawn -1 = no price for real estate respawn 100 = 100 $ for real estate respawn
   "minTimerBeforeRealEstateRespawn": 180, // Min time in seconds before the player can be revived in the real estate
+  "saveItemInHandRealEstate": 1, // 0 = Item in hand will NOT be saved, 1 = Item in hand will be saved
+  "putItemInHandRealEstate": 1, // 0 = Item in hand will NOT be put back to hand, 1 = Item in hand will be put back to hands, this option requires "saveItemInHandRealEstate" to be 1
   "reviveRealEstate": {
     "maxWounds": 0,
     "minWounds": 0,
@@ -29,6 +31,8 @@
   "minTimeBeforeHospital": 180, // Min time in seconds before the player can be revived in the hospital
   "minTimeBeforeHospitalWhenNoOtherPlayerIsOnline": 60, // Min time in seconds before the player can be revived in the hospital when no other player is online
   "priceForReviveInHospital": -1, // Price for revive in hospital -1 = no price for revive 100 = 100 $ for revive
+  "saveItemInHandHospital": 1, // 0 = Item in hand will NOT be saved, 1 = Item in hand will be saved
+  "putItemInHandHospital": 1, // 0 = Item in hand will NOT be put back to hand, 1 = Item in hand will be put back to hands, this option requires "saveItemInHandHospital" to be 1
   "reviveHospital": {
     "maxWounds": 0,
     "minWounds": 0,
@@ -85,7 +89,6 @@
     "health": 0.699999988079071,
     "blood": 0.699999988079071,
     "shock": 0.699999988079071
-  },
-  "enableSoundFix": 1, // 0 = No sound fix, 1 = Sound fix is enabled. Disable this option, if you have for example an ear plug mod and the sound after revive does not match with the earplug state
+  }
 }
 ````

@@ -11,11 +11,38 @@ This coins give player premium status for all my mods that support premium statu
 - TBLibPremiumCoinSilver | 7 Days Premium in Daily Reward
 - TBLibPremiumCoinBronze | 1 Day Premium in Daily Reward
 
-It can be that you will not find all properties or configurations in your mod. They will always automatically created when you start the server and they are needed.
+It can be that you will not find all properties or configurations in your mod. They will always automatically create when you start the server and they are needed.
+
+## FAQ
+### How to give player premium status?
+#### Coins
+There are different premium coins implemented. You can find them in types description of the mod. Give one of the coins to the player. He has to use the coin in game with the F Action.
+
+#### API
+If you don´t want to use Premium coins, you can also use the "API". 
+
+1. enable API in `YourServerProfilesFolder\TBMods\Config\Global\PremiumConfig.json` and restart your server or reload the configs
+2. open `YourServerProfilesFolder\TBMods\Data\Global\AddPremium`
+3. add a file for the player you want to give premium status. The file must have the following pattern.
+   `{SteamID}_{DurationInDays}_{ModName}.premium` so for example `7656119813296317725_30_DailyReward.premium`
+    
+    Possible values for ModName are: 
+   - DailyReward
+   - SecondHand
+   - CarDealer
+   - DeathInsurance
+
+   Possible values for DurationInDays are: 
+   - any number between 1 and 999
+
+The Premium status will be given to the player, after the "API" has checked the folder. The file will after usage deleted. Invalid files will stay. If you see files that will not processed, please check the server script log for entries starting with `[TB Premium API]`.
+Every successful processed file will be logged in csv or discord. See Logger.json for more information.
+
+## Global Configs
 
 You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 
-## AdminConfig.json
+### AdminConfig.json
 ````json lines
 {
   "version": "9", // never change this, internal version number
@@ -48,7 +75,7 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 }
 ````
 
-## CurrencyConfig.json
+### CurrencyConfig.json
 ````json lines
 {
   "version": "1", // never change this, internal version number
@@ -64,23 +91,36 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 } 
 ````
 
-### Money types Extension
+#### Money types Extension
 
 - ExpansionBanknoteUSD
 - ExpansionBanknoteEuro
 - ExpansionBanknoteHryvnia
   
-## Logger.json
+### Logger.json
 ```json lines
 {
-    "version": "1", // never change this, internal version number
-    "logUsePremiumCoinCSV": 1, // 1 = enables csv logging in path YourServerProfilesFolder\TBMods\Logs\Global\playerSteamId, 0 = disabled
-    "logUsePremiumCoinDiscord": 1, // 1 = enables discord logging, 0 = disabled
-    "discordUsePremiumCoinWebhookURL": "" // Add here your discord webhook url
+    "version": "2", // never change this, internal version number
+    "logUsePremiumCoinCSV": 1, // 1 = enables csv logging in path YourServerProfilesFolder\TBMods\Logs\Global\playerSteamId, 0 = disabled Logs the premium coins usage on csv
+    "logUsePremiumCoinDiscord": 1, // 1 = enables discord logging, 0 = disabled Logs the premium coins usage on discord
+    "discordUsePremiumCoinWebhookURL": "", // Add here your discord webhook url
+    "logUsePremiumAPICSV": 1, // 1 = enables csv logging in path YourServerProfilesFolder\TBMods\Logs\Global\playerSteamId, 0 = disabled Logs the premium coins usage on csv
+    "logPremiumAPIDiscord": 1, // 1 = enables discord logging, 0 = disabled Logs the premium API usage on discord
+    "discordLogPremiumAPIWebhookURL": "" // Add here your discord webhook url Logs the premium API usage on discord
 }
 ```
 
-## TBKeyBindsConfig.json
+### PremiumConfig.json
+````json lines
+{
+    "version": "1", // never change this, internal version number
+    "isInitialized": 1, // never change this, internal usage
+    "enableAPI": 0, // 0 = off 1 = on | if you want to use the API for premium coins, set this value to 1 otherwise to 0
+    "checkAPITimeInMinutes": 1 // if you want to check the API every x minutes, min value is 1
+}
+````
+
+### TBKeyBindsConfig.json
 ````json lines
 {
   "version": "1", // never change this, internal version number
@@ -114,8 +154,8 @@ You will find this configs in `YourServerProfilesFolder\TBMods\Config\Global`
 }
 ````
 
-## VehicleSpawnConfig.json
-## Only for Car Dealer, Second Hand Market and Daily Reward
+### VehicleSpawnConfig.json
+### Only for Car Dealer, Second Hand Market and Daily Reward
 ````json lines
 {
   "version": "1", // never change this, internal version number

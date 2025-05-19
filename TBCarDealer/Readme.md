@@ -54,10 +54,9 @@ See also here: https://lbmaster.de/install/?p=36&h=1
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- extract Config.zip
-- Copy the files from `Config\Config` into `YourServerProfilesFolder\TBMods\Config\TBCarDealer` folder
-- Configure your needs, for example pricing
-- Start your Server :-)
+- Start your server, the server will now detect all vehicles and items that can used for the vehicle slots and create all config with default values. 
+- Configure now your needs, for example pricing. You can also use our Config Editor ([TBCarDealerConfigEditor.rar](ConfigEditor/TBCarDealerConfigEditor.rar))
+- Configure yourself as an admin in the [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
 ## How to use the test drive
 - add your test drive positions to the DealerPointConfig

@@ -11,6 +11,7 @@ Here you can configure your price items.
 	"sellPrice": 97, // The price the player get when he sells the item (Currently not implemented)
 	"buyPrice": 98, // The price the player must pay to buy the item
 	"isPremium": false, // If this item is a premium item, set this value to true. Only player with premium status can buy this item
+    "amountItem": 1, // The amount of the item that the player is able to buy if the items is as an optional attachment configured 
 	"attachmentUniqueNames": [ // Here you can add and name your own previuse created items as attachments. They must be in the same folder as this item
 	    "Hatchback_02_Wheel",
 		"Hatchback_02_Wheel",

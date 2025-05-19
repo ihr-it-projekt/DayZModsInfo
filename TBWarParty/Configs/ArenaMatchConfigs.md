@@ -37,7 +37,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
 
 ````json lines
 {
-    "version": "1", // never change this, internal version number
+    "version": "3", // never change this, internal version number
     "isInitialized": 1, // never change this. Internal usage
     "arenaObjectsConfigFile": "Colosseum", // Name of the arena, will use to display the name in game. You can also load your arena via DayZ Editor Loader, it is not needed to add the file name here. Leave it empty if no arena objects should be loaded by TBWarParty 
     "playersCount": [ // how many players can join a match, this value will use to set the min and max players for a match
@@ -86,16 +86,21 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
     "enableFriendlyFire": 1, // At match creation, the match creator can choose if friendly fire is enabled or not
     "enableStaminaMode": 1, // At match creation, the match creator can choose if stamina is enabled or not
     "enableShowSpectatorMode": 1, // Player can join as spectator to a match
+    "enableMultipleGearSets": 1, // Match creator can choose multiple gear sets for a match if value is 1. If value is 0, only one gear set can be chosen.
+    "playerHealth": 100, // how much health a player has
+    "playerShield": 100, // how much shield a player has, shield are automatically regenerate after a period of time
+    "startCountdown": 60, // how long the countdown will be to start the match after enough players are available, must be at least 6 seconds
+    "startNextRoundCountdown": 20, // how long the countdown will be to start the next round, must be at least 6 seconds
+    "endMatchCountdown": 10, // how long the countdown will be to end the match, must be at least 6 seconds
     "gearSetNames": [ // name the gear sets, must be the same name as your gear set file name. See here for more information: GearSets.md
-        "Example1",
-        "Example2"
+          "Example1",
+          "Example2"
     ],
     "gearSets": [], // internal usage, do not change
-    "externalPlayersCanEnterArena": 0, // currently not used but will be used in the future
-    "adminCanEnterArena": 1, // currently not used but will be used in the future
-    "enableMultipleGearSets": 1, // Match creator can choose multiple gear sets for a match if value is 1. If value is 0, only one gear set can be chosen.
+      "externalPlayersCanEnterArena": 0, // currently not used but will be used in the future
+      "adminCanEnterArena": 1, // currently not used but will be used in the future
     "showArenaBoarderPoints": 1, // currently not used but will be used in the future
-    "teamSpawnZones": { // here must all team spawn zones insert, If you want to have more then 2 teams, you must add more team spawn zones.
+    "teamSpawnZones": { // here must all team spawn zones insert, If you want to have more then 2 teams, you must add more team spawn zones. You can configure them also in game as an admin. Create a new match and use the "port to Arena" admin button
       // Start first team
         "1": [
             {
@@ -143,12 +148,7 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
         ]
     },
     "teamsCount": [], // internal usage, do not change
-    "playerHealth": 100, // how much health a player has
-    "playerShield": 100, // how much shield a player has, shield are automatically regenerate after a period of time
-    "startCountdown": 60, // how long the countdown will be to start the match after enough players are available, must be at least 6 seconds
-    "startNextRoundCountdown": 20, // how long the countdown will be to start the next round, must be at least 6 seconds
-    "endMatchCountdown": 10 // how long the countdown will be to end the match, must be at least 6 seconds
-}
+    }
 ````
 
 [back](Index.md)

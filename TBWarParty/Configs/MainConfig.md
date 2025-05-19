@@ -5,9 +5,10 @@
 
 ````json lines
 {
-  "version": "2", // never change this, internal version number
+  "version": "3", // never change this, internal version number
   "isInitialized": 1, // never change this, internal usage
   "isActive": 1, // If you want to activate every player can create a match for  WarArena Mod, set this value to 1 otherwise to 0. This value can also be changed in the admin menu in game.
+  "playerSpawnInMainLobby": 0,// If you want to spawn the player in the main lobby instead somewhere of the map when a new player joins your server, set this value to 1 otherwise to 0. Hint: The player is never able to leave the lobbies, except he plays a match. 
   "arenaFileNames": [ // The names of the arenas, muss match with the file names from `\TBMods\Config\TBWarArena\ArenasMatchConfig` folder
     "Colosseum"
   ],
