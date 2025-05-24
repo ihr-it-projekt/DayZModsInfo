@@ -6,10 +6,10 @@
 
 If you are using VPP Admin tool, you have to use the Object Builder to place thees.
 
-- TBSHMMachine! [Machine.jpg](img%2FMachine.jpg)
-- TBSHMCashier! [Cashier.jpg](img%2FCashier.jpg)
-- TBSHMPokladna! [Pokladna.jpg](img%2FPokladna.jpg)
-- TBSHMPultskasou! [Pultskasou.jpg](img%2FPultskasou.jpg)
+- TBSHMMachine [Machine.jpg](img%2FMachine.jpg)
+- TBSHMCashier [Cashier.jpg](img%2FCashier.jpg)
+- TBSHMPokladna [Pokladna.jpg](img%2FPokladna.jpg)
+- TBSHMPultskasou [Pultskasou.jpg](img%2FPultskasou.jpg)
 
 ### Kits that player can buy at Market Stall Dealer
 - TBSHMStand_01_Kit
