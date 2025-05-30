@@ -105,16 +105,16 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
         "1": [
             {
                 "position": [
-                    3871.87109375,
-                    396.7033386230469,
-                    11775.6171875
+                    3871.87109375, // x position
+                    396.7033386230469, // y position
+                    11775.6171875 // z position
                 ],
                 "orientation": [
                     32.31016159057617,
                     0.0,
                     -0.0
                 ],
-                "radius": 10.0 // how big the spawn zone is, value must be positive
+                "radius": 10.0 // will be used to check if another player is in the spawn zone
             },
             {
                 "position": [
