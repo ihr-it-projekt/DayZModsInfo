@@ -5,6 +5,7 @@
 ````json lines
 {
     "carCollisionDamage": 0, //Car can take damage via collision 0 = off 1 = on
+    "disallowCarCollisionWhenNoMedicIsOnline": 0, // If this is enabled you will not get any car damage, if no medic is online
     "canGetCarsFromEveryGarage": 1, // Parked car can be taken from every garage  //0 = off 1 = on
     "carRaidTimeInSeconds": 60, //  How long a raider need to raid the car
     "chanceToRaid": 2, // if value is 1 every raid is successful, so higher the value, so lower the chance to be successful 
@@ -54,6 +55,6 @@
         "Truck_01_Covered_Blue",
         "Truck_01_Covered_Orange"
     ],
-    "version": "5"  // Never touch this value. It is needed internally
+    "version": "6"  // Never touch this value. It is needed internally
 }
 ````

@@ -24,6 +24,7 @@
   "raidCoolDownTimeInSeconds": 1800, // How long nobody can start a new robbery in seconds
   "maximumRaidDistanceToShop": 20, // Maximum distance to the shop, raid will stop if player is to far away at check time
   "canStartRaidIfBankRaidRuns": 0, // Takes care if a bank robbery runs, 0 = off 1 = on
+  "canUnrestrainSelf": 1, // If this is set to 0, player can not unrestrain himself
   "shopPosition": [  //Where are the positions to rob. Default position is at the fuel station in Electro. You can add as many points as you want. But there can only happen one shop robbery at the same time.
     {
       "position": [
