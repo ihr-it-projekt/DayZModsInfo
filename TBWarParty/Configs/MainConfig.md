@@ -24,7 +24,8 @@
   "playerCanOpenArenaMenuFromEverywhere": 1, // If you want to allow the player to open the arena menu from everywhere, set this value to 1 otherwise to 0 and players can only open the menu from lobby enter points.
   "permanentLobbies": [ // The names of the permanent lobbies, muss match with the file names from `\TBMods\Data\TBWarArena\PermanentLobbies` folder, they will automatically add and removed when you create or remove in game. 
     "Cherno_6ww8dpmex2"
-  ]
+  ],
+  "enableHitAnimation": 1 // 1 = on , 0 = off Player becomes an hit animation when he got an hit. 
 }
 ````
 
