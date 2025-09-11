@@ -4,8 +4,8 @@
 </div>
 
 ## Links:
-Shop: 
-Discord: https://discord.gg/kGjN6gJy3m
+- **Discord**: [Join our Discord](https://discord.gg/kGjN6gJy3m)
+- **Shop**: [Visit our shop](https://lbmaster.de/) 
 
 ## Index
 
