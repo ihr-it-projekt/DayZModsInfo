@@ -1,7 +1,8 @@
-# Welcome to TB Mods (DayZ) Readme Pages
 <div align="center">
-  <img src="logo_min.gif" alt="The Buster Mods" title="The Buster Mods">
+  <img src="logo_min.gif" alt="The Buster Mods" title="The Buster Mods" height="150ox">
 </div>
+
+# Welcome to TB Mods (DayZ) Readme Pages
 
 ## Links:
 - **Discord**: [Join our Discord](https://discord.gg/kGjN6gJy3m)
