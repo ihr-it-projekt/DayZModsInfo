@@ -1,5 +1,9 @@
 # How to Download the Mod Base Mods
 
+[← Back to The Mod Base Setup Guide](../README.md)
+
+---
+
 1. Open the webshop at <a href="https://themodbase.com/">https://themodbase.com</a> and login
 2. Navigate to "Your license and downloads"
 
@@ -36,3 +40,7 @@
 After downloading your mods and license:
 - [Set up your server](AddToServer.md) with the downloaded files
 - [Publish your mod package](PublishAServerModPackage.md) to Steam Workshop
+
+---
+
+[← Back to The Mod Base Setup Guide](../README.md)
