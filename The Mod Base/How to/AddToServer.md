@@ -1,80 +1,88 @@
-# How to Setup a Server
+# How to Set Up a Server
 
 ## License Setup
 
-1. Open your Server Profiles Folder and create a new Folder with name `TheModBase`.
+1. Open your Server Profiles folder and create a new folder with the name `TheModBase`
 
 <div style="padding-left: 100px">
-  <img src="images/profiles_folder_the_mod_base.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/profiles_folder_the_mod_base.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-2. create in that Folder a new Folder with name `Licenses`
+2. Create a new folder inside that folder with the name `Licenses`
 
 <div style="padding-left: 100px">
-  <img src="images/profiles_folder_the_mod_base_licenses.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/profiles_folder_the_mod_base_licenses.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-3. Move your [downloaded](Download.md) License(s) into that Folder 
+3. Move your [downloaded](Download.md) license(s) into that folder 
 
 
 <div style="padding-left: 100px">
-  <img src="images/profiles_folder_the_mod_base_licenses_with license.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/profiles_folder_the_mod_base_licenses_with license.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-## Server Side Mod Setup
+## Server-Side Mod Setup
 
-1. Enter your downloads folder and extract the downloaded Server Zip
+1. Navigate to your downloads folder and extract the downloaded server ZIP file
 
 <div style="padding-left: 100px">
-  <img src="images/extract_server_pbo.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
-  <img src="images/extracted_server_pbo.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/extract_server_pbo.png" alt="The Mod Base" title="The Mod Base" height="300px">
+  <img src="images/extracted_server_pbo.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-2. Enter the extracted Folder
+2. Enter the extracted folder
 
 <div style="padding-left: 100px">
-  <img src="images/server_pbo.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/server_pbo.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-3. Move the pbo file into your DayZ Server Addons Folder
+3. Move the PBO file into your DayZ server addons folder
 
 <div style="padding-left: 100px">
-  <img src="images/server_pbo_at_addons.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/server_pbo_at_addons.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-## Client Side Mod Setup
+## Client-Side Mod Setup
 
-1. Enter your downloads folder and extract the downloaded Client Zip.
+1. Navigate to your downloads folder and extract the downloaded client ZIP file
 
 <div style="padding-left: 100px">
-  <img src="images/extract_client_pbo.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
-  <img src="images/extracted_client_pbo.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/extract_client_pbo.png" alt="The Mod Base" title="The Mod Base" height="300px">
+  <img src="images/extracted_client_pbo.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-2. Enter the extracted Zip Folder so that you can see `Addons` and `Keys` folder
+2. Enter the extracted ZIP folder so that you can see the `Addons` and `Keys` folders
 
 <div style="padding-left: 100px">
-  <img src="images/extracted_client_pbo_folder.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/extracted_client_pbo_folder.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-3. Enter the `Keys` and copy the `bikey` file into your server `Keys` Folder
+3. Enter the `Keys` folder and copy the `bikey` file into your server `Keys` folder
 
 <div style="padding-left: 100px">
-  <img src="images/extracted_client_key.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
-  <img src="images/extracted_client_key_server.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/extracted_client_key.png" alt="The Mod Base" title="The Mod Base" height="300px">
+  <img src="images/extracted_client_key_server.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-4. Go back to Folder where you can see `Addons` and `Keys` folder
-<div style="padding-left: 100px">
-  <img src="images/extracted_client_pbo_folder.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
-</div>
-
-5. Enter the `Addons` Folder and copy the `pbo` and the `bisign` file into your Workshop Mod.
+4. Go back to the folder where you can see the `Addons` and `Keys` folders
 
 <div style="padding-left: 100px">
-  <img src="images/extracted_client_pbo_in_folder.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
-  <img src="images/extracted_client_pbo_in_workshop_folder.png" alt="The Buster Mods" title="The Buster Mods" height="300ox">
+  <img src="images/extracted_client_pbo_folder.png" alt="The Mod Base" title="The Mod Base" height="300px">
 </div>
 
-6. Publish your Workshop Mod
-7. Add the Workshop Mod to your Server
+5. Enter the `Addons` folder and copy the `pbo` and `bisign` files into your workshop mod folder
+
+<div style="padding-left: 100px">
+  <img src="images/extracted_client_pbo_in_folder.png" alt="The Mod Base" title="The Mod Base" height="300px">
+  <img src="images/extracted_client_pbo_in_workshop_folder.png" alt="The Mod Base" title="The Mod Base" height="300px">
+</div>
+
+6. Publish your workshop mod (see [PublishAServerModPackage.md](PublishAServerModPackage.md))
+7. Add the workshop mod to your server
+
+## Important Notes
+
+- Make sure all file paths are correct
+- Test your server before going live
+- Keep backups of your original files
+- Check server logs for any errors after installation
