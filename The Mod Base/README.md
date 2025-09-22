@@ -1,7 +1,7 @@
 # The Mod Base - Setup Guide
 
 <div align="center">
-  <img src="How to/images/logo.png" alt="The Mod Base" title="The Mod Base" height="100px" >
+  <img src="./How to/images/logo.png" alt="The Mod Base" title="The Mod Base" height="100px" >
 </div>
 
 Welcome to The Mod Base setup guide! This section contains comprehensive instructions for downloading, installing, and publishing DayZ mods from The Buster Mods collection.

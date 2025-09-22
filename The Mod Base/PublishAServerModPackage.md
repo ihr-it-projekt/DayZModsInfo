@@ -7,13 +7,13 @@
 1. Open Steam and search in your library for `DayZ Tools`. Install and start DayZ Tools
 
 <div style="padding-left: 100px">
-  <img src="images/steam_dayz_tools.png" alt="The Mod Base" title="The Mod Base" height="500px">
+  <img src="./images/steam_dayz_tools.png" alt="The Mod Base" title="The Mod Base" height="500px">
 </div>
 
 2. Start `Publisher` in DayZ Tools
 
 <div style="padding-left: 100px">
-  <img src="images/start_publisher.png" alt="The Mod Base" title="The Mod Base" height="500px">
+  <img src="./images/start_publisher.png" alt="The Mod Base" title="The Mod Base" height="500px">
 </div>
 
 3. In the publisher:
@@ -28,7 +28,7 @@
 **Important**: When you publish the mod for the first time, you need to update the mod after publishing again. Otherwise, nobody can use the mod.
 
 <div style="padding-left: 100px">
-  <img src="images/dayz_publisher.png" alt="The Mod Base" title="The Mod Base" height="500px">
+  <img src="./images/dayz_publisher.png" alt="The Mod Base" title="The Mod Base" height="500px">
 </div>
 
 ## After Publishing
