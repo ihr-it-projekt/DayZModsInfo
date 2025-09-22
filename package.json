@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "name": "dayzmodsinfo",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"logo_min.gif\" alt=\"The Buster Mods\" title=\"The Buster Mods\" height=\"150ox\">\r </div>",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.12"
+  }
+}

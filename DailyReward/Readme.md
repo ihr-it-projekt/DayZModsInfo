@@ -1,6 +1,7 @@
 # TB Daily Reward
-
-<img src="./logo.png" alt="TB Daily Reward" width="512"/>
+<div align="center">
+  <img src="./logo_new.png" alt="TB Daily Reward" width="256"/>
+</div>
 
 ## Description
 This Mod allows you in DayZ to get a reward for everyday you play on the server.

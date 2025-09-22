@@ -1,2 +1,5 @@
 /.vscode
 /.idea
+node_modules
+.vitepress/dist
+.vitepress/cache
