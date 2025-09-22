@@ -15,7 +15,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
+[![Version 1](./logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
 
 ## Features
 - monetise your sever with premium rewards

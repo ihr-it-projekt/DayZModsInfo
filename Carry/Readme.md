@@ -11,8 +11,8 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](Logo.png)](https://youtu.be/VpCES0LMBiU)
-[![Version 1.1](Logo1.1.png)](https://youtu.be/amBODTDgg38)
+[![Version 1](./Logo.png)](https://youtu.be/VpCES0LMBiU)
+[![Version 1.1](./Logo1.1.png)](https://youtu.be/amBODTDgg38)
 
 ## Features
 

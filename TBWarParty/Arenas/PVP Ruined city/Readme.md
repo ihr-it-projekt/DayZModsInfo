@@ -8,8 +8,8 @@
 
 ## Screenshots
 
-<img src="images/PVPRuinedcity_1.jpg" alt="Ruined City" width="512"/>
-<img src="images/PVPRuinedcity_2.jpg" alt="Ruined City" width="512"/>
+<img src="./images/PVPRuinedcity_1.jpg" alt="Ruined City" width="512"/>
+<img src="./images/PVPRuinedcity_2.jpg" alt="Ruined City" width="512"/>
 
 ## How to use
 - Copy the `PVP Ruined city.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.

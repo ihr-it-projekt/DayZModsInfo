@@ -21,14 +21,14 @@ export default defineConfig({
               { text: 'HowToMigrateFrom1to2', link: '/BasicNeeds/HowToMigrateFrom1to2.md' },
               { text: 'Types', link: '/BasicNeeds/Types.md' },
               { text: 'Configs', collapsed: true, items: [
-                { text: 'BodyZoneConfigs', link: '/BasicNeeds/Configs/BodyZoneConfigs.md' },
-                { text: 'BodyZones', link: '/BasicNeeds/Configs/BodyZones.md' },
-                { text: 'Config', link: '/BasicNeeds/Configs/Config.md' },
-                { text: 'DiseaseConfig', link: '/BasicNeeds/Configs/DiseaseConfig.md' },
-                { text: 'DryerConfig', link: '/BasicNeeds/Configs/DryerConfig.md' },
-                { text: 'StaticDryerConfig', link: '/BasicNeeds/Configs/StaticDryerConfig.md' },
-                { text: 'StaticWashingPlaces', link: '/BasicNeeds/Configs/StaticWashingPlaces.md' },
-                { text: 'WashingMachineConfig', link: '/BasicNeeds/Configs/WashingMachineConfig.md' },
+              { text: 'BodyZoneConfigs', link: '/BasicNeeds/Configs/BodyZoneConfigs.md' },
+              { text: 'BodyZones', link: '/BasicNeeds/Configs/BodyZones.md' },
+              { text: 'Config', link: '/BasicNeeds/Configs/Config.md' },
+              { text: 'DiseaseConfig', link: '/BasicNeeds/Configs/DiseaseConfig.md' },
+              { text: 'DryerConfig', link: '/BasicNeeds/Configs/DryerConfig.md' },
+              { text: 'StaticDryerConfig', link: '/BasicNeeds/Configs/StaticDryerConfig.md' },
+              { text: 'StaticWashingPlaces', link: '/BasicNeeds/Configs/StaticWashingPlaces.md' },
+              { text: 'WashingMachineConfig', link: '/BasicNeeds/Configs/WashingMachineConfig.md' },
               ]}
             ]
           },
@@ -38,11 +38,11 @@ export default defineConfig({
               { text: 'FAQ', link: '/DailyReward/FAQ.md' },
               { text: 'HowToMigrateFrom1to2', link: '/DailyReward/HowToMigrateFrom1to2.md' },
               { text: 'Configs', collapsed: true, items: [
-                { text: 'Example_Item_1', link: '/DailyReward/Configs/Example_Item_1.md' },
-                { text: 'Example_Level_Condition_1', link: '/DailyReward/Configs/Example_Level_Condition_1.md' },
-                { text: 'General', link: '/DailyReward/Configs/General.md' },
-                { text: 'Level_1_Example_Reward_1', link: '/DailyReward/Configs/Level_1_Example_Reward_1.md' },
-                { text: 'Logger', link: '/DailyReward/Configs/Logger.md' },
+              { text: 'Example_Item_1', link: '/DailyReward/Configs/Example_Item_1.md' },
+              { text: 'Example_Level_Condition_1', link: '/DailyReward/Configs/Example_Level_Condition_1.md' },
+              { text: 'General', link: '/DailyReward/Configs/General.md' },
+              { text: 'Level_1_Example_Reward_1', link: '/DailyReward/Configs/Level_1_Example_Reward_1.md' },
+              { text: 'Logger', link: '/DailyReward/Configs/Logger.md' },
                 { text: 'RewardLevels', link: '/DailyReward/Configs/RewardLevels.md' },
               ]}
             ]
@@ -192,13 +192,31 @@ export default defineConfig({
             text: 'TBWarParty', link: '/TBWarParty/Readme.md', collapsed: true, items: [
               { text: 'Configs', collapsed: true, items: [
                 { text: 'Index', link: '/TBWarParty/Configs/Index.md' },
+                { text: 'ArenaBuildingConfig', link: '/TBWarParty/Configs/ArenaBuildingConfig.md' },
+                { text: 'ArenaMatchConfigs', link: '/TBWarParty/Configs/ArenaMatchConfigs.md' },
+                { text: 'GearSets', link: '/TBWarParty/Configs/GearSets.md' },
+                { text: 'LobbyEnterPoints', link: '/TBWarParty/Configs/LobbyEnterPoints.md' },
+                { text: 'Logger', link: '/TBWarParty/Configs/Logger.md' },
+                { text: 'MainConfig', link: '/TBWarParty/Configs/MainConfig.md' },
               ]},
               { text: 'Arenas', collapsed: true, items: [
                 { text: 'README', link: '/TBWarParty/Arenas/README.md' },
+                { text: 'Cherno', link: '/TBWarParty/Arenas/Cherno/Readme.md' },
+                { text: 'Colosseum', link: '/TBWarParty/Arenas/Colosseum/Readme.md' },
+                { text: 'Dust2', link: '/TBWarParty/Arenas/Dust2/Readme.md' },
+                { text: 'NWA', link: '/TBWarParty/Arenas/NWA/Readme.md' },
+                { text: 'Pump Station', link: '/TBWarParty/Arenas/Pump_Station/Readme.md' },
+                { text: 'PVP Arena CONSTRUCTION', link: '/TBWarParty/Arenas/PVP Arena CONSTRUCTION/Readme.md' },
+                { text: 'PVP Arena ROOFTOP', link: '/TBWarParty/Arenas/PVP Arena ROOFTOP/Readme.md' },
+                { text: 'PVP Ruined city', link: '/TBWarParty/Arenas/PVP Ruined city/Readme.md' },
+                { text: 'Smoking Island', link: '/TBWarParty/Arenas/Smoking_Island/Readme.md' },
+                { text: 'warareanaPVPclose', link: '/TBWarParty/Arenas/warareanaPVPclose/Readme.md' },
+                { text: 'wararenaPVPhangar', link: '/TBWarParty/Arenas/wararenaPVPhangar/Readme.md' },
               ]},
               { text: 'Tools', collapsed: true, items: [
-                { text: 'CConverter Readme', link: '/TBWarParty/Tools/Converter/CConverter/Readme.md' },
-                { text: 'JSONConverter Readme', link: '/TBWarParty/Tools/Converter/JSONConverter/Readme.md' },
+                { text: 'ArenaMover', link: '/TBWarParty/Tools/ArenaMover/Readme.md' },
+                { text: 'CConverter', link: '/TBWarParty/Tools/Converter/CConverter/Readme.md' },
+                { text: 'JSONConverter', link: '/TBWarParty/Tools/Converter/JSONConverter/Readme.md' },
               ]}
             ]
           },

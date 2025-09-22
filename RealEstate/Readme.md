@@ -16,7 +16,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](logoYT.png)](https://youtu.be/cMSZLmEtpdo)
+[![Version 1](./logoYT.png)](https://youtu.be/cMSZLmEtpdo)
 
 ## Features
 

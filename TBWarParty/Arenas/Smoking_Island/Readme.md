@@ -7,8 +7,8 @@
 
 ## Screenshots
 
-<img src="images/Smoking_Island_1.jpg" alt="Cherno" width="512"/>
-<img src="images/Smoking_Island_2.jpg" alt="Cherno" width="512"/>
+<img src="./images/Smoking_Island_1.jpg" alt="Cherno" width="512"/>
+<img src="./images/Smoking_Island_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `Smoking_Island.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

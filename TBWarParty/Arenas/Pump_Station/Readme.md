@@ -7,8 +7,8 @@
 
 ## Screenshots
 
-<img src="images/Pump_Station_1.jpg" alt="Cherno" width="512"/>
-<img src="images/Pump_Station_2.jpg" alt="Cherno" width="512"/>
+<img src="./images/Pump_Station_1.jpg" alt="Cherno" width="512"/>
+<img src="./images/Pump_Station_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `Pump_Station.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

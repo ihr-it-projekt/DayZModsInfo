@@ -15,7 +15,7 @@
 
 <!-- Prefix="types" -->
 ````
-<img src="Prefix.png"/>
+<img src="./Prefix.png"/>
 
 - Click on `File` at the top left and then on `Load MPMission`.
 Navigate to your MPMission and click on Select folder
@@ -28,7 +28,7 @@ Navigate to your MPMission and click on Select folder
 - You could check them and the entire content will be displayed in Type Name.
 - Double-click on an item to add this item to Unique Name. At the bottom you have the option to search for specific items/type names or click on Add all Items
 
-<img src="ImportetXMLTypes.png"/>
+<img src="./ImportetXMLTypes.png"/>
 
 To: 
   - add attachments

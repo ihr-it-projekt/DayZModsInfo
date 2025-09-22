@@ -8,9 +8,9 @@
 
 ## Screenshots
 
-<img src="images/warareanaPVPclose_1.jpg" alt="PVP close" width="512"/>
-<img src="images/warareanaPVPclose_2.jpg" alt="PVP close" width="512"/>
-<img src="images/warareanaPVPclose_3.jpg" alt="PVP close" width="512"/>
+<img src="./images/warareanaPVPclose_1.jpg" alt="PVP close" width="512"/>
+<img src="./images/warareanaPVPclose_2.jpg" alt="PVP close" width="512"/>
+<img src="./images/warareanaPVPclose_3.jpg" alt="PVP close" width="512"/>
 
 ## How to use
 - Copy the `warareanaPVPclose.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.
