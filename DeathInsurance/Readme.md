@@ -6,7 +6,7 @@
 This mods allows player to have an insurance for their gear. If they die, they can get their gear back. 
 
 ## Shop Link
-https://lbmaster.de/product.php?id=34
+https://www.themodbase.com/mods/TBDeathInsurance
 
 ## Support
 
@@ -46,7 +46,7 @@ https://youtu.be/xdvwHjvxJYw
 
 ### How to install
 
-See also here: https://lbmaster.de/install/?p=34&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.

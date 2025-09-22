@@ -18,7 +18,6 @@ export default defineConfig({
           {
             text: 'BasicNeeds', link: '/BasicNeeds/Readme.md', collapsed: true, items: [
               { text: 'FAQ', link: '/BasicNeeds/FAQ.md' },
-              { text: 'HowToMigrateFrom1to2', link: '/BasicNeeds/HowToMigrateFrom1to2.md' },
               { text: 'Types', link: '/BasicNeeds/Types.md' },
               { text: 'Configs', collapsed: true, items: [
               { text: 'BodyZoneConfigs', link: '/BasicNeeds/Configs/BodyZoneConfigs.md' },
@@ -36,7 +35,6 @@ export default defineConfig({
           {
             text: 'DailyReward', link: '/DailyReward/Readme.md', collapsed: true, items: [
               { text: 'FAQ', link: '/DailyReward/FAQ.md' },
-              { text: 'HowToMigrateFrom1to2', link: '/DailyReward/HowToMigrateFrom1to2.md' },
               { text: 'Configs', collapsed: true, items: [
               { text: 'Example_Item_1', link: '/DailyReward/Configs/Example_Item_1.md' },
               { text: 'Example_Level_Condition_1', link: '/DailyReward/Configs/Example_Level_Condition_1.md' },
@@ -49,9 +47,7 @@ export default defineConfig({
           },
           {
             text: 'DayZCasinoV2', link: '/DayZCasinoV2/Readme.md', collapsed: true, items: [
-              { text: 'Configs', collapsed: true, items: [
                 { text: 'DayZCasinoV2Config', link: '/DayZCasinoV2/Configs/DayZCasinoV2Config.md' },
-              ]}
             ]
           },
           {
@@ -59,7 +55,7 @@ export default defineConfig({
               { text: 'SettingUpAServer', link: '/DayZLife/SettingUpAServer.md' },
               { text: 'Keybindings', link: '/DayZLife/Keybindings.md' },
               { text: 'Types', link: '/DayZLife/Types.md' },
-              { text: 'Configs', collapsed: true, items: [
+              { text: 'Configs', collapsed: true, link:'/DayZLife/Configs/Readme.md',  items: [
                 { text: 'adminIds', link: '/DayZLife/Configs/adminIds.md' },
                 { text: 'arrest', link: '/DayZLife/Configs/arrest.md' },
                 { text: 'banking', link: '/DayZLife/Configs/banking.md' },
@@ -72,7 +68,6 @@ export default defineConfig({
                 { text: 'logger', link: '/DayZLife/Configs/logger.md' },
                 { text: 'message', link: '/DayZLife/Configs/message.md' },
                 { text: 'paycheck', link: '/DayZLife/Configs/paycheck.md' },
-                { text: 'Readme', link: '/DayZLife/Configs/Readme.md' },
                 { text: 'traderCategories', link: '/DayZLife/Configs/traderCategories.md' },
                 { text: 'traderPositions', link: '/DayZLife/Configs/traderPositions.md' },
                 { text: 'workZone', link: '/DayZLife/Configs/workZone.md' },
@@ -108,7 +103,6 @@ export default defineConfig({
           },
           {
             text: 'RealEstate', link: '/RealEstate/Readme.md', collapsed: true, items: [
-              { text: 'HowToMigrateFrom1to2', link: '/RealEstate/HowToMigrateFrom1to2.md' },
               { text: 'Configs', collapsed: true, items: [
                 { text: 'GlobalRaidConfig', link: '/RealEstate/Configs/GlobalRaidConfig.md' },
                 { text: 'house', link: '/RealEstate/Configs/house.md' },
@@ -122,7 +116,6 @@ export default defineConfig({
           {
             text: 'RevivePlayer', link: '/RevivePlayer/Readme.md', collapsed: true, items: [
               { text: 'FAQ', link: '/RevivePlayer/FAQ.md' },
-              { text: 'HowToMigrateFrom1to2', link: '/RevivePlayer/HowToMigrateFrom1to2.md' },
               { text: 'Configs', collapsed: true, items: [
                 { text: 'logger', link: '/RevivePlayer/Configs/logger.md' },
                 { text: 'reviveConfig', link: '/RevivePlayer/Configs/reviveConfig.md' },
@@ -148,7 +141,6 @@ export default defineConfig({
           { text: 'TBItemExchange', link: '/TBItemExchange/README.md' },
           {
             text: 'TBJewelsOfSurvival', link: '/TBJewelsOfSurvival/Readme.md', collapsed: true, items: [
-              { text: 'HowToMigrateFrom1to2', link: '/TBJewelsOfSurvival/HowToMigrateFrom1to2.md' },
               { text: 'Effects', link: '/TBJewelsOfSurvival/Effects.md' },
               { text: 'Types', link: '/TBJewelsOfSurvival/Types.md' },
               { text: 'Rings', collapsed: true, items: [

@@ -8,7 +8,7 @@ A car dealer script to buy cars and premium cars
 
 ## Shop Link
 
-https://lbmaster.de/product.php?id=36
+https://www.themodbase.com/mods/TBCarDealer
 
 ## Support
 
@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ## How to install
 
-See also here: https://lbmaster.de/install/?p=36&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.

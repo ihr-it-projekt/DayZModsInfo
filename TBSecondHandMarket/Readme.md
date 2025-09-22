@@ -8,7 +8,7 @@ Player can easily sell items to other players.
 
 ## Shop Link
 
-https://lbmaster.de/product.php?id=37
+https://www.themodbase.com/mods/TBSecondHandMarket
 
 ## Support
 
@@ -100,7 +100,7 @@ https://youtu.be/YXXO2QezOUU
 
 ### How to install
 
-See also here: https://lbmaster.de/install/?p=37&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
