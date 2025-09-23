@@ -1,7 +1,5 @@
 # message.json
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   "version": "1", // only for internal, never touch this

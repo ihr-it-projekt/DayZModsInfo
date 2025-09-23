@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## house.json
 ````json lines
 {
@@ -83,4 +81,3 @@
     "houseConfigs": [] // only for interla usage, keep it like it is
 }
 ````
-[**`back`**](../Readme.md)

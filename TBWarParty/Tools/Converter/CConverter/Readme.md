@@ -1,5 +1,3 @@
-[back](../../../Readme.md)
-
 # C File Converter
 
 This tool search for lines like 
@@ -41,5 +39,3 @@ void main()
 
 ....
 ```
-
-[back](../../../Readme.md)

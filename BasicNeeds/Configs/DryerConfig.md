@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 # DryerConfig.json
 
 ````json lines
@@ -20,5 +18,3 @@
   ]
 }
 ````
-
-[**`back`**](../Readme.md)

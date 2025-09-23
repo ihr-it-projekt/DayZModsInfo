@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 ### How to migrate from Version 1.x.x to 2.x.x
 
 **Please read before everything, before you start.**

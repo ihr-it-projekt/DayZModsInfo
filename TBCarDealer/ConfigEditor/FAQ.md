@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 ### How i can give player premium status?
 
 Hint: There are general coin for all my mods that support premium status.

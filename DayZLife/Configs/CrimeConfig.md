@@ -1,7 +1,5 @@
 # CrimeConfig.json:
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   "version": "1", // Never touch this value. It is needed internally

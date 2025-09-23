@@ -1,5 +1,3 @@
-[back](Index.md)
-
 # ArenaMatchConfigs
 
 If you want to add/remove Spawn coordinates, you can do this also easy in game.
@@ -150,5 +148,3 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
     "teamsCount": [], // internal usage, do not change
     }
 ````
-
-[back](Index.md)

@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## BodyZones.json
 
 ````json lines

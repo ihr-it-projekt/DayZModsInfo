@@ -1,5 +1,3 @@
-[back](../Readme.md)
-
 # Config Index
 
 - [AdminConfig.json](../../GlobalConfigs/Readme.md#adminconfig-json) Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
@@ -11,6 +9,3 @@
 - [Logger.md](Logger.md)
 - [MainConfig.md](MainConfig.md)
 - [KeyBindsConfig.json](../../GlobalConfigs/Readme.md#tbkeybindsconfig-json)
-
-
-[back](../Readme.md)

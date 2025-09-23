@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#configuration)
 ## OreSpawnAreasConfig.json
 ```json lines
 {

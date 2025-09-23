@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 # FAQ
 
 ## How to install

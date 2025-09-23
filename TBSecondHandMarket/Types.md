@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 ## Types.xml
 
 ### At this object player can buy a Market Stall (Stall Dealer Objects)

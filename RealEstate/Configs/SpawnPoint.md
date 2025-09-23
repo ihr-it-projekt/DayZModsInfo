@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## SpawnPoint.json
 
 ````json lines

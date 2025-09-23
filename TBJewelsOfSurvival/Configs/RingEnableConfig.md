@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#configuration)
 ## RingEnableConfig.json
 ```json lines
 {

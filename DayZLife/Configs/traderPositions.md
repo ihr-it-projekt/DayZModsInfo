@@ -1,7 +1,5 @@
 # traderPositions.json
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   "version": "3", // Never touch this value. It is needed internally

@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 # General.json
 
 ## Player Data Backup Calculation

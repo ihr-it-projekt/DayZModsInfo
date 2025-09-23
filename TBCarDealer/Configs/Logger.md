@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md)
 
 ## Logger.json
 

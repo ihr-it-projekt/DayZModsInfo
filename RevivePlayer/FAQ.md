@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 ## FAQ
 
 ## My defibrillator is de spawned after re log/server restart?

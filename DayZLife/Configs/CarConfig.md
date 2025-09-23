@@ -1,7 +1,5 @@
 # CarConfig.json
 
-[**`back`**](../Readme.md)
-
 ````json lines
 {
     "carCollisionDamage": 0, //Car can take damage via collision 0 = off 1 = on

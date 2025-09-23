@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## StaticWashingPlaces.json
 
 ````json lines

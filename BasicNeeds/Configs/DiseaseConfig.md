@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## DiseaseConfig.json
 
 Player can become sick when he is dirty. You can configure here the chance to get sick.

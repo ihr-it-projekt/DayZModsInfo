@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 # Setting up a DayZ Life Server
 
 Here you will find any information, how you can set up your DayZ Life Server.

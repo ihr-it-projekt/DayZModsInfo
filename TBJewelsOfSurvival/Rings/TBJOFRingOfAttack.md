@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md#rings)
-
 ## Ring of Attack Level 1 (Type: TBJOFRingOfAttackLevel1)
 ![Ring of Attack Level 1](../images/ROFAL1.png "Ring of Attack Level1")
 ## Ring of Attack Level 2 (Type: TBJOFRingOfAttackLevel2)

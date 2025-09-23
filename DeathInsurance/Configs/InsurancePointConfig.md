@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## InsurancePointConfig.json
 
 ```json lines

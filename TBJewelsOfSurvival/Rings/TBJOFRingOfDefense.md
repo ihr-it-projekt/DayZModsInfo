@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#rings)
 
 ## Ring of Defense Level 1 (Type: TBJOFRingOfDefenseLevel1)
 ![Ring of Defense Level 1](../images/ROFDL1.png "Ring of Defense Level1")

@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## CarConfigs Example
 
 ````json lines

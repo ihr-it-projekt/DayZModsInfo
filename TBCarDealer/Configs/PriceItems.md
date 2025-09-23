@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md)
 ### PriceItems/Example_Item_1.json
 
 Here you can configure your price items.

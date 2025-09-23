@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 # RewardLevels.json
 
 This is a collection of your reward levels and level conditions

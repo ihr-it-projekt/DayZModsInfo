@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#configuration)
 ## SmelterConfig.json
 ```json lines
 {

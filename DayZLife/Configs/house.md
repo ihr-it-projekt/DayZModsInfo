@@ -1,7 +1,5 @@
 # house.json
 
-[**`back`**](../Readme.md)
-
 If you create a new job in paycheck.json, a new definition will automatically be added here after first server restart or config reload.
 
 ```json lines

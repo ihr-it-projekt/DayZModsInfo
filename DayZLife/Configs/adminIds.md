@@ -1,7 +1,5 @@
 # adminIds.json
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   "access": [], // Deprecated, will be removed in future

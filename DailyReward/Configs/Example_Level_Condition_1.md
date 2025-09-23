@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 # LevelConditions/Example_Level_Condition_1.json
 
 You have to create for every level one level condition, You can name it as you want. If you want to use the condition you have to add the name in the RewardLevels.json (see below)

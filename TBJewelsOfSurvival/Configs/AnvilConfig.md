@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md#configuration)
-
 ## AnvilConfig.json
 
 ```json lines
