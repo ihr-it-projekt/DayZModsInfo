@@ -1,4 +1,10 @@
-# PVP Arena CONSTRUCTION
+# PVP Arena Ruined City
+
+## Files
+
+<a href="./ArenaBuildingConfig/PVP Ruined city.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/PVP Ruined city.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 

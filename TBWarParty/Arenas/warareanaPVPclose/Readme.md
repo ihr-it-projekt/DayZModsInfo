@@ -1,4 +1,10 @@
-# PVP Arena CONSTRUCTION
+# PVP Arena Close
+
+## Files
+
+<a href="./ArenaBuildingConfig/warareanaPVPclose.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/warareanaPVPclose.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 

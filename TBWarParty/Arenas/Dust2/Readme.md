@@ -1,5 +1,12 @@
 # PVP Arena DUST 2
 
+## Files
+
+<a href="./ArenaBuildingConfig/Dust2.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/Dust2.json" download>Arena Match Config</a>
+
+
 ## Required Mod Packs
 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)

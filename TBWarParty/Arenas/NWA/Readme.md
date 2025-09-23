@@ -1,4 +1,10 @@
-# Cherno
+# North West Airfield
+
+## Files
+
+<a href="./ArenaBuildingConfig/NWA.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/NWA.json" download>Arena Match Config</a>
 
 ## Required Mod Packs 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)

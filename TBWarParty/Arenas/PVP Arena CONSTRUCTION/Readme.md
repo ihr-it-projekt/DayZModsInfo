@@ -1,5 +1,11 @@
 # PVP Arena CONSTRUCTION
 
+## Files
+
+<a href="./ArenaBuildingConfig/PVP Arena CONSTRUCTION.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/PVP Arena CONSTRUCTION.json" download>Arena Match Config</a>
+
 ## Required Mod Packs
 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)

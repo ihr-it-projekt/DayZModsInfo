@@ -1,4 +1,10 @@
-# Smoking_Island
+# Smoking Island
+
+## Files
+
+<a href="./ArenaBuildingConfig/Smoking_Island.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/Smoking_Island.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 - BadgerBuildings (https://steamcommunity.com/sharedfiles/filedetails/?id=1573788098)

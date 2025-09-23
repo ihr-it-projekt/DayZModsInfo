@@ -1,5 +1,11 @@
 # PVP Arena PVPArenaROOFTOP
 
+## Files
+
+<a href="./ArenaBuildingConfig/PVP Arena ROOFTOP.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/PVP Arena ROOFTOP.json" download>Arena Match Config</a>
+
 ## Required Mod Packs
 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)
