@@ -4,10 +4,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: ".",
 
-  title: "The Mod Base",
+  title: "by the Buster",
   description: "Docs for The Mod Base mods",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: { src: '/The Mod Base/images/logo.png', alt: 'The Mod Base' },
     nav: [
       { text: 'Home', link: './' },
     ],
@@ -249,14 +250,13 @@ export default defineConfig({
               { text: 'TBZombieEvents', link: '/TBZombieEvents/Readme.md' },
             ]
           },
-          
+
         ]
       }
     ],
     search: {
       provider: 'local'
     },
-
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/kGjN6gJy3m' },
       {
@@ -266,7 +266,10 @@ export default defineConfig({
         },
         link: 'https://www.themodbase.com'
       }
-    ]
+    ],
+    footer: {
+      copyright: 'Copyright © 2025 by the Buster',
+    }
   }
 })
 

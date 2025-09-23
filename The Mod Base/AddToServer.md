@@ -1,9 +1,5 @@
 # How to Set Up a Server
 
-[← Back to The Mod Base Setup Guide](../README.md)
-
----
-
 ## License Setup
 
 1. Open your Server Profiles folder and create a new folder with the name `TheModBase`
@@ -90,7 +86,3 @@
 - Test your server before going live
 - Keep backups of your original files
 - Check server logs for any errors after installation
-
----
-
-[← Back to The Mod Base Setup Guide](../README.md)

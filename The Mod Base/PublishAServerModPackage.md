@@ -1,9 +1,5 @@
 # How to Publish a Server Mod Pack at Steam Workshop
 
-[← Back to The Mod Base Setup Guide](../README.md)
-
----
-
 1. Open Steam and search in your library for `DayZ Tools`. Install and start DayZ Tools
 
 <div style="padding-left: 100px">
@@ -44,7 +40,3 @@
 - Check that all files are properly included in the workshop item
 - Verify that the mod is set to public visibility
 - Ensure all dependencies are included
-
----
-
-[← Back to The Mod Base Setup Guide](../README.md)
