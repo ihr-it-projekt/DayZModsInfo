@@ -5,14 +5,12 @@ WORKDIR /app
 
 COPY . .
 
-RUN ls -lsa
-
 RUN npm ci
 
 RUN npm run docs:build
 
 # Stage 2: Serve with Nginx
 FROM nginx:1.28-alpine
-COPY --from=build-stage /app/docs/.vitepress/dist /usr/share/nginx/html
+COPY --from=build-stage /app/.vitepress/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
