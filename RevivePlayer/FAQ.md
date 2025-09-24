@@ -5,6 +5,7 @@ In your `mpmission` folder there is a `cfgIgnoreList.xml` where you have to remo
 
 ### I have another spawn selection mod, can I use it with this mod?
 
+
 Yes, you can. But you have to in MissionServer.c of your spawn selection mod the following line:
 
 ````
