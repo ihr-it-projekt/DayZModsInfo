@@ -12,7 +12,7 @@ RUN npm run docs:build
 # Stage 2: Serve with Nginx
 FROM nginx:1.28-alpine
 # Remove default nginx files
-RUN rm -rf /usr/share/nginx/html/*
+# RUN rm -rf /usr/share/nginx/html/*
 # Copy our built files
 COPY --from=build-stage /app/.vitepress/dist /usr/share/nginx/html
 # Copy custom nginx configuration
