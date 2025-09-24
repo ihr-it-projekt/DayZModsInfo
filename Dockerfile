@@ -15,7 +15,7 @@ FROM nginx:1.28-alpine
 RUN rm -rf /usr/share/nginx/html/*
 # Copy our built files
 COPY --from=build-stage /app/.vitepress/dist /usr/share/nginx/html
-# Create lowercase index.html from Index.html for nginx compatibility
-RUN cp /usr/share/nginx/html/Index.html /usr/share/nginx/html/index.html
+# Copy custom nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
