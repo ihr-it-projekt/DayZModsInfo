@@ -1,6 +1,6 @@
 # Logger.json
 
-See also logging for premium coin usage [Logger.json](../GlobalConfigs/Readme.md#loggerjson)
+See also logging for premium coin usage [Logger](../../GlobalConfigs/Logger.md)
 
 ````
 {

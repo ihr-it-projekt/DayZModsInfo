@@ -13,6 +13,6 @@ With this tool you can move the all buildings to another position.
 - click on "Move Buildings"
 - Use the new file in your server
 
-If no file will be downloaded, you have used the wrong file format. Please use the correct file format. (see [ArenaBuildingConfig.md](../../../Configs/ArenaBuildingConfig.md))
+If no file will be downloaded, you have used the wrong file format. Please use the correct file format. (see [ArenaBuildingConfig.md](../../Configs/ArenaBuildingConfig.md))
 
-How to continue... ? See here: [ArenaBuildingConfig.md](../../../Configs/ArenaBuildingConfig.md)
+How to continue... ? See here: [ArenaBuildingConfig.md](../../Configs/ArenaBuildingConfig.md)

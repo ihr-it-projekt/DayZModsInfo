@@ -16,14 +16,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-Will come when mod is in stable version
-
-## Configs
-
-[Configs](Configs/Index.md)
-
-## Arenas
-[Arenas](Arenas/README.md)
+https://youtu.be/KUnfQ191dW4
 
 ## Tools
 

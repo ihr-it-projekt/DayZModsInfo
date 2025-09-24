@@ -8,9 +8,9 @@ Welcome to The Mod Base setup guide! This section contains comprehensive instruc
 
 ## 📋 Quick Start
 
-1. **[Download Mods](How%20to/Download.md)** - Learn how to download mods and licenses from the webshop
-2. **[Add to Server](How%20to/AddToServer.md)** - Complete server setup guide with step-by-step instructions
-3. **[Publish Server Mod Package](How%20to/PublishAServerModPackage.md)** - Create and publish your server mod package on Steam Workshop
+1. **[Download Mods](Download.md)** - Learn how to download mods and licenses from the webshop
+2. **[Add to Server](AddToServer.md)** - Complete server setup guide with step-by-step instructions
+3. **[Publish Server Mod Package](PublishAServerModPackage.md)** - Create and publish your server mod package on Steam Workshop
 
 ## 🚀 Getting Started
 
@@ -31,7 +31,7 @@ Start by downloading the mods and licenses from the official webshop:
 - Download both the mod files and your license key
 - Accept the terms and conditions
 
-[**📥 Complete Download Guide →**](How%20to/Download.md)
+[**📥 Complete Download Guide →**](Download.md)
 
 #### 2. Set Up Your Server
 Follow the detailed server setup process:
@@ -40,7 +40,7 @@ Follow the detailed server setup process:
 - Configure client-side mod files
 - Set up the workshop mod package
 
-[**⚙️ Complete Server Setup Guide →**](How%20to/AddToServer.md)
+[**⚙️ Complete Server Setup Guide →**](AddToServer.md)
 
 #### 3. Publish Your Mod Package
 Create and publish your server mod package:
@@ -48,7 +48,7 @@ Create and publish your server mod package:
 - Configure your workshop item
 - Publish and update your mod package
 
-[**📤 Complete Publishing Guide →**](How%20to/PublishAServerModPackage.md)
+[**📤 Complete Publishing Guide →**](PublishAServerModPackage.md)
 
 ## 🔧 Configuration
 
@@ -84,9 +84,9 @@ Each mod comes with its own configuration system:
 
 ## 📚 Additional Resources
 
-- **[Main Mod Documentation](../README.md)** - Complete overview of all available mods
-- **[Mod Categories](../README.md#-core-mods)** - Browse mods by category
-- **[Configuration Guides](../README.md#-configuration)** - Learn about mod configuration
+- **[Main Mod Documentation](./README.md)** - Complete overview of all available mods
+- **[Mod Categories](./README.md#-core-mods)** - Browse mods by category
+- **[Configuration Guides](./README.md#-configuration)** - Learn about mod configuration
 
 ## 🔄 Updates
 
