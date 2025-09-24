@@ -6,9 +6,10 @@ export default defineConfig({
 
   title: "by the Buster",
   description: "Docs for The Mod Base mods",
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '/The Mod Base/images/logo.png', alt: 'The Mod Base' },
+    logo: { src: '/logo.png', alt: 'The Mod Base' },
     nav: [
       { text: 'Home', link: './' },
     ],
