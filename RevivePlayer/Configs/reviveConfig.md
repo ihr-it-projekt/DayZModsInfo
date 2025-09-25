@@ -1,5 +1,4 @@
-[**`back`**](../Readme.md)
-
+## Revive Config
 
 ````json lines
 {

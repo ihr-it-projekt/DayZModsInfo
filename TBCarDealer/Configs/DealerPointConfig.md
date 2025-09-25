@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md)
 
 ## DealerPointConfig Example
 

@@ -3,7 +3,7 @@
 A Mod to carry dead players.
 
 ## Shop Link
-https://lbmaster.de/product.php?id=21
+https://www.themodbase.com/mods/TBCarry
 
 ## Support
 
@@ -11,8 +11,8 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](Logo.png)](https://youtu.be/VpCES0LMBiU)
-[![Version 1.1](Logo1.1.png)](https://youtu.be/amBODTDgg38)
+[![Version 1](./Logo.png)](https://youtu.be/VpCES0LMBiU)
+[![Version 1.1](./Logo1.1.png)](https://youtu.be/amBODTDgg38)
 
 ## Features
 
@@ -26,7 +26,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## How to install
 
-See also here: https://lbmaster.de/install/?p=21&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.

@@ -1,6 +1,3 @@
-
-[**`back`**](./Readme.md)
-
 ### Item Class names
 
     - DZLLoadoutActionObject

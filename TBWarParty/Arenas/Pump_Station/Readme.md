@@ -1,4 +1,10 @@
-# WarZxTBM_WarParty_6on6
+# Pump Station
+
+## Files
+
+<a href="./ArenaBuildingConfig/Pump_Station.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/Pump_Station.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 - BadgerBuildings (https://steamcommunity.com/sharedfiles/filedetails/?id=1573788098)
@@ -7,8 +13,8 @@
 
 ## Screenshots
 
-<img src="images/Pump_Station_1.jpg" alt="Cherno" width="512"/>
-<img src="images/Pump_Station_2.jpg" alt="Cherno" width="512"/>
+<img src="./images/Pump_Station_1.jpg" alt="Cherno" width="512"/>
+<img src="./images/Pump_Station_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `Pump_Station.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

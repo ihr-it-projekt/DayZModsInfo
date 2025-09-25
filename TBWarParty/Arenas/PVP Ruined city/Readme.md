@@ -1,4 +1,10 @@
-# PVP Arena CONSTRUCTION
+# PVP Arena Ruined City
+
+## Files
+
+<a href="./ArenaBuildingConfig/PVP Ruined city.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/PVP Ruined city.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 
@@ -8,8 +14,8 @@
 
 ## Screenshots
 
-<img src="images/PVPRuinedcity_1.jpg" alt="Ruined City" width="512"/>
-<img src="images/PVPRuinedcity_2.jpg" alt="Ruined City" width="512"/>
+<img src="./images/PVPRuinedcity_1.jpg" alt="Ruined City" width="512"/>
+<img src="./images/PVPRuinedcity_2.jpg" alt="Ruined City" width="512"/>
 
 ## How to use
 - Copy the `PVP Ruined city.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.

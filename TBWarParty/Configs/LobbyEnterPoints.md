@@ -1,5 +1,3 @@
-[back](Index.md)
-
 # Lobby Entry Points
 
 ````json lines
@@ -22,5 +20,3 @@
     "useExactPosition": 0 // If you want to use the exact position, set this value to 1 otherwise the entry point object will be automatically placed on the ground
 }
 ````
-
-[back](Index.md)

@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## WashingMachineConfig.json
 
 ````json lines
@@ -21,5 +19,3 @@
     ]
 }
 ````
-
-[**`back`**](../Readme.md)

@@ -1,5 +1,3 @@
-[back](../../../Readme.md)
-
 # C File Converter
 
 This tool search for lines like 
@@ -19,7 +17,7 @@ How to continue... ? See here: [ArenaBuildingConfig.md](../../../Configs/ArenaBu
 
 ## Input Format
 
-````*.c
+```c
 void SpawnObject(string objType, vector objPos, vector objOrientation)
 {
 	Object m_Building = Object.Cast(GetGame().CreateObject(objType, objPos));
@@ -40,6 +38,4 @@ void main()
 }
 
 ....
-````
-
-[back](../../../Readme.md)
+```

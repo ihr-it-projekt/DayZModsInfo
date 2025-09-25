@@ -1,7 +1,5 @@
 # logger.json
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   "version": "2", // Never touch this value. It is needed internally

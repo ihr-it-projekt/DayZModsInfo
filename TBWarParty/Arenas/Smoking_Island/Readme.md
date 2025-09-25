@@ -1,4 +1,10 @@
-# Smoking_Island
+# Smoking Island
+
+## Files
+
+<a href="./ArenaBuildingConfig/Smoking_Island.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/Smoking_Island.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 - BadgerBuildings (https://steamcommunity.com/sharedfiles/filedetails/?id=1573788098)
@@ -7,8 +13,8 @@
 
 ## Screenshots
 
-<img src="images/Smoking_Island_1.jpg" alt="Cherno" width="512"/>
-<img src="images/Smoking_Island_2.jpg" alt="Cherno" width="512"/>
+<img src="./images/Smoking_Island_1.jpg" alt="Cherno" width="512"/>
+<img src="./images/Smoking_Island_2.jpg" alt="Cherno" width="512"/>
 
 ## How to use
 - Copy the `Smoking_Island.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

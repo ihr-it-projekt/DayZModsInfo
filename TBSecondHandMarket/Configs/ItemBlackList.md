@@ -1,7 +1,5 @@
 # ItemBlackList.json
 
-[**`back`**](../Readme.md)
-
 These Items can not be traded or ordered.
 
 If you name one entry with `*` like `Survivor*`, all items with the name `Survivor` in will be blacklisted.

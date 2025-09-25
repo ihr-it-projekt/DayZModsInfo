@@ -18,8 +18,8 @@
 
 ## Extensions
 
-- [**`TB Revive Mod`**](https://lbmaster.de/product.php?id=22) 
-- [**`TB Real Estate Mod`**](https://lbmaster.de/product.php?id=19) Buy and extend houses.
+- [**`TB Revive Mod`**](https://www.themodbase.com/mods/TBRevivePlayer) 
+- [**`TB Real Estate Mod`**](https://www.themodbase.com/mods/TBRealEstate) Buy and extend houses.
 
 ## Feature List
 
@@ -132,7 +132,7 @@
 
     - have a panel in almanac where they can see player emergency
 
-#### If TB Revive Mod (https://lbmaster.de/product.php?id=22) is installed
+#### If TB Revive Mod (https://www.themodbase.com/mods/TBRevivePlayer) is installed
 
     - before a player dies, he got a menu to decide for heal by medic, heal by hospital or die.
     - Medics can heal other players

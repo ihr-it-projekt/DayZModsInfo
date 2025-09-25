@@ -1,5 +1,3 @@
-[back](Index.md)
-
 # Logger
 
 ````json lines
@@ -27,5 +25,3 @@
     "discordMatchBodyPlayerFirstLine": "Place | Player name | Points | Kills | Deaths" // Body of the match win message for against all matches
 }
 ````
-
-[back](Index.md)

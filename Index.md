@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="logo_min.gif" alt="The Buster Mods" title="The Buster Mods" height="150ox">
+  <img src="./logo_min.gif" alt="The Buster Mods" title="The Buster Mods" height="150px">
 </div>
 
 # Welcome to TB Mods (DayZ) Readme Pages
 
 ## Links:
 - **Discord**: [Join our Discord](https://discord.gg/kGjN6gJy3m)
-- **Shop**: [Visit our shop](https://lbmaster.de/) 
+- **Shop**: [Visit our shop](https://themodbase.com/) 
 
 ## Index
 
@@ -115,7 +115,7 @@ Most mods include:
 ## 📞 Support
 
 - **Discord**: [Join our Discord](https://discord.gg/kGjN6gJy3m)
-- **Shop**: [Visit our shop](https://lbmaster.de/) 
+- **Shop**: [Visit our shop](https://www.themodbase.com/) 
 - **Documentation**: Each mod folder contains detailed README files
 
 ---

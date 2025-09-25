@@ -1,5 +1,3 @@
-[**`back`**](./Readme.md)
-
 ### Manipulates Effects (Alphabetic order)
 
 #### Blood Regen Effect

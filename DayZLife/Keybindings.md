@@ -1,7 +1,5 @@
 # Keybindings
 
-[**`back`**](./Readme.md)
-
 CtrlL + 1: Open the almanac
 
 CtrlL + CtrlR: Open the almanac

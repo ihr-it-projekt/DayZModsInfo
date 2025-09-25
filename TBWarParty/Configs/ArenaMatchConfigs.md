@@ -1,5 +1,3 @@
-[back](Index.md)
-
 # ArenaMatchConfigs
 
 If you want to add/remove Spawn coordinates, you can do this also easy in game.
@@ -21,13 +19,13 @@ If you want to add/remove Spawn coordinates, you can do this also easy in game.
 - Choose the team you want to add the spawn point at the menu
 - click on "Save"
 
-<img src="images/addSpawn.jpg" alt="addSpawn" width="512"/><br/>
+<img src="./images/addSpawn.jpg" alt="addSpawn" width="512"/><br/>
 *Add a Spawn Position Action*<br/>
-<img src="images/confirmAddSpawn.jpg" alt="confirmAddSpawn" width="512"/><br/>
+<img src="./images/confirmAddSpawn.jpg" alt="confirmAddSpawn" width="512"/><br/>
 *Confirm Add Spawn Position*<br/>
-<img src="images/removeSpawn.jpg" alt="removeSpawn" width="512"/><br/>
+<img src="./images/removeSpawn.jpg" alt="removeSpawn" width="512"/><br/>
 *Remove a Spawn Position Action*<br/>
-<img src="images/spawnMarker.jpg" alt="spawnMarker" width="512"/><br/>
+<img src="./images/spawnMarker.jpg" alt="spawnMarker" width="512"/><br/>
 *Spawn Positions overview*<br/>
 
 After adding the new spawn points, you must reload the configurations via Admin Menu.
@@ -150,5 +148,3 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
     "teamsCount": [], // internal usage, do not change
     }
 ````
-
-[back](Index.md)

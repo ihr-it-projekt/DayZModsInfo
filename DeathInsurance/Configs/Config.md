@@ -1,6 +1,3 @@
-[**`back`**](../Readme.md)
-
-
 ## Config.json
 
 ```json lines

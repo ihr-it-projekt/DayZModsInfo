@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#configuration)
 ## GrinderConfig.json
 ```json lines
 {

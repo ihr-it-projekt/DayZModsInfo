@@ -7,7 +7,7 @@
 This mod allows you to harvest, craft and use jewels with different Skills.
 
 ## Shop Link
-https://lbmaster.de/product.php?id=27
+https://www.themodbase.com/mods/TBJewelsOfSurvival
 
 ## Support
 
@@ -77,7 +77,7 @@ You will find more information here: [https://github.com/ihr-it-projekt/DayZMods
 
 ### How to install
 
-See also here: https://lbmaster.de/install/?p=27&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
@@ -93,9 +93,6 @@ See also here: https://lbmaster.de/install/?p=27&h=1
 
 ### Types
 - [Types](Types.md)
-
-## FAQ
-[HowToMigrateFrom1to2.md](HowToMigrateFrom1to2.md)
 
 ### Jewels
 #### Rings

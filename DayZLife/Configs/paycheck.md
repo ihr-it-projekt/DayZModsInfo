@@ -1,7 +1,5 @@
 # paycheck.json
 
-[**`back`**](../Readme.md)
-
 ````json lines
 
 {

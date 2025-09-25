@@ -1,7 +1,5 @@
 # traderCategories.json
 
-[**`back`**](../Readme.md)
-
 Link Online Editor: [traderCategories.json](https://tools.dayz-life.net/category-editor/add-items)
 
 You can use our Online Editor for creating this configuration, you only have to add Attachments manually. If you use the online Editor, the JSON file will be compressed formatted. But after first start of the mod, the file will be well formatted

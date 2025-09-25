@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## StaticDryerConfig.json
 
 ````json lines
@@ -25,5 +23,3 @@
   ]
 }
 ````
-
-[**`back`**](../Readme.md)

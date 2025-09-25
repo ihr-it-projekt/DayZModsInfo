@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## GlobalRaidConfig.json
 
 ```json lines

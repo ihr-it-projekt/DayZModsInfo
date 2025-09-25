@@ -1,4 +1,3 @@
-[**`back`**](../Readme.md#rings)
 ## Ring of Perseverance Level 1 (Type: TBJOFRingOfPerseveranceLevel1)
 ![Ring of Perseverance Level 1](../images/ROFPL1.JPG "Ring of Perseverance Level1")
 ## Ring of Perseverance Level 2 (Type: TBJOFRingOfPerseveranceLevel2)

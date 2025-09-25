@@ -5,7 +5,7 @@ A mod to revive dead players in DayZ.
 <img src="./logo.png" alt="Revive Player" width="400"/>
 
 ## Shop Link
-https://lbmaster.de/product.php?id=22
+https://www.themodbase.com/mods/TBRevivePlayer
 
 ## Support
 
@@ -13,7 +13,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](logoYT.png)](https://youtu.be/Dh3ECiVC6S4)
+[![Version 1](./logoYT.png)](https://youtu.be/Dh3ECiVC6S4)
 
 ## Features
 
@@ -38,7 +38,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## How to install
 
-See also here: https://lbmaster.de/install/?p=22&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
@@ -49,7 +49,6 @@ See also here: https://lbmaster.de/install/?p=22&h=1
 - Start your Server :-)
 
 - [FAQ.md](FAQ.md)
-- [HowToMigrateFrom1to2.md](HowToMigrateFrom1to2.md)
 
 
 ## Configuration

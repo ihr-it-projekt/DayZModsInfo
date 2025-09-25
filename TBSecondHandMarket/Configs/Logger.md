@@ -1,7 +1,5 @@
 # Logger.json
 
-[**`back`**](../Readme.md)
-
 ```json lines
 {
   // Never touch this value. It is needed internally

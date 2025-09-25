@@ -1,6 +1,6 @@
 # TB War Party
 
-<img src="Images/TBWP_Cover.jpg" alt="logo" width="512"/><br/>
+<img src="./Images/TBWP_Cover.jpg" alt="logo" width="512"/><br/>
 
 ## Description
 
@@ -8,7 +8,7 @@ Player can make different fights in an arena in Teams or against each other with
 
 ## Shop Link
 
-https://lbmaster.de/product.php?id=39
+https://www.themodbase.com/mods/TBWarParty
 
 ## Support
 
@@ -16,14 +16,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-Will come when mod is in stable version
-
-## Configs
-
-[Configs](Configs/Index.md)
-
-## Arenas
-[Arenas](Arenas/README.md)
+https://youtu.be/KUnfQ191dW4
 
 ## Tools
 
@@ -164,7 +157,7 @@ Will come when mod is in stable version
 
 ## How to install
 
-See also here: https://lbmaster.de/install/?p=39&h=1
+See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.

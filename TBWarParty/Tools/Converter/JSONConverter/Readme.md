@@ -1,6 +1,3 @@
-[back](../../../Readme.md)
-
-
 # Json Converter
 
 Converts the input file from Input format to correct 
@@ -54,5 +51,3 @@ How to continue... ? See here: [ArenaBuildingConfig.md](../../../Configs/ArenaBu
   ]
 }
 ````
-
-[back](../../../Readme.md)

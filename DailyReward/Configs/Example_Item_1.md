@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 # Items/Example_Item_1.json
 
 Here you can configure your items.

@@ -35,7 +35,7 @@
 - Admin can reload configs and data at washing machines and dryers
 
 ## Shop Link
-https://lbmaster.de/product.php?id=25
+https://www.themodbase.com/mods/TBBasicNeeds
 
 ## Support
 

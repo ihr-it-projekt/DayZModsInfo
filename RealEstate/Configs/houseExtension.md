@@ -1,5 +1,3 @@
-[**`back`**](../Readme.md)
-
 ## HouseExtensions.json
 
 ```json lines

@@ -1,12 +1,13 @@
 # TB Daily Reward
-
-<img src="./logo.png" alt="TB Daily Reward" width="512"/>
+<div align="center">
+  <img src="./logo_new.png" alt="TB Daily Reward" width="256"/>
+</div>
 
 ## Description
 This Mod allows you in DayZ to get a reward for everyday you play on the server.
 
 ## Shop Link
-https://lbmaster.de/product.php?id=20
+https://www.themodbase.com/mods/TBDailyReward
 
 ## Support
 
@@ -14,7 +15,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
+[![Version 1](./logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
 
 ## Features
 - monetise your sever with premium rewards
@@ -47,9 +48,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## FAQ
 [FAQ.md](FAQ.md)
-
-## How to migrate from Version 1.x.x to 2.x.x
-[HowToMigrateFrom1to2.md](HowToMigrateFrom1to2.md)
 
 ## Configurations
 

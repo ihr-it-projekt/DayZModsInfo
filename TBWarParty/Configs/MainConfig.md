@@ -1,4 +1,3 @@
-[back](Index.md)
 
 # MainConfig.json
 
@@ -28,5 +27,3 @@
   "enableHitAnimation": 1 // 1 = on , 0 = off Player becomes an hit animation when he got an hit. 
 }
 ````
-
-[back](Index.md)

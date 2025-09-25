@@ -1,4 +1,10 @@
-# PVP Arena CONSTRUCTION
+# War Arena PVP Hanger
+
+## Files
+
+<a href="./ArenaBuildingConfig/warareanaPVPhangar.json" download>Arena buildings Config</a>
+
+<a href="./ArenaMatchConfig/warareanaPVPhangar.json" download>Arena Match Config</a>
 
 ## Required Mod Packs
 
@@ -8,8 +14,8 @@
 
 ## Screenshots
 
-<img src="images/warareanaPVPhangar_1.jpg" alt="PVP close" width="512"/>
-<img src="images/warareanaPVPhangar_2.jpg" alt="PVP close" width="512"/>
+<img src="./images/warareanaPVPhangar_1.jpg" alt="PVP close" width="512"/>
+<img src="./images/warareanaPVPhangar_2.jpg" alt="PVP close" width="512"/>
 
 ## How to use
 - Copy the `warareanaPVPhangar.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.
