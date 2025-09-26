@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   srcDir: ".",
 
   title: "by the Buster",
@@ -22,6 +23,7 @@ export default defineConfig({
               { text: 'Add a Mod to a Server', link: '/The Mod Base/AddToServer.md' },
               { text: 'Download a Mod', link: '/The Mod Base/Download.md' },
               { text: 'Publish a Server Mod Package', link: '/The Mod Base/PublishAServerModPackage.md' },
+              { text: 'Config a Server at TheModBase.com', link: '/The Mod Base/ConfigAServerAtTheModBaseCom.md' },
             ]
           },
           {
@@ -40,6 +42,26 @@ export default defineConfig({
                       { text: 'StaticDryerConfig', link: '/BasicNeeds/Configs/StaticDryerConfig.md' },
                       { text: 'StaticWashingPlaces', link: '/BasicNeeds/Configs/StaticWashingPlaces.md' },
                       { text: 'WashingMachineConfig', link: '/BasicNeeds/Configs/WashingMachineConfig.md' },
+                    ]
+                  }
+                ]
+              },
+              {
+                text: 'CarDealer', link: '/TBCarDealer/Readme.md', collapsed: true, items: [
+                  { text: 'Types', link: '/TBCarDealer/Types.md' },
+                  {
+                    text: 'Configs', collapsed: true, items: [
+                      { text: 'CarConfigs', link: '/TBCarDealer/Configs/CarConfigs.md' },
+                      { text: 'DealerPointConfig', link: '/TBCarDealer/Configs/DealerPointConfig.md' },
+                      { text: 'DealerPointsConfig', link: '/TBCarDealer/Configs/DealerPointsConfig.md' },
+                      { text: 'Logger', link: '/TBCarDealer/Configs/Logger.md' },
+                      { text: 'PriceItems', link: '/TBCarDealer/Configs/PriceItems.md' },
+                    ]
+                  },
+                  {
+                    text: 'ConfigEditor', collapsed: true, items: [
+                      { text: 'FAQ', link: '/TBCarDealer/ConfigEditor/FAQ.md' },
+                      { text: 'Readme', link: '/TBCarDealer/ConfigEditor/Readme.md' },
                     ]
                   }
                 ]
@@ -121,50 +143,9 @@ export default defineConfig({
                   { text: 'VehicleSpawnConfig', link: '/GlobalConfigs/VehicleSpawnConfig.md' },
                 ]
               },
+              { text: 'ItemExchange', link: '/TBItemExchange/README.md' },
               {
-                text: 'RealEstate', link: '/RealEstate/Readme.md', collapsed: true, items: [
-                  { text: 'GlobalRaidConfig', link: '/RealEstate/Configs/GlobalRaidConfig.md' },
-                  { text: 'house', link: '/RealEstate/Configs/house.md' },
-                  { text: 'HouseDefinition', link: '/RealEstate/Configs/HouseDefinition.md' },
-                  { text: 'houseExtension', link: '/RealEstate/Configs/houseExtension.md' },
-                  { text: 'logger', link: '/RealEstate/Configs/logger.md' },
-                  { text: 'SpawnPoint', link: '/RealEstate/Configs/SpawnPoint.md' },
-                ]
-              },
-              {
-                text: 'RevivePlayer', link: '/RevivePlayer/Readme.md', collapsed: true, items: [
-                  { text: 'FAQ', link: '/RevivePlayer/FAQ.md' },
-                  {
-                    text: 'Configs', collapsed: true, items: [
-                      { text: 'logger', link: '/RevivePlayer/Configs/logger.md' },
-                      { text: 'reviveConfig', link: '/RevivePlayer/Configs/reviveConfig.md' },
-                    ]
-                  }
-                ]
-              },
-              {
-                text: 'TBCarDealer', link: '/TBCarDealer/Readme.md', collapsed: true, items: [
-                  { text: 'Types', link: '/TBCarDealer/Types.md' },
-                  {
-                    text: 'Configs', collapsed: true, items: [
-                      { text: 'CarConfigs', link: '/TBCarDealer/Configs/CarConfigs.md' },
-                      { text: 'DealerPointConfig', link: '/TBCarDealer/Configs/DealerPointConfig.md' },
-                      { text: 'DealerPointsConfig', link: '/TBCarDealer/Configs/DealerPointsConfig.md' },
-                      { text: 'Logger', link: '/TBCarDealer/Configs/Logger.md' },
-                      { text: 'PriceItems', link: '/TBCarDealer/Configs/PriceItems.md' },
-                    ]
-                  },
-                  {
-                    text: 'ConfigEditor', collapsed: true, items: [
-                      { text: 'FAQ', link: '/TBCarDealer/ConfigEditor/FAQ.md' },
-                      { text: 'Readme', link: '/TBCarDealer/ConfigEditor/Readme.md' },
-                    ]
-                  }
-                ]
-              },
-              { text: 'TBItemExchange', link: '/TBItemExchange/README.md' },
-              {
-                text: 'TBJewelsOfSurvival', link: '/TBJewelsOfSurvival/Readme.md', collapsed: true, items: [
+                text: 'JewelsOfSurvival', link: '/TBJewelsOfSurvival/Readme.md', collapsed: true, items: [
                   { text: 'Effects', link: '/TBJewelsOfSurvival/Effects.md' },
                   { text: 'Types', link: '/TBJewelsOfSurvival/Types.md' },
                   {
@@ -194,7 +175,28 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'TBSecondHandMarket', link: '/TBSecondHandMarket/Readme.md', collapsed: true, items: [
+                text: 'RealEstate', link: '/RealEstate/Readme.md', collapsed: true, items: [
+                  { text: 'GlobalRaidConfig', link: '/RealEstate/Configs/GlobalRaidConfig.md' },
+                  { text: 'house', link: '/RealEstate/Configs/house.md' },
+                  { text: 'HouseDefinition', link: '/RealEstate/Configs/HouseDefinition.md' },
+                  { text: 'houseExtension', link: '/RealEstate/Configs/houseExtension.md' },
+                  { text: 'logger', link: '/RealEstate/Configs/logger.md' },
+                  { text: 'SpawnPoint', link: '/RealEstate/Configs/SpawnPoint.md' },
+                ]
+              },
+              {
+                text: 'RevivePlayer', link: '/RevivePlayer/Readme.md', collapsed: true, items: [
+                  { text: 'FAQ', link: '/RevivePlayer/FAQ.md' },
+                  {
+                    text: 'Configs', collapsed: true, items: [
+                      { text: 'logger', link: '/RevivePlayer/Configs/logger.md' },
+                      { text: 'reviveConfig', link: '/RevivePlayer/Configs/reviveConfig.md' },
+                    ]
+                  }
+                ]
+              },
+              {
+                text: 'SecondHandMarket', link: '/TBSecondHandMarket/Readme.md', collapsed: true, items: [
                   { text: 'Types', link: '/TBSecondHandMarket/Types.md' },
                   {
                     text: 'Configs', collapsed: true, items: [
@@ -211,7 +213,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'TBWarParty', link: '/TBWarParty/Readme.md', collapsed: true, items: [
+                text: 'WarParty', link: '/TBWarParty/Readme.md', collapsed: true, items: [
                   {
                     text: 'Configs', collapsed: true, items: [
                       { text: 'Index', link: '/TBWarParty/Configs/Index.md' },
@@ -248,7 +250,7 @@ export default defineConfig({
                   }
                 ]
               },
-              { text: 'TBZombieEvents', link: '/TBZombieEvents/Readme.md' },
+              { text: 'ZombieEvents', link: '/TBZombieEvents/Readme.md' },
             ]
           },
 
