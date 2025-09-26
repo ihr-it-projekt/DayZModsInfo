@@ -15,13 +15,13 @@
 
 ## Screenshots
 
-<img src="./images/Dust_1.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_2.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_3.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_4.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_5.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_6.jpg" alt="Ruined City" width="512"/>
-<img src="./images/Dust_7.jpg" alt="Ruined City" width="512"/>
+<img src="./images/Dust_1.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_2.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_3.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_4.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_5.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_6.jpg" alt="Ruined City" width="256"/>
+<img src="./images/Dust_7.jpg" alt="Ruined City" width="256"/>
 
 ## How to use
 - Copy the `Dust2.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.

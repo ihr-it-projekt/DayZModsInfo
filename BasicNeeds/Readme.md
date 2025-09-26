@@ -1,5 +1,7 @@
 # TB Basic Needs
 
+<img src="./LogoSmall.png" alt="TB Basic Needs" width="256"/>
+
 ## Features
 - Player has to make poo and pee, if he did not, and you have configured, player will loos blood and health
 - Pee and Poo will make body and clothing dirty

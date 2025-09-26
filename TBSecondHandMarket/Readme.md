@@ -1,6 +1,6 @@
 # TB Second Hand Market
 
-<img src="./TBSecondHandMarket.jpeg" alt="TB Second Hand Market" width="512"/>
+<img src="./TBSecondHandMarket.jpeg" alt="TB Second Hand Market" width="256"/>
 
 ## Description
 

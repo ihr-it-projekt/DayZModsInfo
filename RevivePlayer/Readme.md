@@ -1,8 +1,8 @@
 # TB Revive Player
 
-A mod to revive dead players in DayZ.
-
 <img src="./logo.png" alt="Revive Player" width="400"/>
+
+A mod to revive dead players in DayZ.
 
 ## Shop Link
 https://www.themodbase.com/mods/TBRevivePlayer
