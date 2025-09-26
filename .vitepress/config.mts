@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import lightbox from "vitepress-plugin-lightbox"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +8,13 @@ export default defineConfig({
 
   title: "by the Buster",
   description: "Docs for The Mod Base mods",
-  
+  markdown: {
+    config: (md) => {
+      // Use lightbox plugin
+      md.use(lightbox, {});
+    },
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/logo.png', alt: 'The Mod Base' },

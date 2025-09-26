@@ -1,5 +1,5 @@
 
-## DealerPointConfig Example
+# DealerPointConfig Example
 
 ````json lines
 {

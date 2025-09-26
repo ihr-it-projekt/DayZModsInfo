@@ -14,8 +14,8 @@
 
 ## Screenshots
 
-<img src="./images/warareanaPVPhangar_1.jpg" alt="PVP close" width="256"/>
-<img src="./images/warareanaPVPhangar_2.jpg" alt="PVP close" width="256"/>
+![PVP close](./images/warareanaPVPhangar_1.jpg)
+![PVP close](./images/warareanaPVPhangar_2.jpg)
 
 ## How to use
 - Copy the `warareanaPVPhangar.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.

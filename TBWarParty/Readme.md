@@ -1,6 +1,6 @@
 # TB War Party
 
-<img src="./Images/TBWP_Cover.jpg" alt="TB War Party" width="256"/><br/>
+![TB War Party](./Images/TBWP_Cover.jpg)
 
 ## Description
 

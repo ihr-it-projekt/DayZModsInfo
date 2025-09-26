@@ -1,4 +1,4 @@
-## InsurancePointConfig.json
+# InsurancePointConfig.json
 
 ```json lines
 {

@@ -1,4 +1,4 @@
-## SmelterConfig.json
+# SmelterConfig.json
 ```json lines
 {
   // never change this, internal version number

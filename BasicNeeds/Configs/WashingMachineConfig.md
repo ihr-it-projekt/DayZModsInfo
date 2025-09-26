@@ -1,4 +1,4 @@
-## WashingMachineConfig.json
+# WashingMachineConfig.json
 
 ````json lines
 {

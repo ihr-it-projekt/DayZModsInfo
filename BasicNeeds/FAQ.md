@@ -1,6 +1,6 @@
-## FAQ
+# FAQ
 
-### How to install
+## How to install
 
 See also [here](../The%20Mod%20Base/README.md)
 

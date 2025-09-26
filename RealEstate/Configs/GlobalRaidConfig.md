@@ -1,4 +1,4 @@
-## GlobalRaidConfig.json
+# GlobalRaidConfig.json
 
 ```json lines
 {

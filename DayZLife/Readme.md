@@ -1,6 +1,6 @@
 # DayZ Life Version 2 (RP Framework)
 
-<img src="./DayZLife2Logo.png" alt="DayZ Life V2" width="256"/>
+![DayZ Life V2](./DayZLife2Logo.png)
 
 ***Version 1 see: https://dayz-life.net/***
 

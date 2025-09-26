@@ -1,4 +1,4 @@
-## GrinderRecipeConfiguration.json
+# GrinderRecipeConfiguration.json
 ```json lines
 {
     "version": "1", // never change this, internal version number

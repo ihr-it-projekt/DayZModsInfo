@@ -1,4 +1,4 @@
-## How to upgrade from 1.x.x to 2.x.x
+# How to upgrade from 1.x.x to 2.x.x
 
 **Please read before everything, before you start.**
 

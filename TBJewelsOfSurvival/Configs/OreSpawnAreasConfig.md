@@ -1,4 +1,4 @@
-## OreSpawnAreasConfig.json
+# OreSpawnAreasConfig.json
 ```json lines
 {
     "version": "2", // never change this, internal version number

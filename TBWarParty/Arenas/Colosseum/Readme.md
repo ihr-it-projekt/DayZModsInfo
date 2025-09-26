@@ -13,8 +13,8 @@
 
 ## Screenshots
 
-<img src="./images/Colosseum_1.jpg" alt="Cherno" width="256"/>
-<img src="./images/Colosseum_2.jpg" alt="Cherno" width="256"/>
+![Cherno](./images/Colosseum_1.jpg)
+![Cherno](./images/Colosseum_2.jpg)
 
 ## How to use
 - Copy the `Colosseum.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

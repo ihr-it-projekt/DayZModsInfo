@@ -1,4 +1,4 @@
-### Logger.json
+# Logger.json
 ```json lines
 {
     "version": "2", // never change this, internal version number

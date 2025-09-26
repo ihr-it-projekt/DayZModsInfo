@@ -1,4 +1,4 @@
-## logger.json
+# logger.json
 
 ````json lines
 {

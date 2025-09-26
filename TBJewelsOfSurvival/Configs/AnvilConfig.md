@@ -1,4 +1,4 @@
-## AnvilConfig.json
+# AnvilConfig.json
 
 ```json lines
 {

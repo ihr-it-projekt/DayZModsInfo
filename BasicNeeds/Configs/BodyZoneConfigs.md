@@ -1,4 +1,4 @@
-## BodyZoneConfigs/zonename.json
+# BodyZoneConfigs/zonename.json
 
 For all Zones you need one config file. This file will automatically generated when you start the server. You can change the values in this file.
 

@@ -12,10 +12,10 @@
 
 ## Screenshots
 
-<img src="./images/cherno1.jpg" alt="Cherno" width="256"/>
-<img src="./images/cherno2.jpg" alt="Cherno" width="256"/>
-<img src="./images/cherno3.jpg" alt="Cherno" width="256"/>
-<img src="./images/cherno4.jpg" alt="Cherno" width="256"/>
+![Cherno](./images/cherno1.jpg)
+![Cherno](./images/cherno2.jpg)
+![Cherno](./images/cherno3.jpg)
+![Cherno](./images/cherno4.jpg)
 
 ## How to use
 - Copy the `Cherno.json` from `Config\ArenaBuildingConfigs` into your `YourServerProfilesFolder\TBMods\Config\TBWarParty\ArenaBuildingConfigs\` folder.

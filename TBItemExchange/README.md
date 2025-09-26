@@ -1,6 +1,6 @@
 # TBItemExchange
 
-<img src="./TBExchangeItem.jpeg" alt="TB Jewels of Survival" width="400"/>
+![TB Jewels of Survival](./TBExchangeItem.jpeg)
 
 ## Description
 

@@ -1,11 +1,13 @@
-### What kind of Action Objects are available?
+# Types
+
+## What kind of Action Objects are available?
 
 - TBCDCashier
 - TBCDMachine (default)
 - TBCDPokladna
 - TBCDPultskasou
 
-#### Premium Coins
+## Premium Coins
 
 Activates Premium for the player.
 
@@ -14,9 +16,10 @@ Activates Premium for the player.
 - TBCarDealerPremiumCoinSilver ( 7 Days Premium Coin)
 - TBCarDealerPremiumCoinGold ( 30 Days Premium Coin)
 
-<p float="left">
-  <img src="./images/img.png" width="22%" />
-  <img src="./images/20240307163631_1.jpg" width="22%" />
-  <img src="./images/20240307163720_1.jpg" width="22%" />
-  <img src="./images/20240307163807_1.jpg" width="22%" />
-</p>
+
+## Images of Action Objects
+
+![img](./images/img.png)
+![20240307163631_1](./images/20240307163631_1.jpg)
+![20240307163720_1](./images/20240307163720_1.jpg)
+![20240307163807_1](./images/20240307163807_1.jpg)

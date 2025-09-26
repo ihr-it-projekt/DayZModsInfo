@@ -1,4 +1,4 @@
-## HouseExtensions.json
+# HouseExtensions.json
 
 ```json lines
 {

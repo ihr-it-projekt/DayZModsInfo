@@ -1,4 +1,4 @@
-## StaticDryerConfig.json
+# StaticDryerConfig.json
 
 ````json lines
 {

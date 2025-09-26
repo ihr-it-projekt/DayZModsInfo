@@ -1,4 +1,4 @@
-## house.json
+# house.json
 ````json lines
 {
     "version": "8", // Never touch this value. It is needed internally

@@ -3,33 +3,23 @@
 1. Open the webshop at https://themodbase.com and login
 2. Navigate to "Your license and downloads"
 
-<div style="padding-left: 100px">
-  <img src="./images/open_license.png" alt="The Mod Base" title="The Mod Base" height="500px" />
-</div>
+![The Mod Base](./images/open_license.png)
 
 3. Click on the download icon
 
-<div style="padding-left: 100px">
-  <img src="./images/licensesoverview_download.png" alt="The Mod Base" title="The Mod Base" height="150px" />
-</div>
+![The Mod Base](./images/licensesoverview_download.png)
 
 4. Download your License Key for later use
 
-<div style="padding-left: 100px">
-  <img src="./images/download_license_download.png" alt="The Mod Base" title="The Mod Base" height="500px" />
-</div>
+![The Mod Base](./images/download_license_download.png)
 
 5. Accept Terms & Conditions and Upload Policy
 
-<div style="padding-left: 100px">
-  <img src="./images/download_before_accept.png" alt="The Mod Base" title="The Mod Base" height="500px" />
-</div>
+![The Mod Base](./images/download_before_accept.png)
 
 6. Download the Mods and Dependencies
 
-<div style="padding-left: 100px">
-  <img src="./images/download_after_accept.png" alt="The Mod Base" title="The Mod Base" height="500px" />
-</div>
+![The Mod Base](./images/download_after_accept.png)
 
 ## Next Steps
 

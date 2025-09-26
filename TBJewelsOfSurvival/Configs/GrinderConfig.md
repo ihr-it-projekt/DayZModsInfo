@@ -1,4 +1,4 @@
-## GrinderConfig.json
+# GrinderConfig.json
 ```json lines
 {
   // never change this, internal version number

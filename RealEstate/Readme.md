@@ -1,6 +1,6 @@
 # TB Real Estate
 
-<img src="./Logo.png" alt="TB Real Estate" width="400"/>
+![TB Real Estate](./Logo.png)
 
 Use house as home. Buy, sell, extend and lock your house. Share your house and house inventory with your friends.
 Protect your house with an alarm system and respawn in your house.

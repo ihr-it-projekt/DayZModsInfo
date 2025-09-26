@@ -1,6 +1,6 @@
-## Config files
+# Config files
 
-### dayZCasinoConfigV2.json
+## dayZCasinoConfigV2.json
 
 ````json lines
 {

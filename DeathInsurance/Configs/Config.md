@@ -1,4 +1,4 @@
-## Config.json
+# Config.json
 
 ```json lines
 {

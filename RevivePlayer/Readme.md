@@ -1,6 +1,6 @@
 # TB Revive Player
 
-<img src="./logo.png" alt="Revive Player" width="400"/>
+![Revive Player](./logo.png)
 
 A mod to revive dead players in DayZ.
 

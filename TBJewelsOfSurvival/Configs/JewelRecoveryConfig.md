@@ -1,4 +1,4 @@
-##  JewelRecoveryConfig.json
+#  JewelRecoveryConfig.json
 ```json lines
 {
     "ringOfAttackLevel1": {

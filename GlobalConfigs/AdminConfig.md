@@ -1,4 +1,4 @@
-### AdminConfig.json
+# AdminConfig.json
 ````json lines
 {
   "version": "9", // never change this, internal version number

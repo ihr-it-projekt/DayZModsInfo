@@ -1,4 +1,4 @@
-## RingEnableConfig.json
+# RingEnableConfig.json
 ```json lines
 {
     "enableTBJOFRingOfPerseveranceLevel1": 1, // 1 = enabled, 0 = disabled the ring

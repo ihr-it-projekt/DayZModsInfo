@@ -19,15 +19,12 @@ If you have not done this so far, pls read the listed guides before
 
 *Here you can find alle your manual and auto created servers.*
 
-<div align="center">
-  <img src="./images/YourServers.png" alt="The Mod Base" title="The Mod Base" height="250" >
-</div>
+![./images/YourServers.png](./images/YourServers.png)
 
 3. Click on the glass to see the details of the auto created server
 
-<div align="center">
-  <img src="./images/YourServersDetails.png" alt="The Mod Base" title="Server Details" height="250" >
-</div>
+
+![The Mod Base](./images/YourServersDetails.png)
 
 4. Steps on Details overview
 

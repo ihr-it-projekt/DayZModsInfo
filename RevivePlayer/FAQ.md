@@ -1,4 +1,4 @@
-## FAQ
+# FAQ
 
 ## My defibrillator is de spawned after re log/server restart?
 In your `mpmission` folder there is a `cfgIgnoreList.xml` where you have to remove the "Defibrillator" entry

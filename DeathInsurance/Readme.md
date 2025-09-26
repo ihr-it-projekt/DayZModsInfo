@@ -1,6 +1,6 @@
 # TB Death Insurance
 
-<img src="./DeathInsurance.jpeg" alt="TB Death Insurance" width="256"/>
+![TB Death Insurance](./DeathInsurance.jpeg)
 
 ## Description
 This mods allows player to have an insurance for their gear. If they die, they can get their gear back. 

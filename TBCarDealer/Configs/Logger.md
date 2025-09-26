@@ -1,5 +1,5 @@
 
-## Logger.json
+# Logger.json
 
 See also logging for premium coin usage [Logger](../../GlobalConfigs/Logger.md)
 

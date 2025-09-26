@@ -1,4 +1,4 @@
-## MineConfig.json
+# MineConfig.json
 ```json lines
 {
     "mineTimeCopperInSeconds": 30, // how long it takes to mine copper ore

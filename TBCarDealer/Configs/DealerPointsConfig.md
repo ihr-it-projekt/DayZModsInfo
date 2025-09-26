@@ -1,4 +1,4 @@
-## DealerPointsConfig.json
+# DealerPointsConfig.json
 
 ````json lines
 {

@@ -1,6 +1,6 @@
 # TB Car Dealer
 
-<img src="./Logo.jpeg" alt="TB Car Dealer" width="256"/>
+![TB Car Dealer](./Logo.jpeg)
 
 ## Description
 

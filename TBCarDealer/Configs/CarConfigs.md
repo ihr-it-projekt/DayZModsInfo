@@ -1,4 +1,4 @@
-## CarConfigs Example
+# CarConfigs Example
 
 ````json lines
 {

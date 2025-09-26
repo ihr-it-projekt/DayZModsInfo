@@ -1,6 +1,6 @@
 # TB Jewels of Survival
 
-<img src="./images/jewels_of_survival.jpeg" alt="TB Jewels of Survival" width="400"/>
+![TB Jewels of Survival](./images/jewels_of_survival.jpeg)
 
 ## Short Description
 

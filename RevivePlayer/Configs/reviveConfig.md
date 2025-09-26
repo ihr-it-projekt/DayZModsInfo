@@ -1,4 +1,4 @@
-## Revive Config
+# Revive Config
 
 ````json lines
 {

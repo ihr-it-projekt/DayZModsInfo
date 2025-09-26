@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="./logo_min.gif" alt="The Buster Mods" title="The Buster Mods" height="150px">
-</div>
+![The Buster Mods](./logo_min.gif)
 
 # Welcome to TB Mods (DayZ) Readme Pages
 

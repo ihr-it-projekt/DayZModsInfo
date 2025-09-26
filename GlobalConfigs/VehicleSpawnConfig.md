@@ -1,6 +1,6 @@
-### VehicleSpawnConfig.json
+# VehicleSpawnConfig.json
 
-#### Only for Car Dealer, Second Hand Market and Daily Reward
+## Only for Car Dealer, Second Hand Market and Daily Reward
 
 ````json lines
 {

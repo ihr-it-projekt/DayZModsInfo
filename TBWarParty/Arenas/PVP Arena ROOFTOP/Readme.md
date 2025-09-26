@@ -14,8 +14,8 @@
 
 ## Screenshots
 
-<img src="./images/PVPArenaROOFTOP_1.jpg" alt="ROOFTOP" width="256"/>
-<img src="./images/PVPArenaROOFTOP_2.jpg" alt="ROOFTOP" width="256"/>
+![ROOFTOP](./images/PVPArenaROOFTOP_1.jpg)
+![ROOFTOP](./images/PVPArenaROOFTOP_2.jpg)
 
 ## How to use
 - Copy the `PVP Arena ROOFTOP.dze` from `Config\EditorFiles` into your `YourServer\MPMissions\MAP\EditorFiles\` folder.

@@ -1,4 +1,4 @@
-## SpawnPoint.json
+# SpawnPoint.json
 
 ````json lines
 { 

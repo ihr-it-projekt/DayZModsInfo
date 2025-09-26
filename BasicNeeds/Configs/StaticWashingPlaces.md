@@ -1,4 +1,4 @@
-## StaticWashingPlaces.json
+# StaticWashingPlaces.json
 
 ````json lines
 {

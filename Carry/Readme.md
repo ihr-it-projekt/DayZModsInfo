@@ -1,6 +1,6 @@
 # TB Carry
 
-<img src="./Logo_.png" alt="TB Daily Reward" width="256"/>
+![TB Daily Reward](./Logo_.png)
 
 A Mod to carry dead players.
 

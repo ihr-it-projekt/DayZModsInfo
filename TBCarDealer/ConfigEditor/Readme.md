@@ -15,20 +15,20 @@
 
 <!-- Prefix="types" -->
 ````
-<img src="./Prefix.png"/>
+![Prefix](./Prefix.png)
 
 - Click on `File` at the top left and then on `Load MPMission`.
 Navigate to your MPMission and click on Select folder
 
-<img src="./LoadMPMission.png"/>
+![LoadMPMission](./LoadMPMission.png)
 
 - The `Types.xml` files in which you have entered the prefix in the second line will be displayed as checkboxes in the list.
-<img src="./SelectMPMissionFolder.png"/>
+![SelectMPMissionFolder](./SelectMPMissionFolder.png)
 
 - You could check them and the entire content will be displayed in Type Name.
 - Double-click on an item to add this item to Unique Name. At the bottom you have the option to search for specific items/type names or click on Add all Items
 
-<img src="./ImportetXMLTypes.png"/>
+![ImportetXMLTypes](./ImportetXMLTypes.png)
 
 To: 
   - add attachments
@@ -40,15 +40,15 @@ To:
   
 click once on the item in `Unique Name` and then click on the `+` next to the item you want to add or enter the desired values for Price, Sell, Quantity and Is Premium.
 
-<img src="./AddItems.png"/>
+![AddItems](./AddItems.png)
 
 - To create a CarConfig you have to double click on `Add Car Config` and then enter the name you want. 
 - To enter a category name in the CarConfig you have to double click on `Add Category` (here in my picture it is already called SedanCars because I gave the category a name)
 - Left-click in the `Car Config` to select the Config you want to add vehicles. Then double-click on the vehicle in the list of `Unique Name` to add it to the selected Car Config. 
 
-<img src="./AddAttachments.png"/>
+![AddAttachments](./AddAttachments.png)
 
-<img src="./CreateCarConfig.png"/>
+![CreateCarConfig](./CreateCarConfig.png)
 
 - To export your work, click on `File` at the top left and select `Export Price Items`.
 - Navigate to the folder where you want to have the .json files and click on `Select folder`. The files will now created in that folder.
@@ -56,4 +56,4 @@ click once on the item in `Unique Name` and then click on the `+` next to the it
 - You can import existing PriceItems files as well as existing CarConfigs.
 - #### I advise you to import both before editing PriceItems and CarConfigs to avoid errors later on. 
 
-<img src="./Export.png"/>
+![Export](./Export.png)
