@@ -4,15 +4,11 @@
 
 1. Open your Server Profiles folder and create a new folder with the name `TheModBase`
 
-<div style="padding-left: 100px">
-  ![The Mod Base](./images/profiles_folder_the_mod_base.png)
-</div>
+![The Mod Base](./images/profiles_folder_the_mod_base.png)
 
 2. Create a new folder inside that folder with the name `Licenses`
 
-<div style="padding-left: 100px">
-  ![The Mod Base](./images/profiles_folder_the_mod_base_licenses.png)
-</div>
+![The Mod Base](./images/profiles_folder_the_mod_base_licenses.png)
 
 3. Move your [downloaded](Download.md) license(s) into that folder 
 
