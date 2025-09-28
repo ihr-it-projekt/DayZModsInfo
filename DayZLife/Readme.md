@@ -2,7 +2,9 @@
 
 ![DayZ Life V2](./DayZLife2Logo.png)
 
-***Version 1 see: https://dayz-life.net/***
+## Steam
+Server: https://steamcommunity.com/sharedfiles/filedetails/?id=3196294051 
+Client: https://steamcommunity.com/sharedfiles/filedetails/?id=3196291732
 
 ## Index
 
