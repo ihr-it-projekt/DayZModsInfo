@@ -1,5 +1,9 @@
 # TBZombieEvents
 
+## Steam
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2902412026
+
 ## Configuration
 
 ### `TBZombieEvents` Configuration
