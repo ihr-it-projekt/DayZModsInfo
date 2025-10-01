@@ -13,7 +13,7 @@
 3. Move your [downloaded](Download.md) license(s) into that folder 
 
 
-![The Mod Base](./images/profiles_folder_the_mod_base_licenses_with license.png)
+![The Mod Base](./images/profiles_folder_the_mod_base_licenses_with_license.png)
 
 ## Server-Side Mod Setup
 
