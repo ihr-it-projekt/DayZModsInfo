@@ -2,9 +2,10 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/PVP Arena CONSTRUCTION.json" download>Arena buildings Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Arena%20CONSTRUCTION/Config/EditorFiles/PVP%20Arena%20CONSTRUCTION.dze){target="_blank" download}
 
-<a href="./ArenaMatchConfig/PVP Arena CONSTRUCTION.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Arena%20CONSTRUCTION/Config/ArenaMatchConfigs/PVP%20Arena%20CONSTRUCTION.json){target="_blank" download}
+
 
 ## Required Mod Packs
 

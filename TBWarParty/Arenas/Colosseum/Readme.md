@@ -2,11 +2,11 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/Colosseum.json" download>Arena buildings Config</a>
+[Arena buildings Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Colosseum/Config/ArenaBuildingConfigs/Colosseum.json){target="_blank" download}
 
-<a href="./ArenaMatchConfig/Colosseum.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Colosseum/Config/ArenaMatchConfigs/Colosseum.json){target="_blank" download}
 
-<a href="./Colosseumfinish.c" download>C File of Arenabuildings</a>
+[C File of Arenabuildings](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Colosseum/Config/Colosseumfinish.c){target="_blank" download}
 
 ## Required Mod Packs
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491&searchtext=Builder+Irems)

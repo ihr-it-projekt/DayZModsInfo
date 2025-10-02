@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/PVP Arena ROOFTOP.json" download>Arena buildings Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Arena%20ROOFTOP/Config/EditorFiles/PVP%20Arena%20ROOFTOP.dze){target="_blank" download}
 
-<a href="./ArenaMatchConfig/PVP Arena ROOFTOP.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Arena%20ROOFTOP/Config/ArenaMatchConfigs/PVP%20Arena%20ROOFTOP.json){target="_blank" download}
 
 ## Required Mod Packs
 

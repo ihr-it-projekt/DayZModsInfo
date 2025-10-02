@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/Smoking_Island.json" download>Arena buildings Config</a>
+[Arena buildings Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Smoking_Island/Config/ArenaBuildingConfigs/Smoking_Island.json){target="_blank" download}
 
-<a href="./ArenaMatchConfig/Smoking_Island.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Smoking_Island/Config/ArenaMatchConfigs/Smoking_Island.json){target="_blank" download}
 
 ## Required Mod Packs
 - BadgerBuildings (https://steamcommunity.com/sharedfiles/filedetails/?id=1573788098)

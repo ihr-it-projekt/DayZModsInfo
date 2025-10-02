@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/Cherno.json" download>Arena buildings Config</a>
+[Arena buildings Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Cherno/Config/ArenaBuildingConfigs/Cherno.json){target="_blank" download}
 
-<a href="./ArenaMatchConfig/Cherno.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Cherno/Config/ArenaMatchConfigs/Cherno.json){target="_blank" download}
 
 ## Required Mod Packs 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)

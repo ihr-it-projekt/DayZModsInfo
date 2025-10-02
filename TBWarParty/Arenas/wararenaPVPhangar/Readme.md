@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/warareanaPVPhangar.json" download>Arena buildings Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/wararenaPVPhangar/Config/EditorFiles/warareanaPVPhangar.dze){target="_blank" download}
 
-<a href="./ArenaMatchConfig/warareanaPVPhangar.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/wararenaPVPhangar/Config/ArenaMatchConfigs/warareanaPVPhangar.json){target="_blank" download}
 
 ## Required Mod Packs
 

@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/warareanaPVPclose.json" download>Arena buildings Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/warareanaPVPclose/Config/EditorFiles/warareanaPVPclose.dze){target="_blank" download}
 
-<a href="./ArenaMatchConfig/warareanaPVPclose.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/warareanaPVPclose/Config/ArenaMatchConfigs/warareanaPVPclose.json){target="_blank" download}
 
 ## Required Mod Packs
 

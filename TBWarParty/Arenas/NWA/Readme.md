@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/NWA.json" download>Arena buildings Config</a>
+[Arena buildings Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/NWA/Config/ArenaBuildingConfigs/NWA.json){target="_blank" download}
 
-<a href="./ArenaMatchConfig/NWA.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/NWA/Config/ArenaMatchConfigs/NWA.json){target="_blank" download}
 
 ## Required Mod Packs 
 - BuilderItems (https://steamcommunity.com/sharedfiles/filedetails/?id=1565871491)

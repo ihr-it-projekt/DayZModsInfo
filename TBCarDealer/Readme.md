@@ -46,7 +46,7 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
     - can add additional items to the car that increase the price of the car
     - can log all transactions
     - can disable buy, sell and showroom for locations
-- Config Editor available <a href="./TBCarDealerConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
+- Config Editor available <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
 ## How to install
 
@@ -55,7 +55,7 @@ See also [here](../The%20Mod%20Base/README.md)
 - Take the Server PBO and bring it into your own server side pack
 - Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
 - Start your server, the server will now detect all vehicles and items that can used for the vehicle slots and create all config with default values. 
-- Configure now your needs, for example pricing. You can also use our Config Editor <a href="./TBCarDealerConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
+- Configure now your needs, for example pricing. You can also use our Config Editor <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 - Configure yourself as an admin in the [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
 ## How to use the test drive
@@ -70,7 +70,7 @@ See also [here](../The%20Mod%20Base/README.md)
 
 ## Configurations
 
-Config Editor <a href="./TBCarDealerConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
+Config Editor <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)

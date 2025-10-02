@@ -2,9 +2,10 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/PVP Ruined city.json" download>Arena buildings Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Ruined%20city/Config/EditorFiles/PVP%20Ruined%20city.dze){target="_blank" download}
 
-<a href="./ArenaMatchConfig/PVP Ruined city.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/PVP%20Ruined%20city/Config/ArenaMatchConfigs/PVP%20Ruined%20city.json){target="_blank" download}
+
 
 ## Required Mod Packs
 

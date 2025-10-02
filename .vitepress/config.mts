@@ -56,6 +56,7 @@ export default defineConfig({
               {
                 text: 'CarDealer', link: '/TBCarDealer/Readme.md', collapsed: true, items: [
                   { text: 'Types', link: '/TBCarDealer/Types.md' },
+                  { text: 'FAQ', link: '/TBCarDealer/FAQ.md' },
                   {
                     text: 'Configs', collapsed: true, items: [
                       { text: 'CarConfigs', link: '/TBCarDealer/Configs/CarConfigs.md' },
@@ -65,12 +66,7 @@ export default defineConfig({
                       { text: 'PriceItems', link: '/TBCarDealer/Configs/PriceItems.md' },
                     ]
                   },
-                  {
-                    text: 'ConfigEditor', collapsed: true, items: [
-                      { text: 'FAQ', link: '/TBCarDealer/ConfigEditor/FAQ.md' },
-                      { text: 'Readme', link: '/TBCarDealer/ConfigEditor/Readme.md' },
-                    ]
-                  }
+                  { text: 'ConfigEditor', link: '/TBCarDealer/ConfigEditor/Readme.md' },
                 ]
               },
               { text: 'Carry', link: '/Carry/Readme.md' },

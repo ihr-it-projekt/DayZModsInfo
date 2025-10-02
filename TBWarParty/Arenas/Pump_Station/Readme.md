@@ -2,9 +2,9 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/Pump_Station.json" download>Arena buildings Config</a>
+[Arena buildings Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Pump_Station/Config/ArenaBuildingConfigs/Pump_Station.json){target="_blank" download}
 
-<a href="./ArenaMatchConfig/Pump_Station.json" download>Arena Match Config</a>
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Pump_Station/Config/ArenaMatchConfigs/Pump_Station.json){target="_blank" download}
 
 ## Required Mod Packs
 - BadgerBuildings (https://steamcommunity.com/sharedfiles/filedetails/?id=1573788098)

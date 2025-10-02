@@ -2,7 +2,7 @@
 
 ## Download
 
-<a href="./TBCarDealerConfigEditor.rar" download>Download</a>
+<a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
 ## Description
 ### How to use the TB Car Dealer Editor

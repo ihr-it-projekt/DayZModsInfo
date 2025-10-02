@@ -2,9 +2,10 @@
 
 ## Files
 
-<a href="./ArenaBuildingConfig/Dust2.json" download>Arena buildings Config</a>
 
-<a href="./ArenaMatchConfig/Dust2.json" download>Arena Match Config</a>
+[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/EditorFiles/Dust2.dze){target="_blank" download}
+
+[Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/ArenaMatchConfigs/Dust2.json){target="_blank" download}
 
 
 ## Required Mod Packs
