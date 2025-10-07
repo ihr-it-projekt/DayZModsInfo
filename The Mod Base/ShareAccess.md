@@ -25,7 +25,8 @@
 9.
    1. enable servers you want to share. The invited user will be able to manage this server
    2. enable the mods you want to share. The invited user will be able to download the mod
-   3. click on `save` button
+   3. enable the license keys you want to share. The invited user will be able to download the license key
+   4. click on `save` button
 ![share_access_configure_access_2.png](images/share_access_configure_access_2.png)
 ## Second Part for invited user
 10. after your access rights where configured in step 9 you can open the details of your invitations
