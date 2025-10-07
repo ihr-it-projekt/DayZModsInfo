@@ -31,6 +31,8 @@ export default defineConfig({
               { text: 'Download a Mod', link: '/The Mod Base/Download.md' },
               { text: 'Publish a Server Mod Package', link: '/The Mod Base/PublishAServerModPackage.md' },
               { text: 'Config a Server at TheModBase.com', link: '/The Mod Base/ConfigAServerAtTheModBaseCom.md' },
+              { text: 'Share Access', link: '/The Mod Base/ShareAccess.md' },
+              { text: 'Known Issues', link: '/The Mod Base/KnownIssues.md' },
             ]
           },
           {

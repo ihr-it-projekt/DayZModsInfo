@@ -9,6 +9,8 @@ Welcome to The Mod Base setup guide! This section contains comprehensive instruc
 1. **[Download Mods](Download.md)** - Learn how to download mods and licenses from the webshop
 2. **[Add to Server](AddToServer.md)** - Complete server setup guide with step-by-step instructions
 3. **[Publish Server Mod Package](PublishAServerModPackage.md)** - Create and publish your server mod package on Steam Workshop
+4. **[Share Access](ShareAccess.md)** - Share Access between other Users
+
 
 ## 🚀 Getting Started
 
@@ -99,5 +101,5 @@ When updating mods:
 <div align="center">
   <strong>Need Help?</strong><br>
   <a href="https://discord.gg/kGjN6gJy3m">Join our Discord</a> | 
-  <a href="https://themodbase.com/">Visit our shop</a>
+  <a href="https://www.themodbase.com/">Visit our shop</a>
 </div>
