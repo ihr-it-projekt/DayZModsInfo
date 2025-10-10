@@ -3,7 +3,7 @@
 ```json lines
 {
   // Never touch this value. It is needed internally
-  "version": "2",
+  "version": "4",
   // Never touch this value. It is needed internally
   "isInitialized": 1,
   // Price per slot for player, if an item has 5 slots, player needs to pay 50 in case of this value 
@@ -34,5 +34,11 @@
   "sellTaxInPercentageOrder": 0,
   // How much tax a player has to pay when he has created an order and a player has it sold to him, min = 0 max = 100 if an item was sold for 100, the player has to pay 10 if the value is 10
   "sellTaxInPercentageOffer": 0,
+  // If a player updates a order, the lifetime will be reseted
+  "resetLifetimeOfOrderAfterUpdate": 1,
+  // The Player can reste the liftime of order manually
+  "canResetLifetimeOfOrder": 1,
+  // The Player can reste the liftime of offer manually
+  "canResetLifetimeOfOffer": 1
 }
 ```
