@@ -6,6 +6,12 @@
 - TBCDMachine (default)
 - TBCDPokladna
 - TBCDPultskasou
+- TBCDMachineBoats
+- TBCDMachineCars
+- TBCDMachineMotorcycles
+- TBCDMachineOffroad
+- TBCDMachineTrucks
+- TBCDMachineVanilla
 
 ## Premium Coins
 
@@ -19,7 +25,13 @@ Activates Premium for the player.
 
 ## Images of Action Objects
 
-![img](./images/img.png)
 ![20240307163631_1](./images/20240307163631_1.jpg)
+![img](./images/img.png)
 ![20240307163720_1](./images/20240307163720_1.jpg)
 ![20240307163807_1](./images/20240307163807_1.jpg)
+![boats.JPG](images/boats.JPG)
+![cars.JPG](images/cars.JPG)
+![motorcycles.JPG](images/motorcycles.JPG)
+![offroad.JPG](images/offroad.JPG)
+![trucks.jpg](images/trucks.jpg)
+![vanilla.jpg](images/vanilla.jpg)
