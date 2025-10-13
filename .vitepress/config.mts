@@ -64,6 +64,7 @@ export default defineConfig({
                       { text: 'CarConfigs', link: '/TBCarDealer/Configs/CarConfigs.md' },
                       { text: 'DealerPointConfig', link: '/TBCarDealer/Configs/DealerPointConfig.md' },
                       { text: 'DealerPointsConfig', link: '/TBCarDealer/Configs/DealerPointsConfig.md' },
+                      { text: 'CarCategorieOrder', link: '/TBCarDealer/Configs/CarCategorieOrder.md' },
                       { text: 'Logger', link: '/TBCarDealer/Configs/Logger.md' },
                       { text: 'PriceItems', link: '/TBCarDealer/Configs/PriceItems.md' },
                     ]
