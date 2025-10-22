@@ -16,7 +16,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy our built files
 COPY --from=build-stage /app/.vitepress/dist /usr/share/nginx/html
 # Copy logo file manually
-#COPY --from=build-stage /app/logo.png /usr/share/nginx/html/logo.png
+COPY --from=build-stage /app/logo.png /usr/share/nginx/html/logo.png
 # Copy favicon
 COPY --from=build-stage /app/favicon.ico /usr/share/nginx/html/favicon.ico
 # Fix case sensitivity issues by creating symlinks for JS files
