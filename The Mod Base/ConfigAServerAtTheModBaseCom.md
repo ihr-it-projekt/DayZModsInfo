@@ -36,3 +36,25 @@ If you have not done this so far, pls read the listed guides before
    6. Select the mods you want to use on your Server
    7. Save your Server config
   
+## Configure License System IP
+
+When your server ask the license system for validation, you can configure what ip type your server uses to connect to the license system. By default it can be random IPv4 or IPv6.
+If you need to change it to only use IPv4 or IPv6 you need to adapt a config.
+
+1. open your server profiles folder 
+2. open `TheModBase` folder
+![The Mod Base](./images/folder_config.png)
+3. open `Config` folder
+![The Mod Base](./images/IPSettings.txt.png)
+4. edit `IPSettings.txt` and save the file
+![The Mod Base](./images/ipsettings_content.png)
+   allowed values are
+
+   | IP Type | Config Value  |
+   |---------|------------------|
+   | IPv6 |  ipv6 |
+   | IPv4 |  ipv4 |
+   | IPv6 or IPv4 | mixed|
+5. restart your server 
+
+Your server will now use the configured type of IP address

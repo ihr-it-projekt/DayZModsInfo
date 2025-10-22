@@ -17,7 +17,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: { src: '/logo.png', alt: 'The Mod Base' },
+    logo: { src: '/The Mod Base/images/logo.png', alt: 'The Mod Base' },
     nav: [
       { text: 'Home', link: './' },
     ],
