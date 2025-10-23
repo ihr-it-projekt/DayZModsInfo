@@ -11,6 +11,7 @@
 - TBCDMachineMotorcycles
 - TBCDMachineOffroad
 - TBCDMachineTrucks
+- TBCDMachineHelicopters
 - TBCDMachineVanilla
 
 ## Premium Coins
@@ -26,12 +27,24 @@ Activates Premium for the player.
 ## Images of Action Objects
 
 ![20240307163631_1](./images/20240307163631_1.jpg)
+(TBCDCashier)
 ![img](./images/img.png)
+(TBCDMachine)
 ![20240307163720_1](./images/20240307163720_1.jpg)
+(TBCDPokladna)
 ![20240307163807_1](./images/20240307163807_1.jpg)
+(TBCDPultskasou)
 ![boats.JPG](images/boats.JPG)
+(TBCDMachineBoats)
 ![cars.JPG](images/cars.JPG)
+(TBCDMachineCars)
 ![motorcycles.JPG](images/motorcycles.JPG)
+(TBCDMachineMotorcycles)
 ![offroad.JPG](images/offroad.JPG)
+(TBCDMachineOffroad)
 ![trucks.jpg](images/trucks.jpg)
+(TBCDMachineTrucks)
+![helicopter.jpg](images/helicopter.jpg)
+(TBCDMachineHelicopters)
 ![vanilla.jpg](images/vanilla.jpg)
+(TBCDMachineVanilla)
