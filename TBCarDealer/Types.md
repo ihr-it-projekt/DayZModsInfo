@@ -44,7 +44,7 @@ Activates Premium for the player.
 (TBCDMachineOffroad)
 ![trucks.jpg](images/trucks.jpg)
 (TBCDMachineTrucks)
-![helicopter.jpg](images/helicopter.jpg)
+![helicopter.jpg](images/helicopter.JPG)
 (TBCDMachineHelicopters)
 ![vanilla.jpg](images/vanilla.jpg)
 (TBCDMachineVanilla)
