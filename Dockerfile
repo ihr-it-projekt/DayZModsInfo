@@ -7,7 +7,7 @@ COPY . .
 
 RUN npm ci
 
-RUN npm run docs:build
+RUN npm run build
 
 # Stage 2: Serve with Nginx
 FROM nginx:1.28-alpine
