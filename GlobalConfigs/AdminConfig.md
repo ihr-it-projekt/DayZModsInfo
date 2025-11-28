@@ -13,6 +13,7 @@
       "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
       "jewelsOfSurvival": 0, // 0 = off 1 = on | is admin in jewels of survival
       "warParty": 0, // 0 = off 1 = on | is admin in war party
+      "carry": 0, // 0 = off 1 = on | is admin for carry mod 
       "playerId": "Add here Steam ID Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -25,6 +26,7 @@
       "revivePlayer": 1,
       "jewelsOfSurvival": 1,
       "warParty": 1,
+      "carry": 1,
       "playerId": "765611328196317725"
     }
   }
