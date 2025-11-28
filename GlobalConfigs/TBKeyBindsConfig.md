@@ -9,16 +9,6 @@
       "useServerKeyBind": 0 // if you enable this. All players will be forced to use your keybind and will have configured defaultKey
     },
     {
-      "name": "UAInputOpenTBSHMBulletinBoard",
-      "defaultKey": 47,
-      "useServerKeyBind": 0
-    },
-    {
-      "name": "UAInputOpenTBRevive",
-      "defaultKey": 23,
-      "useServerKeyBind": 0
-    },
-    {
       "name": "UAInputOpenTBWarParty",
       "defaultKey": 48,
       "useServerKeyBind": 0
