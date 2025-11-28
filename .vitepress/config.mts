@@ -73,7 +73,11 @@ export default defineConfig({
                   { text: 'ConfigEditor', link: '/TBCarDealer/ConfigEditor/Readme.md' },
                 ]
               },
-              { text: 'Carry', link: '/Carry/Readme.md' },
+              {
+                text: 'Carry', link: '/Carry/Readme.md', collapsed: true, items: [
+                  { text: 'TBCarryGlobalConfig', link: '/Carry/TBCarryGlobalConfig.md' },
+                ]
+              },
               {
                 text: 'DailyReward', link: '/DailyReward/Readme.md', collapsed: true, items: [
                   { text: 'FAQ', link: '/DailyReward/FAQ.md' },

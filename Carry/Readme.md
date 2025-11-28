@@ -36,7 +36,7 @@ See also [here](../The%20Mod%20Base/README.md)
 
 ## Configuration
 
-No configuration needed.
+[TBCarryGlobalConfig.md](TBCarryGlobalConfig.md)
 
 ### Item Class name
 - TBCPlayerBaseBodyBack
