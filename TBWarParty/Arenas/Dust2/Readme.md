@@ -3,7 +3,9 @@
 ## Files
 
 
-[Arena Editot DZE file](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/EditorFiles/Dust2.dze){target="_blank" download}
+[Arena Editot DZE file Cherno](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/EditorFiles/Dust2.dze){target="_blank" download}
+
+[Arena Editot DZE file PNW 2.0 Map](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/EditorFiles/pnw/Dust2.dze){target="_blank" download}
 
 [Arena Match Config](https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/main/TBWarParty/Arenas/Dust2/Config/ArenaMatchConfigs/Dust2.json){target="_blank" download}
 

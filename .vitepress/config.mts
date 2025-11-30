@@ -26,7 +26,7 @@ export default defineConfig({
       {
         items: [
           {
-            text: 'General Setup for Mods', link: '/The Mod Base/README.md', collapsed: true, items: [
+            text: 'General Setup for Mods', link: '/The Mod Base/README.md', collapsed: false, items: [
               { text: 'Add a Mod to a Server', link: '/The Mod Base/AddToServer.md' },
               { text: 'Download a Mod', link: '/The Mod Base/Download.md' },
               { text: 'Publish a Server Mod Package', link: '/The Mod Base/PublishAServerModPackage.md' },
@@ -36,7 +36,7 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Mods', link: '/The Mod Base/README.md', collapsed: true, items: [
+            text: 'Mods', link: '/The Mod Base/README.md', collapsed: false, items: [
               {
                 text: 'BasicNeeds', link: '/BasicNeeds/Readme.md', collapsed: true, items: [
                   { text: 'FAQ', link: '/BasicNeeds/FAQ.md' },
