@@ -1,0 +1,29 @@
+{
+  "Version": "2.5",
+  "UseGarageOnlyToTrade": 0,
+  "VehicleMustHaveLock": 1,
+  "SaveVehicleLock": 1,
+  "SaveVehicleCargo": 1,
+  "SaveVehicleHealth": 1,
+  "SaveVehicleFuel": 1,
+  "SavedVehicleInGarageForTradeInHour": 1,
+  "MaxVehicleStored": 5,
+  "ParkInCost": 100,
+  "ParkOutCost": 100,
+  "PayWithBankAccount": 0,
+  "WhitelistedObjects": [
+    "SK_LandingPad"
+  ],
+  "NPCs": [],
+  "ParkingNotAvailable": "The parking area is already occupied!",
+  "NotEnoughMoney": "You don't have enough money",
+  "NotRightToPark": "You don't have the right to park this vehicle!",
+  "CarHasMember": "The vehicle still has players inside!",
+  "ParkInFail": "The vehicle was not able to be stored correctly",
+  "ParkInSuccess": "The vehicle was successfully stored",
+  "ParkOutFail": "The vehicle was not able to retrieved!",
+  "ParkOutSuccess": "The vehicle was retrieved successfully!",
+  "MaxVehicleStoredReached": "Max number of vehicle reached!",
+  "TradeVehicleWarning": "The vehicle has been stored for %1 hour, passed this point it will be lost so trade it or get it fast",
+  "TradeVehicleHasBeenDeleted": "The vehicle stored for trade reached his inactivity and has been deleted!"
+}

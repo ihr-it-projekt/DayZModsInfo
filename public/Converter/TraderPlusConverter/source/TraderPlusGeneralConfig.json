@@ -1,0 +1,254 @@
+{
+  "Version": "2.5",
+  "ConvertTraderConfigToTraderPlus": 0,
+  "ConvertTraderConfigToTraderPlusWithStockBasedOnCE": 0,
+  "UseGarageToTradeCar": 0,
+  "DisableHeightFailSafeForReceiptDeployment": 0,
+  "HideInsuranceBtn": 0,
+  "HideGarageBtn": 0,
+  "HideLicenceBtn": 0,
+  "EnableShowAllPrices": 0,
+  "EnableShowAllCheckBox": 1,
+  "IsReceiptTraderOnly": 0,
+  "IsReceiptSaveLock": 0,
+  "IsReceiptSaveAttachment": 0,
+  "IsReceiptSaveCargo": 0,
+  "LockPickChance": 0.30000001192092896,
+  "LicenceKeyWord": "Licence",
+  "Licences": [],
+  "AcceptedStates": {
+    "AcceptWorn": 1,
+    "AcceptDamaged": 1,
+    "AcceptBadlyDamaged": 1,
+    "CoefficientWorn": 0.75,
+    "CoefficientDamaged": 0.45,
+    "CoefficientBadlyDamaged": 0.15
+  },
+  "StoreOnlyToPristineState": 0,
+  "Currencies": [
+    {
+      "ClassName": "TraderPlus_Money_Euro500",
+      "Value": 500
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro200",
+      "Value": 200
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro100",
+      "Value": 100
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro50",
+      "Value": 50
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro10",
+      "Value": 10
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro5",
+      "Value": 5
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro2",
+      "Value": 2
+    },
+    {
+      "ClassName": "TraderPlus_Money_Euro1",
+      "Value": 1
+    }
+  ],
+  "Traders": [
+    {
+      "Id": 1,
+      "Name": "BVM_VendingMachine_weapons_Breathless",
+      "GivenName": "Kevin",
+      "Role": "Weapon Trader",
+      "Position": [
+        3702.87,
+        404.38,
+        6010.47
+      ],
+      "Orientation": [
+        327.083,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 2,
+      "Name": "BVM_VendingMachine_tool_Breathless",
+      "GivenName": "Bob",
+      "Role": "Tool Trader",
+      "Position": [
+        3691.17,
+        404.376,
+        6003.82
+      ],
+      "Orientation": [
+        61.1919,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 3,
+      "Name": "BVM_VendingMachine_vanilla_clothing_Breathless",
+      "GivenName": "John",
+      "Role": "Clothes Trader",
+      "Position": [
+        3697.63,
+        404.38,
+        6018.29
+      ],
+      "Orientation": [
+        154.536,
+        0,
+        0
+      ],
+      "Clothes": [
+        ""
+      ]
+    },
+    {
+      "Id": 4,
+      "Name": "BVM_VendingMachine_vehicle_parts_Breathless",
+      "GivenName": "Helicopters",
+      "Role": "Helicopters Trader",
+      "Position": [
+        8147.66,
+        477.027,
+        9050.8
+      ],
+      "Orientation": [
+        150.211,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 5,
+      "Name": "BVM_VendingMachine_vehicle_parts_Breathless",
+      "GivenName": "Vehicles",
+      "Role": "Car Trader",
+      "Position": [
+        3728.45,
+        404.421,
+        5982.9
+      ],
+      "Orientation": [
+        312.452,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 6,
+      "Name": "BVM_VendingMachine_blackmarket_Breathless",
+      "GivenName": "BM ARMOR",
+      "Role": "BlackMarket",
+      "Position": [
+        8598.53,
+        102.158,
+        13328.1
+      ],
+      "Orientation": [
+        301.287,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 7,
+      "Name": "BVM_VendingMachine_drug_Breathless",
+      "GivenName": "Drugs",
+      "Role": "Drugs",
+      "Position": [
+        10346.9,
+        40.685,
+        3453.33
+      ],
+      "Orientation": [
+        8.07378,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 8,
+      "Name": "BVM_VendingMachine_attachments_Breathless",
+      "GivenName": "Attachments",
+      "Role": "Att&Ammo",
+      "Position": [
+        3701.83,
+        404.38,
+        6009.36
+      ],
+      "Orientation": [
+        317.462,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 9,
+      "Name": "BVM_VendingMachine_medical_Breathless",
+      "GivenName": "Medical",
+      "Role": "Medical",
+      "Position": [
+        3689.66,
+        404.38,
+        6012.36
+      ],
+      "Orientation": [
+        148.533,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 11,
+      "Name": "BVM_VendingMachine_building_Breathless",
+      "GivenName": "BaseBuilduing",
+      "Role": "BaseBuilduing",
+      "Position": [
+        3690.29,
+        404.376,
+        6004.98
+      ],
+      "Orientation": [
+        54.6963,
+        0,
+        0
+      ],
+      "Clothes": []
+    },
+    {
+      "Id": 12,
+      "Name": "BVM_VendingMachine_modded_clothing_Breathless",
+      "GivenName": "FOG Gear",
+      "Role": "FOG Gear",
+      "Position": [
+        3695.21,
+        404.38,
+        6016.4
+      ],
+      "Orientation": [
+        146.414,
+        0,
+        0
+      ],
+      "Clothes": []
+    }
+  ],
+  "TraderObjects": []
+}
