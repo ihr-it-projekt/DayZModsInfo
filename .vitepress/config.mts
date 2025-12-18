@@ -132,6 +132,19 @@ export default defineConfig({
                 ]
               },
               {
+                text: 'DynmaicTrader', link: '/DynmaicTrader/Readme.md', collapsed: true, items: [
+                  {
+                    text: 'Configs', collapsed: true, items: [
+                      { text: 'DealerPoint', link: '/DynmaicTrader/Configs/DealerPoint.md' },
+                      { text: 'DealerPoints', link: '/DynmaicTrader/Configs/DealerPoints.md' },
+                      { text: 'TraderItemConfigs', link: '/DynmaicTrader/Configs/TraderItemConfigs.md' },
+                      { text: 'TraderItemCategorieOrder', link: '/DynmaicTrader/Configs/TraderItemCategorieOrder.md' },
+                    ]
+                  },
+                  { text: 'Types', link: '/DynmaicTrader/Types.md' },
+                ]
+              },
+              {
                 text: 'DeathInsurance', link: '/DeathInsurance/Readme.md', collapsed: true, items: [
                   {
                     text: 'Configs', collapsed: true, items: [
