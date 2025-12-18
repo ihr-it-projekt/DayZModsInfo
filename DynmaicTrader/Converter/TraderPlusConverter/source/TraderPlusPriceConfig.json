@@ -1,0 +1,14 @@
+{
+    "Version": "2.5",
+    "EnableAutoCalculation": 1,
+    "EnableAutoDestockAtRestart": 0,
+    "EnableDefaultTraderStock": 0,
+    "TraderCategories": [
+        {
+            "CategoryName": "Medical Supplies",
+            "Products": [
+                "rag,1,-1,4,100,0.5,1"
+            ]
+        }
+    ]
+}

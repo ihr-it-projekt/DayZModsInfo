@@ -141,6 +141,7 @@ export default defineConfig({
                       { text: 'TraderItemCategorieOrder', link: '/DynmaicTrader/Configs/TraderItemCategorieOrder.md' },
                     ]
                   },
+                  { text: 'Converter', link: '/DynmaicTrader/Converter/Converter.md' },
                   { text: 'Types', link: '/DynmaicTrader/Types.md' },
                 ]
               },

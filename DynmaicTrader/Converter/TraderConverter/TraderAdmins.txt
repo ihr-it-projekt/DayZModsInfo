@@ -1,0 +1,13 @@
+///////////////////////////////////////////////////////////
+//														 //
+//      Put the Steam64 IDs for your Admins in here      //
+//      Make a new Line for every ID!					 //
+//		Used only for vehicles							 //
+//														 //
+///////////////////////////////////////////////////////////
+
+78901234567890123	// Admin No1
+78901234567890123	// Admin No2
+78901234567890123	// Admin No3
+
+<FileEnd>			// This has to be on the End of this File and is very importand!

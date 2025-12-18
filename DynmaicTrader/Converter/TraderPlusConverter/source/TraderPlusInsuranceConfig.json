@@ -1,0 +1,23 @@
+{
+    "Version": "2.5",
+    "AuthorizedIDInsurance": [
+        4
+    ],
+    "Insurances": [
+        {
+            "VehicleName": "OffroadHatchback",
+            "InsurancePriceCoefficient": 1.25,
+            "CollateralMoneyCoefficient": 0.75
+        },
+        {
+            "VehicleName": "Hatchback_02",
+            "InsurancePriceCoefficient": 1.25,
+            "CollateralMoneyCoefficient": 0.75
+        },
+        {
+            "VehicleName": "CivilianSedan",
+            "InsurancePriceCoefficient": 1.25,
+            "CollateralMoneyCoefficient": 0.75
+        }
+    ]
+}

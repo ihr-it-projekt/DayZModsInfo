@@ -1,0 +1,215 @@
+{
+  "Version": "2.5",
+  "IDs": [
+    {
+      "Id": 0,
+      "Categories": [
+        "Licences",
+        "Vegetables",
+        "Packaged Food",
+        "Drinks"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 1,
+      "Categories": [
+        "Melee",
+        "Sidearms",
+        "SMGS",
+        "Rifles",
+        "Shotguns",
+        "Submachine Guns",
+        "Assault Rifles",
+        "Sniper Rifles",
+        "Grenades"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 2,
+      "Categories": [
+        "Tools (small)",
+        "Tools (Big)",
+        "Electronics",
+        "Fire & Lights",
+        "Hardware Supplies",
+        "Seeds & Lime"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 3,
+      "Categories": [
+        "Glasses",
+        "Armbands",
+        "Gloves",
+        "Hats & Caps",
+        "Helmets",
+        "Masks",
+        "Shirts",
+        "Hoodies & Sweater",
+        "Vests",
+        "Jackets & Coats",
+        "Skirts & Dresses",
+        "Pants",
+        "Shoes & Boots",
+        "Ghillie",
+        "Holster & Pouches",
+        "Belt",
+        "Bags"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 4,
+      "Categories": [
+        "Helicopters Parts",
+        "Vehicle Keys"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 5,
+      "Categories": [
+        "Vehicles Parts",
+        "FC Cars",
+        "Vehicle Keys"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 6,
+      "Categories": [
+        "High Cal Weapons",
+        "Ammunition",
+        "Magazines",
+        "HA Optics",
+        "Suppressor",
+        "Collectables",
+        "Collectables Extreme",
+        "Parachutes",
+        "Paragon Ghillie",
+        "Gun Stickers",
+        "Paragon Armor",
+        "Paragon Helmet",
+        "Paragon Backpacks",
+        "Paragon Gear",
+        "Paragon Clothes",
+        "Paragon Attachment",
+        "Magloader & Misc",
+        "Breathless BackPacks",
+        "FOG BlackMarket",
+        "Sleeping bags",
+        "Paragon Extra"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 7,
+      "Categories": [
+        "Cannabis",
+        "Extra Cannabis"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 8,
+      "Categories": [
+        "Ammunition",
+        "Magazines",
+        "Handguards",
+        "Buttstocks",
+        "HA Acessories",
+        "Vanilla Optics",
+        "HA Optics",
+        "Suppressor",
+        "Compensators",
+        "Bayonets",
+        "Flashlights"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 9,
+      "Categories": [
+        "Medical Supplies",
+        "Medications"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 10,
+      "Categories": [
+        "Cooking & Hunting Supplies",
+        "Meat",
+        "Animal Parts"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 11,
+      "Categories": [
+        "Base Building",
+        "Storage",
+        "HA Table attachments"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 12,
+      "Categories": [
+        "Breathless Loadout",
+        "FOG Attachments",
+        "FOG Vests",
+        "FOG Bags",
+        "FOG Belts",
+        "FOG Gas Masks",
+        "FOG Gloves",
+        "FOG FlightSuit",
+        "FOG Headgear",
+        "FOG Helmet Accessories",
+        "FOG Helmets",
+        "FOG Masks",
+        "FOG Misc",
+        "FOG NVG",
+        "FOG Pants",
+        "FOG Shirts",
+        "FOG Shoes",
+        "FOG Vanilla Ghillie Reskins",
+        "FOG Patches",
+        "FOG Small Patches",
+        "FOG Big Patches"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    },
+    {
+      "Id": 13,
+      "Categories": [
+        "Fishing Clothes",
+        "Tackles and Tools",
+        "Fishing Supplies",
+        "Fillets",
+        "Insects",
+        "Rare Catches",
+        "Saltwater Fishes",
+        "Freshwater Fishes"
+      ],
+      "LicencesRequired": [],
+      "CurrenciesAccepted": []
+    }
+  ]
+}
