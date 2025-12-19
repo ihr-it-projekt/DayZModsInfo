@@ -259,7 +259,7 @@ function parseDealerPointLine(line) {
         return null;
     }
     const orientation = [
-        parseFloat(orientationParts[0]),
+        parseFloat(orientationParts[0]) + 180,
         parseFloat(orientationParts[1]),
         parseFloat(orientationParts[2])
     ];
@@ -325,7 +325,7 @@ function processCategoryFiles(categoryFiles, zip) {
 /**
  * Processes category collection files
  */
-function processCollectionFiles(collectionFiles) {
+function processTraderCollectionCategorieFiles(collectionFiles) {
     const collectionMap = new Map(); // collection name -> array of category names
     
     collectionFiles.forEach(file => {
@@ -367,9 +367,17 @@ function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
             const itemUniqueNames = new Set();
             
             categories.forEach(categoryName => {
-                const categoryItems = categoryMap.get(categoryName);
-                if (categoryItems) {
-                    categoryItems.forEach(item => {
+                const categoryNameParts = categoryName.split(':');
+                categoryName = categoryNameParts[0];
+
+// 0 = Can only be bought from this trader, but not sold
+// 1 = Buy and Sell
+// 2 = Can only be sold to this trader, but not bought
+// 3 = Not visible but still available for item customisation (weapons, vests, backpacks) and attachments (vehicles)
+                const tradeOption = categoryNameParts[1] || "1";
+                const categoryItemsAtPosition = categoryMap.get(categoryName);
+                if (categoryItemsAtPosition) {
+                    categoryItemsAtPosition.forEach(item => {
                         itemUniqueNames.add(item.uniqueName);
                     });
                 }
@@ -475,7 +483,7 @@ async function convertAndZip() {
 
         // Separate files by type
         const categoryFiles = fileData.filter(f => f.type === 'category');
-        const collectionFiles = fileData.filter(f => f.type === 'collection');
+        const traderLocationCategorieFiles = fileData.filter(f => f.type === 'collection');
         const mapFiles = fileData.filter(f => f.type === 'map');
 
         if (categoryFiles.length === 0) {
@@ -495,11 +503,11 @@ async function convertAndZip() {
         const categoryStats = processCategoryFiles(categoryFiles, zip);
 
         // Process collection files
-        const collectionMap = processCollectionFiles(collectionFiles);
+        const traderLocationsCategories = processTraderCollectionCategorieFiles(traderLocationCategorieFiles);
 
         // Process map files (dealer points)
         const sellTax = parseFloat(defaultSellTax.value) || 0.0;
-        const dealerPointStats = processMapFiles(mapFiles, collectionMap, categoryStats.categoryMap, zip, sellTax);
+        const dealerPointStats = processMapFiles(mapFiles, traderLocationsCategories, categoryStats.categoryMap, zip, sellTax);
 
         updateProgress(90, 'Generating ZIP download...');
 
