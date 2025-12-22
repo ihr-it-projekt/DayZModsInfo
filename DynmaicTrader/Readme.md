@@ -24,10 +24,10 @@ See also [here](../The%20Mod%20Base/README.md)
 ## Configuration
 - [AdminConfig.json](../GlobalConfigs/AdminConfig.md) Admins can currently reload config at dead body.
 - [CurrencyConfig.json](../GlobalConfigs/CurrencyConfig.md)
-- [DealerPoints.json](./configs/DealerPoints.md)
-- [DealerPoint.json](./configs/DealerPoint.md)
-- [TraderItemConfigs.json](./configs/TraderItemConfigs.md)
-- [TraderItemCategorieOrder.json](./configs/TraderItemCategorieOrder.md)
+- [DealerPoints.json](./Configs/DealerPoints.md)
+- [DealerPoint.json](./Configs/DealerPoint.md)
+- [TraderItemConfigs.json](./Configs/TraderItemConfigs.md)
+- [TraderItemCategorieOrder.json](./Configs/TraderItemCategorieOrder.md)
 - [Types.md](./Types.md)
 
 ## Types
