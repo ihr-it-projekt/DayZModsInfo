@@ -11,7 +11,7 @@ Example `AK74.json`:
     "type": "AK74", // The classname of the item item in game
     "currency": "default", // The currency the item is sold in see CurrencyConfig.json 
     "category": "Assault Rifles", // The category the item belongs to
-    "quantity": 1.0, // Quantity of item (e.g., 1)
+    "quantity": 1.0, // Quantity of item (e.g., 1) If this value is -1 the item get always full quantity but when a player sell the item, quantity has no impact to sell price
     "isPremium": 0, // Only player with premium state can buy this item
     "isStorageItem": 0, // If 1, the item is a storage item
     "buyPrice": 1600, // Buy price of item
