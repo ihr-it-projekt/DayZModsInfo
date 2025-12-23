@@ -132,17 +132,17 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'DynmaicTrader', link: '/DynmaicTrader/Readme.md', collapsed: true, items: [
+                text: 'DynamicTrader', link: '/DynamicTrader/Readme.md', collapsed: true, items: [
                   {
                     text: 'Configs', collapsed: true, items: [
-                      { text: 'DealerPoint', link: '/DynmaicTrader/Configs/DealerPoint.md' },
-                      { text: 'DealerPoints', link: '/DynmaicTrader/Configs/DealerPoints.md' },
-                      { text: 'TraderItemConfigs', link: '/DynmaicTrader/Configs/TraderItemConfigs.md' },
-                      { text: 'TraderItemCategorieOrder', link: '/DynmaicTrader/Configs/TraderItemCategorieOrder.md' },
+                      { text: 'DealerPoint', link: '/DynamicTrader/Configs/DealerPoint.md' },
+                      { text: 'DealerPoints', link: '/DynamicTrader/Configs/DealerPoints.md' },
+                      { text: 'TraderItemConfigs', link: '/DynamicTrader/Configs/TraderItemConfigs.md' },
+                      { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
                     ]
                   },
-                  { text: 'Converter', link: '/DynmaicTrader/Converter/Converter.md' },
-                  { text: 'Types', link: '/DynmaicTrader/Types.md' },
+                  { text: 'Converter', link: '/DynamicTrader/Converter/Converter.md' },
+                  { text: 'Types', link: '/DynamicTrader/Types.md' },
                 ]
               },
               {
