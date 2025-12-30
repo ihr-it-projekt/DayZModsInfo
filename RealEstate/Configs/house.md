@@ -1,14 +1,16 @@
 # house.json
 ````json lines
 {
-    "version": "11", // Never touch this value. It is needed internally
+    "version": "12", // Never touch this value. It is needed internally
     "isInitialized": 1, // Never touch this value. It is needed internally
     "showMap": 1, // Show the map in the house menu
     "howManyHousesCanPlayerBuy": 1, // How many houses can a player buy
     "playerCanRespawnInHouse": 1, // Player can by respawn extension
     "useBlackListedAreas": 0, // 1 = on 0 = off, if on, the player can not buy a house in the black listed area. Please do not use black and white list together
     "useWhiteListedAreas": 0, // 1 = on 0 = off, if on, the player can buy a house only in the white listed area. Please do not use black and white list together
-    "notSoldHousesAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses are locked
+    "notSoldHousesAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses that are NOT in blacklist and NOT in whitelist area are locked
+    "notSoldHousesInBlackListedAreasAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses that are in blacklist area are locked
+    "notSoldHousesInWhiteListedAreasAreLocked": 0, // 1 = on 0 = off, if on, all not sold houses that are in whitelist area are locked
     "stopGlobalStopDisappearingCheck": 0, // 1 = on, 0 = off, This will diable the job that checks for items liftime and reset them. 
     "inactiveDaysBeforePlayerDataWillDeleted": 300, // if a player is inactive for x days, all data in that mod will be deleted
     "closeDoorsAtServerRestartAfterSeconds": 30, // when the server restarts, the looked doors will be closed after x seconds

@@ -21,7 +21,8 @@
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 1, // if 1, only items that are in cargo and inventory at the moment when player make the insurance will be insured, all others will dropped to the ground. If you enable this option you need to set "storeAllItemsInCargoOfMainItems" to 0
             "canBuyAgainAfterSeconds": -1, // if -1, player can buy the insurance again, if not, player must wait after last buy, the seconds to buy the insurance again. If "globalInsuranceBuyCooldownInSeconds" is active this value will be ignored
             "isPremium": 0, // if 1, the insurance is a premium insurance
-            "isBuyable": 1  // 1 = players can buy this insurance, 0 = players can not buy the insurance
+            "isBuyable": 1,  // 1 = players can buy this insurance, 0 = players can not buy the insurance
+            "saveItemInHands": 1 // If 1, item in hand at time of death will saved. 0 = will not saved
         },
         {
             "id": "start",
