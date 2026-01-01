@@ -50,6 +50,8 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Configurations
 
+See also the [config editor](https://doc.themodbase.com/DailyRewardConfigEditor/TheBusterConfigEditor.zip)
+
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
 - [General.json](./Configs/General.md)
