@@ -27,9 +27,10 @@ If you don´t want to use Premium coins, you can also use the "API".
     
     Possible values for ModName are: 
    - DailyReward
-   - SecondHand
-   - CarDealer
    - DeathInsurance
+   - CarDealer
+   - DynamicTrader 
+   - SecondHand
 
    Possible values for DurationInDays are: 
    - any number between 1 and 999
