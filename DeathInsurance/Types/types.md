@@ -22,7 +22,7 @@
 </types>
 ```
 ## What kind of Action Objects are available?
-- TBDIMachine  (used as Trader Object)
+- TBDIMachine  (used as Insurance Point Object)
 
 ## Premium Coins
 - TBDIPremiumCoinGold (used to give Player 30 Days of Premium)
