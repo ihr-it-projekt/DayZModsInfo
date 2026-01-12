@@ -21,3 +21,12 @@
     </type>
 </types>
 ```
+## What kind of Action Objects are available?
+- TBDIMachine  (used as Trader Object)
+
+## Premium Coins
+- TBDIPremiumCoinGold (used to give Player 30 Days of Premium)
+- TBDIPremiumCoinSilver (used to give Player 7 Days of Premium)
+- TBDIPremiumCoinBronze (used to give Player 1 Day of Premium)
+- TBDIPremiumCoinOneTime (used to give Player 1 Time of Premium)
+
