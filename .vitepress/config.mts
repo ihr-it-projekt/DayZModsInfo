@@ -96,7 +96,7 @@ export default defineConfig({
               {
                 text: 'DayZCasinoV2', link: '/DayZCasinoV2/Readme.md', collapsed: true, items: [
                   { text: 'DayZCasinoV2Config', link: '/DayZCasinoV2/Configs/DayZCasinoV2Config.md' },
-                  { text: 'Types', link: '/DayZCasinoV2/Configs/Types.md' },
+                  { text: 'Types', link: '/DayZCasinoV2/Configs/types.md' },
                 ]
               },
               {
