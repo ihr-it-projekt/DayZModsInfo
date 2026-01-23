@@ -50,7 +50,7 @@ Yes, it is easy to migrate to that trader. In Client Pack you can find migration
 Yes, you can use an NPC instead of a trader object. 
 
 1. use a kit to place an static object
-2. open the positin menu and set the required values
+2. open the position menu and set the required values
 3. open the trader menu and use the tap for position configuration
 4. enable there the "use NPC" option and configure the NPC
 5. Save the configuration
