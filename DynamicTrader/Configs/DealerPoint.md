@@ -25,6 +25,21 @@ Example `Weapon Trader.json`:
     "useExactPosition": 1, // Use exact position, if 0 it will be placed automatically on ground
     "useUTCTime": 0, // Use UTC time for opening hours, if 0 it will use local time
     "type": "TBDTTraderMachine", // Type of the trader object (see types.md)
+    "useTraderChar": 1, // Use trader character, if 0 it will not use trader character
+    "traderCharType": "SurvivorF_Judy", // Type of the trader character
+    "traderCharAttachments": { // Attachments for the trader character. Must exists as a configured item in the TraderItemConfigs folder
+        "Gloves": "WoolGlovesFingerless_White",
+        "Feet": "JungleBoots_Black",
+        "Shoulder": "M4A1",
+        "Hips": "MilitaryBelt",
+        "Headgear": "BallisticHelmet_BDU",
+        "Legs": "USMCPants_Woodland",
+        "Melee": "NailedBaseballBat",
+        "Eyewear": "ThickFramesGlasses",
+        "Mask": "Bandana_Camopattern",
+        "Armband": "Armband_Crook",
+        "Body": "TacticalShirt_Tan"
+    },
     "openTimes": [ // Opening hours
         {
             "openHour": 11,
