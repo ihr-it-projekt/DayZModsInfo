@@ -14,20 +14,20 @@ You can find all features here: https://www.themodbase.com/mods/TBDynamicTrader
 
 See also [here](../The%20Mod%20Base/README.md)
 
-- Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- Start your server. All configurations will now create in your Server profile folder.
-- Tear down the server
+- Take the Server PBO and add it to your own server-side pack
+- Take the Client PBO and the TBLib PBO and add them to your own client pack. Publish this pack on Steam.
+- Start your server. All configurations will now be created in your server profile folder.
+- Shut down the server
 - Configure your needs
-- Start your Server :-)
+- Start your server :-)
 
 ## Configuration
-- [AdminConfig.json](../GlobalConfigs/AdminConfig.md) Admins can currently reload config at dead body.
+- [AdminConfig.json](../GlobalConfigs/AdminConfig.md) Admins can currently reload config at dead bodies.
 - [CurrencyConfig.json](../GlobalConfigs/CurrencyConfig.md)
 - [DealerPoints.json](./Configs/DealerPoints.md)
 - [DealerPoint.json](./Configs/DealerPoint.md)
 - [TraderItemConfigs.json](./Configs/TraderItemConfigs.md)
-- [TraderItemCategorieOrder.json](./Configs/TraderItemCategorieOrder.md)
+- [TraderItemCategoryOrder.json](./Configs/TraderItemCategorieOrder.md)
 - [Types.md](./Types.md)
 
 ## Types
@@ -39,22 +39,22 @@ See [here](./Converter/Converter.md)
 
 ## FAQ
 
-### I have already another Trader, is it easy to migrate to that trader?
+### I have another trader already; is it easy to migrate to this trader?
 
-Yes, it is easy to migrate to that trader. In Client Pack you can find migration tools to migrate your trader to the new one. The following are supported:
-- Trader by Dr. Johnes
+Yes, it is easy to migrate to this trader. In the client pack, you can find migration tools to migrate your trader settings to the new one. The following are supported:
+- Trader by Dr. Jones
 - TraderPlusPlus
-- Expension Trader
+- Expansion Trader
 
 ### I want to use an NPC instead of a trader object
 Yes, you can use an NPC instead of a trader object. 
 
-1. use a kit to place an static object
-2. open the position menu and set the required values
-3. open the trader menu and use the tap for position configuration
-4. enable there the "use NPC" option and configure the NPC
-5. Save the configuration
+1. Use a kit to place a static object.
+2. Open the position menu and set the required values.
+3. Open the trader menu and use the tab for position configuration.
+4. Enable the "use NPC" option and configure the NPC.
+5. Save the configuration.
 
-Alternatively you can configure it directly in the DealerPoint.json file. See [DealerPoint.json](./Configs/DealerPoint.md)
+Alternatively, you can configure it directly in the `DealerPoint.json` file. See [DealerPoint.json](./Configs/DealerPoint.md)
 
 

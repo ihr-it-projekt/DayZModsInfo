@@ -4,9 +4,9 @@
 
 See also [here](../The%20Mod%20Base/README.md)
 
-- Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
+- Take the Server PBO and add it to your own server-side pack
+- Take the Client PBO and the TBLib PBO and add them to your own client pack. Publish this pack on Steam.
 - Start your server. Some more configurations will be generated.
-- Tear down the server
+- Shut down the server
 - Configure your needs
-- Start your Server :-)
+- Start your server :-)

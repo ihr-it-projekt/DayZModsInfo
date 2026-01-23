@@ -1,8 +1,8 @@
 # TB Carry
 
-![TB Daily Reward](./Logo_.png)
+![TB Carry](./Logo_.png)
 
-A Mod to carry dead players.
+A mod to carry dead players.
 
 ## Shop Link
 https://www.themodbase.com/mods/TBCarry
@@ -19,10 +19,10 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Features
 
 - you can carry dead players
-- if a dead body de-spawn by DayZ Lifetime, the player who carry will get the items when he drops the dead body
+- if a dead body despawns by DayZ Lifetime, the player who is carrying it will get the items when they drop the dead body
 - Body bags can be placed into vehicle
 - Body bag can show who is in that bag and when it was packed
-- All gears of players will be saved in the body bag, if dead body de-spawn by DayZ Lifetime 
+- All gear of players will be saved in the body bag, if a dead body despawns by DayZ Lifetime 
 - zero config
 
 
@@ -31,12 +31,12 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 See also [here](../The%20Mod%20Base/README.md)
 
 - Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- Start your Server :-) 
+- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this pack on Steam.
+- Start your server :-) 
 
 ## Configuration
 
 [TBCarryGlobalConfig.md](TBCarryGlobalConfig.md)
 
 ### Item Class name
-- TBCPlayerBaseBodyBack
+- TBCPlayerBaseBodyBag

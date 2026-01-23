@@ -3,14 +3,14 @@
 {
     "version": "2", // never change this, internal version number
     "isInitialized": 1, // never change this, internal version number
-    "currencyValues": {}, // deprecated, will removed in future
-    "useMoneyFromLBMasterATM": 1, // deprecated, will removed in future
+    "currencyValues": {}, // deprecated, will be removed in the future
+    "useMoneyFromLBMasterATM": 1, // deprecated, will be removed in the future
     "currencies": [
         {
-            "uniqueName": "default", // unique name of the currency, one currency must be default. Otherwise can it lead to problems
+            "uniqueName": "default", // unique name of the currency; one currency must be marked as 'default'. Otherwise, it can lead to problems.
             "displayName": "Ruble", // display name of the currency
-            "currencyValues": { // Currency values for the your currencies
-                "Money_Ruble50": 50, // "ItemName": ITEM VALUE // Attention the Typename is key sensitive
+            "currencyValues": { // currency values for your currencies
+                "Money_Ruble50": 50, // "ItemName": ITEM VALUE // Attention: the Typename is case-sensitive
                 "Money_Ruble1": 1,
                 "Money_Ruble2": 2,
                 "Money_Ruble5": 5,

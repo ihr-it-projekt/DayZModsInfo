@@ -1,13 +1,13 @@
 # Keybindings
 
-CtrlL + 1: Open the almanac
+LCTRL + 1: Open the Almanac
 
-CtrlL + CtrlR: Open the almanac
+LCTRL + RCTRL: Open the Almanac
 
-CtrlL + 3: Open spawn menu (This is time controlled and can not open every time)
+LCTRL + 3: Open spawn menu (This is time-controlled and cannot be opened at any time)
 
-CtrlL + 4: Open the message menu when you have a personal radio
+LCTRL + 4: Open the message menu when you have a personal radio
 
-CtrlL + 5: Open menu to pay open tickets
+LCTRL + 5: Open menu to pay open tickets
 
-CtrlL + 6: Manage Fraction
+LCTRL + 6: Manage Faction

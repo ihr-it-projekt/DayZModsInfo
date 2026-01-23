@@ -8,7 +8,6 @@ Example `Weapon Trader.json`:
 
 ```json
 {
-    {
     "uniqueName": "Weapon Trader", // Name of the trader
     "version": "0", // Never touch this value. It is needed internally
     "sellTax": 0.10, // Tax for selling items
@@ -22,12 +21,12 @@ Example `Weapon Trader.json`:
         0.00231537944637239,
         0.0008682372281327844
     ],
-    "useExactPosition": 1, // Use exact position, if 0 it will be placed automatically on ground
-    "useUTCTime": 0, // Use UTC time for opening hours, if 0 it will use local time
+    "useExactPosition": 1, // Use exact position; if 0, it will be placed automatically on the ground
+    "useUTCTime": 0, // Use UTC time for opening hours; if 0, it will use server time
     "type": "TBDTTraderMachine", // Type of the trader object (see types.md)
-    "useTraderChar": 1, // Use trader character, if 0 it will not use trader character
-    "traderCharType": "SurvivorF_Judy", // Type of the trader character
-    "traderCharAttachments": { // Attachments for the trader character. Must exists as a configured item in the TraderItemConfigs folder
+    "useTraderChar": 1, // Use a trader NPC character; if 0, it will not spawn an NPC
+    "traderCharType": "SurvivorF_Judy", // Class name of the trader NPC character
+    "traderCharAttachments": { // Attachments for the trader character. Items must be configured in the TraderItemConfigs folder
         "Gloves": "WoolGlovesFingerless_White",
         "Feet": "JungleBoots_Black",
         "Shoulder": "M4A1",
@@ -40,21 +39,19 @@ Example `Weapon Trader.json`:
         "Armband": "Armband_Crook",
         "Body": "TacticalShirt_Tan"
     },
-    "openTimes": [ // Opening hours
+    "openTimes": [ // Opening hours configuration
         {
             "openHour": 11,
             "openMinute": 20,
             "closeHour": 11,
             "closeMinute": 35
-        },
-        ...
+        }
     ],
-    "safeZoneEnabled": 0, // Safe zone settings, 0 = disabled, 1 = enabled
-    "safeZoneRadius": 100.0, // Safe zone radius
-    "uniqueFileNames": [ // List of items (unique names) available at this trader
+    "safeZoneEnabled": 0, // Safe zone toggle: 0 = disabled, 1 = enabled
+    "safeZoneRadius": 100.0, // Safe zone radius in meters
+    "uniqueFileNames": [ // List of item unique names available at this trader
         "AK101",
-        "AK74",
-        ...
+        "AK74"
     ]
 }
 ```

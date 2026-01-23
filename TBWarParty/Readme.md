@@ -4,7 +4,7 @@
 
 ## Description
 
-Player can make different fights in an arena in Teams or against each other with multiple possibilities on configuration. 
+Players can participate in various fights in an arena, either in teams or against each other, with numerous configuration possibilities. 
 
 ## Shop Link
 
@@ -22,147 +22,115 @@ https://youtu.be/KUnfQ191dW4
 
 ### Arena Building Converter
 
-- c file to WarParty format converter [Readme.md](Tools/Converter/CConverter/Readme.md)
-- json file to WarParty format converter [Readme.md](Tools/Converter/JSONConverter/Readme.md)
+- `.c` file to WarParty format converter: [Readme.md](Tools/Converter/CConverter/Readme.md)
+- `.json` file to WarParty format converter: [Readme.md](Tools/Converter/JSONConverter/Readme.md)
 
 ## Features
 
-- Match Modes
+- Match Modes:
   - Team Fights
-  - All against All
-- Match creation
-  - Admin can create permanent Lobbies for matches. This Lobbies stays active over server restart and reset the match when no player is in the lobby or the match is over. 
-  - player can create their own match (if admin allows it)
-  - options
-    - select arena 
-    - match mode
-    - rounds
-    - rounds length
-    - min/max players
-    - count of teams
-    - max kills per round
-    - pre-configured gear sets for match
-    - team markers, so players can see their teammates
-    - turn on/off stamina
-    - turn on/off friendly fire
-    - turn on/off spectator mode
-    - option to prevent players using specator mode when match is running
-    - turn on/off first person mode
-    - turn on/off one life mode
-    - team auto balancing option
-    - option to prevent other players to join the match when it started
-    - starting fee
-    - to delete gears directly at death, so players can not pick up the gear from dead players
-- Friendly Fire count no points
-- Available Config Options for Matches
-  - Arena Buildings
-  - How many rounds a match will have
-  - max time of a round
-  - max kills per round
-  - win rates when match has a starting fee
-  - gear sets
-    - you can create your own gear sets
-    - you can choose multiple gear sets for a match
-    - you can choose only one gear set for a match
-    - configure the quick bar place for the gear set items
-  - gear sets can be assigned to Teams in Game Creation Menu
-  - Spawn Positions for the players/Teams
-  - How many teams can join a match
+  - All against All (Free-for-All)
+- Match Creation:
+  - Admins can create permanent lobbies for matches. These lobbies persist through server restarts and reset the match when no player is in the lobby or the match ends. 
+  - Players can create their own matches (if permitted by the admin).
+  - Options:
+    - Select arena 
+    - Match mode
+    - Number of rounds
+    - Round length
+    - Min/max players
+    - Number of teams
+    - Max kills per round
+    - Pre-configured gear sets for the match
+    - Team markers (so players can see teammates)
+    - Toggle stamina
+    - Toggle friendly fire
+    - Toggle spectator mode
+    - Option to prevent players from using spectator mode while a match is running
+    - Toggle first-person mode
+    - Toggle one-life mode
+    - Team auto-balancing option
+    - Option to prevent players from joining a match after it has started
+    - Entry fee
+    - Option to delete gear immediately upon death (prevents looting dead players)
+- Friendly fire does not count towards points
+- Available Configuration Options for Matches:
+  - Arena buildings
+  - Number of rounds per match
+  - Max round time
+  - Max kills per round
+  - Win rates for matches with an entry fee
+  - Gear sets:
+    - Create your own custom gear sets
+    - Choose multiple gear sets for a match
+    - Restrict a match to a single gear set
+    - Configure quick-bar positions for gear set items
+  - Gear sets can be assigned to teams in the Game Creation menu
+  - Spawn positions for players/teams
+  - Max number of teams that can join a match
   - Player health
-  - Player shield
-    - shield will be regenerated after a period of time, if players get no hit
-  - Countdowns
-    - to start a match
-    - to start a new round
-    - at the end of a match
-  - death penalty times, player has to wait a configured time before he can respawn
-  - turn on/off stamina option for arena 
-  - turn on/off friendly fire for arena 
-  - option in main config that fresh spawned/new server players only spawn in Main Lobby Building, (Players can not run around the map) and they can not leave the main lobby by closing the main menu
-- Players can enter main Lobby at Lobby Entry Point or by pressing a key from everywhere. 
-  - key press option can be disabled
-- You can build your own Arena with the DayZ Editor
-- Arena Building(s) will load with the Mod
-- Pre created Arenas in the Mod Client Package
+  - Player shield:
+    - Shields regenerate after a period of time if the player avoids taking damage
+  - Countdowns:
+    - Match start
+    - Round start
+    - Match end
+  - Death penalty times: players must wait a configured duration before respawning
+  - Toggle stamina option for the arena 
+  - Toggle friendly fire for the arena 
+  - Option to make new players spawn exclusively in the Main Lobby Building (prevents wandering the map and fleeing the lobby)
+- Players can enter the main lobby via the Lobby Entry Point or by pressing a hotkey from anywhere (hotkey can be disabled).
+- You can build your own arena using the DayZ Editor.
+- Arena building(s) load with the mod.
+- Mod client package includes pre-created arenas.
 - Kill Feed
-- Global Server Statistics (Leaderboard for Kills, Deaths, Points, Won Matches, Played Matches, Played Rounds) This statics will updated after every match ending.
- in Game Creation Menu
-- notification after Match was ended to Player with the amount of money he won
-- Scoring System
-  - player hit points
-  - team hit points
-  - player kills
-  - team kills
-  - own deaths
-- Statistics will be shown at the end of a match
-- Overlays 
-  - shield and health bar 
-  - Players with their kills 
-  - Round 
-    - Time left
-    - max Kills
-    - round number
-    - Team Kills
-- frees different states when player joins a lobby or match (Is not important for TBWarParty):
-  - sick states 
-  - cuts 
-  - hunger
-  - thirst
-  - fever
-  - heat
-  - influence
-  - blood and health
-  - blood and health regeneration
-  - shock and shock damage
-  - toxic
-  - heat comfort
-  - immune system
-  - stomach 
-- disable TerjeMedicine modifier when in arena (experimental)
-- Admin can
-  - Reload config in game
-  - can disable Match creation for other players, so only admins can create new matches
-  - can delete matches everytime
-  - can teleport to arena from lobby menu
-  - F Action to add spawn positions for teams
-  - F Action to remove spawn positions for teams
-- Arenas will be cleaned from dropped gear after a round 
-- kills from every deployable object like mines and traps will count for who is placing it
-- kills by cars will count for driver
-- Discord Webhook to log:
-  - Kill feed
-  - Add Discord logs for:
-  - Match was created
-  - Match has stared
-  - Match Winners
+- Global Server Statistics (Leaderboard for Kills, Deaths, Points, Matches Won, Matches Played, Rounds Played). These statistics are updated after every match.
+- Notification after a match ends showing the amount of money won.
+- Scoring System:
+  - Player hit points
+  - Team hit points
+  - Player kills
+  - Team kills
+  - Personal deaths
+- Statistics are displayed at the end of each match.
+- Overlays:
+  - Shield and health bars 
+  - Players and their kill counts 
+  - Round info: Time remaining, max kills, round number, and team kills.
+- Normalizes various states when a player joins a lobby or match (resets sick states, cuts, hunger, thirst, fever, etc.).
+- Admin Actions:
+  - Reload config in-game.
+  - Disable match creation for non-admin players.
+  - Delete matches at any time.
+  - Teleport to the arena from the lobby menu.
+  - Add/remove spawn positions for teams via F action.
+- Arenas are cleared of dropped gear after each round. 
+- Kills from deployable objects (mines/traps) count for the player who placed them.
+- Road kills by cars count for the driver.
+- Discord Webhook Logging: Kill feed, match creation, match start, and match winners.
 
 ## Supported Mods
 - PVEZ (Reloaded)
-- LBMatser Advanced Groups (No team tags and safe zone marker from this Mod are visible in the match)
-- TerjeMedicine (experimental) (can not get sick in arena)
+- LBMaster Advanced Groups (Team tags and safe zone markers are hidden during matches)
+- TerjeMedicine (Players do not get sick in the arena)
 - MuchPVE
 
 ## Planned Features
 
-- mechanic to prevent non combat players to enter the arena from external
-- players can disable new macht notification
-- Goodies like
-  - heal packs/ heal sticks
-  - shield packs
-- Gear Sets can only be used when player have enough points
-- Arenas can only be used when player have enough points
+- Mechanic to prevent non-combat players from entering the arena from outside
+- Option for players to disable new match notifications
+- Consumables like health packs and shield sticks
+- Restrict gear sets and arenas based on player points
 
-- Teammarker position 
-- Delete Admin needs cooldown
 
 ## How to install
 
 See also [here](../The%20Mod%20Base/README.md)
 
-- Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- start the server first time and wait for if it is completed booted
-- turn of the server 
-- in folder `YourServerProfilesFolder\TBMods\Config\TBWarParty` are now configs created
-- Configure your needs
-- Start your Server again :-)
+- Take the Server PBO and add it to your own server-side pack.
+- Take the Client PBO and the TBLib PBO and add them to your own client pack. Publish this pack on Steam.
+- Start the server for the first time and wait for it to fully boot.
+- Shut down the server.
+- Config files are created in `YourServerProfilesFolder\TBMods\Config\TBWarParty`.
+- Configure your needs.
+- Start your server again :-)

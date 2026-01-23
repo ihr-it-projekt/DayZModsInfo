@@ -3,12 +3,11 @@
 ````json lines
 {
     "version": "3", // Never touch this value. It is needed internally
-    "shouldDeleteAllItemsOnPrissoner": 1, // If a player get arrest, all items on player will deleted, 0 = off 1 = on
-    "shouldDeleteAllItemsOnExPrissoner": 1, // If a player becomes by reducing his arrest time to 0, all Items  on Ex Prisoner will 
-deleted
-    "teleportArrestedIntoJail": 0, // teleport arrested players automatically into prisson;  0 = off 1 = on
-    "teleportPosition": "0 0 0", // target position for teleported players
-    "prisonerItems": [ // This Items will a Prisoner become, when he get arrest.
+    "shouldDeleteAllItemsOnPrisoner": 1, // If a player gets arrested, all items on the player will be deleted; 0 = off, 1 = on
+    "shouldDeleteAllItemsOnExPrisoner": 1, // If a player is released by reducing their arrest time to 0, all items on the ex-prisoner will be deleted
+    "teleportArrestedIntoJail": 0, // Teleport arrested players automatically into prison; 0 = off, 1 = on
+    "teleportPosition": "0 0 0", // Target position for teleported players
+    "prisonerItems": [ // These items a prisoner will receive when they get arrested.
         "Pickaxe",
         "PrisonerCap",
         "PrisonUniformPants",
@@ -19,7 +18,7 @@ deleted
         "TunaCan",
         "TunaCan"
     ],
-    "exPrisonerItems": [ // This Items will a Ex Prisoner become, when his arrest is over.
+    "exPrisonerItems": [ // These items an ex-prisoner will receive when their arrest is over.
         "CanvasPants_Blue",
         "TShirt_RedBlackStripes",
         "AthleticShoes_Brown",
@@ -28,20 +27,20 @@ deleted
         "TunaCan",
         "TunaCan"
     ],
-    "arrestAreas": [ // A player must be in this area to reduce his arrest time. Use for example a police jail, default is Prison Island
+    "arrestAreas": [ // A player must be in this area to reduce their arrest time. Use, for example, a police jail; default is Prison Island
         [
             2746.17333984375,
             26.421398162841798,
             1301.691162109375
         ]
     ],
-    "exPrisonerAreas": [ //In this area the ex prisoner will spawn 
+    "exPrisonerAreas": [ // In this area, the ex-prisoner will spawn 
         [
             3662.57421875,
             6.720571994781494,
             2396.926513671875
         ]
     ],
-    "arrestAreaRadius": 110 // the radius in that the prisoner must be, to reduce his arrest time
+    "arrestAreaRadius": 110 // The radius in which the prisoner must be to reduce their arrest time
 }
 ````

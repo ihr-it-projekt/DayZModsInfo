@@ -11,36 +11,36 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2902412026
 ```
 {
     "version": "1", // Version of the configuration
-    "timeControlled": 0, // 0 = Random, 1 = Controlled
-    "startTimeHour": 18, // Start time in hours
-    "startTimeMinute": 0, // Start time in minutes
-    "endTimeMinute": 0, // End time in minutes
-    "endTimeHour": 22, // End time in hours
-    "playerControlled": 0, // 0 = Random, 1 = use minCountPlayer
-    "minCountPlayer": 1, // Minimum number of players
+    "timeControlled": 0, // 0 = Random, 1 = Controlled by time
+    "startTimeHour": 18, // Start time in hours (0-23)
+    "startTimeMinute": 0, // Start time in minutes (0-59)
+    "endTimeHour": 22, // End time in hours (0-23)
+    "endTimeMinute": 0, // End time in minutes (0-59)
+    "playerControlled": 0, // 0 = Random, 1 = Use minCountPlayer
+    "minCountPlayer": 1, // Minimum number of players required for the event
     "minMinutesBetweenEvents": 10, // Minimum minutes between events
     "maxMinutesBetweenEvents": 60, // Maximum minutes between events
     "locations": [
         {
-            "name": "Airplane Accident", // Name of the location
+            "name": "Airplane Accident", // Name of the event location
             "position": [
                 4739.15869140625, // X
                 177.31765747070313, // Y
                 13236.0341796875 // Z
             ],
-            "radiusOfSpawn": 25.0, // Radius of the spawn
+            "radiusOfSpawn": 25.0, // Radius of the spawn area
             "countOfMaxZombies": 20, // Maximum number of zombies
             "countOfMinZombies": 5, // Minimum number of zombies
             "countOfMaxItems": 15, // Maximum number of items
             "countOfMinItems": 5, // Minimum number of items
-            "playerNeedsItemsToEnter": 0, // 0 = No, 1 = Yes
+            "playerNeedsItemsToEnter": 0, // 0 = No, 1 = Yes (Requires specific items to enter without taking damage)
             "zombieReSpawn": 1, // 0 = No, 1 = Yes
-            "zombieReSpawnTick": 0, // Time in minutes
-            "durationInMinutes": 60, // Duration in minutes
-            "randomItemHealths": 1, // 0 = No, 1 = Yes
-            "randomItemHealthsMax": 100, // Maximum health
-            "randomItemHealthsMin": 50, // Minimum health
-            "zombieTypes": [ // Zombie types
+            "zombieReSpawnTick": 0, // Respawn time in minutes
+            "durationInMinutes": 60, // Duration of the event in minutes
+            "randomItemHealths": 1, // 0 = No, 1 = Yes (Randomize item health)
+            "randomItemHealthsMax": 100, // Maximum item health
+            "randomItemHealthsMin": 50, // Minimum item health
+            "zombieTypes": [ // List of zombie class names
                 "ZmbM_CitizenASkinny_Blue",
                 "ZmbM_CitizenASkinny_Brown",
                 "ZmbM_CitizenASkinny_Grey",
@@ -85,11 +85,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2902412026
             ],
             "itemTypes": [
                 {
-                    "type": "VSS", // Type of the item
+                    "type": "VSS", // Item class name
                     "attachments": [
                         {
-                            "type": "Mag_vss_10rnd", // Attachment type
-                            "attachments": [] // Attachments
+                            "type": "Mag_vss_10rnd", // Attachment class name
+                            "attachments": [] 
                         },
                         {
                             "type": "PSO1Optic",
@@ -109,7 +109,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2902412026
             ],
             "eventObjects": [
                 {
-                    "name": "Land_Wreck_C130J", // Name of the object
+                    "name": "Land_Wreck_C130J", // Object class name
                     "position": [
                         4737.9013671875, // X
                         181.91348266601563, // Y
@@ -150,9 +150,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2902412026
             ],
             "neededItemsToEnter": [
                 {
-                    "name": "MotoHelmet_Red", // Name of the item
-                    "position": "Head", // Position of the item
-                    "healthDecrease": 5.0 // Health decrease
+                    "name": "MotoHelmet_Red", // Item class name required to enter
+                    "position": "Head", // Slot where the item must be equipped
+                    "healthDecrease": 5.0 // Health decrease per tick if not equipped
                 },
                 {
                     "name": "MountainBag_Green",

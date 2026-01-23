@@ -107,9 +107,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
 8. start server first time.
 9. wait for boot finished
 10. stop server
-11. go to configured server profile folder, there are now a new folder named "DayZCasinoV2". This folder contains 2 json files "dayZCasinoConfigV2.json" and "dayZCasinoJackpot.json"
+11. go to configured server profile folder, there is now a new folder named "DayZCasinoV2". This folder contains 2 json files "dayZCasinoConfigV2.json" and "dayZCasinoJackpot.json"
 
-**Attention: please don't use that config here in readme. It is only for explanation and the server can not load this config file. The server creates at first start a new config file.**
+**Attention: please don't use the config here in the readme. It is only for explanation and the server cannot load this config file. The server creates a new config file at the first start.**
 
 ## Config files
 
@@ -137,7 +137,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
     "enabled": 1,
     // 1 = ON 0 = OFF
     "gamePositions": [
-      // here are the positions of the game machine, you can add more then one
+      // here are the positions of the game machine, you can add more than one
       // start of first position
       {
         "pos": [
@@ -168,13 +168,13 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
       // end of second position
     ],
     "gameObject": "Casino_Pacman",
-    // the game object that will placed in landscape
+    // the game object that will be placed in landscape
     "chipsBet": 50,
     // Bet per round
     "minJackpot": 500,
     "maxJackpot": 10000,
     "wheelNumberConfigs": [
-      // here you find the quote for numbers on lucky wheel. All numbers from 0 - 35 must be configured. You don´t can use more then the number 35. 0 quote means you loose. All others means you win. The number 33 is the default Jackpot field and can not be override.
+      // here you find the quote for numbers on lucky wheel. All numbers from 0 - 35 must be configured. You cannot use more than the number 35. 0 quote means you lose. All others means you win. The number 33 is the default Jackpot field and cannot be overridden.
       {
         "number": 0,
         "quote": 0
@@ -329,7 +329,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
     "enabled": 1,
     // 1 = ON 0 = OFF
     "gamePositions": [
-      // here are the positions of the game machine, you can add more then one
+      // here are the positions of the game machine, you can add more than one
       {
         "pos": [
           8349.77,
@@ -344,7 +344,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
       }
     ],
     "gameObject": "Casino_Pacman",
-    // the game object that will placed in landscape
+    // the game object that will be placed in landscape
     "minBet": 10,
     "maxBet": 10000,
     "winFactor": 1.5,
@@ -355,7 +355,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
   "diceSettings": {
     "enabled": 1,
     "gamePositions": [
-      // here are the positions of the game machine, you can add more then one
+      // here are the positions of the game machine, you can add more than one
       {
         "pos": [
           8345.3,
@@ -370,7 +370,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
       }
     ],
     "gameObject": "Casino_Pacman",
-    // the game object that will placed in landscape
+    // the game object that will be placed in landscape
     "minBet": 10,
     "maxBet": 10000,
     "diceWinFactor": 2
@@ -379,7 +379,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
   "ratRaceSettings": {
     "enabled": 1,
     "gamePositions": [
-      // here are the positions of the game machine, you can add more then one
+      // here are the positions of the game machine, you can add more than one
       {
         "pos": [
           8349.44,
@@ -394,16 +394,16 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1940425039
       }
     ],
     "gameObject": "Casino_Pacman",
-    // the game object that will placed in landscape
+    // the game object that will be placed in landscape
     "minBet": 10,
     "maxBet": 10000,
     "maxWinQouta": 5
     // max Factor for multiply the bet when a player win
   },
   "configVersion": 4,
-  // config file version NEVER CHANGE THIS it is needed to automaticaly update the config file when new values will added
+  // config file version NEVER CHANGE THIS it is needed to automatically update the config file when new values are added
   "enablePlayLogs": 1
-  // here you can enable game logs. 1=on 0=off In DayZCasionV2 config folder will created for every day a new file when player plays a game. The name of the file is yeahr-month-day_play.csv for example "2020-2-1_play.csv in this file are four columns "time" "game" "playerid" and "win/lose". Example: 15:43:22 ;BlackJack;76561198196317725;15; 
+  // here you can enable game logs. 1=on 0=off In DayZCasinoV2 config folder will be created for every day a new file when player plays a game. The name of the file is year-month-day_play.csv for example "2020-2-1_play.csv in this file are four columns "time" "game" "playerid" and "win/lose". Example: 15:43:22 ;BlackJack;76561198196317725;15; 
 }
 
 ````

@@ -20,59 +20,59 @@ https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
 ## Features
 
-- Creates a showroom for every single player, where they can test the cars
-- works with DayZLife Car ownership
+- Creates a showroom for every player, where they can test cars
+- Works with DayZLife car ownership
 - 4 different action objects to open the dealer menu
-- Player can
-    - buy cars
-    - sell cars, 
-      - items in car inventory will drop to the ground
-      - items in car slots will be sold with the car
-    - can buy additional items for the car
-- If spawn location for Vehicle is blocked, the car will be spawned at the next free location
-- Premium Features
-  - You can set Cars to Premium Cars, so only Players with Premium Status can buy them
-  - You can set Items to Premium Items
-  - 4 different Premium Coins
-    - One Time Coin for Car Trader, player is able to buy one premium car with it
-    - 30 Days Premium in Daily Reward
-    - 7 Days Premium in Daily Reward
-    - 1 Day Premium in Daily Reward
-- Admin
-    - can reload configs and user data in game, that helps to support config changes without server restart
-    - can add multiple independent dealer points
-    - can add car variations to car position, for example different colors or equipment
-    - can mark cars as premium cars so only premium users can buy them
-    - can add additional items to the car that increase the price of the car
-    - can log all transactions
-    - can disable buy, sell and showroom for locations
+- Players can:
+    - Buy cars
+    - Sell cars 
+      - Items in the car's inventory will drop to the ground
+      - Items in car slots will be sold with the car
+    - Buy additional items for the car
+- If a spawn location for a vehicle is blocked, the car will be spawned at the next free location
+- Premium Features:
+  - You can set cars to "Premium", so only players with premium status can buy them
+  - You can set items to "Premium"
+  - 4 different premium coins:
+    - One-time coin for Car Trader: player is able to buy one premium car
+    - 30 days premium in Daily Reward
+    - 7 days premium in Daily Reward
+    - 1 day premium in Daily Reward
+- Admins can:
+    - Reload configs and user data in-game; this allows for configuration changes without a server restart
+    - Add multiple independent dealer points
+    - Add car variations to car positions (e.g., different colors or equipment)
+    - Mark cars as premium so only premium users can buy them
+    - Add additional items to the car that increase its price
+    - Log all transactions
+    - Disable buying, selling, and the showroom for specific locations
 - Config Editor available <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
 ## How to install
 
 See also [here](../The%20Mod%20Base/README.md)
 
-- Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- Start your server, the server will now detect all vehicles and items that can used for the vehicle slots and create all config with default values. 
-- Configure now your needs, for example pricing. You can also use our Config Editor <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
+- Take the Server PBO and add it to your own server-side pack
+- Take the Client PBO and the TBLib PBO and add them to your own client pack. Publish this pack on Steam.
+- Start your server; the server will detect all vehicles and items that can be used for vehicle slots and create configurations with default values. 
+- Configure to your needs (e.g., pricing). You can also use our Config Editor. <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 - Configure yourself as an admin in the [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson)
 
 ## How to use the test drive
-- add your test drive positions to the DealerPointConfig
-- set the vehicle to `canUsedForTestDrive` and set the `maxDistanceToTestDriveSpawnPosition` and `maxTimeInSecondsForTestDrive` to your needs in CarConfig
-- reload the configs
-- Go to show room
-- select a vehicle with enabled option
-- get into vehicle and use "test drive" mouse action
-- you can get back from test drive with another action when you are at test drive OR you just leave the vehicle OR time is over OR max distance is reached  
+- Add your test drive positions to the `DealerPointConfig`
+- Set the vehicle to `canUsedForTestDrive` and set `maxDistanceToTestDriveSpawnPosition` and `maxTimeInSecondsForTestDrive` to your needs in `CarConfig`
+- Reload the configs
+- Go to the showroom
+- Select a vehicle with the option enabled
+- Get into the vehicle and use the "test drive" mouse action
+- You can end the test drive with another action, or by leaving the vehicle, or when the time is over, or if the max distance is reached.
 
 
 ## Configurations
 
 Config Editor <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
-- [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently make a hot reload of configs and player data. Only they see the button in the menu.
+- [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently perform a hot-reload of configs and player data. Only they can see this button in the menu.
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [CarConfigs.md](Configs/CarConfigs.md)
 - [DealerPointConfig.md](Configs/DealerPointConfig.md)

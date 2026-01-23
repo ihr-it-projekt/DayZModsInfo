@@ -4,7 +4,7 @@
 
 ## Short Description
 
-This mod allows you to harvest, craft and use jewels with different Skills.
+This mod allows you to harvest, craft, and use jewels with different skills.
 
 ## Shop Link
 https://www.themodbase.com/mods/TBJewelsOfSurvival
@@ -21,50 +21,50 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Features
 
 ### Admin
-- Admin can reload configs in Crafting Book
+- Admins can reload configs in the Crafting Book.
 
-### 21 new Materials
+### 21 New Materials
 - Ore (Gold, Silver, Copper, Iron, Gemstone Red, Gemstone Green, Gemstone Blue)
-- crafted Ore (Gold, Silver, Copper, Iron, Gemstone Red, Gemstone Green, Gemstone Blue)
-- Gemstone (Red, Green, Blue)
-- Ingot (Gold, Silver, Copper, Iron)
+- Crafted Ore (Gold, Silver, Copper, Iron, Gemstone Red, Gemstone Green, Gemstone Blue)
+- Gemstones (Red, Green, Blue)
+- Ingots (Gold, Silver, Copper, Iron)
 
-### Smelter (static and non static)
-- used to smelt ore to ingots
-- Sound animation when processing
-- Consumes Gas and Metal Ores
-- Gas requirement can be disabled for static smelter
+### Smelter (Static and non-static)
+- Used to smelt ore into ingots.
+- Sound animation during processing.
+- Consumes gas and metal ores.
+- Gas requirement can be disabled for static smelters.
 
-### Grinder (static and non static)
-- used to grind gemstone ore to gemstone
-- sound and running animation when processing
-- consume batteries and gemstone ore
-- battery requirement can be disabled for static grinder  
-- can be used by only one player at same time
+### Grinder (Static and non-static)
+- Used to grind gemstone ore into gemstones.
+- Sound and running animation during processing.
+- Consumes batteries and gemstone ore.
+- Battery requirement can be disabled for static grinders.
+- Can be used by only one player at a time.
 
-### Anvil (static and non static)
-- used to craft jewels
-- sound when used
-- consume ingots, gemstones and jewels
+### Anvil (Static and non-static)
+- Used to craft jewels.
+- Sound when used.
+- Consumes ingots, gemstones, and jewels.
 
-### Manipulates Effects (Alphabetic order)
+### Manipulate Effects (Alphabetical order)
 
-- Blood Regen Effect (Blood regeneration will be reduced or increased)
-- Charcoal Effect (Charcoal Effective time will be reduced or increased)
-- Damage Reduce Effect (Damage will be reduced or increased when player will be attacked)
-- Damage Increase Effect (Damage will be reduced or increased when player will attack)
-- Deafness Effect (Player can not hear anything, as long he watches into a scope. Negative effect for some rings)
-- Disinfection Effect (Disinfection Effective time will be reduced or increased)
-- Epinephrine Effect (Epinephrine Effective time will be reduced or increased)
-- Flash bang Effect (Player get a white screen for a period of time. This will be used as negative effect for some rings)
-- Hunger Effect (Hunger of player will be reduced or increased)
-- Night Vision Effect (Player can get Night Vision in different versions)
-- Optic Stabilizer Effect (Scope Optic will stabilize)
-- Stamina Depletion Effect (Stamina usage will be reduced or increased)
-- Stamina Recovery Effect (Stamina recovery will be reduced or increased)
-- Thirst Effect (Thirst of player will be reduced or increased)
+- Blood Regen Effect: Blood regeneration will be reduced or increased.
+- Charcoal Effect: Charcoal effective time will be reduced or increased.
+- Damage Reduce Effect: Damage will be reduced or increased when a player is attacked.
+- Damage Increase Effect: Damage will be reduced or increased when a player attacks.
+- Deafness Effect: Player cannot hear anything as long as they are looking through a scope. (Negative effect for some rings).
+- Disinfection Effect: Disinfection effective time will be reduced or increased.
+- Epinephrine Effect: Epinephrine effective time will be reduced or increased.
+- Flashbang Effect: Player gets a white screen for a period of time. (Negative effect for some rings).
+- Hunger Effect: Hunger depletion will be reduced or increased.
+- Night Vision Effect: Players can receive various versions of night vision.
+- Optic Stabilizer Effect: Scope optics will stabilize.
+- Stamina Depletion Effect: Stamina usage will be reduced or increased.
+- Stamina Recovery Effect: Stamina recovery will be reduced or increased.
+- Thirst Effect: Thirst depletion will be reduced or increased.
 
-### Jewels (Alphabetic order)
+### Jewels (Alphabetical order)
 - Ring of Attack (3 Levels)
 - Ring of Defense (3 Levels)
 - Ring of DragonBlood (3 Levels)
@@ -73,23 +73,21 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - Ring of Owl (3 Levels)
 - Ring of Perseverance (3 Levels)
 
-You will find more information here: [https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels](https://github.com/ihr-it-projekt/DayZModsInfo/blob/main/TBJewelsOfSurvival/Readme.md#jewels)
-
 ### How to install
 
 See also [here](../The%20Mod%20Base/README.md)
 
-- Take the Server PBO and bring it into your own server side pack
-- Take the Client PBO and the TBLib PBO and bring it into your own client pack. Publish this Pack on steam.
-- Start your server. Some more configurations will be generated.
-- Tear down the server
-- Configure your needs
-- Start your Server :-)
+- Take the Server PBO and add it to your own server-side pack.
+- Take the Client PBO and the TBLib PBO and add them to your own client pack. Publish this pack on Steam.
+- Start your server. Additional configurations will be generated.
+- Shut down the server.
+- Configure your needs.
+- Start your server :-)
 
 
 ### Configuration Options
-- a lot of configurations possibilities
-- config will automatically create on first server start
+- A wide range of configuration possibilities.
+- Config files will automatically be created on the first server start.
 
 ### Types
 - [Types](Types.md)
@@ -105,7 +103,7 @@ See also [here](../The%20Mod%20Base/README.md)
 - [Rings of Eagle Eye](Rings/TBJOFRingOfEagleEye.md)
 
 ## Configuration
-Here are shown only examples. The generated configs can have more items. But they will all described here.
+Only examples are shown here. The generated configs may contain more items, all of which are described below.
 - [AnvilConfig.md](Configs/AnvilConfig.md)
 - [GrinderConfig.md](Configs/GrinderConfig.md)
 - [GrinderRecipeConfiguration.md](Configs/GrinderRecipeConfiguration.md)

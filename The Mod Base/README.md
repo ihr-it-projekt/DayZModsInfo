@@ -8,8 +8,8 @@ Welcome to The Mod Base setup guide! This section contains comprehensive instruc
 
 1. **[Download Mods](Download.md)** - Learn how to download mods and licenses from the webshop
 2. **[Add to Server](AddToServer.md)** - Complete server setup guide with step-by-step instructions
-3. **[Publish Server Mod Package](PublishAServerModPackage.md)** - Create and publish your server mod package on Steam Workshop
-4. **[Share Access](ShareAccess.md)** - Share Access between other Users
+3. **[Publish Server Mod Package](PublishAServerModPackage.md)** - Create and publish your server mod package on the Steam Workshop
+4. **[Share Access](ShareAccess.md)** - Share access between other users
 
 
 ## 🚀 Getting Started
@@ -18,16 +18,16 @@ Welcome to The Mod Base setup guide! This section contains comprehensive instruc
 
 Before you begin, make sure you have:
 - A DayZ server with admin access
-- Steam account with DayZ Tools installed
-- Valid license for the mods you want to use
-- Basic understanding of DayZ server file structure
+- A Steam account with DayZ Tools installed
+- A valid license for the mods you want to use
+- A basic understanding of the DayZ server file structure
 
 ### Step-by-Step Process
 
 #### 1. Download Your Mods
 Start by downloading the mods and licenses from the official webshop:
 - Visit [themodbase.com](https://themodbase.com)
-- Navigate to "Your license and downloads"
+- Navigate to "Your licenses and downloads"
 - Download both the mod files and your license key
 - Accept the terms and conditions
 
@@ -44,7 +44,7 @@ Follow the detailed server setup process:
 
 #### 3. Publish Your Mod Package
 Create and publish your server mod package:
-- Use DayZ Tools Publisher
+- Use the DayZ Tools Publisher
 - Configure your workshop item
 - Publish and update your mod package
 
@@ -53,23 +53,23 @@ Create and publish your server mod package:
 ## 🔧 Configuration
 
 Each mod comes with its own configuration system:
-- **Config Schemas** - JSON schemas for validation
-- **Example Configs** - Ready-to-use configuration examples
-- **Documentation** - Detailed setup and configuration guides
+- **Config Schemas**: JSON schemas for validation
+- **Example Configs**: Ready-to-use configuration examples
+- **Documentation**: Detailed setup and configuration guides
 
 ## 🆘 Troubleshooting
 
 ### Common Issues
 
 **Mod not loading on server:**
-- Check that server PBO files are in the correct addons folder
+- Check that server PBO files are in the correct `addons` folder
 - Verify license files are properly placed
 - Ensure all dependencies are installed
 
 **Client can't connect:**
-- Verify client PBO and BISIGN files are in workshop mod
-- Check that BIKEY files are in server keys folder
-- Ensure workshop mod is published and updated
+- Verify client PBO and BISIGN files are in the workshop mod
+- Check that BIKEY files are in the server `keys` folder
+- Ensure the workshop mod is published and updated
 
 **License errors:**
 - Verify license files are in the correct location
@@ -84,9 +84,9 @@ Each mod comes with its own configuration system:
 
 ## 📚 Additional Resources
 
-- **[Main Mod Documentation](./README.md)** - Complete overview of all available mods
-- **[Mod Categories](./README.md#-core-mods)** - Browse mods by category
-- **[Configuration Guides](./README.md#-configuration)** - Learn about mod configuration
+- **[Main Mod Documentation](./README.md)**: Complete overview of all available mods
+- **[Mod Categories](./README.md#-core-mods)**: Browse mods by category
+- **[Configuration Guides](./README.md#-configuration)**: Learn about mod configuration
 
 ## 🔄 Updates
 

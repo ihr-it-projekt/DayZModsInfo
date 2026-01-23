@@ -3,7 +3,7 @@
 ![TB Daily Reward](./logo_new.png)
 
 ## Description
-This Mod allows you in DayZ to get a reward for everyday you play on the server.
+This mod allows you in DayZ to get a reward for every day you play on the server.
 
 ## Shop Link
 https://www.themodbase.com/mods/TBDailyReward
@@ -17,32 +17,32 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 [![Version 1](./logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
 
 ## Features
-- monetise your sever with premium rewards
+- monetize your server with premium rewards
 - (non-) premium rewards for players
 - reward levels can have multiple rewards collections (the player will get one of the collections as one reward)
 - rewards collections can have multiple items
 - Logging on discord and/or csv file
 - Configurations:
   - reward levels
-  - reward level names that will shown in UI
+  - reward level names that will be shown in UI
   - reward items
   - reward conditions
     - player kills
-    - headshot kills (will not count as player kill)
+    - headshot kills (will not count as player kills)
     - infected kills
     - walked distance
     - time played
     - animal type kills
   - reward collections
   - rewards can be limited for server, so for example a reward can be taken only 10 times by all players 
-- Player gets an in game notification when he is abele to take a reward  
-- Over 1400 Items pre-configured, you can just use it
-- Toggle Animation when player starts to get reward
+- Player gets an in game notification when they are able to take a reward  
+- Over 1400 items pre-configured, you can just use them
+- Toggle animation when player starts to get reward
 - Win animation when player gets reward
-- 3 Included Premium Coins to give player premium status for 1, 7 or 30 days 
-- Admins can 
+- 3 included premium coins to give player premium status for 1, 7 or 30 days 
+- Admins can:
   - in game reload configs and player data
-  - can reset all player data in game
+  - reset all player data in game
   
 
 ## FAQ
