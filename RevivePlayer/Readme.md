@@ -2,7 +2,8 @@
 
 ![Revive Player](./logo.png)
 
-A mod to revive dead players in DayZ.
+## Features
+Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBRevivePlayer)
 
 ## Shop Link
 https://www.themodbase.com/mods/TBRevivePlayer
@@ -14,27 +15,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Youtube
 
 [![Version 1](./logoYT.png)](https://youtu.be/Dh3ECiVC6S4)
-
-## Features
-
-- You can revive dead players by using a defibrillator
-- Defibrillators can be destroyed after use (configurable)
-- Hospital (can be disabled)
-  - Players can be revived in hospitals (teleport)
-  - Players must pay for the revive (configurable)
-  - Support for LBMaster's Advanced Banking, so players can pay via bank account (can be disabled via config)
-- Real Estate Respawn (can be disabled)
-  - Players can be revived in their Real Estate (teleport)
-  - Players must pay for the revive (configurable)
-- Players don't lose their inventory after being revived
-- Revived players can receive the following (configurable):
-      - Random cuts
-      - Blood level
-      - Shock
-      - Health
-- Admins can:
-  - Revive players via F action
-  - Reload config at the dead body of a player
 
 ## How to install
 

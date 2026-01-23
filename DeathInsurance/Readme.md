@@ -2,8 +2,9 @@
 
 ![TB Death Insurance](./DeathInsurance.jpeg)
 
-## Description
-This mod allows players to have insurance for their gear. If they die, they can get their gear back. 
+## Features
+
+Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBDeathInsurance)
 
 ## Shop Link
 https://www.themodbase.com/mods/TBDeathInsurance
@@ -15,34 +16,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## Youtube
 
 https://youtu.be/xdvwHjvwJYw
-
-## Features
-
-- Players can buy insurance for their gear, including gear in their hands
-- You can configure:
-  - Multiple insurance durations and prices
-  - Max heirs per insurance
-  - Position of insurance trader
-  - Time when insurance will be active after death
-  - Non-picked-up insurance cases (gear) will be deleted after a configured time
-  - That insurance stays active after death 
-- Players can name heirs
-- New object: Insurance trader (type TBDIMachine)
-- Gear can be picked up at the insurance trader after death
-- Works with TB Revive Player and TB Carry
-- Supports Advanced Banking System from LBMaster
-- Players can have only one insurance at a time
-- If a player wants to change their insurance, they have to purchase a new one
-- Admins can:
-  - Reload config at the insurance trader 
-- Logs when:
-  - Player buys insurance
-  - Player dies
-  - Insurance becomes active and items are saved
-  - Player takes items from the insurance trader
-  - Player deletes the insurance case or the last item is taken
-  - Log to CSV file
-  - Log to Discord
 
 ### How to install
 

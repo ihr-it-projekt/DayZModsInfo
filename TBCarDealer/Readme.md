@@ -2,9 +2,8 @@
 
 ![TB Car Dealer](./Logo.jpeg)
 
-## Description
-
-A car dealer script to buy cars and premium cars
+## Features
+Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBCarDealer)
 
 ## Shop Link
 
@@ -18,35 +17,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 https://www.youtube.com/watch?v=Yq5ngJGqJAg
 
-## Features
 
-- Creates a showroom for every player, where they can test cars
-- Works with DayZLife car ownership
-- 4 different action objects to open the dealer menu
-- Players can:
-    - Buy cars
-    - Sell cars 
-      - Items in the car's inventory will drop to the ground
-      - Items in car slots will be sold with the car
-    - Buy additional items for the car
-- If a spawn location for a vehicle is blocked, the car will be spawned at the next free location
-- Premium Features:
-  - You can set cars to "Premium", so only players with premium status can buy them
-  - You can set items to "Premium"
-  - 4 different premium coins:
-    - One-time coin for Car Trader: player is able to buy one premium car
-    - 30 days premium in Daily Reward
-    - 7 days premium in Daily Reward
-    - 1 day premium in Daily Reward
-- Admins can:
-    - Reload configs and user data in-game; this allows for configuration changes without a server restart
-    - Add multiple independent dealer points
-    - Add car variations to car positions (e.g., different colors or equipment)
-    - Mark cars as premium so only premium users can buy them
-    - Add additional items to the car that increase its price
-    - Log all transactions
-    - Disable buying, selling, and the showroom for specific locations
-- Config Editor available <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
+## Config Editor available 
+<a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZModsInfo/f3bee68f38a446348fad68638310ae920ee24416/TBCarDealer/ConfigEditor/TBCarDealerConfigEditor.rar" download>Download</a>
 
 ## How to install
 

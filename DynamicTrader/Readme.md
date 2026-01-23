@@ -4,11 +4,11 @@
 
 Dynamic Trader System for DayZ. Buy and sell items at different trader points with dynamic pricing based on stock and demand.
 
-## Shop Link
-https://www.themodbase.com/mods/TBDynamicTrader
-
 ## Features
 You can find all features here: https://www.themodbase.com/mods/TBDynamicTrader
+
+## Shop Link
+https://www.themodbase.com/mods/TBDynamicTrader
 
 ## How to install
 

@@ -2,7 +2,8 @@
 
 ![TB Carry](./Logo_.png)
 
-A mod to carry dead players.
+## Features
+Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBCarry)
 
 ## Shop Link
 https://www.themodbase.com/mods/TBCarry
@@ -15,16 +16,6 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 [![Version 1](./Logo.png)](https://youtu.be/VpCES0LMBiU)
 [![Version 1.1](./Logo1.1.png)](https://youtu.be/amBODTDgg38)
-
-## Features
-
-- you can carry dead players
-- if a dead body despawns by DayZ Lifetime, the player who is carrying it will get the items when they drop the dead body
-- Body bags can be placed into vehicle
-- Body bag can show who is in that bag and when it was packed
-- All gear of players will be saved in the body bag, if a dead body despawns by DayZ Lifetime 
-- zero config
-
 
 ## How to install
 

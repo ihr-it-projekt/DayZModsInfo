@@ -1,6 +1,6 @@
 # TBItemExchange
 
-![TB Jewels of Survival](./TBExchangeItem.jpeg)
+![TB Item Exchange](./TBExchangeItem.jpeg)
 
 ## Description
 
