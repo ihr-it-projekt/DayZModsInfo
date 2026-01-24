@@ -2,9 +2,10 @@
 
 ````json lines
 {
-  "version": "7", // Never touch this value. It is needed internally
+  "version": "8", // Never touch this value. It is needed internally
   "isInitialized": 1, // Never touch this value. It is needed internally
-  "destroyDefibrillatorAfterUsage": 0, // 0 = Defibrillator will not be destroyed after usage, 1 = Defibrillator will be destroyed after usage
+  "destroyDefibrillatorAfterUsage": 0, // deprecated, no longer used, will be removed in future versions
+  "defibrillatorHealthLoss": 20, // Health loss when using a defibrillator (0 - 100) 100 = 100% health loss
   "deleteDeadBodyTimeWhenHealedByPlayer": 5.0, // Time in seconds when the dead body will be deleted when healed by another player
   "minTimeBeforeKillButton": 180, // Min time in seconds before player can use the killbutton
   "revive": {
