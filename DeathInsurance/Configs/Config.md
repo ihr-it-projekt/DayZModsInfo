@@ -1,5 +1,12 @@
 # Config.json
 
+::: warning
+
+If you can´t see any insurance in the game, check if you have set `storeAllItemsInCargoOfMainItems` to 1 and if so please see the hint at `insureOnlyItemsThatAreAtTheMomentInCargoAndInventory`.
+The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsThatAreAtTheMomentInCargoAndInventory` to 1 is not possible.
+
+:::
+
 ```json lines
 {
     "version": "8", // never change this, internal version number
