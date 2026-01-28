@@ -9,8 +9,8 @@ Example `Weapon Trader.json`:
 ```json
 {
     "uniqueName": "Weapon Trader", // Name of the trader
-    "version": "0", // Never touch this value. It is needed internally
-    "sellTax": 0.10, // Tax for selling items
+    "version": "2", // Never touch this value. It is needed internally
+    "sellTax": 0.10, // Tax for selling items. Range from 1 - 0  | 1 = 100% | 0 = 0%
     "position": [ // Location of the trader object
         6542.7314453125,
         6.188297748565674,
@@ -49,6 +49,10 @@ Example `Weapon Trader.json`:
     ],
     "safeZoneEnabled": 0, // Safe zone toggle: 0 = disabled, 1 = enabled
     "safeZoneRadius": 100.0, // Safe zone radius in meters
+    "safeZoneTimeout": 10, // How long it takes, befor a player count as not in safe zone, when he leave safe zone
+    "safeZoneRemoveAnimals": 1, // removes all animals in safe zone
+    "safeZoneRemoveInfected": 1, // removes all infacted in safe zone
+    "safeZoneRemoveEAI": 1, // removes all ai in safe zone
     "uniqueFileNames": [ // List of item unique names available at this trader
         "AK101",
         "AK74"
