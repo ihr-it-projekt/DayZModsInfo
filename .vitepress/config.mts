@@ -135,8 +135,11 @@ export default defineConfig({
                 text: 'DynamicTrader', link: '/DynamicTrader/Readme.md', collapsed: true, items: [
                   {
                     text: 'Configs', collapsed: true, items: [
+                      { text: 'AdminConfig', link: '/GlobalConfigs/AdminConfig.md' },
+                      { text: 'CurrencyConfig', link: '/GlobalConfigs/CurrencyConfig.md' },
                       { text: 'DealerPoint', link: '/DynamicTrader/Configs/DealerPoint.md' },
                       { text: 'DealerPoints', link: '/DynamicTrader/Configs/DealerPoints.md' },
+                      { text: 'Logger', link: '/DynamicTrader/Configs/Logger.md' },
                       { text: 'TraderItemConfigs', link: '/DynamicTrader/Configs/TraderItemConfigs.md' },
                       { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
                     ]
