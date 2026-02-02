@@ -193,6 +193,8 @@ function convertItemToTraderType(item, categoryName) {
     const maxStorage = item.MaxStockThreshold || 0;
     const minStorage = item.MinStockThreshold || 0;
 
+    const isNotStorageItem = maxStorage === 1 && minStorage === 1;
+
     // Get variations from Variants array
     const variations = (item.Variants && Array.isArray(item.Variants))
         ? item.Variants.filter(v => v && v.trim()) // Filter out empty/null values
@@ -203,9 +205,9 @@ function convertItemToTraderType(item, categoryName) {
         type: item.ClassName,
         category: categoryName,
         quantity: quantity,
-        isPremium: false,
+        isPremium: 0,
         currency: "default",
-        isStorageItem: maxStorage > 0,
+        isStorageItem: !isNotStorageItem ? 1 : 0,
         buyPrice: buyPrice,
         maxBuyPrice: maxBuyPrice,
         sellPrice: sellPrice,
