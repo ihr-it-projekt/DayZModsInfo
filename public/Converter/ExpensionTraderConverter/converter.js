@@ -23,13 +23,13 @@ let uploadedFiles = new Map(); // Map of filename -> File object
 
 // Show/hide options when files are ready
 function checkFilesReady() {
-    const hasJsonFiles = Array.from(uploadedFiles.values()).some(file => 
+    const hasJsonFiles = Array.from(uploadedFiles.values()).some(file =>
         file.name.endsWith('.json')
     );
-    const hasMapFiles = Array.from(uploadedFiles.values()).some(file => 
+    const hasMapFiles = Array.from(uploadedFiles.values()).some(file =>
         file.name.endsWith('.map')
     );
-    
+
     if (hasJsonFiles && hasMapFiles) {
         convertButton.disabled = false;
         options.classList.add('show');
@@ -58,7 +58,7 @@ uploadArea.addEventListener('dragleave', () => {
 uploadArea.addEventListener('drop', (e) => {
     e.preventDefault();
     uploadArea.classList.remove('dragover');
-    
+
     const files = Array.from(e.dataTransfer.files);
     if (files.length > 0) {
         handleFiles(files);
@@ -77,22 +77,22 @@ fileInput.addEventListener('change', (e) => {
  */
 function handleFiles(files) {
     errorDiv.classList.remove('show');
-    
+
     // Filter to only JSON and MAP files
-    const validFiles = files.filter(file => 
+    const validFiles = files.filter(file =>
         file.name.endsWith('.json') || file.name.endsWith('.map')
     );
-    
+
     if (validFiles.length === 0) {
         showError('Please select JSON or MAP files');
         return;
     }
-    
+
     // Process each file
     validFiles.forEach(file => {
         uploadedFiles.set(file.name, file);
     });
-    
+
     updateFileStatus();
     checkFilesReady();
 }
@@ -103,14 +103,14 @@ function handleFiles(files) {
 function updateFileStatus() {
     const statusDiv = document.getElementById('fileStatus');
     if (!statusDiv) return;
-    
-    const jsonFiles = Array.from(uploadedFiles.values()).filter(f => 
+
+    const jsonFiles = Array.from(uploadedFiles.values()).filter(f =>
         f.name.endsWith('.json')
     );
-    const mapFiles = Array.from(uploadedFiles.values()).filter(f => 
+    const mapFiles = Array.from(uploadedFiles.values()).filter(f =>
         f.name.endsWith('.map')
     );
-    
+
     let html = '';
     if (jsonFiles.length > 0) {
         html += `<div class="file-status-item">
@@ -126,11 +126,11 @@ function updateFileStatus() {
             <span class="file-status-text uploaded">${mapFiles.length} file(s)</span>
         </div>`;
     }
-    
+
     if (html === '') {
         html = '<div class="file-status-item"><span class="file-status-text pending">No files uploaded</span></div>';
     }
-    
+
     statusDiv.innerHTML = html;
 }
 
@@ -168,7 +168,7 @@ function convertItemToTraderType(item, categoryName) {
     // Calculate prices
     const maxBuyPrice = item.MaxPriceThreshold || 0;
     const buyPrice = item.MinPriceThreshold || 0;
-    
+
     // Calculate sell price
     let sellPrice = 0;
     let maxSellPrice = 0;
@@ -180,22 +180,24 @@ function convertItemToTraderType(item, categoryName) {
         sellPrice = 0;
         maxSellPrice = 0;
     }
-    
+
     // Calculate quantity
     let quantity = 1.0;
     if (item.QuantityPercent !== undefined && item.QuantityPercent >= 0) {
         quantity = item.QuantityPercent / 100.0;
+    } else {
+        quantity = -1.0;
     }
-    
+
     // Calculate storage
     const maxStorage = item.MaxStockThreshold || 0;
     const minStorage = item.MinStockThreshold || 0;
-    
+
     // Get variations from Variants array
-    const variations = (item.Variants && Array.isArray(item.Variants)) 
+    const variations = (item.Variants && Array.isArray(item.Variants))
         ? item.Variants.filter(v => v && v.trim()) // Filter out empty/null values
         : [];
-    
+
     return {
         uniqueName: item.ClassName,
         type: item.ClassName,
@@ -227,21 +229,21 @@ function convertItemToTraderType(item, categoryName) {
 function parseDealerPointLine(line) {
     line = line.trim();
     if (!line) return null;
-    
+
     const parts = line.split('|');
     if (parts.length < 3) {
         return null;
     }
-    
+
     // Parse dealer point name and category collection
     const dealerInfo = parts[0].split('.');
     if (dealerInfo.length !== 2) {
         return null;
     }
-    
+
     const dealerPointName = dealerInfo[0].trim();
     const categoryCollection = dealerInfo[1].trim();
-    
+
     // Parse position
     const positionParts = parts[1].trim().split(/\s+/);
     if (positionParts.length !== 3) {
@@ -252,7 +254,7 @@ function parseDealerPointLine(line) {
         parseFloat(positionParts[1]),
         parseFloat(positionParts[2])
     ];
-    
+
     // Parse orientation
     const orientationParts = parts[2].trim().split(/\s+/);
     if (orientationParts.length !== 3) {
@@ -263,7 +265,7 @@ function parseDealerPointLine(line) {
         parseFloat(orientationParts[1]),
         parseFloat(orientationParts[2])
     ];
-    
+
     return {
         dealerPointName,
         categoryCollection,
@@ -277,44 +279,44 @@ function parseDealerPointLine(line) {
  */
 function processCategoryFiles(categoryFiles, zip) {
     updateProgress(20, 'Processing category files...');
-    
+
     const itemsMap = new Map();
     const categoryMap = new Map(); // category name -> items
-    
+
     let processedItems = 0;
-    
+
     categoryFiles.forEach((file, index) => {
         const categoryName = file.name.replace('.json', '');
         const content = file.content;
-        
+
         if (!content.Items || !Array.isArray(content.Items)) {
             return;
         }
-        
+
         const categoryItems = [];
-        
+
         content.Items.forEach(item => {
             if (!item.ClassName) return;
-            
+
             const traderType = convertItemToTraderType(item, categoryName);
             itemsMap.set(item.ClassName, traderType);
             categoryItems.push(traderType);
             processedItems++;
         });
-        
+
         categoryMap.set(categoryName, categoryItems);
-        
+
         const progressPercent = 20 + (index / categoryFiles.length) * 30;
         updateProgress(progressPercent, `Processing categories... (${processedItems} items)`);
     });
-    
+
     // Add items to TraderItemConfigs folder
     itemsMap.forEach((itemData, uniqueName) => {
         const fileName = `TraderItemConfigs/${uniqueName}.json`;
         const jsonContent = JSON.stringify(itemData, null, 4);
         zip.file(fileName, jsonContent);
     });
-    
+
     return {
         itemsProcessed: processedItems,
         uniqueItems: itemsMap.size,
@@ -327,16 +329,16 @@ function processCategoryFiles(categoryFiles, zip) {
  */
 function processTraderCollectionCategorieFiles(collectionFiles) {
     const collectionMap = new Map(); // collection name -> array of category names
-    
+
     collectionFiles.forEach(file => {
         const collectionName = file.name.replace('.json', '');
         const content = file.content;
-        
+
         if (content.Categories && Array.isArray(content.Categories)) {
             collectionMap.set(collectionName, content.Categories);
         }
     });
-    
+
     return collectionMap;
 }
 
@@ -345,35 +347,35 @@ function processTraderCollectionCategorieFiles(collectionFiles) {
  */
 function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
     updateProgress(60, 'Processing dealer points...');
-    
+
     const dealerPoints = [];
     const dealerPointMap = new Map(); // dealer point name -> config
-    
+
     let processedDealerPoints = 0;
-    
+
     mapFiles.forEach((file, fileIndex) => {
         const lines = file.content.split('\n');
-        
+
         lines.forEach((line, lineIndex) => {
             const dealerPointData = parseDealerPointLine(line);
             if (!dealerPointData) return;
-            
-            const { dealerPointName, categoryCollection, position, orientation } = dealerPointData;
-            
+
+            let { dealerPointName, categoryCollection, position, orientation } = dealerPointData;
+
             // Get categories from collection
             const categories = collectionMap.get(categoryCollection) || [];
-            
+
             // Collect all items from these categories
             const itemUniqueNames = new Set();
-            
+
             categories.forEach(categoryName => {
                 const categoryNameParts = categoryName.split(':');
                 categoryName = categoryNameParts[0];
 
-// 0 = Can only be bought from this trader, but not sold
-// 1 = Buy and Sell
-// 2 = Can only be sold to this trader, but not bought
-// 3 = Not visible but still available for item customisation (weapons, vests, backpacks) and attachments (vehicles)
+                // 0 = Can only be bought from this trader, but not sold
+                // 1 = Buy and Sell
+                // 2 = Can only be sold to this trader, but not bought
+                // 3 = Not visible but still available for item customisation (weapons, vests, backpacks) and attachments (vehicles)
                 const tradeOption = categoryNameParts[1] || "1";
                 const categoryItemsAtPosition = categoryMap.get(categoryName);
                 if (categoryItemsAtPosition) {
@@ -382,7 +384,11 @@ function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
                     });
                 }
             });
-            
+
+            while (dealerPointMap.has(dealerPointName)) {
+                dealerPointName = dealerPointName + "_" + 1;
+            }
+
             // Create dealer point config
             const dealerPoint = {
                 uniqueName: dealerPointName,
@@ -394,31 +400,31 @@ function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
                 type: "TBDTTraderMachine",
                 uniqueFileNames: Array.from(itemUniqueNames).sort()
             };
-            
+
             dealerPointMap.set(dealerPointName, dealerPoint);
             dealerPoints.push(dealerPointName);
             processedDealerPoints++;
         });
-        
+
         const progressPercent = 60 + (fileIndex / mapFiles.length) * 20;
         updateProgress(progressPercent, `Processing dealer points... (${processedDealerPoints} points)`);
     });
-    
+
     // Create DealerPoints.json
     const dealerPointsConfig = {
         version: "1",
         isInitialized: true,
         dealerPointsNames: dealerPoints
     };
-    
+
     zip.file('DealerPoints.json', JSON.stringify(dealerPointsConfig, null, 4));
-    
+
     // Add individual dealer point files
     dealerPointMap.forEach((dealerPoint, uniqueName) => {
         const fileName = `DealerPoints/${uniqueName}.json`;
         zip.file(fileName, JSON.stringify(dealerPoint, null, 4));
     });
-    
+
     return {
         dealerPointsCount: dealerPoints.length,
         filesCount: dealerPointMap.size + 1,
@@ -446,12 +452,12 @@ async function convertAndZip() {
         const fileData = [];
         for (const [filename, file] of uploadedFiles.entries()) {
             const content = await readFileAsText(file);
-            
+
             if (filename.endsWith('.json')) {
                 try {
                     const fixedContent = content.replace(/,(\s*[}\]])/g, '$1');
                     const jsonContent = JSON.parse(fixedContent);
-                    
+
                     // Determine file type based on structure
                     // Collection files have "Categories" array and empty or no "Items"
                     // Category files have "Items" array
@@ -459,7 +465,7 @@ async function convertAndZip() {
                     if (jsonContent.Categories) {
                         fileType = 'collection';
                     }
-                    
+
                     fileData.push({
                         name: filename,
                         type: fileType,
