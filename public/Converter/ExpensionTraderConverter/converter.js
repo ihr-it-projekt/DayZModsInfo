@@ -100,30 +100,54 @@ function handleFiles(files) {
 /**
  * Updates the file status display
  */
-function updateFileStatus() {
+async function updateFileStatus() {
     const statusDiv = document.getElementById('fileStatus');
     if (!statusDiv) return;
 
-    const jsonFiles = Array.from(uploadedFiles.values()).filter(f =>
-        f.name.endsWith('.json')
-    );
-    const mapFiles = Array.from(uploadedFiles.values()).filter(f =>
-        f.name.endsWith('.map')
-    );
+    let categoryCount = 0;
+    let collectionCount = 0;
+    let traderZoneCount = 0;
+    let mapCount = 0;
+
+    // Use a loop to check content type if needed, but for now strict async reading might be too heavy for just status update.
+    // However, since we already need to know the type for the status, 
+    // we should ideally store the type when uploading.
+    // But since `uploadedFiles` is just `File` objects, we re-check or guess.
+    // For a responsive UI, we will do a quick check or just group all JSONs if not parsed yet.
+    // actually, let's just group all JSONs as "JSON Files" to avoid lag, 
+    // OR we can make this async and read a snippet.
+
+    // Better approach: maintain a separate 'fileType' map if we wanted perfection, 
+    // but for now, let's keep it simple and just show the total JSON count, 
+    // OR try to parse if the user uploaded few files.
+
+    // However, the user asked to "update also the ui for new accepted file".
+    // A simple breakdown would be nice. Let's try to peek.
+
+    const files = Array.from(uploadedFiles.values());
+
+    // We'll trust the extension for map files. Easiest.
+    mapCount = files.filter(f => f.name.endsWith('.map')).length;
+    const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+
+    // To differentiate JSONs without reading content is hard.
+    // Let's just list "JSON Files (Categories/Collections/Zones)"
 
     let html = '';
+
     if (jsonFiles.length > 0) {
         html += `<div class="file-status-item">
             <span class="file-status-icon">📦</span>
             <span class="file-status-label">JSON Files:</span>
-            <span class="file-status-text uploaded">${jsonFiles.length} file(s)</span>
+            <span class="file-status-text uploaded">${jsonFiles.length} file(s) (Categories, Collections, Zones)</span>
         </div>`;
     }
-    if (mapFiles.length > 0) {
+
+    if (mapCount > 0) {
         html += `<div class="file-status-item">
             <span class="file-status-icon">📍</span>
             <span class="file-status-label">Map Files:</span>
-            <span class="file-status-text uploaded">${mapFiles.length} file(s)</span>
+            <span class="file-status-text uploaded">${mapCount} file(s)</span>
         </div>`;
     }
 
@@ -164,7 +188,7 @@ function formatFileSize(bytes) {
 /**
  * Converts ExpansionTrader item to TBDTTraderType format
  */
-function convertItemToTraderType(item, categoryName) {
+function convertItemToTraderType(item, categoryName, categorySellPercentMap) {
     // Calculate prices
     const maxBuyPrice = item.MaxPriceThreshold || 0;
     const buyPrice = item.MinPriceThreshold || 0;
@@ -172,11 +196,20 @@ function convertItemToTraderType(item, categoryName) {
     // Calculate sell price
     let sellPrice = 0;
     let maxSellPrice = 0;
-    if (item.SellPricePercent !== undefined && item.SellPricePercent >= 0) {
-        sellPrice = Math.round(buyPrice * item.SellPricePercent / 100);
-        maxSellPrice = Math.round(maxBuyPrice * item.SellPricePercent / 100);
+
+    // Determine the Sell Price Percent to use
+    let useSellPercent = item.SellPricePercent;
+
+    // Check if we should use the fallback from a linked Trader Zone
+    if (useSellPercent === -1 && categorySellPercentMap && categorySellPercentMap.has(categoryName)) {
+        useSellPercent = categorySellPercentMap.get(categoryName);
+    }
+
+    if (useSellPercent !== undefined && useSellPercent >= 0) {
+        sellPrice = Math.round(buyPrice * useSellPercent / 100);
+        maxSellPrice = Math.round(maxBuyPrice * useSellPercent / 100);
     } else {
-        // Default to 50% of buy price if not specified
+        // Default to 0 if not specified or invalid (or if still -1)
         sellPrice = 0;
         maxSellPrice = 0;
     }
@@ -279,7 +312,7 @@ function parseDealerPointLine(line) {
 /**
  * Processes category files and creates item configs
  */
-function processCategoryFiles(categoryFiles, zip) {
+function processCategoryFiles(categoryFiles, zip, categorySellPercentMap) {
     updateProgress(20, 'Processing category files...');
 
     const itemsMap = new Map();
@@ -300,7 +333,7 @@ function processCategoryFiles(categoryFiles, zip) {
         content.Items.forEach(item => {
             if (!item.ClassName) return;
 
-            const traderType = convertItemToTraderType(item, categoryName);
+            const traderType = convertItemToTraderType(item, categoryName, categorySellPercentMap);
             itemsMap.set(item.ClassName, traderType);
             categoryItems.push(traderType);
             processedItems++;
@@ -461,21 +494,31 @@ async function convertAndZip() {
                     const jsonContent = JSON.parse(fixedContent);
 
                     // Determine file type based on structure
-                    // Collection files have "Categories" array and empty or no "Items"
-                    // Category files have "Items" array
-                    let fileType = 'category';
-                    if (jsonContent.Categories) {
+                    let fileType = 'unknown';
+
+                    if (jsonContent.Categories && Array.isArray(jsonContent.Categories)) {
                         fileType = 'collection';
+                    } else if (jsonContent.Items && Array.isArray(jsonContent.Items)) {
+                        fileType = 'category';
+                    } else if (jsonContent.Position && jsonContent.Radius !== undefined && jsonContent.SellPricePercent !== undefined) {
+                        // Detect Trader Zone file (e.g. TGC_Horobo_Trader.json)
+                        fileType = 'trader_zone';
+                    } else if (jsonContent.MarketSystemEnabled !== undefined && jsonContent.SellPricePercent !== undefined) {
+                        // Detect MarketSettings.json
+                        fileType = 'market_settings';
                     }
 
-                    fileData.push({
-                        name: filename,
-                        type: fileType,
-                        content: jsonContent,
-                        file: file
-                    });
+                    if (fileType !== 'unknown') {
+                        fileData.push({
+                            name: filename,
+                            type: fileType,
+                            content: jsonContent,
+                            file: file
+                        });
+                    }
                 } catch (e) {
-                    throw new Error(`Invalid JSON in ${filename}: ${e.message}`);
+                    // throw new Error(`Invalid JSON in ${filename}: ${e.message}`);
+                    console.warn(`Skipping invalid or unknown JSON in ${filename}: ${e.message}`);
                 }
             } else if (filename.endsWith('.map')) {
                 fileData.push({
@@ -491,8 +534,10 @@ async function convertAndZip() {
 
         // Separate files by type
         const categoryFiles = fileData.filter(f => f.type === 'category');
-        const traderLocationCategorieFiles = fileData.filter(f => f.type === 'collection');
+        const collectionFiles = fileData.filter(f => f.type === 'collection');
         const mapFiles = fileData.filter(f => f.type === 'map');
+        const traderZoneFiles = fileData.filter(f => f.type === 'trader_zone');
+        const marketSettingsFile = fileData.find(f => f.type === 'market_settings');
 
         if (categoryFiles.length === 0) {
             throw new Error('No category files found. Please upload category JSON files.');
@@ -502,16 +547,73 @@ async function convertAndZip() {
             throw new Error('No map files found. Please upload .map files.');
         }
 
+        // Get global sell percent from MarketSettings if available
+        let globalSellPricePercent = -1;
+        if (marketSettingsFile && marketSettingsFile.content.SellPricePercent !== undefined) {
+            globalSellPricePercent = marketSettingsFile.content.SellPricePercent;
+            console.log("Global SellPricePercent found in MarketSettings:", globalSellPricePercent);
+        }
+
+        // PRE-PROCESSING: Link Categories to Trader Zones to resolve SellPricePercent
+        updateProgress(12, 'Analyzing trader zones and categories...');
+        const categorySellPercentMap = new Map(); // categoryName -> sellPricePercent
+
+        // 1. Build Collection -> Categories Map
+        const collectionMap = new Map();
+        collectionFiles.forEach(file => {
+            const collectionName = file.name.replace('.json', '');
+            if (file.content.Categories) {
+                collectionMap.set(collectionName, file.content.Categories);
+            }
+        });
+
+        // 2. Iterate Maps to find links between DealerPoints and TraderZones
+        mapFiles.forEach(mapFile => {
+            const lines = mapFile.content.split('\n');
+            lines.forEach(line => {
+                const dp = parseDealerPointLine(line);
+                if (!dp) return;
+
+                // Find if this position is inside any Trader Zone
+                const matchedZone = traderZoneFiles.find(zoneFile => {
+                    const zone = zoneFile.content;
+                    if (!zone.Position || zone.Radius === undefined) return false;
+
+                    const dist = getDistance(dp.position, zone.Position);
+                    return dist <= zone.Radius;
+                });
+
+                if (matchedZone) {
+                    let zoneSellPercent = matchedZone.content.SellPricePercent;
+
+                    // If zone percent is -1, try to use global percent
+                    if (zoneSellPercent === -1 && globalSellPricePercent !== -1) {
+                        zoneSellPercent = globalSellPricePercent;
+                    }
+
+                    // If the zone has a valid SellPricePercent, associate it with all categories in this point's collection
+                    if (zoneSellPercent !== undefined && zoneSellPercent !== -1) {
+                        const categories = collectionMap.get(dp.categoryCollection) || [];
+                        categories.forEach(catEntry => {
+                            // Category entry might be "CategoryName:Mode"
+                            const catName = catEntry.split(':')[0];
+                            categorySellPercentMap.set(catName, zoneSellPercent);
+                        });
+                    }
+                }
+            });
+        });
+
         updateProgress(15, 'Creating ZIP file...');
 
         // Create ZIP file
         const zip = new JSZip();
 
         // Process category files (items)
-        const categoryStats = processCategoryFiles(categoryFiles, zip);
+        const categoryStats = processCategoryFiles(categoryFiles, zip, categorySellPercentMap);
 
         // Process collection files
-        const traderLocationsCategories = processTraderCollectionCategorieFiles(traderLocationCategorieFiles);
+        const traderLocationsCategories = processTraderCollectionCategorieFiles(collectionFiles);
 
         // Process map files (dealer points)
         const sellTax = parseFloat(defaultSellTax.value) || 0.0;
@@ -554,6 +656,16 @@ async function convertAndZip() {
         progress.classList.remove('show');
         console.error('Conversion error:', error);
     }
+}
+
+/**
+ * Calculates distance between two 3D points
+ */
+function getDistance(p1, p2) {
+    const dx = p1[0] - p2[0];
+    const dy = p1[1] - p2[1];
+    const dz = p1[2] - p2[2];
+    return Math.sqrt(dx * dx + dy * dy + dz * dz);
 }
 
 /**

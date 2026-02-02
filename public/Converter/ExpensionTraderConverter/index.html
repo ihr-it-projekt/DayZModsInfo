@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -379,6 +380,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="header-content">
@@ -389,62 +391,72 @@
     </div>
     <div class="main-content">
         <div class="container">
-        <h1>🔄 ExpansionTrader Converter</h1>
-        <p class="subtitle">Convert ExpansionTrader files to TBDynamicTrader format</p>
+            <h1>🔄 ExpansionTrader Converter</h1>
+            <p class="subtitle">Convert ExpansionTrader files to TBDynamicTrader format</p>
 
-        <div class="upload-area" id="uploadArea">
-            <div class="upload-icon">📁</div>
-            <div class="upload-text">Click to upload or drag & drop</div>
-            <div class="upload-hint">Drop category JSON files, collection JSON files, and .map files here</div>
-            <input type="file" id="fileInput" accept=".json,.map" multiple />
-        </div>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">Click to upload or drag & drop</div>
+                <div class="upload-hint">Drop category JSON files, collection JSON files, and .map files here</div>
+                <input type="file" id="fileInput" accept=".json,.map" multiple />
+            </div>
 
-        <div class="file-status-section">
-            <div id="fileStatus">
-                <div class="file-status-item">
-                    <span class="file-status-text pending">No files uploaded</span>
+            <div class="file-status-section">
+                <div id="fileStatus">
+                    <div class="file-status-item">
+                        <span class="file-status-text pending">No files uploaded</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>📋 File Types:</strong>
+                <ul style="margin-left: 20px; margin-top: 5px;">
+                    <li><strong>Category Files:</strong> JSON files containing items (e.g., Gardening.json,
+                        Assault_Rifles.json)</li>
+                    <li><strong>Collection Files:</strong> JSON files containing category references (e.g.,
+                        BuildingSupplies.json)</li>
+                    <li><strong>Trader Zone Files:</strong> JSON files containing zone definition with radius (e.g.,
+                        TGC_Horobo_Trader.json)</li>
+                    <li><strong>Market Settings File:</strong> JSON file containing global market settings (e.g.,
+                        MarketSettings.json)</li>
+                    <li><strong>Map Files:</strong> .map files containing dealer point data (e.g., Maik.map,
+                        MyTrader.map)</li>
+                </ul>
+            </div>
+
+            <div class="options" id="options">
+                <div class="option-group">
+                    <label class="option-label" for="defaultSellTax">Default Sell Tax:</label>
+                    <input type="number" class="option-input" id="defaultSellTax" value="0.0" min="0" max="1"
+                        step="0.01">
+                    <div class="option-hint">Sell tax for dealer points (0.0 to 1.0)</div>
+                </div>
+            </div>
+
+            <button class="button" id="convertButton" disabled>Convert & Download ZIP</button>
+
+            <div class="progress" id="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Processing...</div>
+            </div>
+
+            <div class="error" id="error"></div>
+
+            <div class="results" id="results">
+                <div class="results-title">✅ Conversion Complete!</div>
+                <div class="results-item" id="resultsInfo"></div>
+                <div class="results-item" id="resultsFiles"></div>
+                <div class="results-item" id="resultsSize"></div>
+                <div class="results-item"
+                    style="margin-top: 15px; padding: 10px; background: #3a2a1a; border-radius: 5px; color: #d4a574; font-size: 0.85em;">
+                    <strong>⚠ Windows-Hint:</strong> If a security warning appears when unpacking the ZIP file:
+                    Right-click on ZIP → Properties → "Unblock" checkbox → OK
                 </div>
             </div>
         </div>
-
-        <div class="info-box">
-            <strong>📋 File Types:</strong>
-            <ul style="margin-left: 20px; margin-top: 5px;">
-                <li><strong>Category Files:</strong> JSON files containing items (e.g., Gardening.json, Assault_Rifles.json)</li>
-                <li><strong>Collection Files:</strong> JSON files containing category references (e.g., BuildingSupplies.json)</li>
-                <li><strong>Map Files:</strong> .map files containing dealer point data (e.g., Maik.map, MyTrader.map)</li>
-            </ul>
-        </div>
-
-        <div class="options" id="options">
-            <div class="option-group">
-                <label class="option-label" for="defaultSellTax">Default Sell Tax:</label>
-                <input type="number" class="option-input" id="defaultSellTax" value="0.0" min="0" max="1" step="0.01">
-                <div class="option-hint">Sell tax for dealer points (0.0 to 1.0)</div>
-            </div>
-        </div>
-
-        <button class="button" id="convertButton" disabled>Convert & Download ZIP</button>
-
-        <div class="progress" id="progress">
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
-            <div class="progress-text" id="progressText">Processing...</div>
-        </div>
-
-        <div class="error" id="error"></div>
-
-        <div class="results" id="results">
-            <div class="results-title">✅ Conversion Complete!</div>
-            <div class="results-item" id="resultsInfo"></div>
-            <div class="results-item" id="resultsFiles"></div>
-            <div class="results-item" id="resultsSize"></div>
-            <div class="results-item" style="margin-top: 15px; padding: 10px; background: #3a2a1a; border-radius: 5px; color: #d4a574; font-size: 0.85em;">
-                <strong>⚠ Windows-Hint:</strong> If a security warning appears when unpacking the ZIP file: Right-click on ZIP → Properties → "Unblock" checkbox → OK
-            </div>
-        </div>
-    </div>
     </div>
 
     <footer class="footer">
@@ -460,5 +472,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="converter.js"></script>
 </body>
-</html>
 
+</html>
