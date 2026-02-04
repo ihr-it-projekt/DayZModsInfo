@@ -22,6 +22,31 @@
     "discordMatchTitleTeamWinAgainstAll": "Team %1 won against all", // Title of the match win message %1 will be replaced with the team number
     "discordMatchBodyTeamFirstLine": "Place | Team | Points | Kills | Deaths", // Body of the match win message for team matches
     "discordMatchTitlePlayerWinAgainstAll": "%1 won against all", // Title of the match win message %1 will be replaced with the player name
-    "discordMatchBodyPlayerFirstLine": "Place | Player name | Points | Kills | Deaths" // Body of the match win message for against all matches
+    "discordMatchBodyPlayerFirstLine": "Place | Player name | Points | Kills | Deaths", // Body of the match win message for against all matches
+    // Arena Details for log messages
+    "logTeamsCount": "Teams Count", 
+    "logPlayersPerTeam": "Players Per Team",
+    "logRoundsCount": "Rounds Count",
+    "logDeathPenaltyTime": "Death Penalty Time",
+    "logMaxTimePerRound": "Max Time Per Round",
+    "logMaxKillsPerRound": "Max Kills Per Round",
+    "logEnableChangeSides": "Enable Change Sides",
+    "logEnableOneLifeMode": "Enable One Life Mode",
+    "logEnableShowTeamMarker": "Enable Show Team Marker",
+    "logEnableStamina": "Enable Stamina",
+    "logEnableMultipleGearSets": "Enable Multiple Gear Sets",
+    "logEnableSpectatorMode": "Enable Spectator Mode",
+    "logEnableRandomTeamSelect": "Enable Random Team Select",
+    "logStartingFee": "Starting Fee",
+    "logIsPermanent": "Is Permanent",
+    "logTeamWinRatio": "Team Win Ratio",
+    "logEnableFriendlyFire": "Enable Friendly Fire",
+    "logForceFirstPerson": "Force First Person",
+    "logLootWillDeletedWhenPlayerDie": "Loot Will Deleted When Player Die",
+    "logDisableSpectatorIfMatchIsStarted": "Disable Spectator If Match Is Started",
+    "logDisableJoinIfMatchIsStarted": "Disable Join If Match Is Started",
+    "logWinCondition": "Win Condition",
+    "logWinByKills": "Win by Kills",
+    "logWinByPoints": "Win by Points"
 }
 ````
