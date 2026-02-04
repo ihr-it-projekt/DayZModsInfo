@@ -401,7 +401,9 @@ function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
             const categories = collectionMap.get(categoryCollection) || [];
 
             // Collect all items from these categories
+            // Collect all items from these categories
             const itemUniqueNames = new Set();
+            const itemVariationsMap = new Map();
 
             categories.forEach(categoryName => {
                 const categoryNameParts = categoryName.split(':');
@@ -416,6 +418,21 @@ function processMapFiles(mapFiles, collectionMap, categoryMap, zip, sellTax) {
                 if (categoryItemsAtPosition) {
                     categoryItemsAtPosition.forEach(item => {
                         itemUniqueNames.add(item.uniqueName);
+                        if (item.variations && item.variations.length > 0) {
+                            itemVariationsMap.set(item.uniqueName, item.variations);
+                        }
+                    });
+                }
+            });
+
+            // Filter out variations that are already present as items
+            itemVariationsMap.forEach((variations, parentItem) => {
+                // Only needed if the parent itself is indeed in the list (which it is, but good to be safe)
+                if (itemUniqueNames.has(parentItem)) {
+                    variations.forEach(variation => {
+                        if (itemUniqueNames.has(variation)) {
+                            itemUniqueNames.delete(variation);
+                        }
                     });
                 }
             });
