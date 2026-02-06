@@ -3,7 +3,7 @@
 ````json lines
 {
   // Never touch this value. It is needed internally
-  "version": "1",
+  "version": "2",
   // Never touch this value. It is needed internally
   "isInitialized": 1,
   // Dealer Points where gloabl stalls are placed
@@ -28,7 +28,11 @@
       // The type of the global stall (see Types.md.md)
       "type": "TBSHMGlobalStall_03",
       // This name is just to give the stall a name that you can identify it
-      "uniqueName": "Chernogorsk 1"
+      "uniqueName": "Chernogorsk 1",
+      // 0 = off, 1 = on, if 1 the global stall will not allow vehicle trading for non premium players
+      "disableVehicleTrading": 0,
+      // 0 = off, 1 = on, if 1 the global stall will not allow vehicle trading for premium players
+      "premiumDisableVehicleTrading": 0
     },
     {
       "id": "MyDealerPoint1",
@@ -44,7 +48,9 @@
       ],
       "useExactPosition": 0,
       "type": "TBSHMGlobalStall_03",
-      "uniqueName": "Chernogorsk 2"
+      "uniqueName": "Chernogorsk 2",
+      "disableVehicleTrading": 1,
+      "premiumDisableVehicleTrading": 1
     }
   ]
 }

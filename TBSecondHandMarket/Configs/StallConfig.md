@@ -3,7 +3,7 @@
 
 ```json lines
 {
-  "version": "2", // Never touch this value. It is needed internally
+  "version": "4", // Never touch this value. It is needed internally
   "maxMarketStallPerUser": 2, // How many market stalls can a player have, -1 = unlimited
   "maxPremiumMarketStallPerUser": 3, // How many market stalls can a premium player have, -1 = unlimited
   "maxMarketStallPerServer": -1, // How many market stalls can be placed on the server, -1 = unlimited
@@ -61,7 +61,9 @@
       "price": 2000, // Price for the stall
       "premiumPriceReduce": 500, // Price reduce for premium users
       "priceForTimeExtension": 100, // Price for time extension, if value is lower than 0, the time extension feature is disabled
-      "durationInMinutesForTimeExtension": 60 // Duration in minutes for time extension, if value is lower than 0, the time extension feature is disabled
+      "durationInMinutesForTimeExtension": 60, // Duration in minutes for time extension, if value is lower than 0, the time extension feature is disabled
+      "disableVehicleTrading": 1, // 0 = off, 1 = on, if 1 the stall will not allow vehicle trading for non premium players
+      "premiumDisableVehicleTrading": 0 // 0 = off, 1 = on, if 1 the stall will not allow vehicle trading for premium players
     },
     {
       "id": "0c5nvonrpm",
@@ -73,7 +75,9 @@
       "price": 2000,
       "premiumPriceReduce": 500,
       "priceForTimeExtension": -1,
-      "durationInMinutesForTimeExtension": -1
+      "durationInMinutesForTimeExtension": -1,
+      "disableVehicleTrading": 1,
+      "premiumDisableVehicleTrading": 0
     },
     {
       "id": "mydcejy2pk",
@@ -85,7 +89,9 @@
       "price": 2000,
       "premiumPriceReduce": 500,
       "priceForTimeExtension": -1,
-      "durationInMinutesForTimeExtension": -1
+      "durationInMinutesForTimeExtension": -1,
+      "disableVehicleTrading": 1,
+      "premiumDisableVehicleTrading": 0
     }
   ]
 }
