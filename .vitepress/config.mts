@@ -266,6 +266,7 @@ export default defineConfig({
                       { text: 'PVP Arena ROOFTOP', link: '/TBWarParty/Arenas/PVP Arena ROOFTOP/Readme.md' },
                       { text: 'PVP Ruined city', link: '/TBWarParty/Arenas/PVP Ruined city/Readme.md' },
                       { text: 'Smoking Island', link: '/TBWarParty/Arenas/Smoking_Island/Readme.md' },
+                      { text: 'Village', link: '/TBWarParty/Arenas/Village/Readme.md' },
                       { text: 'warareanaPVPclose', link: '/TBWarParty/Arenas/warareanaPVPclose/Readme.md' },
                       { text: 'wararenaPVPhangar', link: '/TBWarParty/Arenas/wararenaPVPhangar/Readme.md' },
                     ]
