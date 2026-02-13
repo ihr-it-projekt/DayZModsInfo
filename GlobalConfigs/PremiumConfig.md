@@ -1,4 +1,8 @@
 # PremiumConfig.json
+
+
+File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
+
 ````json lines
 {
     "version": "1", // never change this, internal version number

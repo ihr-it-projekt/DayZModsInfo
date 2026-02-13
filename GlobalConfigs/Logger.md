@@ -1,4 +1,7 @@
 # Logger.json
+
+File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
+
 ```json lines
 {
     "version": "2", // never change this, internal version number

@@ -1,5 +1,7 @@
 # VehicleSpawnConfig.json
 
+File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
+
 ## Only for Car Dealer, Second Hand Market and Daily Reward
 
 ````json lines

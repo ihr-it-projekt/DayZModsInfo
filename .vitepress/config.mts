@@ -6,7 +6,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   srcDir: ".",
 
-  title: "by the Buster",
+  title: "by TheBuster",
   description: "Docs for The Mod Base mods",
   markdown: {
     config: (md) => {
@@ -215,10 +215,17 @@ export default defineConfig({
               {
                 text: 'RevivePlayer', link: '/RevivePlayer/Readme.md', collapsed: true, items: [
                   { text: 'FAQ', link: '/RevivePlayer/FAQ.md' },
+                  { text: 'Types', link: '/RevivePlayer/Types.md' },
                   {
                     text: 'Configs', collapsed: true, items: [
                       { text: 'logger', link: '/RevivePlayer/Configs/logger.md' },
-                      { text: 'reviveConfig', link: '/RevivePlayer/Configs/reviveConfig.md' },
+                      { text: 'GeneralConfig', link: '/RevivePlayer/Configs/GeneralConfig.md' },
+                      { text: 'HospitalReviveConfig', link: '/RevivePlayer/Configs/HospitalReviveConfig.md' },
+                      { text: 'HospitalReviveConfigPremium', link: '/RevivePlayer/Configs/HospitalReviveConfig.md' },
+                      { text: 'MedicReviveConfig', link: '/RevivePlayer/Configs/MedicReviveConfig.md' },
+                      { text: 'MedicReviveConfigPremium', link: '/RevivePlayer/Configs/MedicReviveConfig.md' },
+                      { text: 'RealEstateReviveConfig', link: '/RevivePlayer/Configs/RealEstateReviveConfig.md' },
+                      { text: 'RealEstateReviveConfigPremium', link: '/RevivePlayer/Configs/RealEstateReviveConfig.md' },
                     ]
                   }
                 ]

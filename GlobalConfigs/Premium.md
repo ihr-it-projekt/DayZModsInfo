@@ -26,10 +26,11 @@ If you don't want to use premium coins, you can also use the "API".
    `{SteamID}_{DurationInDays}_{ModName}.premium` (e.g., `7656119813296317725_30_DailyReward.premium`).
     
     Possible values for ModName are: 
+   - CarDealer
    - DailyReward
    - DeathInsurance
-   - CarDealer
    - DynamicTrader 
+   - Revive
    - SecondHand
 
     Possible values for DurationInDays are: 

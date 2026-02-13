@@ -29,11 +29,16 @@ See also [here](../The%20Mod%20Base/README.md)
 - Start your server :-)
 
 - [FAQ.md](FAQ.md)
-
+- [Types.md](Types.md)
 
 ## Configuration
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently reload config at dead bodies.
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
-- [reviveConfig.md](Configs/reviveConfig.md)
+- [HospitalReviveConfig.md](Configs/HospitalReviveConfig.md)
+- [PremiumHospitalReviveConfig.md](Configs/HospitalReviveConfig.md)
+- [MedicReviveConfig.md](Configs/MedicReviveConfig.md)
+- [PremiumMedicReviveConfig.md](Configs/MedicReviveConfig.md)
+- [RealEstateReviveConfig.md](Configs/RealEstateReviveConfig.md)
+- [PremiumRealEstateReviveConfig.md](Configs/RealEstateReviveConfig.md)
 - [logger.md](Configs/logger.md)
