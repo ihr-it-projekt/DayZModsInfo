@@ -25,5 +25,6 @@
     "Cherno_6ww8dpmex2"
   ],
   "enableHitAnimation": 1 // 1 = on , 0 = off Player becomes an hit animation when he got an hit. 
+  "disableNpcSpawnInLobbyBuilding": 1 // 1 = on , 0 = off Npc's will not spawn in the lobby building.
 }
 ````
