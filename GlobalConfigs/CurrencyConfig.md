@@ -7,7 +7,7 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
     "version": "2", // never change this, internal version number
     "isInitialized": 1, // never change this, internal version number
     "currencyValues": {}, // deprecated, will be removed in the future
-    "useMoneyFromLBMasterATM": 1, // deprecated, will be removed in the future
+    "useMoneyFromLBMasterATM": 0, // deprecated, will be removed in the future
     "currencies": [
         {
             "uniqueName": "default", // unique name of the currency; one currency must be marked as 'default'. Otherwise, it can lead to problems.
@@ -25,7 +25,8 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
                 "Money_Ruble2000": 2000,
                 "Money_Ruble1000": 1000
             },
-            "useLBMasterATM": 1
+            "useLBMasterATM": 0, // 1= on 0 = off
+            "useDCBanking": 1 // 1= on 0 = off
         },
 		{
             "uniqueName": "Euro",
@@ -40,7 +41,8 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
                 "Money_Euro100": 100,
                 "Money_Euro500": 500
             },
-            "useLBMasterATM": 0
+            "useLBMasterATM": 0,
+            "useDCBanking": 0
         }
     ]
 }
