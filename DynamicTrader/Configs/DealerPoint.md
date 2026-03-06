@@ -59,4 +59,3 @@ Example `Weapon Trader.json`:
     ]
 }
 ```
-

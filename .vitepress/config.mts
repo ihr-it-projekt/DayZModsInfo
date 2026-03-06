@@ -142,6 +142,8 @@ export default defineConfig({
                       { text: 'Logger', link: '/DynamicTrader/Configs/Logger.md' },
                       { text: 'TraderItemConfigs', link: '/DynamicTrader/Configs/TraderItemConfigs.md' },
                       { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
+                      { text: 'BetterVendingMaschines', link: '/DynamicTrader/Configs/BetterVendingMaschines.md' },
+                      { text: 'I want to use custom Vending Machine', link: '/DynamicTrader/Configs/IWantToUseCustomVendingMachine.md' },
                     ]
                   },
                   { text: 'Converter', link: '/DynamicTrader/Converter/Converter.md' },
