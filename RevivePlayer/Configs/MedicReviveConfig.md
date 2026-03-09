@@ -14,6 +14,7 @@ PremiumMedicReviveConfig = This config is for premium players.
     "minTimeBeforeWhenNoOtherPlayerIsOnline": 5, // Min time in seconds before the player can be revived by a medic when no other player is online (Only relevant if you use DayZ Life Medic System)
     "currencyType": "default", // Currency type for the price of the revive by a medic (see currencyConfig in TBMods/Config/Globals) (Only relevant if you use DayZ Life Medic System)
     "price": 100, // Price for revive by a medic | -1 = free for revive | 100 = 100 $ for revive (Only relevant if you use DayZ Life Medic System)
+    "enabledInPVPZones": 1, // 0 = Player can not call a medic in PVP zones, 1 = Player can call a medic in PVP zones Supported PVP Zone Mods are PVEZ and Ninjins-PvP-PvE
     "damageConfig": { // This part is relevant for both versions.
         "maxWounds": 50, // Max wounds the player get when revived
         "minWounds": 1, // Min wounds the player get when revived

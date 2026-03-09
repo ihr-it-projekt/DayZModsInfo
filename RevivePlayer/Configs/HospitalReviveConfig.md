@@ -14,6 +14,7 @@ HospitalReviveConfigPremium = This config is for premium players.
     "minTimeBeforeWhenNoOtherPlayerIsOnline": 60, // Min time in seconds before the player can be revived in the hospital when no other player is online
     "currencyType": "default", // Currency type for the price of the revive in hospital (see currencyConfig in TBMods/Config/Globals)
     "price": -1, // Price for revive in hospital | -1 = free for revive | 100 = 100 $ for revive
+    "enabledInPVPZones": 1, // 0 = disabled in PVP zones, 1 = enabled in PVP zones Supported PVP Zone Mods are PVEZ and Ninjins-PvP-PvE
     "damageConfig": {
         "maxWounds": 0, // Max wounds the player get when revived
         "minWounds": 0, // Min wounds the player get when revived

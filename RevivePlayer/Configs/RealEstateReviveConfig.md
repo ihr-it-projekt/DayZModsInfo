@@ -11,6 +11,7 @@ This config is only relevant if you use Real Estate Mod https://www.themodbase.c
     "minTimeBeforeWhenNoOtherPlayerIsOnline": 2, // Min time in seconds before the player can be revived by a real estate agent when no other player is online 
     "currencyType": "default", // Currency type for the price of the revive by a real estate agent (see currencyConfig in TBMods/Config/Globals) 
     "price": 1, // Price for revive by a real estate agent | -1 = free for revive | 100 = 100 $ for revive 
+    "enabledInPVPZones": 1, // 0 = disabled in PVP zones, 1 = enabled in PVP zones Supported PVP Zone Mods are PVEZ and Ninjins-PvP-PvE
     "damageConfig": { // This part is relevant for both versions.
         "maxWounds": 0, // Max wounds the player get when revived
         "minWounds": 0, // Min wounds the player get when revived
