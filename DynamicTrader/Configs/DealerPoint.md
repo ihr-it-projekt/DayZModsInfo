@@ -9,19 +9,27 @@ Example `Weapon Trader.json`:
 ```json
 {
     "uniqueName": "Weapon Trader", // Name of the trader
-    "version": "2", // Never touch this value. It is needed internally
+    "version": "3", // Never touch this value. It is needed internally
     "sellTax": 0.10, // Tax for selling items. Range from 1 - 0  | 1 = 100% | 0 = 0%
-    "position": [ // Location of the trader object
-        6542.7314453125,
-        6.188297748565674,
-        2478.249267578125
+    "position": [], // deprecated will removed in future versions
+    "orientation": [], // deprecated will removed in future versions
+    "positions": [
+        { // Position 1
+            "position": [ // Location of the trader object
+                6909.38818359375,
+                2.85197377204895,
+                1391.57470703125
+            ],
+            "orientation": [ // Orientation of the trader object
+                235.23611450195313,
+                0.0015493175014853478,
+                0.0008105853921733797
+            ],
+            "useExactPosition": 0, // Use exact position; if 0, it will be placed automatically on the ground
+            "name": "Cherno"
+        }
     ],
-    "orientation": [ // Orientation of the trader object
-        -48.88920974731445,
-        0.00231537944637239,
-        0.0008682372281327844
-    ],
-    "useExactPosition": 1, // Use exact position; if 0, it will be placed automatically on the ground
+    "useExactPosition": 1, // deprecated will removed in future versions
     "useUTCTime": 0, // Use UTC time for opening hours; if 0, it will use server time
     "type": "TBDTTraderMachine", // Type of the trader object (see types.md)
     "useTraderChar": 1, // Use a trader NPC character; if 0, it will not spawn an NPC
