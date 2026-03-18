@@ -242,6 +242,7 @@ export default defineConfig({
                       { text: 'GeneralConfig', link: '/TBSecondHandMarket/Configs/GeneralConfig.md' },
                       { text: 'GlobalStallConfig', link: '/TBSecondHandMarket/Configs/GlobalStallConfig.md' },
                       { text: 'ItemBlackList', link: '/TBSecondHandMarket/Configs/ItemBlackList.md' },
+                      { text: 'ItemPriceConfig', link: '/TBSecondHandMarket/Configs/ItemPriceConfig.md' },
                       { text: 'ItemsCategory', link: '/TBSecondHandMarket/Configs/ItemsCategory.md' },
                       { text: 'ItemWhiteList', link: '/TBSecondHandMarket/Configs/ItemWhiteList.md' },
                       { text: 'Logger', link: '/TBSecondHandMarket/Configs/Logger.md' },
