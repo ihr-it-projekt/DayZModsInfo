@@ -1,6 +1,6 @@
 # TBSurvivorLuck
 
-![TBSurvivorLuck](./Image/TBSurvivorLuck.png)
+![TBSurvivorLuck](./Image/TBSurvivorLuckLogo.png)
 
 This mod allows you to win items by scratching a scratch card.
 
@@ -16,7 +16,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![TBSurvivorLuck](./Image/TBSurvivorLuck.png)](https://youtu.be/UGkJvDl_TLU)
+[TBSurvivorLuck](https://youtu.be/UGkJvDl_TLU)
 
 ### How to install
 
