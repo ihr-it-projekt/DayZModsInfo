@@ -26,7 +26,7 @@ This config is used to configure the scratch card.
     "isInitialized": 1, // Never touch this value. It is needed internally
     "WinningCombinations": [
         {
-            "Symbol": "zombie", // The symbol that will be displayed on the scratch card
+            "ImageSymbol": "zombie", // The symbol that will be displayed on the scratch card
             "Chance": 45, // The win chance for this symbol
             "RewardVariations": [ // The reward variations for this symbol, one of them will be chosen randomly
                 {
@@ -44,7 +44,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "appel",
+            "ImageSymbol": "appel",
             "Chance": 30,
             "RewardVariations": [
                 {
@@ -62,7 +62,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "eat",
+            "ImageSymbol": "eat",
             "Chance": 20,
             "RewardVariations": [
                 {
@@ -80,7 +80,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "bottle",
+            "ImageSymbol": "bottle",
             "Chance": 15,
             "RewardVariations": [
                 {
@@ -96,7 +96,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "ducktape",
+            "ImageSymbol": "ducktape",
             "Chance": 10,
             "RewardVariations": [
                 {
@@ -108,7 +108,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "medical",
+            "ImageSymbol": "medical",
             "Chance": 8,
             "RewardVariations": [
                 {
@@ -126,7 +126,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "plum",
+            "ImageSymbol": "plum",
             "Chance": 4,
             "RewardVariations": [
                 {
@@ -138,7 +138,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "tires",
+            "ImageSymbol": "tires",
             "Chance": 2,
             "RewardVariations": [
                 {
@@ -150,7 +150,7 @@ This config is used to configure the scratch card.
             ]
         },
         {
-            "Symbol": "nvg",
+            "ImageSymbol": "nvg",
             "Chance": 1,
             "RewardVariations": [
                 {
