@@ -65,21 +65,22 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
         3,
         5
     ],
-    "startingFee": [ // currently not used but will be used in the future
+    "startingFee": [ // How much money players have to pay to join a match, 0 for free
+        0,
         1000,
         2000,
         3000,
         5000,
         10000
     ],
-    "teamWinRatio": [ // currently not used but will be used in the future
+    "teamWinRatio": [ // how much money the winning team gets
         {
             "place": 1,
-            "ratio": 0.5
+            "ratio": 0.5 // 50% of the complete starting fee, in sum ration must never be higher then 1
         },
         {
             "place": 2,
-            "ratio": 0.30000001192092898
+            "ratio": 0.30000001192092898 // 30% of the complete starting fee
         }
     ],
     "enableChangeSides": 1, // currently not used but will be used in the future
@@ -99,8 +100,8 @@ If you want to add ne positions for other teams, just cut and copy the coordinat
           "Example2"
     ],
     "gearSets": [], // internal usage, do not change
-      "externalPlayersCanEnterArena": 0, // currently not used but will be used in the future
-      "adminCanEnterArena": 1, // currently not used but will be used in the future
+    "externalPlayersCanEnterArena": 0, // currently not used but will be used in the future
+    "adminCanEnterArena": 1, // currently not used but will be used in the future
     "showArenaBoarderPoints": 1, // currently not used but will be used in the future
     "teamSpawnZones": { // here must all team spawn zones insert, If you want to have more then 2 teams, you must add more team spawn zones. You can configure them also in game as an admin. Create a new match and use the "port to Arena" admin button
       // Start first team
