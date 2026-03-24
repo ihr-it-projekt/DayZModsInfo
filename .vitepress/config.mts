@@ -155,6 +155,7 @@ export default defineConfig({
                   {
                     text: 'Configs', collapsed: true, items: [
                       { text: 'Config', link: '/DeathInsurance/Configs/Config.md' },
+                      { text: 'BlacklistConfig', link: '/DeathInsurance/Configs/BlacklistConfig.md' },
                       { text: 'InsurancePointConfig', link: '/DeathInsurance/Configs/InsurancePointConfig.md' },
                       { text: 'Logger', link: '/DeathInsurance/Configs/Logger.md' },
                     ]
@@ -173,7 +174,6 @@ export default defineConfig({
                   { text: 'VehicleSpawnConfig', link: '/GlobalConfigs/VehicleSpawnConfig.md' },
                 ]
               },
-              { text: 'ItemExchange', link: '/TBItemExchange/README.md' },
               {
                 text: 'JewelsOfSurvival', link: '/TBJewelsOfSurvival/Readme.md', collapsed: true, items: [
                   { text: 'Effects', link: '/TBJewelsOfSurvival/Effects.md' },
