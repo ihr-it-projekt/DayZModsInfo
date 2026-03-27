@@ -14,7 +14,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 
 ## Youtube
 
-[![Version 1](./logoYT.png)](https://www.youtube.com/watch?v=9gFb6p5iBgY)
+- [Version 1](https://youtu.be/JsQrh3tAQEs)
+- [Version 1.9](https://youtu.be/9gFb6p5iBgY)
+- [Version 2.27.0](https://youtu.be/cdvXKRMzBTk)
 
 ## FAQ
 [FAQ.md](FAQ.md)
