@@ -8,6 +8,7 @@ Here you can configure your price items.
 	"type": "AK74_Complete", // the type name from types.xml
 	"quantity": 100.0, // The quantity of the item in percent 100.0 means 100%, 50. means 50%
 	"sellPrice": 97, // The price the player get when he sells the item (Currently not implemented)
+	"currencyType": "default", // The currency the item is sold in see CurrencyConfig.json 
 	"buyPrice": 98, // The price the player must pay to buy the item
 	"isPremium": false, // If this item is a premium item, set this value to true. Only player with premium status can buy this item
     "amountItem": 1, // The amount of the item that the player is able to buy if the items is as an optional attachment configured 
