@@ -26,15 +26,16 @@ If you don't want to use premium coins, you can also use the "API".
    `{SteamID}_{DurationInDays}_{ModName}.premium` (e.g., `7656119813296317725_30_DailyReward.premium`).
     
     Possible values for ModName are: 
-   - CarDealer
-   - DailyReward
-   - DeathInsurance
-   - DynamicTrader 
-   - Revive
-   - SecondHand
+    - Global (Add to all mods Premium Status)
+    - CarDealer
+    - DailyReward
+    - DeathInsurance
+    - DynamicTrader 
+    - Revive
+    - SecondHand
 
     Possible values for DurationInDays are: 
-   - Any number between 1 and 999.
+    - Any number between 1 and 999.
 
 The premium status will be given to the player after the "API" has checked the folder. The file will be deleted after use. Invalid files will remain. If you see files that are not processed, please check the server script log for entries starting with `[TB Premium API]`.
 Every successfully processed file will be logged in CSV or Discord. See `Logger.json` for more information.
