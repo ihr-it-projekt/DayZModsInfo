@@ -10,6 +10,10 @@ You can find all features here: https://www.themodbase.com/mods/TBDynamicTrader
 ## Shop Link
 https://www.themodbase.com/mods/TBDynamicTrader
 
+## Youtube
+
+https://youtu.be/txYttaSWmN8
+
 ## How to install
 
 See also [here](../The%20Mod%20Base/README.md)
