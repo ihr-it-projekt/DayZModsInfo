@@ -4,7 +4,7 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
 
 ````json lines
 {
-  "version": "11", // never change this, internal version number
+  "version": "12", // never change this, internal version number
   "admins": {
     "Add here Steam ID Or DayZ ID": {
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
@@ -16,8 +16,9 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
       "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
       "jewelsOfSurvival": 0, // 0 = off 1 = on | is admin in jewels of survival
       "warParty": 0, // 0 = off 1 = on | is admin in war party
-      "dynamicDealer": 0, // 0 = off 1 = on | is admin in dynamic trader
       "carry": 0, // 0 = off 1 = on | is admin for carry mod 
+      "dynamicDealer": 0, // 0 = off 1 = on | is admin in dynamic trader
+      "survivorLuck": 0, // 0 = off 1 = on | is admin for survivor luck mod 
       "playerId": "Add here Steam ID Or DayZ ID" // Steam or DayZ ID
     },
     "7656119813296317725": {
@@ -30,8 +31,9 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
       "revivePlayer": 1,
       "jewelsOfSurvival": 1,
       "warParty": 1,
-      "dynamicDealer": 1,
       "carry": 1,
+      "dynamicDealer": 1,
+      "survivorLuck": 1,
       "playerId": "765611328196317725"
     }
   }
