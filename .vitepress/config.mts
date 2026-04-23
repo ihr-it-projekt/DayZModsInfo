@@ -1,17 +1,21 @@
 import { defineConfig } from 'vitepress'
 import lightbox from "vitepress-plugin-lightbox"
+import llmstxt, { copyOrDownloadAsMarkdownButtons } from 'vitepress-plugin-llms'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   srcDir: ".",
-
+  vite: {
+    plugins: [llmstxt()],
+  },
   title: "by TheBuster",
   description: "Docs for The Mod Base mods",
   markdown: {
     config: (md) => {
       // Use lightbox plugin
       md.use(lightbox, {});
+      md.use(copyOrDownloadAsMarkdownButtons)
     },
   },
 
