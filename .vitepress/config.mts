@@ -253,7 +253,6 @@ export default defineConfig({
               },
               {
                 text: 'LuckySurvivor', link: '/TBSurvivorLuck/Readme.md', collapsed: true, items: [
-                  { text: 'Types', link: '/TBSurvivorLuck/Types.md' },
                   {
                     text: 'Configs', collapsed: true, items: [
                       { text: 'ScratchCardConfig', link: '/TBSurvivorLuck/Configs/ScratchCardConfig.md' },
