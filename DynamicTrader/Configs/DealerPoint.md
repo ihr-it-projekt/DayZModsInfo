@@ -26,7 +26,8 @@ Example `Weapon Trader.json`:
                 0.0008105853921733797
             ],
             "useExactPosition": 0, // Use exact position; if 0, it will be placed automatically on the ground
-            "name": "Cherno"
+            "name": "Cherno", // Name of the trader position, this name will appear in the notification
+            "enableNotification": 1 // Enable notification if trader change the position
         }
     ],
     "useExactPosition": 1, // deprecated will removed in future versions
