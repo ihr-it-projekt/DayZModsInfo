@@ -55,7 +55,7 @@ uploadArea.addEventListener('dragleave', () => {
 uploadArea.addEventListener('drop', (e) => {
     e.preventDefault();
     uploadArea.classList.remove('dragover');
-    
+
     const files = Array.from(e.dataTransfer.files);
     if (files.length > 0) {
         handleFiles(files);
@@ -74,7 +74,7 @@ fileInput.addEventListener('change', (e) => {
  */
 async function detectFileType(file) {
     const filename = file.name.toLowerCase();
-    
+
     // First try filename-based detection
     if (filename.includes('priceconfig') || filename.includes('price_config')) {
         return 'priceConfig';
@@ -83,13 +83,13 @@ async function detectFileType(file) {
     } else if (filename.includes('idsconfig') || filename.includes('ids_config')) {
         return 'idsConfig';
     }
-    
+
     // Try to detect from content
     try {
         const content = await readFileAsText(file);
         const fixedContent = content.replace(/,(\s*[}\]])/g, '$1');
         const config = JSON.parse(fixedContent);
-        
+
         if (config.TraderCategories && Array.isArray(config.TraderCategories)) {
             return 'priceConfig';
         } else if (config.Traders && Array.isArray(config.Traders)) {
@@ -100,7 +100,7 @@ async function detectFileType(file) {
     } catch (e) {
         // Couldn't parse, will return null
     }
-    
+
     return null;
 }
 
@@ -109,25 +109,25 @@ async function detectFileType(file) {
  */
 async function handleFiles(files) {
     errorDiv.classList.remove('show');
-    
+
     // Filter to only JSON files
     const jsonFiles = files.filter(file => file.name.endsWith('.json'));
-    
+
     if (jsonFiles.length === 0) {
         showError('Please select JSON files');
         return;
     }
-    
+
     // Process each file and detect its type
     for (const file of jsonFiles) {
         try {
             const fileType = await detectFileType(file);
-            
+
             if (!fileType) {
                 showError(`${file.name} - Could not detect file type. Expected TraderPlusPriceConfig.json, TraderPlusGeneralConfig.json, or TraderPlusIDsConfig.json`);
                 continue;
             }
-            
+
             // Assign file to appropriate variable
             if (fileType === 'priceConfig') {
                 if (priceConfigFile) {
@@ -152,7 +152,7 @@ async function handleFiles(files) {
             showError(`Error processing ${file.name}: ${error.message}`);
         }
     }
-    
+
     checkAllFilesReady();
 }
 
@@ -170,10 +170,10 @@ function setFileStatusText(fileType, text) {
     } else {
         return; // Unknown file type
     }
-    
+
     statusElement.textContent = text;
     statusElement.className = 'file-status-text';
-    
+
     if (text.startsWith('✓')) {
         statusElement.classList.add('uploaded');
     } else if (text.startsWith('❌') || text.startsWith('⚠')) {
@@ -197,7 +197,7 @@ function checkAllFilesReady() {
             options.classList.remove('show');
         }
     }
-    
+
     // Update status for missing files
     if (!priceConfigFile) {
         setFileStatusText('priceConfig', 'Not uploaded');
@@ -242,12 +242,13 @@ function updateProgress(percent, text) {
  * Format: "ItemName,coefficient,maxStorage,quantity,maxBuyPrice,maxSellPrice,reducePerTick"
  */
 function parseProductString(productString, categoryName) {
-    const parts = productString.split(',');
-    
+    const parts = productString.replaceAll('*', '').split(',');
+
     if (parts.length < 2) {
         return null;
     }
-    
+
+    // remove * from uniqueName
     const uniqueName = parts[0].trim();
     if (!uniqueName) {
         return null;
@@ -320,7 +321,7 @@ function parseProductString(productString, categoryName) {
         itemData.isStorageItem = 1;
         itemData.tickLengthInMinutes = 1;
     }
-    
+
     return itemData;
 }
 
@@ -383,10 +384,10 @@ function generateDealerPointName(traders, index) {
  */
 function createDealerPoint(traders, uniqueName, sellTax) {
     const firstTrader = traders[0];
-    
+
     let position = firstTrader.Position;
     let orientation = firstTrader.Orientation;
-    
+
     if (traders.length > 1) {
         const avgPos = [0, 0, 0];
         traders.forEach(trader => {
@@ -426,21 +427,21 @@ function processPriceConfig(config, zip) {
 
     config.TraderCategories.forEach((category, catIndex) => {
         const categoryName = category.CategoryName || 'Unknown';
-        
+
         if (!category.Products || !Array.isArray(category.Products)) {
             return;
         }
-        
+
         category.Products.forEach(productString => {
             totalProducts++;
             const cleanProductString = productString.replace(/^["']|["']$/g, '').trim();
-            
+
             if (!cleanProductString) {
                 return;
             }
-            
+
             const itemData = parseProductString(cleanProductString, categoryName);
-            
+
             if (itemData) {
                 itemsMap.set(itemData.uniqueName, itemData);
                 processedProducts++;
@@ -470,20 +471,20 @@ function processPriceConfig(config, zip) {
  */
 function createTraderIDCategoryMap(idsConfig) {
     const idCategoryMap = new Map();
-    
+
     if (!idsConfig.IDs || !Array.isArray(idsConfig.IDs)) {
         return idCategoryMap;
     }
-    
+
     idsConfig.IDs.forEach(idEntry => {
         const traderId = idEntry.Id;
         const categories = idEntry.Categories || [];
-        
+
         // Create a Set of categories for this trader ID
         const categorySet = new Set(categories.map(cat => cat.toLowerCase().trim()));
         idCategoryMap.set(traderId, categorySet);
     });
-    
+
     return idCategoryMap;
 }
 
@@ -512,7 +513,7 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
     traderGroups.forEach((group, index) => {
         const uniqueName = generateDealerPointName(group, index);
         dealerPoints.push(uniqueName);
-        
+
         const dealerPoint = createDealerPoint(group, uniqueName, sellTax);
         dealerPointFiles.set(uniqueName, dealerPoint);
     });
@@ -521,7 +522,7 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
 
     // Match items to dealer points based on categories
     const idCategoryMap = createTraderIDCategoryMap(idsConfig);
-    
+
     // Create mapping: Item uniqueName -> Item category
     const itemCategoryMap = new Map();
     priceConfig.TraderCategories.forEach(category => {
@@ -541,11 +542,11 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
             });
         }
     });
-    
+
     // For each dealer point, find items that match its traders
     dealerPointFiles.forEach((dealerPoint, dealerPointName) => {
         const matchedItems = new Set();
-        
+
         // Get all trader IDs in this dealer point
         const traderIdsInDealerPoint = new Set();
         traderGroups.forEach((group, index) => {
@@ -556,7 +557,7 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
                 });
             }
         });
-        
+
         // For each item, check if its category matches any trader ID's categories in this dealer point
         itemCategoryMap.forEach((itemCategory, itemUniqueName) => {
             traderIdsInDealerPoint.forEach(traderId => {
@@ -566,7 +567,7 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
                 }
             });
         });
-        
+
         // Add matched items to dealer point's uniqueFileNames
         dealerPoint.uniqueFileNames = Array.from(matchedItems).sort();
     });
@@ -581,7 +582,7 @@ function processGeneralConfig(config, zip, priceConfig, idsConfig) {
     };
 
     zip.file('DealerPoints.json', JSON.stringify(dealerPointsConfig, null, 4));
-    
+
     // Add individual dealer point files
     dealerPointFiles.forEach((dealerPoint, uniqueName) => {
         const fileName = `DealerPoints/${uniqueName}.json`;
@@ -625,7 +626,7 @@ async function convertAndZip() {
         const fixedPriceContent = priceConfigContent.replace(/,(\s*[}\]])/g, '$1');
         const fixedGeneralContent = generalConfigContent.replace(/,(\s*[}\]])/g, '$1');
         const fixedIdsContent = idsConfigContent.replace(/,(\s*[}\]])/g, '$1');
-        
+
         let priceConfig, generalConfig, idsConfig;
         try {
             priceConfig = JSON.parse(fixedPriceContent);
