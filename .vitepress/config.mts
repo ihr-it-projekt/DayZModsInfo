@@ -151,6 +151,7 @@ export default defineConfig({
                     ]
                   },
                   { text: 'Converter', link: '/DynamicTrader/Converter/Converter.md' },
+                  { text: 'Add Custom Sounds for Trader Positions', link: '/DynamicTrader/AddCustomSounds.md' },
                   { text: 'Types', link: '/DynamicTrader/Types.md' },
                 ]
               },
