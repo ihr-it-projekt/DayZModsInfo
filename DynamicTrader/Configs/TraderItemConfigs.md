@@ -16,6 +16,8 @@ Example `AK74.json`:
     "ignoreHealth": 0, // If 1, the item health when player sell it will be ignored
     "buyPrice": 1600, // Buy price of item
     "maxBuyPrice": 1600, // Max buy price of item, only relevant when it is a storage item
+    "emptyStorageOnServerRestart": 0, // If 1, the storage will be emptied on server restart
+    "fillStorageOnServerRestart": 0, // If 1, the storage will be filled on server restart
     "ignoreBuyStorageLimit": 0, // If 1, the buy storage limit will be ignored when player buys an item
     "ignoreSellStorageLimit": 0, // If 1, the sell storage limit will be ignored when player sells an item
     "sellPrice": 750, // Sell price of item
