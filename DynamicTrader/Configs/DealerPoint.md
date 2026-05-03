@@ -9,10 +9,45 @@ Example `Weapon Trader.json`:
 ```json
 {
     "uniqueName": "Weapon Trader", // Name of the trader
-    "version": "3", // Never touch this value. It is needed internally
+    "version": "4", // Never touch this value. It is needed internally
     "sellTax": 0.10, // Tax for selling items. Range from 1 - 0  | 1 = 100% | 0 = 0%
-    "position": [], // deprecated will removed in future versions
-    "orientation": [], // deprecated will removed in future versions
+    "acceptOnlyCash": 0, // Accept only cash from now on; if 1, it will not accept items as payment
+    "playSound": 1, // Enable/disable sound effects
+    "gender": "m", // Gender of the trader: "m" = male, "f" = female
+    "minSoundTime": 60, // Minimum time in seconds between sound effects
+    "maxSoundTime": 600, // Maximum time in seconds between sound effects
+    "enabledSounds": [ // index number of sounds
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+    ],
     "positions": [
         { // Position 1
             "position": [ // Location of the trader object
