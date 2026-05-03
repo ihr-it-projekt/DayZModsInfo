@@ -4,10 +4,11 @@
 ````json lines
 {
   "uniqueName": "Chernogorsk", // The name of the dealer point, file name must be the same
-  "version": "3", // never change this, internal version number
+  "version": "4", // never change this, internal version number
   "playerCanSellCars": 0, // If you want to allow the player to sell cars, set this value to 1 otherwise to 0
   "playerCanEnterShowRoom": 1, // If you want to allow the player to enter the showroom, set this value to 1 otherwise to 0
   "playerCanBuyCars": 1, // If you want to allow the player to buy cars, set this value to 1 otherwise to 0
+  "acceptOnlyCash": 1, // If you want to accept only cash, set this value to 1 otherwise to 0, ATM Money will then be ignored.
   "position": [ // The position of the dealer point
     6542.534180,
     6.215929,
