@@ -22,23 +22,37 @@ This config is used to configure the scratch card.
 
 ````json lines
 {
-    "version": "1", // Never touch this value. It is needed internally
+    "version": "3", // Never touch this value. It is needed internally
     "isInitialized": 1, // Never touch this value. It is needed internally
     "WinningCombinations": [
         {
             "ImageSymbol": "zombie", // The symbol that will be displayed on the scratch card
-            "Chance": 45, // The win chance for this symbol
+            "Chance": 90, // The win chance for this symbol
             "RewardVariations": [ // The reward variations for this symbol, one of them will be chosen randomly
                 {
-                    "Rewards": [ // The rewards for this symbol variation, all of them will be given to the player
-                        "Pear",
-                        "Plum"
+                    "Rewards": [], // deprecated, will removed in future
+                    "RewardOptions": [
+                        {
+                            "Type": "Pear", // type of the item
+                            "QuantityInPercent": 30.0 // quantity of the item in % 0 - 100
+                        },
+                        {
+                            "Type": "Plum",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 },
                 {
-                    "Rewards": [
-                        "Tomato",
-                        "Potato"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "Tomato",
+                            "QuantityInPercent": 30.0
+                        },
+                        {
+                            "Type": "Potato",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -48,15 +62,29 @@ This config is used to configure the scratch card.
             "Chance": 30,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "Apple",
-                        "SodaCan_Pipsi"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "Apple",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "SodaCan_Pipsi",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 },
                 {
-                    "Rewards": [
-                        "Apple",
-                        "Marmalade"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "Apple",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "Marmalade",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -66,15 +94,29 @@ This config is used to configure the scratch card.
             "Chance": 20,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "BakedBeansCan",
-                        "TacticalBaconCan"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "BakedBeansCan",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "TacticalBaconCan",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 },
                 {
-                    "Rewards": [
-                        "SpaghettiCan",
-                        "SardinesCan"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "SpaghettiCan",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "SardinesCan",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -84,13 +126,21 @@ This config is used to configure the scratch card.
             "Chance": 15,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "WaterBottle"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "WaterBottle",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 },
                 {
-                    "Rewards": [
-                        "Canteen"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "Canteen",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -100,9 +150,16 @@ This config is used to configure the scratch card.
             "Chance": 10,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "DuctTape",
-                        "EpoxyPutty"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "DuctTape",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "EpoxyPutty",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -112,15 +169,29 @@ This config is used to configure the scratch card.
             "Chance": 8,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "BandageDressing",
-                        "BloodTestKit"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "BandageDressing",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "BloodTestKit",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 },
                 {
-                    "Rewards": [
-                        "SalineBagIV",
-                        "Epinephrine"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "SalineBagIV",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "Epinephrine",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -130,9 +201,16 @@ This config is used to configure the scratch card.
             "Chance": 4,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "PipeWrench",
-                        "Pliers"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "PipeWrench",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "Pliers",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -142,9 +220,16 @@ This config is used to configure the scratch card.
             "Chance": 2,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "CarTire",
-                        "CarRadiator"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "CarTire",
+                            "QuantityInPercent": 100.0
+                        },
+                        {
+                            "Type": "CarRadiator",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
@@ -154,8 +239,12 @@ This config is used to configure the scratch card.
             "Chance": 1,
             "RewardVariations": [
                 {
-                    "Rewards": [
-                        "NVGHeadstrap"
+                    "Rewards": [],
+                    "RewardOptions": [
+                        {
+                            "Type": "NVGHeadstrap",
+                            "QuantityInPercent": 100.0
+                        }
                     ]
                 }
             ]
