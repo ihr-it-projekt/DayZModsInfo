@@ -8,8 +8,9 @@ Example `Weapon Trader.json`:
 
 ```json
 {
-    "uniqueName": "Weapon Trader", // Name of the trader
-    "version": "4", // Never touch this value. It is needed internally
+    "uniqueName": "Weapon Trader Cherno", // unique name of the trader, will only use internal or in admin menus
+    "version": "5", // Never touch this value. It is needed internally
+    "displayName": "Weapon Trader", // Display name of the trader, will be visible to players
     "sellTax": 0.10, // Tax for selling items. Range from 1 - 0  | 1 = 100% | 0 = 0%
     "acceptOnlyCash": 0, // Accept only cash from now on; if 1, it will not accept items as payment
     "playSound": 1, // Enable/disable sound effects

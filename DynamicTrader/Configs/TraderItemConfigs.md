@@ -28,6 +28,13 @@ Example `AK74.json`:
     "premiumPriceReduce": 0, // Reduce the buy price for premium players
     "maxCountThatPlayerCanBuyAsAttachment": 1, // If this trader type is added as an attachment to another item, this defines the max count that player can buy
     "maxCountThatPlayerCanBuyAsOptionalAttachment": 1, // If this trader type is added as an optional attachment to another item, this defines the max count that player can buy
+    "enablePoints": 1, // Enable points for this item. If 0, reputation system is not relevant for this item
+    "minPointsNeededForSell": 10, // Minimum points needed to sell the item, is by default the lowest int value in DayZ
+    "minPointsNeededForBuy": 1, // Minimum points needed to buy the item, is by default the lowest int value in DayZ
+    "maxPointsNeededForSell": 1000, // Maximum points needed to sell the item, is by default the highest int value in DayZ
+    "maxPointsNeededForBuy": 1000, // Maximum points needed to buy the item, is by default the highest int value in DayZ
+    "givePlayerPointsForSell": -10, // Points to give the player for selling the item.
+    "givePlayerPointsForBuy": 10, // Points to give the player for buying the item.
     "storageItem": {}, // Never touch this value. It is needed internally
     "attachmentUniqueNames": [ // List of attachments included. The player has not to pay for this attachments
         "AK_PlasticHndgrd",
@@ -43,7 +50,7 @@ Example `AK74.json`:
     "variations": [ // if you want to add for examle a Tshirt, you can define here the variations of the Tshirt. This value must be the Type name of DayZ
         "ExampleTyp1"
     ],
-    "version": "1" // Never touch this value. It is needed internally
+    "version": "2" // Never touch this value. It is needed internally
 }
 ```
 

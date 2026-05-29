@@ -148,6 +148,7 @@ export default defineConfig({
                       { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
                       { text: 'BetterVendingMaschines', link: '/DynamicTrader/Configs/BetterVendingMaschines.md' },
                       { text: 'I want to use custom Vending Machine', link: '/DynamicTrader/Configs/IWantToUseCustomVendingMachine.md' },
+                      { text: 'How to enable other mods to use reputation', link: '/DynamicTrader/Configs/ReputationSystem.md' },
                     ]
                   },
                   { text: 'Converter', link: '/DynamicTrader/Converter/Converter.md' },
