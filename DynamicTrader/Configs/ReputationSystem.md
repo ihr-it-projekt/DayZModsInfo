@@ -1,6 +1,6 @@
 # Reputation System
 
-## How to add Points to player reputation
+## How to add Points to player reputation from other mods
 
 Reputation can only be added from Serverside, if you call this functions from the Client, it will throw an error!
 
