@@ -148,7 +148,7 @@ export default defineConfig({
                       { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
                       { text: 'BetterVendingMaschines', link: '/DynamicTrader/Configs/BetterVendingMaschines.md' },
                       { text: 'I want to use custom Vending Machine', link: '/DynamicTrader/Configs/IWantToUseCustomVendingMachine.md' },
-                      { text: 'How to enable other mods to use reputation', link: '/DynamicTrader/Configs/ReputationSystem.md' },
+                      { text: 'How to enable other mods to use reputation', link: '/GlobalConfigs/ReputationSystem/Index.md' },
                     ]
                   },
                   { text: 'Converter', link: '/DynamicTrader/Converter/Converter.md' },
@@ -178,6 +178,7 @@ export default defineConfig({
                   { text: 'PremiumConfig', link: '/GlobalConfigs/PremiumConfig.md' },
                   { text: 'TBKeyBindsConfig', link: '/GlobalConfigs/TBKeyBindsConfig.md' },
                   { text: 'VehicleSpawnConfig', link: '/GlobalConfigs/VehicleSpawnConfig.md' },
+                  { text: 'How to enable other mods to use reputation', link: '/GlobalConfigs/ReputationSystem/Index.md' },
                 ]
               },
               {
