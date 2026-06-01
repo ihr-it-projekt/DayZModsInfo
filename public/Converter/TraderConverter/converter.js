@@ -50,7 +50,7 @@ uploadArea.addEventListener('dragleave', () => {
 uploadArea.addEventListener('drop', (e) => {
     e.preventDefault();
     uploadArea.classList.remove('dragover');
-    
+
     const files = Array.from(e.dataTransfer.files);
     if (files.length > 0) {
         handleFiles(files);
@@ -69,19 +69,19 @@ fileInput.addEventListener('change', (e) => {
  */
 function handleFiles(files) {
     errorDiv.classList.remove('show');
-    
+
     // Filter to only .txt files
     const txtFiles = files.filter(file => file.name.toLowerCase().endsWith('.txt'));
-    
+
     if (txtFiles.length === 0) {
         showError('Please select .txt files');
         return;
     }
-    
+
     // Process each file and detect its type
     txtFiles.forEach(file => {
         const filename = file.name.toLowerCase();
-        
+
         if (filename.includes('traderconfig') || filename === 'traderconfig.txt') {
             traderConfigFile = file;
             setFileStatusText('traderConfig', `✓ ${file.name} (${formatFileSize(file.size)})`);
@@ -92,7 +92,7 @@ function handleFiles(files) {
             showError(`Unknown file: ${file.name}. Expected TraderConfig.txt or TraderObjects.txt`);
         }
     });
-    
+
     checkAllFilesReady();
 }
 
@@ -108,10 +108,10 @@ function setFileStatusText(fileType, text) {
     } else {
         return;
     }
-    
+
     statusElement.textContent = text;
     statusElement.className = 'file-status-text';
-    
+
     if (text.startsWith('✓')) {
         statusElement.classList.add('uploaded');
     } else if (text.startsWith('❌') || text.startsWith('⚠')) {
@@ -134,7 +134,7 @@ function checkAllFilesReady() {
             options.classList.remove('show');
         }
     }
-    
+
     // Update status for missing files
     if (!traderConfigFile) {
         setFileStatusText('traderConfig', 'Not uploaded');
@@ -179,15 +179,15 @@ function updateProgress(percent, text) {
  */
 function removeCommentsAndStrip(line) {
     if (!line) return '';
-    
+
     // Find the position of // (but not if it's part of a URL or path)
     const commentIndex = line.indexOf('//');
-    
+
     if (commentIndex !== -1) {
         // Remove everything from // onwards
         line = line.substring(0, commentIndex);
     }
-    
+
     // Strip whitespace
     return line.trim();
 }
@@ -201,12 +201,12 @@ function parseQuantity(quantityStr) {
     if (!quantityStr || quantityStr.trim() === '*') {
         return 1.0;
     }
-    
+
     const qty = quantityStr.trim().toUpperCase();
     if (qty === 'S' || qty === 'W' || qty === 'M' || qty === 'V' || qty === 'VNK') {
         return 1.0;
     }
-    
+
     const num = parseFloat(quantityStr);
     return isNaN(num) ? 1.0 : num;
 }
@@ -220,24 +220,24 @@ function parseTraderConfig(content) {
     let currentTrader = null;
     let currentCategory = null;
     let traderId = -1;
-    
+
     for (let i = 0; i < lines.length; i++) {
         let line = removeCommentsAndStrip(lines[i]);
-        
+
         // Skip empty lines
         if (!line) {
             continue;
         }
-        
+
         // Parse trader marker
         if (line.startsWith('<Trader>')) {
             // Save previous trader if exists
             if (currentTrader) {
                 traders.push(currentTrader);
             }
-            
+
             traderId++;
-            const traderName = line.replace('<Trader>', '').trim();
+            const traderName = line.replace('<Trader>', '').replaceAll('/', ' ').trim();
             currentTrader = {
                 id: traderId,
                 name: traderName,
@@ -246,7 +246,7 @@ function parseTraderConfig(content) {
             currentCategory = null;
             continue;
         }
-        
+
         // Parse category
         if (line.startsWith('<Category>')) {
             const categoryName = line.replace('<Category>', '').trim();
@@ -259,7 +259,7 @@ function parseTraderConfig(content) {
             }
             continue;
         }
-        
+
         // Parse item line (format: ItemName, Quantity, BuyValue, SellValue)
         if (currentCategory && line.includes(',')) {
             const parts = line.split(',').map(p => p.trim());
@@ -269,7 +269,7 @@ function parseTraderConfig(content) {
                     const quantity = parseQuantity(parts[1]);
                     const buyPrice = parts.length > 2 && parts[2] !== '-1' ? parseInt(parts[2]) || 0 : 0;
                     const sellPrice = parts.length > 3 && parts[3] !== '-1' ? parseInt(parts[3]) || 0 : 0;
-                    
+
                     currentCategory.items.push({
                         uniqueName: itemName,
                         quantity: quantity,
@@ -280,12 +280,12 @@ function parseTraderConfig(content) {
             }
         }
     }
-    
+
     // Add last trader
     if (currentTrader) {
         traders.push(currentTrader);
     }
-    
+
     return traders;
 }
 
@@ -296,22 +296,22 @@ function parseTraderObjects(content) {
     const lines = content.split('\n');
     const traders = [];
     let currentTrader = null;
-    
+
     for (let i = 0; i < lines.length; i++) {
         let line = removeCommentsAndStrip(lines[i]);
-        
+
         // Skip empty lines
         if (!line) {
             continue;
         }
-        
+
         // Parse trader marker
         if (line.startsWith('<TraderMarker>')) {
             // Save previous trader if exists
             if (currentTrader && currentTrader.position) {
                 traders.push(currentTrader);
             }
-            
+
             const traderId = parseInt(line.replace('<TraderMarker>', '').trim());
             currentTrader = {
                 id: traderId,
@@ -321,7 +321,7 @@ function parseTraderObjects(content) {
             };
             continue;
         }
-        
+
         // Parse position
         if (line.startsWith('<TraderMarkerPosition>')) {
             const posStr = line.replace('<TraderMarkerPosition>', '').trim();
@@ -331,7 +331,7 @@ function parseTraderObjects(content) {
             }
             continue;
         }
-        
+
         // Parse orientation (from ObjectOrientation)
         if (line.startsWith('<ObjectOrientation>')) {
             const oriStr = line.replace('<ObjectOrientation>', '').trim();
@@ -341,7 +341,7 @@ function parseTraderObjects(content) {
             }
             continue;
         }
-        
+
         // Parse safezone
         if (line.startsWith('<TraderMarkerSafezone>')) {
             const safezone = parseInt(line.replace('<TraderMarkerSafezone>', '').trim());
@@ -351,12 +351,12 @@ function parseTraderObjects(content) {
             continue;
         }
     }
-    
+
     // Add last trader
     if (currentTrader && currentTrader.position) {
         traders.push(currentTrader);
     }
-    
+
     return traders;
 }
 
@@ -447,10 +447,10 @@ function generateDealerPointName(traders, index) {
  */
 function createDealerPoint(traders, uniqueName, sellTax) {
     const firstTrader = traders[0];
-    
+
     let position = firstTrader.position;
     let orientation = firstTrader.orientation || [0, 0, 0];
-    
+
     if (traders.length > 1) {
         const avgPos = [0, 0, 0];
         let count = 0;
@@ -492,22 +492,22 @@ function processTraderConfig(traderConfigData, zip) {
 
     const itemsMap = new Map();
     const traderCategoryMap = new Map(); // Trader ID -> Set of categories
-    
+
     traderConfigData.forEach((trader, traderIndex) => {
         const categorySet = new Set();
-        
+
         trader.categories.forEach((category, catIndex) => {
             const categoryName = category.name;
             categorySet.add(categoryName.toLowerCase().trim());
-            
+
             category.items.forEach(item => {
                 const itemData = createItemData(item, categoryName);
                 itemsMap.set(item.uniqueName, itemData);
             });
         });
-        
+
         traderCategoryMap.set(trader.id, categorySet);
-        
+
         const progressPercent = 20 + (traderIndex / traderConfigData.length) * 30;
         updateProgress(progressPercent, `Processing items... (${itemsMap.size} items)`);
     });
@@ -563,7 +563,7 @@ function processTraderObjects(traderObjectsData, traderConfigData, traderCategor
     traderGroups.forEach((group, index) => {
         const uniqueName = generateDealerPointName(group, index);
         dealerPoints.push(uniqueName);
-        
+
         const dealerPoint = createDealerPoint(group, uniqueName, sellTax);
         dealerPointFiles.set(uniqueName, dealerPoint);
     });
@@ -583,7 +583,7 @@ function processTraderObjects(traderObjectsData, traderConfigData, traderCategor
     // For each dealer point, find items that match its traders
     dealerPointFiles.forEach((dealerPoint, dealerPointName) => {
         const matchedItems = new Set();
-        
+
         // Get all trader IDs in this dealer point
         const traderIdsInDealerPoint = new Set();
         traderGroups.forEach((group, index) => {
@@ -594,7 +594,7 @@ function processTraderObjects(traderObjectsData, traderConfigData, traderCategor
                 });
             }
         });
-        
+
         // For each item, check if its category matches any trader ID's categories in this dealer point
         itemCategoryMap.forEach((itemCategory, itemUniqueName) => {
             traderIdsInDealerPoint.forEach(traderId => {
@@ -604,7 +604,7 @@ function processTraderObjects(traderObjectsData, traderConfigData, traderCategor
                 }
             });
         });
-        
+
         // Add matched items to dealer point's uniqueFileNames
         dealerPoint.uniqueFileNames = Array.from(matchedItems).sort();
     });
@@ -619,7 +619,7 @@ function processTraderObjects(traderObjectsData, traderConfigData, traderCategor
     };
 
     zip.file('DealerPoints.json', JSON.stringify(dealerPointsConfig, null, 4));
-    
+
     // Add individual dealer point files
     dealerPointFiles.forEach((dealerPoint, uniqueName) => {
         const fileName = `DealerPoints/${uniqueName}.json`;
