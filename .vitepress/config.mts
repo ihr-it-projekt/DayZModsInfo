@@ -174,6 +174,7 @@ export default defineConfig({
                   { text: 'AdminConfig', link: '/GlobalConfigs/AdminConfig.md' },
                   { text: 'CurrencyConfig', link: '/GlobalConfigs/CurrencyConfig.md' },
                   { text: 'Logger', link: '/GlobalConfigs/Logger.md' },
+                  { text: 'NPCGearConfig', link: '/GlobalConfigs/NPCGearConfig.md' },
                   { text: 'Premium', link: '/GlobalConfigs/Premium.md' },
                   { text: 'PremiumConfig', link: '/GlobalConfigs/PremiumConfig.md' },
                   { text: 'TBKeyBindsConfig', link: '/GlobalConfigs/TBKeyBindsConfig.md' },
