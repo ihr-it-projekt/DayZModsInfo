@@ -26,7 +26,7 @@ Gear config is located in the `GearSets` subdirectory under your global config f
             "machineType": "TBDIMachine", // type of the insurance trader, by default only "TBDIMachine" exists but if you create your own machine, you can name it here. Your created object must have as parent class TBDIMachine
             "enableNpcTrader": 1, // if 1 an NPC instead of a machine will spawn at the insurance trader, if 0 no NPC will spawn
             "npcType": "SurvivorF_Judy", // the type of the NPC (only if enableNpcTrader is 1)
-            "npcGearSetName": "NPC2" // the gear set to be used by the NPC (only if enableNpcTrader is 1) 
+            "npcGearSetName": "NPC2" // the gear set to be used by the NPC (only if enableNpcTrader is 1). If the config does not exist, a new one with default gear will automatically be created.
         },
         { // second insurance trader
             "position": [

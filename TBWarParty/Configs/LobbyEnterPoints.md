@@ -26,6 +26,6 @@ Gear config is located in the `GearSets` subdirectory under your global config f
     "useExactPosition": 0, // If you want to use the exact position, set this value to 1 otherwise the entry point object will be automatically placed on the ground
     "enableNpcTrader": 1, // If 1, an NPC will be spawned at the entry point, otherwise no NPC will be spawned
     "npcType": "SurvivorF_Judy", // The type of the NPC (only if enableNpcTrader is 1)
-    "npcGearSetName": "NPC3" // The gear set to be used by the NPC (only if enableNpcTrader is 1)
+    "npcGearSetName": "NPC3" // The gear set to be used by the NPC (only if enableNpcTrader is 1). If the config does not exist, a new one with default gear will automatically be created.
 }
 ````

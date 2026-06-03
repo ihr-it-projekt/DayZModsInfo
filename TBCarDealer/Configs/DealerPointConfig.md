@@ -72,6 +72,6 @@ Gear config is located in the `GearSets` subdirectory under your global config f
   ],
   "enableNpcTrader": 1, // If 1, an NPC will be spawned at the dealer point, otherwise no NPC will be spawned
   "npcType": "SurvivorF_Judy", // The type of the NPC (only if enableNpcTrader is 1)
-  "npcGearSetName": "NPC1" // The gear set to be used by the NPC (only if enableNpcTrader is 1)
+  "npcGearSetName": "NPC1" // The gear set to be used by the NPC (only if enableNpcTrader is 1). If the config does not exist, a new one with default gear will automatically be created.
 }
 ````
