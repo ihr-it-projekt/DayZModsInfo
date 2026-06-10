@@ -241,6 +241,9 @@ export default defineConfig({
                 ]
               },
               {
+                text: 'StaticLights', link: '/TBStaticLights/Readme.md'
+              },
+              {
                 text: 'SecondHandMarket', link: '/TBSecondHandMarket/Readme.md', collapsed: true, items: [
                   { text: 'Types', link: '/TBSecondHandMarket/Types.md' },
                   {
