@@ -11,12 +11,19 @@
 ** Dont forget to save it. Otherwise the object will not be available after server restart. **
 
 ### Types
+- TBSLForeverAirfieldLamp
 - TBSLForeverBurningBarrelBase
 - TBSLForeverBurningBarrel_Green
 - TBSLForeverBurningBarrel_Blue
 - TBSLForeverBurningBarrel_Red
 - TBSLForeverBurningBarrel_Yellow
+- TBSLForeverFurnitureHangarLamp
+- TBSLForeverFurnitureLuxuryLamp
+- TBSLForeverHalogenLamp
+- TBSLForeverLampHarbour
+- TBSLForeverPowerPoleWood4Lamp
 - TBSLForeverSpotlight
+- TBSLForeverStadiumLamp
 
 
 ### Config
@@ -37,6 +44,9 @@ Path: `DayZServer\profiles\TBMods\Config\TBStaticLights\LightObjects.json`
                 9.9998197555542,
                 0.0,
                 -0.0
+            ],
+            "lightStates": [
+                0
             ]
         },
         {
@@ -50,6 +60,9 @@ Path: `DayZServer\profiles\TBMods\Config\TBStaticLights\LightObjects.json`
                 215.0,
                 0.0,
                 -0.0
+            ],
+            "lightStates": [
+                0
             ]
         },
         {
@@ -63,6 +76,9 @@ Path: `DayZServer\profiles\TBMods\Config\TBStaticLights\LightObjects.json`
                 339.99798583984377,
                 0.0,
                 -0.0
+            ],
+            "lightStates": [
+                0
             ]
         }
     ]
