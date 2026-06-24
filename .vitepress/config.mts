@@ -144,6 +144,7 @@ export default defineConfig({
                       { text: 'DealerPoint', link: '/DynamicTrader/Configs/DealerPoint.md' },
                       { text: 'DealerPoints', link: '/DynamicTrader/Configs/DealerPoints.md' },
                       { text: 'Logger', link: '/DynamicTrader/Configs/Logger.md' },
+                      { text: 'SafeZoneCleanUp', link: '/DynamicTrader/Configs/SafeZoneCleanUp.md' },
                       { text: 'TraderItemConfigs', link: '/DynamicTrader/Configs/TraderItemConfigs.md' },
                       { text: 'TraderItemCategorieOrder', link: '/DynamicTrader/Configs/TraderItemCategorieOrder.md' },
                       { text: 'BetterVendingMaschines', link: '/DynamicTrader/Configs/BetterVendingMaschines.md' },

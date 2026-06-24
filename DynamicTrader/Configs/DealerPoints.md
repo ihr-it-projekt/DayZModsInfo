@@ -1,5 +1,3 @@
-
-
 ### DealerPoints.json
 
 Defines the available dealer points.
