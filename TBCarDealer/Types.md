@@ -14,6 +14,19 @@
 - TBCDMachineHelicopters
 - TBCDMachineVanilla
 
+### Kits to spawn new positions
+- TBCDMachineKit
+- TBCDMachineBoatsKit
+- TBCDMachineCarsKit
+- TBCDMachineMotorcyclesKit
+- TBCDMachineOffroadKit
+- TBCDMachineTrucksKit
+- TBCDMachineHelicoptersKit
+- TBCDMachineVanillaKit
+- TBCDCashierKit
+- TBCDPokladnaKit
+- TBCDPultskasouKit
+
 ## Premium Coins
 
 Activates Premium for the player.
