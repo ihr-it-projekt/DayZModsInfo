@@ -314,7 +314,11 @@ export default defineConfig({
               { text: 'ZombieEvents', link: '/TBZombieEvents/Readme.md' },
             ]
           },
-
+          {
+            text: 'General Guides', link: '/General/README.md', collapsed: false, items: [
+              { text: 'How to discover Mod Conflicts', link: '/General/HowToDiscoverModConflicts.md' },
+            ]
+          }
         ]
       }
     ],
