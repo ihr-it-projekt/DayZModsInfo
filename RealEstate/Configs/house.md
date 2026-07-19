@@ -81,6 +81,12 @@
         "Land_House_2W04_Yellow",
         "Land_House_2B03"
     ],
-    "houseConfigs": [] // only for interla usage, keep it like it is
+    "houseConfigs": [], // only for interla usage, keep it like it is
+    "blackListedObjectsForStopDisappearing": [ // Types that are here entered will not prevent from disappear.  You can use any type you want.
+		"*dressin*", // Type name must contain dressi anywhere in the type name
+        "*bandag", // Type name must contain bandag at the end of the type name
+        "bandag*", // Type name must contain bandag at the start of the type name
+        "BandageDressing", // Type name must be exactly BandageDressing
+	]
 }
 ````
