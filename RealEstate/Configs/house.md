@@ -86,7 +86,7 @@
 		"*dressin*", // Type name must contain dressi anywhere in the type name
         "*bandag", // Type name must contain bandag at the end of the type name
         "bandag*", // Type name must contain bandag at the start of the type name
-        "BandageDressing", // Type name must be exactly BandageDressing
+        "BandageDressing" // Type name must be exactly BandageDressing
 	]
 }
 ````
