@@ -14,6 +14,10 @@ If you are using`insureOnlyItemsThatAreAtTheMomentInCargoAndInventory = 1` the b
     "blacklistedItems": [
         "Item_Type_1", // add here the type name of the item you want to blacklist
         "Item_Type_2" // add here the type name of the item you want to blacklist
+        "*item*" // type name must contain item anywhere
+        "item*" // type name must contain item at start
+        "*item" // type name must contain item at end
+        "Item_Type_3" // type name must be exactly Item_Type_3
     ]
 }
 ````
