@@ -9,7 +9,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
 
 ```json lines
 {
-    "version": "8", // never change this, internal version number
+    "version": "10", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
@@ -19,6 +19,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
     "globalInsuranceBuyCooldownInSeconds": -1, // global cooldown in seconds for buying insurance, -1 to disable. Player has to wait last buy + this value to buy again
     "defaultInsuranceIDForNewPlayers": "start", // You can enable a default insurance for all re- or new spawns. Just add the id of the insurance here
     "maximumFreeInsuranceCountForPlayers": -1, // You can limit the max amount how often a player gets the default insurance. -1 means a player gets always the default insurance on fresh spawn. any other higher number then 0 means for example 2 means a player get the default insurance 2 times.
+    "hideDeleteItemsButton": false, // if 1, hide the delete items button in the insurance case menu
     "insurances": [
         {
             "id": "g8ciyetvox", // this value must be unique to other insurance ids.
@@ -39,7 +40,8 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0,
             "canBuyAgainAfterSeconds": 100000,
             "isPremium": 0,
-            "isBuyable": 1
+            "isBuyable": 1,
+            "saveItemInHands": 1
         },
         {
             "id": "4b2dgimf1x",
@@ -49,7 +51,8 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0,
             "canBuyAgainAfterSeconds": 86400,
             "isPremium": 1,
-            "isBuyable": 1
+            "isBuyable": 1,
+            "saveItemInHands": 1
         }
     ]
 }
