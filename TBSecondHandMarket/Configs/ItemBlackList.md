@@ -18,7 +18,11 @@ If you name one entry with `*` like `Survivor*`, all items with the name `Surviv
         "Anniversary*",
         "PileOfWoodenPlanks",
         "StaticObj_*",
-        "PremiumCoin*"
+        "PremiumCoin*",
+        "FullItemName", // must match
+        "ExampleStartsWith*", // must start with
+        "*Ammo", // must end with
+        "*wat*" // must contain
     ]
 }
 ```

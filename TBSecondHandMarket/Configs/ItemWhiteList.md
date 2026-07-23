@@ -9,9 +9,10 @@ If you name one entry with `*` like `Survivor*`, all items with the name `Surviv
     "version": "1", // Never touch this value. It is needed internally
     "isInitialized": 1, // Never touch this value. It is needed internally
     "blackListItems": [ // Whitelisted Items
-      "FullItemName",
-      "ExampleStartsWith*",
-      "Bandage"
+      "FullItemName", // must match
+      "ExampleStartsWith*", // must start with
+      "*Ammo", // must end with
+      "*wat*" // must contain
     ]
 }
 ```
