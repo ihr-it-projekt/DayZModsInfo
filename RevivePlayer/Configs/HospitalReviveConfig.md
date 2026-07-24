@@ -9,12 +9,11 @@ HospitalReviveConfigPremium = This config is for premium players.
 
 ````json lines
 {
-    "version": "3", // Never touch this value. It is needed internally
+    "version": "4", // Never touch this value. It is needed internally
     "enable": 1, // 0 = No hospital revive, 1 = Hospital revive is enabled
     "minTimeBefore": 180, // Min time in seconds before the player can be revived in the hospital
     "minTimeBeforeWhenNoOtherPlayerIsOnline": 60, // Min time in seconds before the player can be revived in the hospital when no other player is online
-    "currencyType": "default", // Currency type for the price of the revive in hospital (see currencyConfig in TBMods/Config/Globals)
-    "price": -1, // Price for revive in hospital | -1 = free for revive | 100 = 100 $ for revive
+    
     "enabledInPVPZones": 1, // 0 = disabled in PVP zones, 1 = enabled in PVP zones Supported PVP Zone Mods are PVEZ and Ninjins-PvP-PvE
     "damageConfig": {
         "maxWounds": 0, // Max wounds the player get when revived
@@ -58,7 +57,9 @@ HospitalReviveConfigPremium = This config is for premium players.
                 12.801782608032227,
                 2293.035400390625
             ],
-            "name": "Hospital 1" // Display Name of the spawn point
+            "name": "Hospital 1", // Display Name of the spawn point
+            "currencyType": "default", // Currency type for the price of the revive in hospital (see currencyConfig in TBMods/Config/Globals)
+            "price": -1, // Price for revive in hospital | -1 = free for revive | 100 = 100 $ for revive
         },
         {
             "id": "573sbye32f", // ID of the spawn point, must be unique
@@ -72,8 +73,12 @@ HospitalReviveConfigPremium = This config is for premium players.
                 9.735041618347168,
                 2713.15771484375
             ],
-            "name": "Hospital 2" // Display Name of the spawn point
+            "name": "Hospital 2", // Display Name of the spawn point
+            "currencyType": "default", // Currency type for the price of the revive in hospital (see currencyConfig in TBMods/Config/Globals)
+            "price": -1, // Price for revive in hospital | -1 = free for revive | 100 = 100 $ for revive
         }
     ]
+    "currencyType": "deprecated", // deprecated, will remove in future versions
+    "price": -1 // deprecated, will remove in future versions
 }
 ````
