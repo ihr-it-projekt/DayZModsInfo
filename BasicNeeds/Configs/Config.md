@@ -57,7 +57,28 @@
     "peeIncreaseFactorPerTick": 1.0, // How much pee will be increased per tick 
     "peeHealthReduceStatePerTickInPercent": 0.01, // How much health will be reduced per tick for pee. 1.0 means 100% health loos
     "peeBloodReduceStatePerTickInPercent": 0.01, // How much blood will be reduced per tick for pee. 1.0 means 100% blood loos
-    "tickLengthInMinutes": 5 // How long is a tick in minutes
+    "tickLengthInMinutes": 5, // How long is a tick in minutes
+    "enableToilets": 1, // Enable or disable toilets. 1 = enabled, 0 = disabled
+    "toiletDuration": 15, // How long it takes to use a toilet in seconds
+    "toiletMakeInvisible": 1, // Make the toilet invisible when in use. 1 = enabled, 0 = disabled
+    "toiletDisableDamage": 1, // Disable damage to the player when he use the toilet. 1 = enabled, 0 = disabled
+    "toiletSmallMenuOnLeft": 0, // Render a small toilet UI in the top-left corner allowing player movement/looking around. 1 = enabled, 0 = disabled (full screen)
+    "toiletObjectNames": [ // Object Names of Toilet
+        "Toilet",
+        "Land_Misc_Toilet_Dry",
+        "Land_Misc_Toilet_Mobile",
+        "toilet"
+    ],
+    "enableWashClothingSink": 1, // Enable or disable washing clothing at sinks. 1 = enabled, 0 = disabled
+    "sinkMinDirtLevelToWash": 25.0, // Minimum dirt level required on clothing to wash at a sink
+    "sinkObjectNames": [ // Keywords/Classnames for objects recognized as sinks
+        "bath.p3d",
+        "bar_tap",
+        "sink",
+        "washbasin",
+        "kitchen_desk",
+        "kitchendesk"
+    ]
 }
 ````
 
