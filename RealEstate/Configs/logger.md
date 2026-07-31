@@ -19,6 +19,7 @@
     "discordHouseExtensionTradeWebhookURL": "", //https://your.discord.webhook.url",
     "logHouseOwnerDelete": 1, // 1 = on 0 = off, Log to csv when delete a house owner/player
     "logHouseOwnerDeleteToDiscord": 1, // 1 = on 0 = off, Log to discord when delete a house owner/player
-    "discordHouseOwnerDeleteWebhookURL": ""// https://your.discord.webhook.url",
+    "discordHouseOwnerDeleteWebhookURL": "", // https://your.discord.webhook.url",
+    "logItemLifetimeIncreaseDetailsToScriptlog": 0 // 1 = on 0 = off, Log to script.log when an item lifetime is increased, enable this only for debug purpose, otherwise it will spam your log file
 }
 ````
