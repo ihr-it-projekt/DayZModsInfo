@@ -14,7 +14,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
     "useLocalTime": 0, // if 1, the time will be calculated and displayed in local time of your server, if 0, the time will be calculated and displayed in UTC
-    "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": 10,
+    "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": 10, // if this value is higher then 0, item in hand can not be saved
     "storeAllItemsInCargoOfMainItems": 0, // if 1, all items will be stored in cargo of main items, so not all items will be stored separately. Recommend to use if you have modded inventory size
     "globalInsuranceBuyCooldownInSeconds": -1, // global cooldown in seconds for buying insurance, -1 to disable. Player has to wait last buy + this value to buy again
     "defaultInsuranceIDForNewPlayers": "start", // You can enable a default insurance for all re- or new spawns. Just add the id of the insurance here
@@ -30,7 +30,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
             "canBuyAgainAfterSeconds": -1, // if -1, player can buy the insurance again, if not, player must wait after last buy, the seconds to buy the insurance again. If "globalInsuranceBuyCooldownInSeconds" is active this value will be ignored
             "isPremium": 0, // if 1, the insurance is a premium insurance
             "isBuyable": 1,  // 1 = players can buy this insurance, 0 = players can not buy the insurance
-            "saveItemInHands": 1 // If 1, item in hand at time of death will saved. 0 = will not saved
+            "saveItemInHands": 1 // If 1, item in hand at time of death will saved. 0 = will not saved, timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer must be 0 that this option will work
         },
         {
             "id": "start",
