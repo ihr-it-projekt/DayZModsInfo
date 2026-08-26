@@ -10,7 +10,8 @@ Gear config is located in the `GearSets` subdirectory under your global config f
 ````json lines
 {
   "uniqueName": "Chernogorsk", // The name of the dealer point, file name must be the same
-  "version": "6", // never change this, internal version number
+  "version": "7", // never change this, internal version number
+  "displayName": "Cars for everyone", // This name will be ingame displayed at trader point
   "playerCanSellCars": 0, // If you want to allow the player to sell cars, set this value to 1 otherwise to 0
   "playerCanEnterShowRoom": 1, // If you want to allow the player to enter the showroom, set this value to 1 otherwise to 0
   "playerCanBuyCars": 1, // If you want to allow the player to buy cars, set this value to 1 otherwise to 0
