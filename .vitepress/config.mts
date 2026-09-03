@@ -178,6 +178,7 @@ export default defineConfig({
                   { text: 'NPCGearConfig', link: '/GlobalConfigs/NPCGearConfig.md' },
                   { text: 'Premium', link: '/GlobalConfigs/Premium.md' },
                   { text: 'PremiumConfig', link: '/GlobalConfigs/PremiumConfig.md' },
+                  { text: 'Premium Tip4ServApiConfig', link: '/GlobalConfigs/Tip4ServApiConfig.md' },
                   { text: 'TBKeyBindsConfig', link: '/GlobalConfigs/TBKeyBindsConfig.md' },
                   { text: 'VehicleSpawnConfig', link: '/GlobalConfigs/VehicleSpawnConfig.md' },
                   { text: 'How to enable other mods to use reputation', link: '/GlobalConfigs/ReputationSystem/Index.md' },
