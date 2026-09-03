@@ -12,6 +12,8 @@ Then you will get an API token. You need to add this token to the config file.
 Do not avoid agains Bohemia Interactive monetized DayZ server rules by using premium functions of my mod. By using this API you agree to the terms of service of Bohemia Interactive.
 :::
 
+I recommend to enable logging for premium api in [Logger](Logger.md) 
+
 ````json lines
 {
     "enableAPI": 1, // 0 = off | 1 = on, your server requests Tip4Serv every X minutes to check if someone gave you a tip.
