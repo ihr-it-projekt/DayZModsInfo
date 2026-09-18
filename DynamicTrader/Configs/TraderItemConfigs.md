@@ -28,6 +28,7 @@ Example `AK74.json`:
     "premiumPriceReduce": 0, // Reduce the buy price for premium players
     "maxCountThatPlayerCanBuyAsAttachment": 1, // If this trader type is added as an attachment to another item, this defines the max count that player can buy
     "maxCountThatPlayerCanBuyAsOptionalAttachment": 1, // If this trader type is added as an optional attachment to another item, this defines the max count that player can buy
+    "maxBuyCount": 20, // Max items that can player buy in one transaction
     "enablePoints": 1, // Enable points for this item. If 0, reputation system is not relevant for this item
     "minPointsNeededForSell": 10, // Minimum points needed to sell the item, is by default the lowest int value in DayZ
     "minPointsNeededForBuy": 1, // Minimum points needed to buy the item, is by default the lowest int value in DayZ
