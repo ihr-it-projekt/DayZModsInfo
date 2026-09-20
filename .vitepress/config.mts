@@ -78,15 +78,6 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'CarLookSystem', link: '/TBCarLookSystem/Readme.md', collapsed: true, items: [
-                  { text: 'GeneralConfig', link: '/TBCarLookSystem/Configs/GeneralConfig.md' },
-                  { text: 'LoggerConfig', link: '/TBCarLookSystem/Configs/LoggerConfig.md' },
-                  { text: 'PackVehicleConfig', link: '/TBCarLookSystem/Configs/PackVehicleConfig.md' },
-                  { text: 'RaidVehicleConfig', link: '/TBCarLookSystem/Configs/RaidVehicleConfig.md' },
-                  { text: 'ShortCircuitVehicleConfig', link: '/TBCarLookSystem/Configs/ShortCircuitVehicleConfig.md' },
-                ]
-              },
-              {
                 text: 'Carry', link: '/Carry/Readme.md', collapsed: true, items: [
                   {
                     text: 'Configs', collapsed: true, items: [
@@ -284,6 +275,15 @@ export default defineConfig({
                       { text: 'ScratchCardConfig', link: '/TBSurvivorLuck/Configs/ScratchCardConfig.md' },
                     ]
                   }
+                ]
+              },
+              {
+                text: 'VehicleLockSystem', link: '/TBVehicleLockSystem/Readme.md', collapsed: true, items: [
+                  { text: 'GeneralConfig', link: '/TBVehicleLockSystem/Configs/GeneralConfig.md' },
+                  { text: 'LoggerConfig', link: '/TBVehicleLockSystem/Configs/LoggerConfig.md' },
+                  { text: 'PackVehicleConfig', link: '/TBVehicleLockSystem/Configs/PackVehicleConfig.md' },
+                  { text: 'RaidVehicleConfig', link: '/TBVehicleLockSystem/Configs/RaidVehicleConfig.md' },
+                  { text: 'ShortCircuitVehicleConfig', link: '/TBVehicleLockSystem/Configs/ShortCircuitVehicleConfig.md' },
                 ]
               },
               {

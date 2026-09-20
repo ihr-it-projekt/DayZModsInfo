@@ -20,7 +20,7 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
       "dynamicDealer": 0, // 0 = off 1 = on | is admin in dynamic trader
       "survivorLuck": 0, // 0 = off 1 = on | is admin for survivor luck mod 
       "staticLightsAdmin": 0, // 0 = off 1 = on | is admin in static lights
-      "carLockSystem": 0, // 0 = off 1 = on | is admin in car lock system (currenty unused)
+      "vehicleLockSystem": 0, // 0 = off 1 = on | is admin in car lock system (currenty unused)
       "notes": "This field can be used for any note" // Free text field, to for example a admin name
     },
     "7656119813296317725": {
@@ -37,7 +37,7 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
       "dynamicDealer": 1,
       "survivorLuck": 1,
       "staticLightsAdmin": 1,
-      "carLockSystem": 1,
+      "vehicleLockSystem": 1,
       "notes": "This field can be used for any note"
     }
   }

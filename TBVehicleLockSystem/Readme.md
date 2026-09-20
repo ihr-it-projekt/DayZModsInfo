@@ -1,8 +1,8 @@
-# TBCarLookSystem
+# TBVehicleLockSystem
 
-![TBCarLookSystem](./Images/TBCarLookSystem.jpeg)
+![TBVehicleLockSystem](./Images/TBVehicleLockSystem.jpeg)
 
-TBCarLookSystem is a vehicle ownership, anti-theft, and vehicle-management mod. It lets players claim, lock, share, and upgrade vehicles, gives raiders ways to break in, and gives admins full oversight and audit logging.
+TBVehicleLockSystem is a vehicle ownership, anti-theft, and vehicle-management mod. It lets players claim, lock, share, and upgrade vehicles, gives raiders ways to break in, and gives admins full oversight and audit logging.
 
 ## Features
 - **Ownership & access** - claim a vehicle, transfer ownership, and manage key access for individual players or whole groups.
@@ -14,10 +14,10 @@ TBCarLookSystem is a vehicle ownership, anti-theft, and vehicle-management mod. 
 - **Discord & in-game logging** - separate log channels for General, Raid Actions, Admin, and Key actions.
 - **Admin oversight** - admins can remove ownership and audit key-access and ownership changes.
 
-Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBCarLookSystem)
+Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBVehicleLockSystem)
 
 ## Shop Link
-https://www.themodbase.com/mods/TBCarLookSystem
+https://www.themodbase.com/mods/TBVehicleLockSystem
 
 ## Support
 
