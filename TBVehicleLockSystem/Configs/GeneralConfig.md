@@ -21,7 +21,13 @@
                     "price": 5000,
                     "currencyType": "default"
                 }
-            ]
+            ],
+			"disabledVehicleTypes": [ // Mentioned vehicle type are not able to buy this extension
+				"Example*", // means all vehicles types thats starts with "Example"
+                "ExampleCarType", // means this exact vehicle type
+                "*CarType" // means all vehicles types thats ends with "CarType"
+                "*Car*" // means all vehicles types thats contains "Car"
+			]
         },
         {
             "id": "DISCORD_RAID_ALERT", // DO NOT CHANGE
@@ -34,7 +40,13 @@
                     "price": 4000, // The price of the extension for this vehicle type
                     "currencyType": "default" // The currency type of the extension for this vehicle type
                 }
-            ]
+            ],
+			"disabledVehicleTypes": [ // Mentioned vehicle type are not able to buy this extension
+				"Example*", // means all vehicles types thats starts with "Example"
+                "ExampleCarType", // means this exact vehicle type
+                "*CarType" // means all vehicles types thats ends with "CarType"
+                "*Car*" // means all vehicles types thats contains "Car"
+			]
         },
         {
             "id": "DISCORD_SHORT_CIRCUIT_ALERT", // DO NOT CHANGE
@@ -47,7 +59,13 @@
                     "price": 4000, // The price of the extension for this vehicle type
                     "currencyType": "default" // The currency type of the extension for this vehicle type
                 }
-            ]
+            ],
+			"disabledVehicleTypes": [ // Mentioned vehicle type are not able to buy this extension
+				"Example*", // means all vehicles types thats starts with "Example"
+                "ExampleCarType", // means this exact vehicle type
+                "*CarType" // means all vehicles types thats ends with "CarType"
+                "*Car*" // means all vehicles types thats contains "Car"
+			]
         },
         {
             "id": "PACK_VEHICLE", // DO NOT CHANGE
@@ -60,7 +78,13 @@
                     "price": 4000, // The price of the extension for this vehicle type
                     "currencyType": "default" // The currency type of the extension for this vehicle type
                 }
-            ]
+            ],
+			"disabledVehicleTypes": [ // Mentioned vehicle type are not able to buy this extension
+				"Example*", // means all vehicles types thats starts with "Example"
+                "ExampleCarType", // means this exact vehicle type
+                "*CarType" // means all vehicles types thats ends with "CarType"
+                "*Car*" // means all vehicles types thats contains "Car"
+			]
         }
     ]
 }
