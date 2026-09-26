@@ -3,9 +3,9 @@
 ```json lines
 {
     "version": "2", // Internal version number - do not modify!
-    "canPackVehicle": 1, // If 1, player can pack the car
-    "vehicleCargoMustBeEmpty": 1, // If 1, vehicle cargo must be empty to pack the car
-	"handNeedsToBeEmpty": 1, // If 1, hand needs to be empty to pack the car
+    "canPackVehicle": 1, // 0 = off, 1 = on. If 1, player can pack the car
+    "vehicleCargoMustBeEmpty": 1, // 0 = off, 1 = on. If 1, vehicle cargo must be empty to pack the car
+	"handNeedsToBeEmpty": 1, // 0 = off, 1 = on. If 1, hand needs to be empty to pack the car
     "packTimeInSeconds": 60, // The time in seconds it takes to pack the car
     "unpackTimeInSeconds": 60, // The time in seconds it takes to unpack the car
     "unpackBlacklistAreas": [
