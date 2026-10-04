@@ -293,6 +293,7 @@ export default defineConfig({
                       { text: 'Index', link: '/TBWarParty/Configs/Index.md' },
                       { text: 'ArenaBuildingConfig', link: '/TBWarParty/Configs/ArenaBuildingConfig.md' },
                       { text: 'ArenaMatchConfigs', link: '/TBWarParty/Configs/ArenaMatchConfigs.md' },
+                      { text: 'BotConfig', link: '/TBWarParty/Configs/BotConfig.md' },
                       { text: 'GearSets', link: '/TBWarParty/Configs/GearSets.md' },
                       { text: 'LobbyEnterPoints', link: '/TBWarParty/Configs/LobbyEnterPoints.md' },
                       { text: 'Logger', link: '/TBWarParty/Configs/Logger.md' },
