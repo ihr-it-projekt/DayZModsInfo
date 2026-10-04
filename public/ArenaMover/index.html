@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Mover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #1a1a1a;
+            color: #fcedb4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #2d2d2d;
+            border-bottom: 1px solid #404040;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 40px 16px;
+        }
+
+        .container {
+            background: #2d2d2d;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            max-width: 720px;
+            width: 100%;
+            border: 1px solid #404040;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            margin-bottom: 30px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .upload-area {
+            border: 2px dashed #555;
+            border-radius: 8px;
+            padding: 32px;
+            text-align: center;
+            background: #252525;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: #2a2a35;
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .upload-text {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .upload-hint {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .section {
+            margin-top: 20px;
+            padding: 18px;
+            background: #252525;
+            border-radius: 8px;
+            border: 1px solid #404040;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .file-item {
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+            font-size: 0.9em;
+            flex-wrap: wrap;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-name {
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .file-type {
+            color: #10b981;
+        }
+
+        .file-type.error {
+            color: #ef4444;
+        }
+
+        .file-detail {
+            width: 100%;
+            opacity: 0.8;
+        }
+
+        .remove-file {
+            margin-left: auto;
+            background: none;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 6px 16px;
+            font-size: 0.9em;
+        }
+
+        .info-grid span:nth-child(odd) {
+            font-weight: 600;
+        }
+
+        .mode-switch {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .mode-switch label {
+            cursor: pointer;
+        }
+
+        .option-group {
+            margin-bottom: 15px;
+        }
+
+        .option-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .option-input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #555;
+            border-radius: 5px;
+            font-size: 0.9em;
+            background: #1a1a1a;
+            color: #fcedb4;
+        }
+
+        .option-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .option-input.invalid {
+            border-color: #ef4444;
+        }
+
+        .option-hint {
+            font-size: 0.8em;
+            margin-top: 5px;
+            opacity: 0.8;
+            line-height: 1.4;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .input-row .option-input {
+            flex: 1;
+        }
+
+        .small-button {
+            padding: 8px 12px;
+            background: #404040;
+            color: #fcedb4;
+            border: 1px solid #555;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .small-button:hover {
+            border-color: #667eea;
+        }
+
+        .small-button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .message {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .message.error {
+            background: #3a1f1f;
+            border: 1px solid #ef4444;
+        }
+
+        .message.success {
+            background: #1f3a2c;
+            border: 1px solid #10b981;
+        }
+
+        .notes {
+            margin-top: 24px;
+            font-size: 0.85em;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes li {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 16px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .input-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-content">
+        <div class="logo">
+            <img src="https://doc.themodbase.com/logo.png" alt="TheModBase"/>
+        </div>
+    </div>
+</div>
+<div class="main-content">
+    <div class="container">
+        <h1>🏟️ Arena Mover</h1>
+        <p class="subtitle">
+            Move a TB War Party arena to another position. All loaded files are moved by the same offset, so buildings and spawn points stay together.
+            Everything happens in your browser, no file is uploaded anywhere.
+        </p>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Click to select or drag &amp; drop</div>
+            <div class="upload-hint">
+                DayZ Editor <b>.dze</b> files (binary or JSON),<br>
+                <b>ArenaBuildingConfigs</b> .json and <b>ArenaMatchConfigs</b> .json (spawn points)
+            </div>
+            <input type="file" id="fileInput" accept=".dze,.json" multiple/>
+        </div>
+
+        <div class="section hidden" id="fileSection">
+            <h2>Loaded files</h2>
+            <div id="fileList"></div>
+        </div>
+
+        <div class="section hidden" id="arenaSection">
+            <h2>Arena</h2>
+            <div class="info-grid" id="arenaInfo"></div>
+        </div>
+
+        <div class="section hidden" id="moveSection">
+            <h2>Move</h2>
+            <div class="mode-switch">
+                <label><input type="radio" name="mode" value="points" checked> From point → to point</label>
+                <label><input type="radio" name="mode" value="offset"> Offset</label>
+            </div>
+
+            <div id="pointsMode">
+                <div class="option-group">
+                    <label class="option-label" for="fromPoint">From (a point of the arena)</label>
+                    <div class="input-row">
+                        <input class="option-input" id="fromPoint" placeholder="12367.65, 2433.86, 12731.95">
+                        <button class="small-button" id="useCenterButton" title="Center of all buildings, height of the lowest spawn point (or lowest building)">Arena center</button>
+                    </div>
+                    <div class="option-hint">
+                        "Arena center" uses the middle of all buildings and the height of the lowest spawn point, which is the arena floor.
+                        Or stand on the arena floor in game and paste your position (X, Y, Z), e.g. from VPP Admin Tools.
+                    </div>
+                </div>
+                <div class="option-group">
+                    <label class="option-label" for="toPoint">To (target position)</label>
+                    <input class="option-input" id="toPoint" placeholder="9243.155273, 248.937088, 11243.206055">
+                    <div class="option-hint">Stand at the target position in game (on the ground) and paste your position (X, Y, Z).</div>
+                </div>
+                <div class="option-group">
+                    <label class="option-label" for="extraHeight">Extra height (m)</label>
+                    <input class="option-input" id="extraHeight" type="number" step="0.1" value="1">
+                    <div class="option-hint">Lifts the arena above the target position, so uneven ground does not poke through the floor.</div>
+                </div>
+            </div>
+
+            <div id="offsetMode" class="hidden">
+                <div class="option-group">
+                    <label class="option-label" for="offsetValue">Offset (X, Y, Z)</label>
+                    <input class="option-input" id="offsetValue" placeholder="-3124.5, -2183.92, -1488.74">
+                    <div class="option-hint">Added to every position. Y is the height.</div>
+                </div>
+            </div>
+
+            <div class="info-grid" id="resultInfo"></div>
+
+            <button class="button" id="moveButton" disabled>Move &amp; download</button>
+        </div>
+
+        <div id="message"></div>
+
+        <div class="notes">
+            <b>Notes</b>
+            <ul>
+                <li>Load the arena buildings and the ArenaMatchConfig together, then the spawn points move with the buildings.</li>
+                <li>Hidden (deleted) map objects in .dze files are not moved, they belong to the map.</li>
+                <li>The downloaded files keep their names. Make a backup of your files before you replace them.</li>
+                <li>Your browser may ask to allow downloading multiple files.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ---------- file types ----------
+
+    const FILE_TYPES = {
+        DZE_BINARY: 'DayZ Editor .dze (binary)',
+        DZE_JSON: 'DayZ Editor .dze (JSON)',
+        BUILDING_CONFIG: 'ArenaBuildingConfig',
+        MATCH_CONFIG: 'ArenaMatchConfig (spawn points)'
+    };
+
+    const BIN_CHECK = 'EditorBinned';
+
+    // ---------- binary .dze (Dabs DayZ Editor "EditorBinned", versions 1 - 8) ----------
+
+    class BinaryReader {
+        constructor(buffer) {
+            this.view = new DataView(buffer);
+            this.bytes = new Uint8Array(buffer);
+            this.offset = 0;
+        }
+
+        ensure(size) {
+            if (this.offset + size > this.bytes.length) throw new Error('Unexpected end of file at byte ' + this.offset);
+        }
+
+        int() {
+            this.ensure(4);
+            const value = this.view.getInt32(this.offset, true);
+            this.offset += 4;
+            return value;
+        }
+
+        float() {
+            this.ensure(4);
+            const value = this.view.getFloat32(this.offset, true);
+            this.offset += 4;
+            return value;
+        }
+
+        string() {
+            const length = this.int();
+            if (length < 0) throw new Error('Invalid string length at byte ' + (this.offset - 4));
+            this.ensure(length);
+            const value = new TextDecoder().decode(this.bytes.subarray(this.offset, this.offset + length));
+            this.offset += length;
+            return value;
+        }
+
+        // vectors are written as an array: element count (3) + 3 floats
+        vector() {
+            const count = this.int();
+            if (count !== 3) throw new Error('Unexpected vector size ' + count + ' at byte ' + (this.offset - 4));
+            const offset = this.offset;
+            return {x: this.float(), y: this.float(), z: this.float(), offset: offset};
+        }
+    }
+
+    // SerializableParamN<T1, T2, ...>: every template argument is written in order
+    function readSerializableParam(reader, typeName) {
+        const match = typeName.match(/<(.*)>/);
+        if (!match) throw new Error('Unsupported object parameter type "' + typeName + '"');
+
+        for (let argument of match[1].split(',')) {
+            argument = argument.trim().toLowerCase();
+            if (argument === 'int' || argument === 'float' || argument === 'bool') reader.int();
+            else if (argument === 'string') reader.string();
+            else if (argument === 'vector') reader.vector();
+            else throw new Error('Unsupported object parameter type "' + typeName + '"');
+        }
+    }
+
+    function readEditorObject(reader, version, positions, isWorldObject) {
+        const type = reader.string();
+        reader.string(); // display name
+        const position = reader.vector();
+        reader.vector(); // orientation
+        reader.float(); // scale
+        reader.int(); // flags
+
+        // attached objects sit in slots of their parent, only world objects get moved
+        if (isWorldObject) positions.push(Object.assign(position, {type: type}));
+        if (version < 2) return;
+
+        if (version < 8) {
+            const attachments = reader.int();
+            for (let i = 0; i < attachments; i++) reader.string();
+        }
+
+        const parameters = reader.int();
+        for (let i = 0; i < parameters; i++) {
+            reader.string(); // key
+            readSerializableParam(reader, reader.string());
+        }
+
+        if (version < 3) return;
+        for (let i = 0; i < 4; i++) reader.int(); // editor only, locked, allow damage, simulate
+        if (version < 5) return;
+        reader.string(); // model
+        if (version < 8) return;
+
+        const attachmentMapCount = reader.int();
+        for (let i = 0; i < attachmentMapCount; i++) {
+            reader.int(); // slot id
+            readEditorObject(reader, version, positions, false);
+        }
+    }
+
+    function isBinaryDze(buffer) {
+        try {
+            return new BinaryReader(buffer).string() === BIN_CHECK;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    function parseBinaryDze(buffer) {
+        const reader = new BinaryReader(buffer);
+        if (reader.string() !== BIN_CHECK) throw new Error('Not a binary .dze file');
+
+        const version = reader.int();
+        const mapName = reader.string();
+        const positions = [];
+        const camera = reader.vector();
+
+        if (version >= 7) {
+            reader.string(); // author id
+            const credits = reader.int();
+            for (let i = 0; i < credits; i++) reader.string();
+            reader.int(); // last modified
+            reader.int(); // creation date
+        }
+
+        const objectCount = reader.int();
+        for (let i = 0; i < objectCount; i++) readEditorObject(reader, version, positions, true);
+
+        // hidden map objects stay where the map has them
+        const hiddenCount = reader.int();
+        for (let i = 0; i < hiddenCount; i++) {
+            if (version !== 6 && version !== 7) reader.string();
+            reader.vector();
+            reader.int();
+            if (version >= 6) reader.string();
+        }
+
+        const extraPositions = [camera];
+        if (version > 5) {
+            const cameraTracks = reader.int();
+            for (let i = 0; i < cameraTracks; i++) {
+                readEditorObject(reader, version, extraPositions, true);
+                reader.float(); // time
+            }
+        }
+
+        if (reader.offset !== reader.bytes.length) {
+            throw new Error('File could not be read completely (' + reader.offset + ' of ' + reader.bytes.length + ' bytes). Unknown .dze format version ' + version + '.');
+        }
+
+        return {
+            version: version,
+            mapName: mapName,
+            hiddenCount: hiddenCount,
+            buildingPositions: positions.map(p => [p.x, p.y, p.z]),
+            write: function (offset) {
+                const output = buffer.slice(0);
+                const view = new DataView(output);
+                for (const position of positions.concat(extraPositions)) {
+                    view.setFloat32(position.offset, position.x + offset[0], true);
+                    view.setFloat32(position.offset + 4, position.y + offset[1], true);
+                    view.setFloat32(position.offset + 8, position.z + offset[2], true);
+                }
+                return new Blob([output], {type: 'application/octet-stream'});
+            }
+        };
+    }
+
+    // ---------- JSON files ----------
+
+    function isVector(value) {
+        return Array.isArray(value) && value.length === 3 && value.every(v => typeof v === 'number');
+    }
+
+    function moveVector(vector, offset) {
+        return [vector[0] + offset[0], vector[1] + offset[1], vector[2] + offset[2]];
+    }
+
+    function jsonBlob(data) {
+        return new Blob([JSON.stringify(data, null, 4)], {type: 'application/json'});
+    }
+
+    function parseJsonFile(text) {
+        let data;
+        try {
+            data = JSON.parse(text);
+        } catch (e) {
+            throw new Error('Not a valid JSON file: ' + e.message);
+        }
+
+        // DayZ Editor .dze exported as JSON
+        if (Array.isArray(data.EditorObjects)) {
+            const objects = data.EditorObjects.filter(o => o && isVector(o.Position));
+            return {
+                type: FILE_TYPES.DZE_JSON,
+                buildingPositions: objects.map(o => o.Position),
+                write: function (offset) {
+                    const copy = JSON.parse(text);
+                    for (const object of copy.EditorObjects) {
+                        if (object && isVector(object.Position)) object.Position = moveVector(object.Position, offset);
+                    }
+                    if (isVector(copy.CameraPosition)) copy.CameraPosition = moveVector(copy.CameraPosition, offset);
+                    if (Array.isArray(copy.CameraTracks)) {
+                        for (const track of copy.CameraTracks) {
+                            if (track && isVector(track.Position)) track.Position = moveVector(track.Position, offset);
+                        }
+                    }
+                    return jsonBlob(copy);
+                }
+            };
+        }
+
+        // TB War Party ArenaBuildingConfigs
+        if (Array.isArray(data.m_SceneObjects)) {
+            const objects = data.m_SceneObjects.filter(o => o && isVector(o.param2));
+            return {
+                type: FILE_TYPES.BUILDING_CONFIG,
+                buildingPositions: objects.map(o => o.param2),
+                write: function (offset) {
+                    const copy = JSON.parse(text);
+                    for (const object of copy.m_SceneObjects) {
+                        if (object && isVector(object.param2)) object.param2 = moveVector(object.param2, offset);
+                    }
+                    return jsonBlob(copy);
+                }
+            };
+        }
+
+        // TB War Party ArenaMatchConfigs
+        if (data.teamSpawnZones && typeof data.teamSpawnZones === 'object') {
+            const spawnPositions = [];
+            for (const zones of Object.values(data.teamSpawnZones)) {
+                if (!Array.isArray(zones)) continue;
+                for (const zone of zones) {
+                    if (zone && isVector(zone.position)) spawnPositions.push(zone.position);
+                }
+            }
+            return {
+                type: FILE_TYPES.MATCH_CONFIG,
+                spawnPositions: spawnPositions,
+                write: function (offset) {
+                    const copy = JSON.parse(text);
+                    for (const zones of Object.values(copy.teamSpawnZones)) {
+                        if (!Array.isArray(zones)) continue;
+                        for (const zone of zones) {
+                            if (zone && isVector(zone.position)) zone.position = moveVector(zone.position, offset);
+                        }
+                    }
+                    return jsonBlob(copy);
+                }
+            };
+        }
+
+        throw new Error('Unknown JSON format. Expected a DayZ Editor .dze, an ArenaBuildingConfig or an ArenaMatchConfig.');
+    }
+
+    // ---------- state and UI ----------
+
+    const loadedFiles = [];
+
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+    const fromPointInput = document.getElementById('fromPoint');
+    const toPointInput = document.getElementById('toPoint');
+    const extraHeightInput = document.getElementById('extraHeight');
+    const offsetInput = document.getElementById('offsetValue');
+    const moveButton = document.getElementById('moveButton');
+
+    uploadArea.addEventListener('click', () => fileInput.click());
+    uploadArea.addEventListener('dragover', event => {
+        event.preventDefault();
+        uploadArea.classList.add('dragover');
+    });
+    uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+    uploadArea.addEventListener('drop', event => {
+        event.preventDefault();
+        uploadArea.classList.remove('dragover');
+        addFiles(event.dataTransfer.files);
+    });
+    fileInput.addEventListener('change', () => {
+        addFiles(fileInput.files);
+        fileInput.value = '';
+    });
+
+    document.querySelectorAll('input[name="mode"]').forEach(radio => radio.addEventListener('change', () => {
+        const isOffsetMode = getMode() === 'offset';
+        document.getElementById('pointsMode').classList.toggle('hidden', isOffsetMode);
+        document.getElementById('offsetMode').classList.toggle('hidden', !isOffsetMode);
+        updateResult();
+    }));
+
+    [fromPointInput, toPointInput, extraHeightInput, offsetInput].forEach(input => input.addEventListener('input', updateResult));
+    document.getElementById('useCenterButton').addEventListener('click', useArenaCenter);
+    moveButton.addEventListener('click', moveAndDownload);
+
+    async function addFiles(files) {
+        showMessage('');
+        for (const file of files) {
+            const entry = {name: file.name, error: null, parsed: null};
+            try {
+                const buffer = await file.arrayBuffer();
+                if (isBinaryDze(buffer)) {
+                    entry.parsed = parseBinaryDze(buffer);
+                    entry.parsed.type = FILE_TYPES.DZE_BINARY;
+                } else {
+                    entry.parsed = parseJsonFile(new TextDecoder().decode(buffer));
+                }
+            } catch (e) {
+                entry.error = e.message;
+            }
+
+            const existing = loadedFiles.findIndex(f => f.name === file.name);
+            if (existing !== -1) loadedFiles.splice(existing, 1);
+            loadedFiles.push(entry);
+        }
+        render();
+    }
+
+    function removeFile(index) {
+        loadedFiles.splice(index, 1);
+        render();
+    }
+
+    function validFiles() {
+        return loadedFiles.filter(f => f.parsed);
+    }
+
+    function allBuildingPositions() {
+        return validFiles().flatMap(f => f.parsed.buildingPositions || []);
+    }
+
+    function allSpawnPositions() {
+        return validFiles().flatMap(f => f.parsed.spawnPositions || []);
+    }
+
+    function getBounds(positions) {
+        if (positions.length === 0) return null;
+        const min = [Infinity, Infinity, Infinity];
+        const max = [-Infinity, -Infinity, -Infinity];
+        for (const position of positions) {
+            for (let i = 0; i < 3; i++) {
+                min[i] = Math.min(min[i], position[i]);
+                max[i] = Math.max(max[i], position[i]);
+            }
+        }
+        return {min: min, max: max};
+    }
+
+    function formatNumber(value) {
+        return value.toFixed(2);
+    }
+
+    function formatVector(vector) {
+        return vector.map(formatNumber).join(', ');
+    }
+
+    function formatBounds(bounds) {
+        return 'X ' + formatNumber(bounds.min[0]) + ' … ' + formatNumber(bounds.max[0])
+            + ' | Y ' + formatNumber(bounds.min[1]) + ' … ' + formatNumber(bounds.max[1])
+            + ' | Z ' + formatNumber(bounds.min[2]) + ' … ' + formatNumber(bounds.max[2]);
+    }
+
+    function render() {
+        const fileList = document.getElementById('fileList');
+        fileList.innerHTML = '';
+
+        loadedFiles.forEach((file, index) => {
+            const item = document.createElement('div');
+            item.className = 'file-item';
+
+            const name = document.createElement('span');
+            name.className = 'file-name';
+            name.textContent = file.name;
+
+            const type = document.createElement('span');
+            type.className = 'file-type' + (file.error ? ' error' : '');
+            type.textContent = file.error ? '✖ not supported' : '✔ ' + file.parsed.type;
+
+            const remove = document.createElement('button');
+            remove.className = 'remove-file';
+            remove.textContent = '✕';
+            remove.title = 'Remove';
+            remove.addEventListener('click', () => removeFile(index));
+
+            const detail = document.createElement('span');
+            detail.className = 'file-detail';
+            if (file.error) {
+                detail.textContent = file.error;
+            } else if (file.parsed.spawnPositions) {
+                detail.textContent = file.parsed.spawnPositions.length + ' spawn points';
+            } else {
+                let text = file.parsed.buildingPositions.length + ' buildings';
+                if (file.parsed.version !== undefined) text += ', format version ' + file.parsed.version + ', map ' + file.parsed.mapName;
+                if (file.parsed.hiddenCount) text += ', ' + file.parsed.hiddenCount + ' hidden map objects (not moved)';
+                detail.textContent = text;
+            }
+
+            item.append(name, type, remove, detail);
+            fileList.appendChild(item);
+        });
+
+        document.getElementById('fileSection').classList.toggle('hidden', loadedFiles.length === 0);
+
+        const hasValidFiles = validFiles().length > 0;
+        document.getElementById('arenaSection').classList.toggle('hidden', !hasValidFiles);
+        document.getElementById('moveSection').classList.toggle('hidden', !hasValidFiles);
+
+        const rows = [];
+        const buildingBounds = getBounds(allBuildingPositions());
+        const spawnBounds = getBounds(allSpawnPositions());
+        if (buildingBounds) {
+            rows.push(['Buildings', allBuildingPositions().length]);
+            rows.push(['Building area', formatBounds(buildingBounds)]);
+            rows.push(['Size', formatNumber(buildingBounds.max[0] - buildingBounds.min[0]) + ' m × ' + formatNumber(buildingBounds.max[2] - buildingBounds.min[2]) + ' m']);
+        }
+        if (spawnBounds) {
+            rows.push(['Spawn points', allSpawnPositions().length]);
+            rows.push(['Spawn heights', formatNumber(spawnBounds.min[1]) + ' … ' + formatNumber(spawnBounds.max[1])]);
+        }
+        fillGrid(document.getElementById('arenaInfo'), rows);
+
+        document.getElementById('useCenterButton').disabled = !buildingBounds && !spawnBounds;
+        updateResult();
+    }
+
+    function fillGrid(grid, rows) {
+        grid.innerHTML = '';
+        for (const [label, value] of rows) {
+            const labelElement = document.createElement('span');
+            labelElement.textContent = label;
+            const valueElement = document.createElement('span');
+            valueElement.textContent = value;
+            grid.append(labelElement, valueElement);
+        }
+    }
+
+    // center of all buildings at the height of the lowest spawn point (the arena floor)
+    function useArenaCenter() {
+        const buildingBounds = getBounds(allBuildingPositions());
+        const spawnBounds = getBounds(allSpawnPositions());
+        const bounds = buildingBounds || spawnBounds;
+        if (!bounds) return;
+
+        const height = spawnBounds ? spawnBounds.min[1] : bounds.min[1];
+        fromPointInput.value = formatVector([(bounds.min[0] + bounds.max[0]) / 2, height, (bounds.min[2] + bounds.max[2]) / 2]);
+        updateResult();
+    }
+
+    // accepts "x, y, z", "<x, y, z>", "x y z" ...
+    function parseVector(text) {
+        const numbers = (text.match(/-?\d+(?:\.\d+)?(?:e-?\d+)?/gi) || []).map(Number);
+        return numbers.length === 3 ? numbers : null;
+    }
+
+    function getMode() {
+        return document.querySelector('input[name="mode"]:checked').value;
+    }
+
+    function getOffset() {
+        if (getMode() === 'offset') return parseVector(offsetInput.value);
+
+        const from = parseVector(fromPointInput.value);
+        const to = parseVector(toPointInput.value);
+        const extraHeight = parseFloat(extraHeightInput.value) || 0;
+        if (!from || !to) return null;
+
+        return [to[0] - from[0], to[1] + extraHeight - from[1], to[2] - from[2]];
+    }
+
+    function markInput(input) {
+        input.classList.toggle('invalid', input.value.trim() !== '' && !parseVector(input.value));
+    }
+
+    function updateResult() {
+        [fromPointInput, toPointInput, offsetInput].forEach(markInput);
+
+        const offset = getOffset();
+        const rows = [];
+        if (offset) {
+            rows.push(['Offset', formatVector(offset)]);
+            const movedBuildings = getBounds(allBuildingPositions().map(p => moveVector(p, offset)));
+            const movedSpawns = getBounds(allSpawnPositions().map(p => moveVector(p, offset)));
+            if (movedBuildings) rows.push(['New building area', formatBounds(movedBuildings)]);
+            if (movedSpawns) rows.push(['New spawn heights', formatNumber(movedSpawns.min[1]) + ' … ' + formatNumber(movedSpawns.max[1])]);
+        }
+
+        const resultInfo = document.getElementById('resultInfo');
+        fillGrid(resultInfo, rows);
+        resultInfo.style.marginBottom = rows.length ? '4px' : '0';
+        moveButton.disabled = !offset || validFiles().length === 0;
+    }
+
+    function download(blob, fileName) {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    async function moveAndDownload() {
+        const offset = getOffset();
+        if (!offset) return;
+
+        try {
+            const files = validFiles();
+            for (const file of files) {
+                download(file.parsed.write(offset), file.name);
+                // a short pause keeps browsers from dropping some of the downloads
+                await new Promise(resolve => setTimeout(resolve, 300));
+            }
+            showMessage('Moved ' + files.length + ' file(s) by ' + formatVector(offset) + '. Check your download folder.', 'success');
+        } catch (e) {
+            showMessage('Moving failed: ' + e.message, 'error');
+        }
+    }
+
+    function showMessage(text, type) {
+        const message = document.getElementById('message');
+        message.innerHTML = '';
+        if (!text) return;
+
+        const element = document.createElement('div');
+        element.className = 'message ' + type;
+        element.textContent = text;
+        message.appendChild(element);
+    }
+</script>
+</body>
+</html>

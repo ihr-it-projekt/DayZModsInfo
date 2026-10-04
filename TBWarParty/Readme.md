@@ -20,6 +20,10 @@ https://youtu.be/KUnfQ191dW4
 
 ## Tools
 
+### Arena Mover
+
+- Move an arena (`.dze` or ArenaBuildingConfig together with its spawn points) to another position: [Readme.md](Tools/ArenaMover/Readme.md)
+
 ### Arena Building Converter
 
 - `.c` file to WarParty format converter: [Readme.md](Tools/Converter/CConverter/Readme.md)
@@ -36,3 +40,12 @@ See also [here](../The%20Mod%20Base/README.md)
 - Config files are created in `YourServerProfilesFolder\TBMods\Config\TBWarParty`.
 - Configure your needs.
 - Start your server again :-)
+
+## Bots (optional)
+
+Match creators can add bots to teams, create pure bot teams or fill free slots with bots. Bots are provided by **DayZ Expansion AI** through the **TBWarParty AI Extension**.
+
+- Install DayZ Expansion AI (with its dependencies) on server and client.
+- Add the `TBWarpartyAIExtensionClient` PBO to your client pack.
+- Add the `TBWarpartyAIExtensionServer` PBO to your server-side pack.
+- Configure the bots in `BotConfig.json`, see [BotConfig.md](Configs/BotConfig.md).

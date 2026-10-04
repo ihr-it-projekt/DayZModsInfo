@@ -9,3 +9,7 @@ When utilizing .dze files, the ArenaBuildingConfig is no longer necessary.
 Update the ArenaMatchConfig by setting the arenaObjectsConfigFile to an empty value like so: "arenaObjectsConfigFile": "".
 You should place the .dze files in the following directory: YourServer\MPMissions\YourMapName\EditorFiles\.
 Simply follow the standard procedure for inserting the files.
+
+## Move an arena to another position
+
+Use the [Arena Mover](../Tools/ArenaMover/Readme.md). It moves the `.dze` file and the spawn points of the ArenaMatchConfig together.
