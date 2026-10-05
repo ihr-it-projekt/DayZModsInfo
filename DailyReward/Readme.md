@@ -21,6 +21,9 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 ## FAQ
 [FAQ.md](FAQ.md)
 
+## Modding / Extending
+[CustomCraftingActions.md](CustomCraftingActions.md) - how to hook a custom crafting action into the "Crafting Count" condition
+
 ## Configurations
 
 See also the [config editor](https://doc.themodbase.com/DailyRewardConfigEditor/TheBusterConfigEditor.zip)

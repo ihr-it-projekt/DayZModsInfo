@@ -26,7 +26,15 @@ You have to create for every level one level condition, You can name it as you w
     },
     "aiKillsRequiredCount": -1, // The ai kills the player must have to get the reward or -1 to disable this condition
     "aiHeadShotKillsRequiredCount": -1, // The ai headshot kills the player must have to get the reward or -1 to disable this condition
-    "version": "7", // Never touch this value. It is needed internally
+    "craftingCountRequiredCount": -1, // The number of crafted items (any type) the player must have to get the reward or -1 to disable this condition. If this condition is enabled, the "craftingCounts" option will be ignored
+    "craftingCounts": { // The crafted item counts (by type) the player must have to get the reward, leave it empty to disable this condition. See CustomCraftingActions.md for the list of built-in types and how to add your own
+        "Rags": 1 // "Crafted Type Name": count required
+    },
+    "fishingCountRequiredCount": -1, // The number of caught fish (any type) the player must have to get the reward or -1 to disable this condition. If this condition is enabled, the "fishingCounts" option will be ignored
+    "fishingCounts": { // The caught fish counts (by type) the player must have to get the reward, leave it empty to disable this condition. Type is the caught fish's item class name
+        "TYPNAME": 1 // "Fish Type Name": count required
+    },
+    "version": "9", // Never touch this value. It is needed internally
     "displayName": "Level 1" // The display name on the level button
 }
 ````
