@@ -33,6 +33,9 @@
                     "price": {
                         "type": "number"
                     },
+                    "currencyType": {
+                        "type": "string"
+                    },
                     "durationInSeconds": {
                         "type": "number"
                     },

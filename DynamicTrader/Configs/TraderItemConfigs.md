@@ -14,6 +14,7 @@ Example `AK74.json`:
     "isPremium": 0, // Only player with premium state can buy this item
     "isStorageItem": 0, // If 1, the item is a storage item
     "ignoreHealth": 0, // If 1, the item health when player sell it will be ignored
+    "sellOnlyFullStack": 0, // If 1, stackable items (e.g. Rags, ammo) can only be sold as a full stack. The required amount is the max stack size of the item (e.g. Rags stack to 3, so the player must sell 3 at once)
     "buyPrice": 1600, // Buy price of item
     "maxBuyPrice": 1600, // Max buy price of item, only relevant when it is a storage item
     "emptyStorageOnServerRestart": 0, // If 1, the storage will be emptied on server restart
@@ -51,7 +52,7 @@ Example `AK74.json`:
     "variations": [ // if you want to add for examle a Tshirt, you can define here the variations of the Tshirt. This value must be the Type name of DayZ
         "ExampleTyp1"
     ],
-    "version": "2" // Never touch this value. It is needed internally
+    "version": "4" // Never touch this value. It is needed internally
 }
 ```
 

@@ -9,7 +9,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
 
 ```json lines
 {
-    "version": "10", // never change this, internal version number
+    "version": "11", // never change this, internal version number
     "isInitialized": 0, // never change this, internal usage
     "maximumHeirsForOneInheritance": 10, // maximum heirs for one inheritance that can player add
     "insuranceCaseWillDeletedAfterSeconds": 86400, 
@@ -24,6 +24,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
         {
             "id": "g8ciyetvox", // this value must be unique to other insurance ids.
             "price": 1000, // price of the insurance
+            "currencyType": "default", // The currency the insurance is paid in, see CurrencyConfig.json. If empty or unknown, "default" is used
             "durationInSeconds": 86400, // duration of the insurance in seconds
             "stayActiveAfterDeath": 0 ,// if 1, the insurance will stay active after death of player
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 1, // if 1, only items that are in cargo and inventory at the moment when player make the insurance will be insured, all others will dropped to the ground. If you enable this option you need to set "storeAllItemsInCargoOfMainItems" to 0
@@ -35,6 +36,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
         {
             "id": "start",
             "price": 0,
+            "currencyType": "default",
             "durationInSeconds": 3600,
             "stayActiveAfterDeath": 0,
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0,
@@ -46,6 +48,7 @@ The combination of `storeAllItemsInCargoOfMainItems` to 1 and `insureOnlyItemsTh
         {
             "id": "4b2dgimf1x",
             "price": 2000,
+            "currencyType": "default",
             "durationInSeconds": 604800,
             "stayActiveAfterDeath": 0,
             "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory": 0,
