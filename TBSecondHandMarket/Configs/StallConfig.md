@@ -3,7 +3,7 @@
 
 ```json lines
 {
-  "version": "4", // Never touch this value. It is needed internally
+  "version": "5", // Never touch this value. It is needed internally
   "maxMarketStallPerUser": 2, // How many market stalls can a player have, -1 = unlimited
   "maxPremiumMarketStallPerUser": 3, // How many market stalls can a premium player have, -1 = unlimited
   "maxMarketStallPerServer": -1, // How many market stalls can be placed on the server, -1 = unlimited
@@ -63,7 +63,9 @@
       "priceForTimeExtension": 100, // Price for time extension, if value is lower than 0, the time extension feature is disabled
       "durationInMinutesForTimeExtension": 60, // Duration in minutes for time extension, if value is lower than 0, the time extension feature is disabled
       "disableVehicleTrading": 1, // 0 = off, 1 = on, if 1 the stall will not allow vehicle trading for non premium players
-      "premiumDisableVehicleTrading": 0 // 0 = off, 1 = on, if 1 the stall will not allow vehicle trading for premium players
+      "premiumDisableVehicleTrading": 0, // 0 = off, 1 = on, if 1 the stall will not allow vehicle trading for premium players
+      "maxOrderCount": 20, // How many purchase orders can be created at this stall, -1 = unlimited (shown at the stall dealer and as "used/max" in the stall menu, ∞ for unlimited)
+      "premiumExtraMaxOrderCount": 10 // How many extra purchase orders premium users can create at this stall, -1 = unlimited for premium users
     },
     {
       "id": "0c5nvonrpm",
@@ -77,7 +79,9 @@
       "priceForTimeExtension": -1,
       "durationInMinutesForTimeExtension": -1,
       "disableVehicleTrading": 1,
-      "premiumDisableVehicleTrading": 0
+      "premiumDisableVehicleTrading": 0,
+      "maxOrderCount": -1,
+      "premiumExtraMaxOrderCount": 0
     },
     {
       "id": "mydcejy2pk",
@@ -91,7 +95,9 @@
       "priceForTimeExtension": -1,
       "durationInMinutesForTimeExtension": -1,
       "disableVehicleTrading": 1,
-      "premiumDisableVehicleTrading": 0
+      "premiumDisableVehicleTrading": 0,
+      "maxOrderCount": -1,
+      "premiumExtraMaxOrderCount": 0
     }
   ]
 }

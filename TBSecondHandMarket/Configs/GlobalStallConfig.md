@@ -3,7 +3,7 @@
 ```json lines
 {
   // Never touch this value. It is needed internally
-  "version": "4",
+  "version": "5",
   // Never touch this value. It is needed internally
   "isInitialized": 1,
   // Price per slot for player, if an item has 5 slots, player needs to pay 50 in case of this value 
@@ -39,6 +39,10 @@
   // The Player can reste the liftime of order manually
   "canResetLifetimeOfOrder": 1,
   // The Player can reste the liftime of offer manually
-  "canResetLifetimeOfOffer": 1
+  "canResetLifetimeOfOffer": 1,
+  // How many purchase orders a player can have at all global stalls together, -1 = unlimited. Shown as "used / max" in the global stall config menu
+  "maxOrdersForPlayer": -1,
+  // How many purchase orders a premium player can have at all global stalls together, -1 = unlimited
+  "maxOrdersForPremiumPlayer": -1
 }
 ```
