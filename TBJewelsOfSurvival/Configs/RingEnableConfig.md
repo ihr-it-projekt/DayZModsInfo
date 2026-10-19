@@ -19,6 +19,9 @@
     "enableTBJOFRingOfOwlLevel1": 1, // 1 = enabled, 0 = disabled the ring
     "enableTBJOFRingOfOwlLevel2": 1, // 1 = enabled, 0 = disabled the ring
     "enableTBJOFRingOfOwlLevel3": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfEagleEyeLevel1": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfEagleEyeLevel2": 1, // 1 = enabled, 0 = disabled the ring
+    "enableTBJOFRingOfEagleEyeLevel3": 1, // 1 = enabled, 0 = disabled the ring
     "version": "1" // never change this, internal version number
 }
 ```

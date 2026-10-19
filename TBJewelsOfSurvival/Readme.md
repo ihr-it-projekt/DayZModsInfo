@@ -38,7 +38,9 @@ See also [here](../The%20Mod%20Base/README.md)
 ### Types
 - [Types](Types.md)
 
-### Jewels
+### Jewels & Effects
+- [Effects & Skills Reference](Effects.md)
+
 #### Rings
 - [Rings of Attack](Rings/TBJOFRingOfAttack.md)
 - [Rings of Defense](Rings/TBJOFRingOfDefense.md)
@@ -54,6 +56,7 @@ Only examples are shown here. The generated configs may contain more items, all 
 - [GrinderConfig.md](Configs/GrinderConfig.md)
 - [GrinderRecipeConfiguration.md](Configs/GrinderRecipeConfiguration.md)
 - [JewelRecoveryConfig.md](Configs/JewelRecoveryConfig.md)
+- [JewelsConfig.md](Configs/JewelsConfig.md)
 - [MineConfig.md](Configs/MineConfig.md)
 - [OreChanceConfig.md](Configs/OreChanceConfig.md)
 - [OreSpawnAreasConfig.md](Configs/OreSpawnAreasConfig.md)
