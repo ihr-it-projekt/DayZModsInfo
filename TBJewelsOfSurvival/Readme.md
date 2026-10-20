@@ -40,6 +40,7 @@ See also [here](../The%20Mod%20Base/README.md)
 
 ### Jewels & Effects
 - [Effects & Skills Reference](Effects.md)
+- [Reputation System & Requirements](Configs/ReputationConfig.md)
 
 #### Rings
 - [Rings of Attack](Rings/TBJOFRingOfAttack.md)
@@ -60,6 +61,7 @@ Only examples are shown here. The generated configs may contain more items, all 
 - [MineConfig.md](Configs/MineConfig.md)
 - [OreChanceConfig.md](Configs/OreChanceConfig.md)
 - [OreSpawnAreasConfig.md](Configs/OreSpawnAreasConfig.md)
+- [ReputationConfig.md](Configs/ReputationConfig.md)
 - [RingEnableConfig.md](Configs/RingEnableConfig.md)
 - [SmelterConfig.md](Configs/SmelterConfig.md)
 - [TBKeyBindsConfig.json](../GlobalConfigs/Readme.md#tbkeybindsconfigjson)

@@ -10,6 +10,7 @@ All jewel effects are fully configurable by server administrators in [`JewelsCon
   - Administrators enter intuitive percentage values in `JewelsConfig.json` (e.g., `10` for `+10%`, `-10` for `-10%`, `100` for `+100%`, `300` for `+300%`).
   - Internally, all percentage values are automatically normalized (`value / 100.0`) and combined additively across worn active rings (slots `TBJOFRing1` and `TBJOFRing2`, provided the ring's quantity is `> 1`).
   - Setting a float property to `0` (or a boolean property to `0` / `false`) disables that effect on the ring and hides it in the Jewel Book UI.
+- **Reputation Integration & Jewel Book Display**: Fully integrated with TBLib's Reputation System via [`ReputationConfig.json`](Configs/ReputationConfig.md). The in-game Jewel Book (`TBJOFBook`) permanently displays the player's current reputation points on the left index page (`CurrentReputation`), and indicates required minimum reputation thresholds to craft (`MinReputationCraft`) and equip (`MinReputationEquip`) rings with status color indicators (Green = requirement met, Red = not met) and interactive mouse hover tooltips.
 
 ---
 
