@@ -1,6 +1,6 @@
 # ReputationConfig.json
 
-`ReputationConfig.json` integrates TBJewelsOfSurvival with the [TBLib Reputation System](../../GlobalConfigs/ReputationSystem/Index.md). It allows server administrators to configure reputation point rewards for mining, smelting, grinding, and forging rings, as well as minimum reputation requirements to perform actions and equip rings.
+`ReputationConfig.json` integrates TBJewelsOfSurvival with the [TBLib Reputation System](/GlobalConfigs/ReputationSystem/Index.html). It allows server administrators to configure reputation point rewards for mining, smelting, grinding, and forging rings, as well as minimum reputation requirements to perform actions and equip rings.
 
 ## Overview & Key Features
 

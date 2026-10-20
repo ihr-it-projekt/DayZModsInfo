@@ -209,9 +209,11 @@ export default defineConfig({
                       { text: 'GrinderConfig', link: '/TBJewelsOfSurvival/Configs/GrinderConfig.md' },
                       { text: 'GrinderRecipeConfiguration', link: '/TBJewelsOfSurvival/Configs/GrinderRecipeConfiguration.md' },
                       { text: 'JewelRecoveryConfig', link: '/TBJewelsOfSurvival/Configs/JewelRecoveryConfig.md' },
+                      { text: 'JewelsConfig', link: '/TBJewelsOfSurvival/Configs/JewelsConfig.md' },
                       { text: 'MineConfig', link: '/TBJewelsOfSurvival/Configs/MineConfig.md' },
                       { text: 'OreChanceConfig', link: '/TBJewelsOfSurvival/Configs/OreChanceConfig.md' },
                       { text: 'OreSpawnAreasConfig', link: '/TBJewelsOfSurvival/Configs/OreSpawnAreasConfig.md' },
+                      { text: 'ReputationConfig', link: '/TBJewelsOfSurvival/Configs/ReputationConfig.md' },
                       { text: 'RingEnableConfig', link: '/TBJewelsOfSurvival/Configs/RingEnableConfig.md' },
                       { text: 'SmelterConfig', link: '/TBJewelsOfSurvival/Configs/SmelterConfig.md' },
                     ]
