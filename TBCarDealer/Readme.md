@@ -47,6 +47,7 @@ Config Editor <a href="https://raw.githubusercontent.com/ihr-it-projekt/DayZMods
 
 - [AdminConfig.json](../GlobalConfigs/Readme.md#adminconfigjson) Admins can currently perform a hot-reload of configs and player data. Only they can see this button in the menu.
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
+- [CarCategorieOrder.md](Configs/CarCategorieOrder.md)
 - [CarConfigs.md](Configs/CarConfigs.md)
 - [DealerPointConfig.md](Configs/DealerPointConfig.md)
 - [DealerPointsConfig.md](Configs/DealerPointsConfig.md)

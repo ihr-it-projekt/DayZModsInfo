@@ -1,6 +1,10 @@
 
 # DealerPointConfig Example
 
+::: tip Category Ordering & Icons
+The display order of vehicle categories at each dealer point and their UI icons are configured in [CarCategorieOrder.json](CarCategorieOrder.md).
+:::
+
 ::: tip
 Gear config is located in the `GearSets` subdirectory under your global config folder: `YourDayZServerProfileFolder\TBMods\Config\Global\GearSets\` you can find all information at [NPCGearConfig](/GlobalConfigs/NPCGearConfig.md)
 :::
