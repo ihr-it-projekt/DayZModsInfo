@@ -53,6 +53,7 @@ export default defineConfig({
                       { text: 'DiseaseConfig', link: '/BasicNeeds/Configs/DiseaseConfig.md' },
                       { text: 'DryerConfig', link: '/BasicNeeds/Configs/DryerConfig.md' },
                       { text: 'HudColorConfig', link: '/BasicNeeds/Configs/HudColorConfig.md' },
+                      { text: 'ReputationConfig', link: '/BasicNeeds/Configs/ReputationConfig.md' },
                       { text: 'StaticDryerConfig', link: '/BasicNeeds/Configs/StaticDryerConfig.md' },
                       { text: 'StaticWashingPlaces', link: '/BasicNeeds/Configs/StaticWashingPlaces.md' },
                       { text: 'WashingMachineConfig', link: '/BasicNeeds/Configs/WashingMachineConfig.md' },

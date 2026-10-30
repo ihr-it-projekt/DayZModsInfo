@@ -1,5 +1,11 @@
 # Reputation System TB Mods
 
+## Manage player reputation
+
+TBLib provides an administrator menu for viewing and setting shared reputation totals, including stored offline players. Enable `reputationAdmin` for authorized administrators in [AdminConfig.json](../AdminConfig.md#reputation-management-permission).
+
+
+
 ## How to add Points to player reputation from other mods
 
 Reputation can only be added from Serverside, if you call this functions from the Client, it will throw an error!
@@ -106,3 +112,4 @@ class YourClass {
 
 }
 ```
+The reputation menu action is also available on `TBLIBBaseMachine` and derived machines through TBLib, without requiring BasicNeeds. It uses the same `reputationAdmin` permission and player menu.

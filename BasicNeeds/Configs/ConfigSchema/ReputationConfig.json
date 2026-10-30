@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "actionRewards": {
+      "type": "object",
+      "properties": {
+        "TBBNActionPee": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNActionPoo": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNActionPeeAndPoo": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNActionUseToilet": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNWashBodyWater": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNWashBodyWell": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNWashClothingWater": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNWashClothingWell": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBBNWashClothingSink": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionTurnOnWashingMachine": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionTurnOffWashingMachine": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionTurnOnDryer": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionTurnOffDryer": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionPayInMoney": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionPayIn10TimesMoney": {
+          "type": "integer",
+          "default": 0
+        },
+        "TBActionPayOutMoney": {
+          "type": "integer",
+          "default": 0
+        }
+      },
+      "additionalProperties": {
+        "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "actionRewards"
+  ]
+}

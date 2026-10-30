@@ -25,6 +25,12 @@
                         "basicNeedsAdmin": {
                             "type": "number"
                         },
+                        "reputationAdmin": {
+                            "type": "number",
+                            "enum": [0, 1],
+                            "default": 0,
+                            "description": "Allows viewing and setting shared player reputation"
+                        },
                         "deathInsurance": {
                             "type": "number"
                         },
