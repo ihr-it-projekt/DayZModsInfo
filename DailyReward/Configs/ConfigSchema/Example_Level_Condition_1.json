@@ -28,42 +28,47 @@
         "canTakenOnlyOnce": {
             "type": "number"
         },
+        "animalsKillsRequiredCount": {
+            "type": "number"
+        },
         "animalKills": {
             "type": "object",
-            "properties": {
-                "Animal_GallusGallusDomesticus": {
-                    "type": "number"
-                }
-            },
-            "required": [
-                "Animal_GallusGallusDomesticus"
-            ]
+            "additionalProperties": {
+                "type": "number"
+            }
         },
         "infectedKillsRequiredCount": {
             "type": "number"
         },
         "zombieKills": {
             "type": "object",
-            "properties": {
-                "TYPNAME": {
-                    "type": "number"
-                },
-                "ZmbM_FarmerFat_Blue": {
-                    "type": "number"
-                },
-                "ZmbM_FarmerFat_Brown": {
-                    "type": "number"
-                },
-                "ZmbM_FarmerFat_Green": {
-                    "type": "number"
-                }
-            },
-            "required": [
-                "TYPNAME",
-                "ZmbM_FarmerFat_Blue",
-                "ZmbM_FarmerFat_Brown",
-                "ZmbM_FarmerFat_Green"
-            ]
+            "additionalProperties": {
+                "type": "number"
+            }
+        },
+        "aiKillsRequiredCount": {
+            "type": "number"
+        },
+        "aiHeadShotKillsRequiredCount": {
+            "type": "number"
+        },
+        "craftingCountRequiredCount": {
+            "type": "number"
+        },
+        "craftingCounts": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "number"
+            }
+        },
+        "fishingCountRequiredCount": {
+            "type": "number"
+        },
+        "fishingCounts": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "number"
+            }
         },
         "version": {
             "type": "string"

@@ -78,6 +78,7 @@
     }
   },
   "required": [
-    "actionRewards"
+    "actionRewards",
+    "version"
   ]
 }

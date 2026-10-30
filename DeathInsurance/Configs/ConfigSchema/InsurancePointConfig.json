@@ -7,6 +7,50 @@
         "isInitialized": {
             "type": "number"
         },
+        "insurancePoint": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "position": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "orientation": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "useExactPosition": {
+                        "type": "number"
+                    },
+                    "machineType": {
+                        "type": "string"
+                    },
+                    "enableNpcTrader": {
+                        "type": "number"
+                    },
+                    "npcType": {
+                        "type": "string"
+                    },
+                    "npcGearSetName": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "enableNpcTrader",
+                    "machineType",
+                    "npcGearSetName",
+                    "npcType",
+                    "orientation",
+                    "position",
+                    "useExactPosition"
+                ]
+            }
+        },
         "insurancePoints": {
             "type": "array",
             "items": {
@@ -26,9 +70,25 @@
                     },
                     "useExactPosition": {
                         "type": "number"
+                    },
+                    "machineType": {
+                        "type": "string"
+                    },
+                    "enableNpcTrader": {
+                        "type": "number"
+                    },
+                    "npcType": {
+                        "type": "string"
+                    },
+                    "npcGearSetName": {
+                        "type": "string"
                     }
                 },
                 "required": [
+                    "enableNpcTrader",
+                    "machineType",
+                    "npcGearSetName",
+                    "npcType",
                     "orientation",
                     "position",
                     "useExactPosition"
@@ -37,7 +97,6 @@
         }
     },
     "required": [
-        "insurancePoints",
         "isInitialized",
         "version"
     ]

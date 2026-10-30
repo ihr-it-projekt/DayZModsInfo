@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "vehicleSizes": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": [
+        "isInitialized",
+        "vehicleSizes",
+        "version"
+    ]
+}

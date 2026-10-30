@@ -1,19 +1,257 @@
 {
     "type": "object",
     "properties": {
-        "version": {
-            "type": "string"
-        },
-        "isInitialized": {
+        "configVersion": {
             "type": "number"
         },
-        "subtractNPCKillsFromPlayerKills": {
+        "enablePlayLogs": {
             "type": "number"
+        },
+        "currencyValues": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "number"
+            }
+        },
+        "luckyWheelSettings": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "number"
+                },
+                "gamePositions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "pos": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "orientation": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "required": [
+                            "orientation",
+                            "pos"
+                        ]
+                    }
+                },
+                "gameObject": {
+                    "type": "string"
+                },
+                "chipsBet": {
+                    "type": "number"
+                },
+                "minJackpot": {
+                    "type": "number"
+                },
+                "maxJackpot": {
+                    "type": "number"
+                },
+                "wheelNumberConfigs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "number": {
+                                "type": "number"
+                            },
+                            "quote": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "number",
+                            "quote"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "chipsBet",
+                "enabled",
+                "gameObject",
+                "gamePositions",
+                "maxJackpot",
+                "minJackpot",
+                "wheelNumberConfigs"
+            ]
+        },
+        "blackJackSettings": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "number"
+                },
+                "gamePositions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "pos": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "orientation": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "required": [
+                            "orientation",
+                            "pos"
+                        ]
+                    }
+                },
+                "gameObject": {
+                    "type": "string"
+                },
+                "minBet": {
+                    "type": "number"
+                },
+                "maxBet": {
+                    "type": "number"
+                },
+                "winFactor": {
+                    "type": "number"
+                },
+                "winFactorBlackJack": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "enabled",
+                "gameObject",
+                "gamePositions",
+                "maxBet",
+                "minBet",
+                "winFactor",
+                "winFactorBlackJack"
+            ]
+        },
+        "diceSettings": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "number"
+                },
+                "gamePositions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "pos": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "orientation": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "required": [
+                            "orientation",
+                            "pos"
+                        ]
+                    }
+                },
+                "gameObject": {
+                    "type": "string"
+                },
+                "minBet": {
+                    "type": "number"
+                },
+                "maxBet": {
+                    "type": "number"
+                },
+                "diceWinFactor": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "diceWinFactor",
+                "enabled",
+                "gameObject",
+                "gamePositions",
+                "maxBet",
+                "minBet"
+            ]
+        },
+        "ratRaceSettings": {
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "type": "number"
+                },
+                "gamePositions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "pos": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "orientation": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "required": [
+                            "orientation",
+                            "pos"
+                        ]
+                    }
+                },
+                "gameObject": {
+                    "type": "string"
+                },
+                "minBet": {
+                    "type": "number"
+                },
+                "maxBet": {
+                    "type": "number"
+                },
+                "maxWinQouta": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "enabled",
+                "gameObject",
+                "gamePositions",
+                "maxBet",
+                "maxWinQouta",
+                "minBet"
+            ]
         }
     },
     "required": [
-        "isInitialized",
-        "subtractNPCKillsFromPlayerKills",
-        "version"
+        "blackJackSettings",
+        "configVersion",
+        "currencyValues",
+        "diceSettings",
+        "enablePlayLogs",
+        "luckyWheelSettings",
+        "ratRaceSettings"
     ]
 }

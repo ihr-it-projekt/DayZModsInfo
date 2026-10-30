@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "enableAPI": {
+            "type": "number"
+        },
+        "checkAPITimeInMinutes": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "checkAPITimeInMinutes",
+        "enableAPI",
+        "isInitialized",
+        "version"
+    ]
+}

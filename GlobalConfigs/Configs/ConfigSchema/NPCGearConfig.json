@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/gearItem"
+            }
+        }
+    },
+    "definitions": {
+        "gearItem": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "quantityInPercent": {
+                    "type": "number"
+                },
+                "slot": {
+                    "type": "string"
+                },
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/gearItem"
+                    }
+                }
+            },
+            "required": [
+                "attachments",
+                "quantityInPercent",
+                "slot",
+                "type"
+            ]
+        }
+    },
+    "required": [
+        "items",
+        "name",
+        "version"
+    ]
+}

@@ -117,6 +117,39 @@
         },
         "tickLengthInMinutes": {
             "type": "number"
+        },
+        "enableToilets": {
+            "type": "number"
+        },
+        "toiletDuration": {
+            "type": "number"
+        },
+        "toiletMakeInvisible": {
+            "type": "number"
+        },
+        "toiletDisableDamage": {
+            "type": "number"
+        },
+        "toiletSmallMenuOnLeft": {
+            "type": "number"
+        },
+        "toiletObjectNames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "enableWashClothingSink": {
+            "type": "number"
+        },
+        "sinkMinDirtLevelToWash": {
+            "type": "number"
+        },
+        "sinkObjectNames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     },
     "required": [
@@ -124,17 +157,23 @@
         "cleanItemsForBodyWash",
         "cleanItemsForClothingWash",
         "cleanItemsWhenPoo",
-        "isInitialized",
+        "enableToilets",
+        "enableWashClothingSink",
         "peeBloodReduceStatePerTickInPercent",
         "peeHealthReduceStatePerTickInPercent",
         "peeIncreaseFactorPerTick",
         "pooBloodReduceStatePerTickInPercent",
         "pooHealthReduceStatePerTickInPercent",
         "pooIncreaseFactorPerTick",
-        "regularBloodReduceStatePerTickInPercent",
-        "regularHealthReduceStatePerTickInPercent",
+        "sinkMinDirtLevelToWash",
+        "sinkObjectNames",
         "stanceMask",
         "tickLengthInMinutes",
+        "toiletDisableDamage",
+        "toiletDuration",
+        "toiletMakeInvisible",
+        "toiletObjectNames",
+        "toiletSmallMenuOnLeft",
         "version"
     ]
 }

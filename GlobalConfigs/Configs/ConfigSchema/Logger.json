@@ -12,10 +12,26 @@
         },
         "discordUsePremiumCoinWebhookURL": {
             "type": "string"
+        },
+        "logUsePremiumAPICSV": {
+            "type": "number"
+        },
+        "logPremiumAPIDiscord": {
+            "type": "number"
+        },
+        "discordLogPremiumAPIWebhookURL": {
+            "type": "string"
+        },
+        "enableGlobalLogFileRotation": {
+            "type": "number"
         }
     },
     "required": [
+        "discordLogPremiumAPIWebhookURL",
         "discordUsePremiumCoinWebhookURL",
+        "enableGlobalLogFileRotation",
+        "logPremiumAPIDiscord",
+        "logUsePremiumAPICSV",
         "logUsePremiumCoinCSV",
         "logUsePremiumCoinDiscord",
         "version"

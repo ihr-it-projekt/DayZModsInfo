@@ -35,9 +35,13 @@
                     },
                     "useExactPosition": {
                         "type": "number"
+                    },
+                    "moneyPerMinuted": {
+                        "type": "number"
                     }
                 },
                 "required": [
+                    "moneyPerMinuted",
                     "needsDetergent",
                     "needsEnergy",
                     "needsWater",

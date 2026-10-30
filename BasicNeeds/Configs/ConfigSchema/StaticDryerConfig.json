@@ -29,20 +29,24 @@
           },
           "useExactPosition": {
             "type": "number"
+          },
+          "moneyPerMinuted": {
+            "type": "number"
           }
         },
         "required": [
-          "position",
-          "orientation",
+          "moneyPerMinuted",
           "needsEnergy",
+          "orientation",
+          "position",
           "useExactPosition"
         ]
       }
     }
   },
   "required": [
-    "version",
+    "dryerPlaces",
     "isInitialized",
-    "dryerPlaces"
+    "version"
   ]
 }

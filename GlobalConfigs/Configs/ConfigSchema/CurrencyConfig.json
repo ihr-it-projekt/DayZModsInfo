@@ -9,21 +9,50 @@
         },
         "currencyValues": {
             "type": "object",
-            "patternProperties": {
-                "^[A-Za-z0-9_]+$": {
-                    "type": "number"
-                }
-            },
-            "additionalProperties": false
+            "additionalProperties": {
+                "type": "number"
+            }
         },
         "useMoneyFromLBMasterATM": {
             "type": "number"
+        },
+        "currencies": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "uniqueName": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "currencyValues": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "number"
+                        }
+                    },
+                    "useLBMasterATM": {
+                        "type": "number"
+                    },
+                    "useDCBanking": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "currencyValues",
+                    "displayName",
+                    "uniqueName",
+                    "useDCBanking",
+                    "useLBMasterATM"
+                ]
+            }
         }
     },
     "required": [
-        "currencyValues",
+        "currencies",
         "isInitialized",
-        "useMoneyFromLBMasterATM",
         "version"
     ]
 }

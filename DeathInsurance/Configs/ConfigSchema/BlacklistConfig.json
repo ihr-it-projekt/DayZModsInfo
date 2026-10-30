@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "isInitialized": {
+            "type": "number"
+        },
+        "blacklistedItems": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "blacklistedItems",
+        "isInitialized",
+        "version"
+    ]
+}

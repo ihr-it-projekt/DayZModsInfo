@@ -29,9 +29,13 @@
                     },
                     "useExactPosition": {
                         "type": "number"
+                    },
+                    "moneyPerMinuted": {
+                        "type": "number"
                     }
                 },
                 "required": [
+                    "moneyPerMinuted",
                     "needsEnergy",
                     "orientation",
                     "position",

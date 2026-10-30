@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+        "enableAPI": {
+            "type": "number"
+        },
+        "apiToken": {
+            "type": "string"
+        },
+        "checkAPITimeInMinutes": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "apiToken",
+        "checkAPITimeInMinutes",
+        "enableAPI"
+    ]
+}

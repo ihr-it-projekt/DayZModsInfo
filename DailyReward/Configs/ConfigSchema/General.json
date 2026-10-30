@@ -9,10 +9,18 @@
         },
         "subtractNPCKillsFromPlayerKills": {
             "type": "number"
+        },
+        "maxBackupsPerPlayer": {
+            "type": "number"
+        },
+        "doNotCountKillsWhenPlayerIsInSameGroupFromLBMasterGroup": {
+            "type": "number"
         }
     },
     "required": [
+        "doNotCountKillsWhenPlayerIsInSameGroupFromLBMasterGroup",
         "isInitialized",
+        "maxBackupsPerPlayer",
         "subtractNPCKillsFromPlayerKills",
         "version"
     ]

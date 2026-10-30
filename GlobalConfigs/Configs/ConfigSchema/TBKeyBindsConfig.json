@@ -31,7 +31,6 @@
         }
     },
     "required": [
-        "isInitialized",
         "keyBinds",
         "version"
     ]

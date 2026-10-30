@@ -13,6 +13,9 @@
         "insuranceCaseWillDeletedAfterSeconds": {
             "type": "number"
         },
+        "useLocalTime": {
+            "type": "number"
+        },
         "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer": {
             "type": "number"
         },
@@ -21,6 +24,18 @@
         },
         "globalInsuranceBuyCooldownInSeconds": {
             "type": "number"
+        },
+        "defaultInsuranceIDForNewPlayers": {
+            "type": "string"
+        },
+        "maximumFreeInsuranceCountForPlayers": {
+            "type": "number"
+        },
+        "hideDeleteItemsButton": {
+            "type": [
+                "boolean",
+                "number"
+            ]
         },
         "insurances": {
             "type": "array",
@@ -47,6 +62,15 @@
                     },
                     "canBuyAgainAfterSeconds": {
                         "type": "number"
+                    },
+                    "isPremium": {
+                        "type": "number"
+                    },
+                    "isBuyable": {
+                        "type": "number"
+                    },
+                    "saveItemInHands": {
+                        "type": "number"
                     }
                 },
                 "required": [
@@ -54,20 +78,27 @@
                     "durationInSeconds",
                     "id",
                     "insureOnlyItemsThatAreAtTheMomentInCargoAndInventory",
+                    "isBuyable",
+                    "isPremium",
                     "price",
+                    "saveItemInHands",
                     "stayActiveAfterDeath"
                 ]
             }
         }
     },
     "required": [
+        "defaultInsuranceIDForNewPlayers",
         "globalInsuranceBuyCooldownInSeconds",
+        "hideDeleteItemsButton",
         "insuranceCaseWillDeletedAfterSeconds",
         "insurances",
         "isInitialized",
+        "maximumFreeInsuranceCountForPlayers",
         "maximumHeirsForOneInheritance",
         "storeAllItemsInCargoOfMainItems",
         "timeInSecondsWhenItemsWillBeTransferAfterDeathOfPlayer",
+        "useLocalTime",
         "version"
     ]
 }

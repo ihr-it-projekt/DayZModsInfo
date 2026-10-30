@@ -1,0 +1,166 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "isInitialized": {
+      "type": "number"
+    },
+    "backgroundColor": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "a": {
+          "type": "number"
+        },
+        "r": {
+          "type": "number"
+        },
+        "g": {
+          "type": "number"
+        },
+        "b": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "a",
+        "b",
+        "g",
+        "name",
+        "r"
+      ]
+    },
+    "peeColors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "a": {
+            "type": "number"
+          },
+          "r": {
+            "type": "number"
+          },
+          "g": {
+            "type": "number"
+          },
+          "b": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "a",
+          "b",
+          "g",
+          "name",
+          "r"
+        ]
+      }
+    },
+    "pooColors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "a": {
+            "type": "number"
+          },
+          "r": {
+            "type": "number"
+          },
+          "g": {
+            "type": "number"
+          },
+          "b": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "a",
+          "b",
+          "g",
+          "name",
+          "r"
+        ]
+      }
+    },
+    "dirtColors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "a": {
+            "type": "number"
+          },
+          "r": {
+            "type": "number"
+          },
+          "g": {
+            "type": "number"
+          },
+          "b": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "a",
+          "b",
+          "g",
+          "name",
+          "r"
+        ]
+      }
+    },
+    "putridColors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "a": {
+            "type": "number"
+          },
+          "r": {
+            "type": "number"
+          },
+          "g": {
+            "type": "number"
+          },
+          "b": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "a",
+          "b",
+          "g",
+          "name",
+          "r"
+        ]
+      }
+    }
+  },
+  "required": [
+    "backgroundColor",
+    "dirtColors",
+    "peeColors",
+    "pooColors",
+    "putridColors",
+    "version"
+  ]
+}

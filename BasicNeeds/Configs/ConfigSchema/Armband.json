@@ -12,12 +12,24 @@
         },
         "dirtIncrementRegular": {
             "type": "number"
+        },
+        "dirtIncrementWhenPooToilet": {
+            "type": "number"
+        },
+        "dirtIncrementWhenPeeToilet": {
+            "type": "number"
+        },
+        "version": {
+            "type": "number"
         }
     },
     "required": [
         "dirtIncrementRegular",
         "dirtIncrementWhenPee",
+        "dirtIncrementWhenPeeToilet",
         "dirtIncrementWhenPoo",
-        "name"
+        "dirtIncrementWhenPooToilet",
+        "name",
+        "version"
     ]
 }
