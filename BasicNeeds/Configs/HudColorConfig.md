@@ -1,6 +1,19 @@
 # HudColorConfig
 
-`HudColorConfig.json` controls the Basic Needs HUD colors. Each color has a `name` and four channels from 0 to 255: `a` (alpha: 0 is transparent, 255 is opaque), `r` (red), `g` (green), and `b` (blue). Keep the entry names unchanged.
+`HudColorConfig.json` controls the Basic Needs HUD icons and colors. Each color has a `name` and four channels from 0 to 255: `a` (alpha: 0 is transparent, 255 is opaque), `r` (red), `g` (green), and `b` (blue). Keep the entry names unchanged.
+
+## Icon selection
+
+Server owners can select the icon set with `useLegacyIcons`:
+
+| Value | Icons |
+| --- | --- |
+| `false` (default) | Current HUD icons: wind, shirt, droplet and toilet. |
+| `true` | Original `putrid_0`–`putrid_3`, `clothing_0`–`clothing_3`, `pee_0`–`pee_3` and `poop_0`–`poop_3` textures from the mod's data folder. |
+
+The original icons appear as a plain horizontal row of 50-pixel icons in body, clothing, pee and poop order, without tile backgrounds, rings or pips. They change with all four status levels and still use the configured icon colors. Setting `useLegacyIcons` back to `false` restores the current HUD tiles.
+
+Existing configs upgrade automatically to version `3`, adding `useLegacyIcons` with a default of `false` while preserving existing settings. Restart the server after changing the option; it applies to all players.
 
 ## Background
 
@@ -27,8 +40,9 @@ Leave `version` and `isInitialized` unchanged; they are used internally.
 
 ```json
 {
-    "version":  "1",
+    "version":  "3",
     "isInitialized":  1,
+    "useLegacyIcons":  false,
     "backgroundColor":  {
                             "name":  "background",
                             "a":  245,

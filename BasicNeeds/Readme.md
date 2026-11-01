@@ -27,6 +27,7 @@ If you need any support, please open a ticket here: https://discord.gg/kGjN6gJy3
 - [CurrencyConfig.json](../GlobalConfigs/Readme.md#currencyconfigjson)
 - [DiseaseConfig.json](Configs/DiseaseConfig.md)
 - [DryerConfig.json](Configs/DryerConfig.md)
+- [HudColorConfig.json](Configs/HudColorConfig.md) Choose current or original HUD icons and configure HUD colors.
 - [ReputationConfig.json](Configs/ReputationConfig.md) Reputation rewards per gameplay action and admin menu setup.
 - [StatcicDryerConfig.json](Configs/StaticDryerConfig.md)
 - [StaticWashingPlaces.json](Configs/StaticWashingPlaces.md)

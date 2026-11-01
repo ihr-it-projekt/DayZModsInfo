@@ -7,6 +7,11 @@
     "isInitialized": {
       "type": "number"
     },
+    "useLegacyIcons": {
+      "type": "boolean",
+      "default": false,
+      "description": "Display the original body, clothing, pee and poop textures as a plain row of 50-pixel icons without tile backgrounds, rings or pips. Includes all four status levels."
+    },
     "backgroundColor": {
       "type": "object",
       "properties": {
@@ -161,6 +166,7 @@
     "peeColors",
     "pooColors",
     "putridColors",
+    "useLegacyIcons",
     "version"
   ]
 }
