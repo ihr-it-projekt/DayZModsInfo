@@ -5,6 +5,16 @@
 ## Features
 Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBBasicNeeds)
 
+### Needs and toilet actions
+
+- **Pee** empties only the bladder, **Poop** only the bowel, and **Pee & Poop** empties both. Each required need must be above 50% for its action to be available.
+- Separate timed actions are available at supported outhouses, portable toilets, standalone prison toilets, and toilet fixtures inside buildings, including the main prison. Players are positioned and oriented at the fixture.
+- Male characters use a custom standing pee animation with a visible urine stream, outdoors and at toilets. Male pee actions require empty hands. Outdoor pee leaves its ground mark in front of male characters.
+- Nearby supported toilets take priority over outdoor actions. Toilet actions play relieving sounds and use the toilet-specific dirt values in [BodyZoneConfigs.json](Configs/BodyZoneConfigs.md).
+- Toilet use now happens directly in the world. The former toilet screen, temporary invisibility, and damage protection have been removed.
+- The needs HUD remains available in the inventory and follows HUD visibility, menu, unconsciousness, and death states.
+- The new toilet action labels currently use English text in all supported languages.
+
 ## Shop Link
 https://www.themodbase.com/mods/TBBasicNeeds
 

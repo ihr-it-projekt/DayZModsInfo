@@ -118,27 +118,6 @@
         "tickLengthInMinutes": {
             "type": "number"
         },
-        "enableToilets": {
-            "type": "number"
-        },
-        "toiletDuration": {
-            "type": "number"
-        },
-        "toiletMakeInvisible": {
-            "type": "number"
-        },
-        "toiletDisableDamage": {
-            "type": "number"
-        },
-        "toiletSmallMenuOnLeft": {
-            "type": "number"
-        },
-        "toiletObjectNames": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
         "enableWashClothingSink": {
             "type": "number"
         },
@@ -157,7 +136,6 @@
         "cleanItemsForBodyWash",
         "cleanItemsForClothingWash",
         "cleanItemsWhenPoo",
-        "enableToilets",
         "enableWashClothingSink",
         "peeBloodReduceStatePerTickInPercent",
         "peeHealthReduceStatePerTickInPercent",
@@ -169,11 +147,6 @@
         "sinkObjectNames",
         "stanceMask",
         "tickLengthInMinutes",
-        "toiletDisableDamage",
-        "toiletDuration",
-        "toiletMakeInvisible",
-        "toiletObjectNames",
-        "toiletSmallMenuOnLeft",
         "version"
     ]
 }

@@ -172,3 +172,7 @@ Leave `version` and `isInitialized` unchanged; they are used internally.
                      ]
 }
 ```
+
+## HUD visibility
+
+The needs HUD remains available in the inventory. Outside the inventory, it follows the HUD disable/hide settings and hides while menus are open or the player is unconscious. It is also hidden when there is no living local player. Closing a menu does not override a hidden HUD.

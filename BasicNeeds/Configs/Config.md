@@ -2,7 +2,7 @@
 
 ````json lines
 {
-    "version": "4", // Never touch this value. It is needed internally
+    "version": "6", // Never touch this value. It is needed internally
     "animationCommandUID": 1056, // see https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/main/scripts/3_game/dayzplayer.c#L1007 !!!!DO NOT CHANGE IF YOU NOT KNOW WHAT YOU DO!!! This change the animation for poo and pee
     "stanceMask": 2, // see https://github.com/BohemiaInteractive/DayZ-Script-Diff/blob/main/scripts/3_game/dayzplayer.c#L634 !!!!DO NOT CHANGE IF YOU NOT KNOW WHAT YOU DO !!! This change the stance for poo and pee
     "cleanItemsWhenPoo": [ // This clean items are needed when you make poo
@@ -58,17 +58,6 @@
     "peeHealthReduceStatePerTickInPercent": 0.01, // How much health will be reduced per tick for pee. 1.0 means 100% health loos
     "peeBloodReduceStatePerTickInPercent": 0.01, // How much blood will be reduced per tick for pee. 1.0 means 100% blood loos
     "tickLengthInMinutes": 5, // How long is a tick in minutes
-    "enableToilets": 1, // Enable or disable toilets. 1 = enabled, 0 = disabled
-    "toiletDuration": 15, // How long it takes to use a toilet in seconds
-    "toiletMakeInvisible": 1, // Make the toilet invisible when in use. 1 = enabled, 0 = disabled
-    "toiletDisableDamage": 1, // Disable damage to the player when he use the toilet. 1 = enabled, 0 = disabled
-    "toiletSmallMenuOnLeft": 0, // Render a small toilet UI in the top-left corner allowing player movement/looking around. 1 = enabled, 0 = disabled (full screen)
-    "toiletObjectNames": [ // Object Names of Toilet
-        "Toilet",
-        "Land_Misc_Toilet_Dry",
-        "Land_Misc_Toilet_Mobile",
-        "toilet"
-    ],
     "enableWashClothingSink": 1, // Enable or disable washing clothing at sinks. 1 = enabled, 0 = disabled
     "sinkMinDirtLevelToWash": 25.0, // Minimum dirt level required on clothing to wash at a sink
     "sinkObjectNames": [ // Keywords/Classnames for objects recognized as sinks
@@ -104,3 +93,7 @@ peeIncreaseFactorPerTick = 100 percent  / 300 minutes * tickLengthInMinutes
 0,33 = 100 / 300 * 1
 
 ```
+
+## Toilet configuration changes
+
+Config version 6 removes the old toilet screen settings: `enableToilets`, `toiletDuration`, `toiletMakeInvisible`, `toiletDisableDamage`, `toiletSmallMenuOnLeft`, and `toiletObjectNames`. Supported toilets now use animated world actions; players remain visible and vulnerable. Existing configs migrate automatically; do not edit the version manually. Toilet dirt increments remain configurable in [BodyZoneConfigs.json](BodyZoneConfigs.md).
