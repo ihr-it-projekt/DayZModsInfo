@@ -25,6 +25,22 @@
 - TBSLForeverSpotlight
 - TBSLForeverStadiumLamp
 
+### Placeable Kits
+As an alternative to the Admin Tool, a burning barrel can be placed with a kit item:
+- Take the kit in your hands and switch to placing mode. A barrel hologram shows where it will be placed.
+- Once placed, the kit turns into the matching Forever Burning Barrel and is removed.
+- The barrel is saved to `LightObjects.json` automatically, so it is still there after a server restart. It can be edited via the Config Menu like any other object.
+- **Only admins** with the Static Lights right can use the kits. If a player without this right places a kit, no barrel is created, an error message is shown and the kit stays in the player's hands.
+
+| Kit | Placed object |
+| --- | --- |
+| TBSLBurningBarrelKit_Green | TBSLForeverBurningBarrel_Green |
+| TBSLBurningBarrelKit_Blue | TBSLForeverBurningBarrel_Blue |
+| TBSLBurningBarrelKit_Red | TBSLForeverBurningBarrel_Red |
+| TBSLBurningBarrelKit_Yellow | TBSLForeverBurningBarrel_Yellow |
+
+The kits do not spawn as loot by default. Spawn them with your Admin Tool or add them to your `types.xml`.
+
 
 ### Config
 
