@@ -28,6 +28,11 @@ See also [here](../The%20Mod%20Base/README.md)
 ### How to give player premium status?
 See [**`Global FAQ`**](../GlobalConfigs/Readme.md#FAQ)
 
+### How to limit the condition (health level) of traded items?
+Set it in [**`GeneralConfig.json`**](./Configs/GeneralConfig.md). Allowed values are `"Pristine"`, `"Worn"`, `"Damage"` and `"BadlyDamaged"`. The value is always the worst condition that is still allowed.
+- `minOfferHealthValue`: worst condition an item may have to be offered for sale on a market stall or Global Stall. Default: `"BadlyDamaged"`. Items in a worse condition are not shown in the sell list, and the server rejects them. Ruined items can never be offered.
+- `minOrderHealthValue`: worst condition players can choose when creating a buy order. Default: `"BadlyDamaged"`.
+
 ## Types
 - [**`Types`**](Types.md)
 
