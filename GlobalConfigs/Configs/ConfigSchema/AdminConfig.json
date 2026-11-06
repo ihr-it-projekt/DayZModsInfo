@@ -13,6 +13,9 @@
                 "^[A-Za-z0-9_+=/]+$": {
                     "type": "object",
                     "properties": {
+                        "configAdmin": {
+                            "type": "number"
+                        },
                         "dailyRewardAdmin": {
                             "type": "number"
                         },

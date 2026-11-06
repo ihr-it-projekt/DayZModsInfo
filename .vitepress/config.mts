@@ -177,6 +177,7 @@ export default defineConfig({
               },
               {
                 text: 'GlobalConfigs', link: '/GlobalConfigs/Readme.md', collapsed: true, items: [
+                  { text: 'AdminMenu', link: '/GlobalConfigs/AdminMenu.md' },
                   { text: 'AdminConfig', link: '/GlobalConfigs/AdminConfig.md' },
                   { text: 'CurrencyConfig', link: '/GlobalConfigs/CurrencyConfig.md' },
                   { text: 'Logger', link: '/GlobalConfigs/Logger.md' },

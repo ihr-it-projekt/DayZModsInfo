@@ -4,14 +4,15 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
 
 ````json lines
 {
-  "version": "17", // never change this, internal version number
+  "version": "18", // never change this, internal version number
   "admins": {
     "Add here Steam ID Or DayZ ID": {
+      "configAdmin": 0, // 0 = off 1 = on | full access to TBLib administration menu (reputation, permissions, premium, currency)
+      "reputationAdmin": 0, // 0 = off 1 = on | can view and set shared player reputation
       "dailyRewardAdmin": 0, // 0 = off 1 = on | is admin in daily reward mod
       "realEstateAdmin": 0, //  0 = off 1 = on | is admin in real estate mod
       "carDealerAdmin": 0, //  0 = off 1 = on | is admin in car dealer
       "basicNeedsAdmin": 0, // 0 = off 1 = on | is admin in basic needs
-      "reputationAdmin": 0, // 0 = off 1 = on | can view and set shared player reputation
       "deathInsurance": 0, // 0 = off 1 = on | is admin in death insurance
       "secondHandMarket": 0, // 0 = off 1 = on | is admin in second hand market
       "revivePlayer": 0, // 0 = off 1 = on | is admin in revive player
@@ -22,14 +23,15 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
       "survivorLuck": 0, // 0 = off 1 = on | is admin for survivor luck mod 
       "staticLightsAdmin": 0, // 0 = off 1 = on | is admin in static lights
       "vehicleLockSystem": 0, // 0 = off 1 = on | is admin in car lock system
-      "notes": "This field can be used for any note" // Free text field, to for example a admin name
+      "notes": "This field can be used for any note" // Free text field, for example an admin name
     },
     "7656119813296317725": {
+      "configAdmin": 1,
+      "reputationAdmin": 1,
       "dailyRewardAdmin": 1,
       "realEstateAdmin": 1,
       "carDealerAdmin": 1,
       "basicNeedsAdmin": 1,
-      "reputationAdmin": 1,
       "deathInsurance": 1,
       "secondHandMarket": 1,
       "revivePlayer": 1,
@@ -45,20 +47,21 @@ File is located in `YourDayZServerProfileFolder\TBMods\Config\Global`
   }
 }
 ````
-## Reputation management permission
 
-`reputationAdmin` grants access to TBLib's shared player reputation menu. It defaults to `0` when upgrading and is independent of `basicNeedsAdmin` and `carDealerAdmin`. Grant it only to administrators who should be able to view and replace player reputation totals.
+## TBLib Administration Menu Permissions
 
-With BasicNeeds installed, authorized administrators open the menu by aiming at a portable or static washing machine or dryer and selecting **[Admin] Manage player reputation**. See [ReputationConfig.json](../BasicNeeds/Configs/ReputationConfig.md#manage-player-reputation) for usage.
+TBLib provides a unified in-game administration menu accessible on any `TBLIBBaseMachine` (and mod machines like BasicNeeds washing machines/dryers) via the interaction **[Admin] TBLib Administration**. See [TBLib Administration Menu](AdminMenu.md) for full details.
 
-The reputation menu action is also available on `TBLIBBaseMachine` and derived machines through TBLib, without requiring BasicNeeds. It uses the same `reputationAdmin` permission and player menu.
+- **`configAdmin`**: Grants full access to all sections of the Admin Menu:
+  - **Reputation**: View and modify shared player reputation points.
+  - **Admin config**: Toggle all 16 admin permissions per player with live checkboxes.
+  - **Premium users**: View, extend (+30 days, custom days) and revoke premium roles per mod or globally.
+  - **Currency config**: Configure currencies, banking integrations (LBMaster ATM / DC Banking), and item values.
+- **`reputationAdmin`**: Grants access only to the **Reputation** section.
 
-### Enable reputation management
+### Enabling Admin Access
 
 1. Find the administrator's Steam ID or DayZ ID in `admins`, or add an entry for it.
-2. Set `"reputationAdmin": 1` in that entry. Keep `version` unchanged; TBLib migrates the file automatically.
-3. Restart the server to load the permission change. For BasicNeeds servers, the existing **[Admin] Reload Config** action can also reload AdminConfig; using that action requires `basicNeedsAdmin`.
-
-Open **[Admin] Manage player reputation** at a TBLib base machine or a BasicNeeds washing machine/dryer. Search by name or UID and use the gold **Save** button in the player's row. The top-right controls are **Refresh**, **Mute** and **Close**, displayed as icons.
-
-The server confirms **Player reputation saved successfully.** only after the new total is written. Invalid input, missing permission, missing player records and failed writes produce an error. See [save confirmation and errors](/GlobalConfigs/ReputationSystem/Index.html#save-confirmation-and-errors) for troubleshooting.
+2. Set `"configAdmin": 1` (or `"reputationAdmin": 1` for reputation only).
+3. Restart the server to load the permission change. For servers running BasicNeeds, the **[Admin] Reload Config** action can also reload AdminConfig.
+4. Interact with any `TBLIBBaseMachine` in-game and choose **[Admin] TBLib Administration**.
