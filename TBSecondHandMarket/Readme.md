@@ -33,6 +33,19 @@ Set it in [**`GeneralConfig.json`**](./Configs/GeneralConfig.md). Allowed values
 - `minOfferHealthValue`: worst condition an item may have to be offered for sale on a market stall or Global Stall. Default: `"BadlyDamaged"`. Items in a worse condition are not shown in the sell list, and the server rejects them. Ruined items can never be offered.
 - `minOrderHealthValue`: worst condition players can choose when creating a buy order. Default: `"BadlyDamaged"`.
 
+### How can admins moderate listings on the Bulletin Board?
+Admins with the `secondHandMarket` permission can moderate all listings directly at the Bulletin Board:
+- **View all items**: Toggle the "List all items" checkbox to reveal all listings, including disabled listings, unlisted personal stalls, and completed orders.
+- **Delete listings**: Remove inappropriate offers or completed orders. Deleting completed orders frees up the reserved stall slots and permanently deletes associated storage files from the server.
+- **Disable / Enable listings**: Temporarily deactivate specific listings on personal stalls or global stalls without deleting them (hidden from regular players).
+- **Block player and delete/disable**: Block a player from trading and delete or disable their listing in one click.
+- **Teleport to stall**: Click teleport in the item detail view to jump directly to the physical stall location.
+
+### How do purchase orders and quantities work?
+- Players can create buy orders with quantities up to 2000 units.
+- Total required money is automatically calculated and reserved when placing an order.
+- Completed orders (target quantity reached or zero remaining) display a clear "Purchased" badge in the Bulletin Board detail view so players know they are fulfilled.
+
 ## Types
 - [**`Types`**](Types.md)
 
