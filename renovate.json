@@ -1,0 +1,37 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "baseBranches": ["main"],
+  "enabledManagers": ["npm", "dockerfile", "github-actions"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["dockerfile"],
+      "groupName": "Node.js Docker image"
+    },
+    {
+      "matchPackageNames": ["nginx"],
+      "matchManagers": ["dockerfile"],
+      "groupName": "Nginx Docker image"
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "groupName": "Docker images",
+      "groupSlug": "docker-images"
+    },
+    {
+      "matchPackageNames": ["vitepress", "vitepress-plugin-**"],
+      "groupName": "VitePress packages",
+      "groupSlug": "vitepress"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
+      "groupSlug": "github-actions"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
+}

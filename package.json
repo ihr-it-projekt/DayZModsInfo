@@ -13,9 +13,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "npm-check-updates": "^21.0.0",
+    "npm-check-updates": "^23.1.1",
     "vitepress": "^2.0.0-alpha.15",
     "vitepress-plugin-lightbox": "^1.0.3",
-    "vitepress-plugin-llms": "^1.12.1"
+    "vitepress-plugin-llms": "^1.14.0"
+  },
+  "overrides": {
+    "minimatch": "^11.0.5"
   }
 }

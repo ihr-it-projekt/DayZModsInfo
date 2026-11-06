@@ -1,4 +1,6 @@
-node_modules/
-git/
-docs/.vitepress/cache/
-docs/.vitepress/dist/
+node_modules
+.git
+.vitepress/cache
+.vitepress/dist
+.idea
+.vscode
