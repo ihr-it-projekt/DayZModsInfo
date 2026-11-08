@@ -30,15 +30,23 @@ COPY --from=build-stage /app/favicon.ico /usr/share/nginx/html/favicon.ico
 # Fix case sensitivity issues by creating symlinks for JS files
 RUN cd /usr/share/nginx/html/assets && \
     for file in *.js; do \
-        lowercase_file=$(echo "$file" | tr '[:upper:]' '[:lower:]'); \
-        ln -sf "$file" "$lowercase_file"; \
+        [ -f "$file" ] || continue; \
+        lowercase_file=$(printf '%s' "$file" | tr '[:upper:]' '[:lower:]'); \
+        if [ "$file" != "$lowercase_file" ]; then \
+            ln -sf "$file" "$lowercase_file"; \
+        fi; \
         first=$(printf '%s' "$file" | cut -c1 | tr '[:upper:]' '[:lower:]'); \
         rest=$(printf '%s' "$file" | cut -c2-); \
-        ln -sf "$file" "${first}${rest}"; \
+        mixed_file="${first}${rest}"; \
+        if [ "$file" != "$mixed_file" ] && [ "$lowercase_file" != "$mixed_file" ]; then \
+            ln -sf "$file" "$mixed_file"; \
+        fi; \
         case "$file" in \
             Index.md.*) \
                 lowercase_index="index.md.${file#Index.md.}"; \
-                ln -sf "$file" "$lowercase_index" ;; \
+                if [ "$file" != "$lowercase_index" ]; then \
+                    ln -sf "$file" "$lowercase_index"; \
+                fi ;; \
         esac; \
     done
 
