@@ -1,7 +1,7 @@
 # ItemPriceConfig.json
 
 ::: tip
-You can set the max price for each item in the second hand market here.
+These limits apply to sale offers. The same numeric limit is checked against the entered price in the selected currency.
 :::
 
 ````json lines

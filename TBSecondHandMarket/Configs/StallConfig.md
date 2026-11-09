@@ -1,9 +1,15 @@
 
-# StallConfig.json
+# StallConfigs.json
+
+Set `currencyType` on each entry in `stalls` to the currency's `uniqueName` from the shared TBLib configuration. The trader charges the `price` and applies the `premiumPriceReduce` discount in that currency. To sell the same kit in multiple currencies, add one entry per currency with a different `id` and the same kit `type`. Existing entries use `default` when the field is missing, and the server automatically migrates config version 5 to version 6. [CurrencyConfig.json](../../GlobalConfigs/CurrencyConfig.md)
+
+If the configured `currencyType` is missing or not defined in `CurrencyConfig.json`, the stall dealer disables the buy button and displays **Price unavailable** (`#TBSHM_StallPriceUnavailable`). The server also validates the currency on purchase and rejects any mismatched or unconfigured currencies. Stall purchases log the kit, price, and currency to CSV and Discord.
+
+Lifetime extensions use `default`.
 
 ```json lines
 {
-  "version": "5", // Never touch this value. It is needed internally
+  "version": "6", // Never touch this value. It is needed internally
   "maxMarketStallPerUser": 2, // How many market stalls can a player have, -1 = unlimited
   "maxPremiumMarketStallPerUser": 3, // How many market stalls can a premium player have, -1 = unlimited
   "maxMarketStallPerServer": -1, // How many market stalls can be placed on the server, -1 = unlimited
@@ -59,6 +65,7 @@
       "lifetimeInMinutes": 360, // How long the stall will be available, if he is placed. After this time, the stall will be closed and deleted after the timeInMinutesThatOwnerHasAfterLifetimeIsExpired
       "premiumExtraLifetimeInMinutes": 120,  // Extra lifetime for premium users
       "price": 2000, // Price for the stall
+      "currencyType": "default", // Currency uniqueName from CurrencyConfig.json
       "premiumPriceReduce": 500, // Price reduce for premium users
       "priceForTimeExtension": 100, // Price for time extension, if value is lower than 0, the time extension feature is disabled
       "durationInMinutesForTimeExtension": 60, // Duration in minutes for time extension, if value is lower than 0, the time extension feature is disabled
@@ -75,6 +82,7 @@
       "lifetimeInMinutes": 360,
       "premiumExtraLifetimeInMinutes": 120,
       "price": 2000,
+      "currencyType": "default",
       "premiumPriceReduce": 500,
       "priceForTimeExtension": -1,
       "durationInMinutesForTimeExtension": -1,
@@ -91,6 +99,7 @@
       "lifetimeInMinutes": 360,
       "premiumExtraLifetimeInMinutes": 120,
       "price": 2000,
+      "currencyType": "default",
       "premiumPriceReduce": 500,
       "priceForTimeExtension": -1,
       "durationInMinutesForTimeExtension": -1,

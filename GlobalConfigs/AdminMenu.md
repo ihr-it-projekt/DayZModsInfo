@@ -76,6 +76,8 @@ The left column contains four main section tabs:
 ### 4. Currency Config
 - **Currencies List**: Browse all configured currencies (e.g. `default`, `Ruble`, `Euro`).
 - **Create New Currency**: Enter a unique name in the lower field and click **Open / create**.
+- **Mandatory Default Currency**: There must always be at least one currency with the unique name `default`. The form displays an informational notice banner, locks the unique name input for `default`, and strictly protects it against deletion or renaming. If missing on disk, it is restored automatically on server startup.
+- **Delete Currency**: Custom currencies can be deleted by clicking the red **Delete currency** button. The mandatory `default` currency is protected and cannot be deleted or renamed.
 - **Settings**:
   - `Unique name`: Unique internal identifier (the `default` currency is protected and cannot be renamed).
   - `Display name`: In-game name displayed to players.
@@ -84,7 +86,7 @@ The left column contains four main section tabs:
 - **Currency Items & Values**:
   - Each item class has a case-sensitive classname input and an integer value.
   - Add new rows using **Add currency item / value**.
-  - Remove existing rows using the compact red **X** button.
+  - Remove individual item rows cleanly using the compact red **X** button (the UI collapses immediately and the entry is removed upon saving).
 
 ---
 

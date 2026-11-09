@@ -41,9 +41,19 @@ Admins with the `secondHandMarket` permission can moderate all listings directly
 - **Block player and delete/disable**: Block a player from trading and delete or disable their listing in one click.
 - **Teleport to stall**: Click teleport in the item detail view to jump directly to the physical stall location.
 
+### How do currencies work on market stalls?
+
+Personal and global stalls use the currencies in the shared TBLib configuration. Add currencies to the `currencies` list in `CurrencyConfig.json` and keep one entry with `uniqueName` set to `default`. Existing listings and balances saved before multi-currency support load under `default`. [CurrencyConfig.json](../GlobalConfigs/CurrencyConfig.md)
+
+- Select the currency next to the price fields when creating a purchase order. For a sale offer, select it above your inventory before clicking **Create** on the item.
+- Buyers pay and sellers receive the currency shown on the listing. The Bulletin Board also shows that currency with the price.
+- The header shows the player’s available balance by currency. The left panel in stall management shows the separate stall balances, including zero balances. Use **Manage** to select the currency for a deposit or withdrawal.
+- Stall kit purchases use the currency configured for that dealer entry (`currencyType` in `StallConfigs.json`). If a stall's currency is not defined in `CurrencyConfig.json`, the buy button is disabled with "Price unavailable" and purchases are safely blocked server-side. Completed stall purchases also log the paid currency to CSV and Discord. Lifetime extensions, Bulletin Board publication fees and fixed global stall slot fees use `default`. [StallConfigs.json](./Configs/StallConfig.md)
+- Percentage-based global stall listing fees and transaction taxes use the listing currency. [Global stall fees and taxes](./Configs/GlobalStallConfig.md#fee-and-tax-currencies)
+
 ### How do purchase orders and quantities work?
 - Players can create buy orders with quantities up to 2000 units.
-- Total required money is automatically calculated and reserved when placing an order.
+- The order form calculates the total in the selected currency. Personal stalls fund new orders from the available player balance in that currency, up to the order total. Global stalls require the additional funding shown in the form, including any configured order tax. Orders with insufficient stall funds in their own currency are hidden from other players.
 - Completed orders (target quantity reached or zero remaining) display a clear "Purchased" badge in the Bulletin Board detail view so players know they are fulfilled.
 
 ## Types
@@ -62,5 +72,5 @@ Admins with the `secondHandMarket` permission can moderate all listings directly
 - [**`ItemsCategory.json`**](./Configs/ItemsCategory.md)
 - [**`GlobalStallConfig.json`**](./Configs/GlobalStallConfig.md)
 - [**`Logger.json`**](./Configs/Logger.md)
-- [**`StallConfig.json`**](./Configs/StallConfig.md)
+- [**`StallConfigs.json`**](./Configs/StallConfig.md)
 

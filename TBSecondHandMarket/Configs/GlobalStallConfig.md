@@ -1,5 +1,13 @@
 # GlobalStallConfig.json
 
+## Fee and tax currencies
+
+- Fixed slot fees use the `default` currency. With `pricePerSlotIsInPercentage` or `pricePerSlotPremiumPlayerIsInPercentage` enabled for the player’s rate, the creation fee is calculated from the sale offer price and charged in the offer currency.
+- `sellTaxInPercentageOrder` applies to completed sales and is deducted from the seller’s proceeds in the sale offer currency.
+- `sellTaxInPercentageOffer` applies when a purchase order is fulfilled. The tax is included in the order funding calculation and charged against the buyer’s stall balance in the order currency.
+
+The shared currency configuration defines the available currencies. [CurrencyConfig.json](../../GlobalConfigs/CurrencyConfig.md)
+
 ```json lines
 {
   // Never touch this value. It is needed internally
