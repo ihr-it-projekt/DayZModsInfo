@@ -2,9 +2,9 @@
 
 | Channel | Covers |
 |---|---|
-| **General** | Extension purchases |
+| **General** | Extension purchases, player vehicle flips |
 | **Raid Actions** | Raids, short-circuits, repairs, alarms on/off |
-| **Admin** | Admin owner deletion, admin key-access changes |
+| **Admin** | Admin owner deletion, admin key-access changes, admin vehicle flips |
 | **Key** | Player-driven ownership, key access, group access, pack/unpack, and claiming a vehicle |
 
 ```json lines
@@ -38,6 +38,8 @@
     "logVehicleUnpackToDiscord": 1, // 0 = off, 1 = on
     "logOwnVehicle": 1, // 0 = off, 1 = on
     "logOwnVehicleToDiscord": 1, // 0 = off, 1 = on
+    "logVehicleFlip": 1, // // 0 = off, 1 = on
+    "logVehicleFlipToDiscord": 0, // 0 = off, 1 = on
     "discordGeneralWebhookURL": "https://discord.com/api/webhooks/...", // Discord Webhook URL for general logs
     "discordRaidActionsWebhookURL": "https://discord.com/api/webhooks/...", // Discord Webhook URL for raid actions logs
     "discordAdminWebhookURL": "https://discord.com/api/webhooks/...", // Discord Webhook URL for admin logs

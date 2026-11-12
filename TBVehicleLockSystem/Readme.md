@@ -10,9 +10,11 @@ TBVehicleLockSystem is a vehicle ownership, anti-theft, and vehicle-management m
 - **Short circuiting** - disable a vehicle's engine/lock with tools (e.g. Screwdriver) or, without a tool, over a configurable time and chance; owners can repair it afterwards.
 - **Alarms** - raiding or short-circuiting a vehicle triggers an alarm that raiders must turn off within a time limit.
 - **Pack & unpack** - pack vehicles for storage or transport, with blacklisted areas where unpacking is not allowed.
+- **Vehicle flip** - put tilted cars, motorbikes and boats upright from the context menu, with configurable timing, key access and collision checks. Admins can flip vehicles instantly.
+- **Leave vehicle** - exit from the context menu, automatically opening the seat's door when possible and preserving vanilla jump-out behavior and damage while moving.
 - **Purchasable extensions** - Alarm System, Discord Raid Alert, Discord Short Circuit Alert, and Pack Vehicle, priced globally or per vehicle type.
 - **Discord & in-game logging** - separate log channels for General, Raid Actions, Admin, and Key actions.
-- **Admin oversight** - admins can remove ownership and audit key-access and ownership changes.
+- **Admin oversight** - admins can remove ownership, flip vehicles, and audit key-access, ownership and vehicle-flip actions.
 
 Full list of features can be found at [Shop](https://www.themodbase.com/mods/TBVehicleLockSystem)
 
@@ -39,9 +41,9 @@ Attention, please do a backup before you install the mod, it can destroy the veh
 - Start your server :-)
 
 ## Configuration
-- [AdminConfig.json](../GlobalConfigs/AdminConfig.md) Admins can currently reload configs and remove vehicle ownership.
+- [AdminConfig.json](../GlobalConfigs/AdminConfig.md) Admins can reload configs, remove vehicle ownership and instantly flip vehicles.
 - [CurrencyConfig.json](../GlobalConfigs/CurrencyConfig.md)
-- [GeneralConfig.json](./Configs/GeneralConfig.md)
+- [GeneralConfig.json](./Configs/GeneralConfig.md) Alarm settings, extensions, vehicle flipping and the Leave vehicle menu action.
 - [PackVehicleConfig.json](./Configs/PackVehicleConfig.md)
 - [RaidVehicleConfig.json](./Configs/RaidVehicleConfig.md)
 - [ShortCircuitVehicleConfig.json](./Configs/ShortCircuitVehicleConfig.md)

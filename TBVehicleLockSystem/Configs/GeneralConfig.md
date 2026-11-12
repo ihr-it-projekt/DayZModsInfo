@@ -2,8 +2,17 @@
 
 ````json lines
 {
+    "version": "1", // Internal version number - do not modify!
     "alarmTimeInSeconds": 600, // The time in seconds the alarm will sound after raid or short circuit
     "stopAlarmTimeInSeconds": 600, // The time the raider needs to turn off the alarm
+    "flipVehicleConfig": {
+        "canFlipVehicle": 1, // 0 = off, 1 = on. Enables the player Flip vehicle action
+        "flipTimeInSeconds": 10, // Progress bar duration in seconds; 0 = instant
+        "minTiltAngle": 30, // Minimum tilt in degrees for players and admins; 90 = on its side, 180 = upside down
+        "requiresKeyAccess": 1, // 1 = owned vehicles require key access; unowned vehicles can be flipped by anyone
+        "maxSearchRadius": 15, // Search radius in metres for a free position if the current spot is blocked
+        "canExitVehicleViaContextMenu": 1 // 0 = off, 1 = on. Adds Leave vehicle to the context menu
+    },
     "extensions": [
         {
             "id": "ALARM_SYSTEM", // The id of the extension, DO NOT CHANGE THE NAME. Internal used
